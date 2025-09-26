@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Voip on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/voip/</link>
-    <description>Recent content in Voip on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sun, 08 Nov 2009 23:08:41 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/voip/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>浅析电信封杀解决  </title>
-      <link>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</link>
-      <pubDate>Sun, 08 Nov 2009 23:08:41 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</guid>
-      <description>&lt;p&gt;VOIP电信封杀与反封杀&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Voip on Seth Dang'S</title><link>seth.dpdns.org/categories/voip/</link><description>Recent content in Voip on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Sun, 08 Nov 2009 23:08:41 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/voip/index.xml" rel="self" type="application/rss+xml"/><item><title>浅析电信封杀解决</title><link>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</link><pubDate>Sun, 08 Nov 2009 23:08:41 +0800</pubDate><guid>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</guid><description>&lt;p&gt;VOIP电信封杀与反封杀&lt;br&gt;
 一、 封软交换平台的端口&lt;br&gt;
 国际电联定义的IP通信信令端口是1719、1720等，终端（不管是软电话、ip电话还是语音网关）连上网后都需要注册到软交换平台，就像QQ上网要注册到QQ的服务器一样，这样系统才知道这个终端上线了，终端的ip和端口号是多少，并记录下来。有别的终端呼叫这个终端系统就会在数据库中找出这个终端注册后记录下来的ip和端口号，把数据发往这个地址。&lt;br&gt;
 1、 电信封杀手段&lt;br&gt;
@@ -57,14 +42,7 @@ voip系统是由终端、软交换平台、中继网关、PSTN共同组成的，
 六、目前超级解决办法&lt;br&gt;
 建立IP通信用户的私网或者VPN，但是成本太高。尤其是虚拟运营商，需要在用户端、软交换平台、落地网关都建立这种私网或者VPN，成本还是很高。&lt;br&gt;
 总之，只要做IP通信技术的公司做了技术准备，你的IP通信注册、信令、语音所使用的端口可以随意调整，最好是可以自己寻找端口来传输，做虚拟运营的时候考虑得周到一些，全面一些，电信一般还是比较在流量众多的IP网络里把你的包给纠出来，查找你的IP再封杀的。&lt;/p&gt;
-&lt;p&gt;技术革新，行业才能进步！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title> Original X100P 原装卡 Trixbox(Asterisk) voip 不是兼容卡哦 </title>
-      <link>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</link>
-      <pubDate>Sun, 08 Nov 2009 21:51:11 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</guid>
-      <description>&lt;p&gt;之前断货有1个多月了，现在又找到一些了，请抓紧购买。&lt;/p&gt;
+&lt;p&gt;技术革新，行业才能进步！&lt;/p&gt;</description></item><item><title> Original X100P 原装卡 Trixbox(Asterisk) voip 不是兼容卡哦</title><link>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</link><pubDate>Sun, 08 Nov 2009 21:51:11 +0800</pubDate><guid>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</guid><description>&lt;p&gt;之前断货有1个多月了，现在又找到一些了，请抓紧购买。&lt;/p&gt;
 &lt;p&gt;支持各类流行的Asterisk软件，如Trixbox, Asterisk, Elastix ,asterCC-BOX,Askozia等等&lt;/p&gt;
 &lt;p&gt;注：我们没有办法提供任何软件使用上的技术支持的，你会使用才买，若没有任何使用经验请谨慎购买，我们提供不了帮助的。&lt;/p&gt;
 &lt;p&gt;这个 单口（虽然你看到2个口，他们其实是并联的，方便接一台电话机做逃生口）FXO卡是给Asterisk/Trixbox系统用来落地用的。&lt;/p&gt;
@@ -77,16 +55,13 @@ A single port FXO PCI interface card for interfacing with a standard analog phon
 &lt;p&gt;2.带来电显示（FSK制式，不支持DTMF 广州，山东某些地方）&lt;/p&gt;
 &lt;p&gt;3.忙音检测 不需要补丁&lt;/p&gt;
 &lt;p&gt;市面上其他兼容卡都有1，2，3的问题。所以还是抓紧时间买原装卡划算。保值，原装卡芯片已经停产了，有收藏价值。价格根据库存调整，起始价格98元。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.asterisk.org/hardware&#34;&gt;http://www.asterisk.org/hardware&lt;/a&gt; 官方只有克隆卡，原装卡国外都买不到了&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.asterisk.org/hardware"&gt;http://www.asterisk.org/hardware&lt;/a&gt; 官方只有克隆卡，原装卡国外都买不到了&lt;/p&gt;
 &lt;p&gt;我们快递公司一定走申通速递，平邮我也一样走快递。&lt;/p&gt;
-&lt;p&gt;新手先去看看一下后面的丰富的参考链接，然后再去&lt;a href=&#34;http://www.trixbox.com.cn/&#34;&gt;www.trixbox.com.cn&lt;/a&gt;问问题。本人所有卡亲自测试，所以一般卡是没问题的，关于开源的事情还是去论坛看看。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.x100p.com/&#34;&gt;www.x100p.com&lt;/a&gt;不要认为我们的卡和这家一样，他们在卖的卡和我的芯片封装不一样，我的品质和他们不相上下，甚至比他们要好。不过我们的设备X100P的ID是一样的（motorola）。&lt;/p&gt;
+&lt;p&gt;新手先去看看一下后面的丰富的参考链接，然后再去&lt;a href="http://www.trixbox.com.cn/"&gt;www.trixbox.com.cn&lt;/a&gt;问问题。本人所有卡亲自测试，所以一般卡是没问题的，关于开源的事情还是去论坛看看。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.x100p.com/"&gt;www.x100p.com&lt;/a&gt;不要认为我们的卡和这家一样，他们在卖的卡和我的芯片封装不一样，我的品质和他们不相上下，甚至比他们要好。不过我们的设备X100P的ID是一样的（motorola）。&lt;/p&gt;
 &lt;p&gt;复制以下链接，粘贴到浏览器，就可以看到了。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.sureteq.com/asterisk/trixbox.htm&#34;&gt;http://www.sureteq.com/asterisk/trixbox.htm&lt;/a&gt; 风云提供链接。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sureteq.com/asterisk/trixbox.htm"&gt;http://www.sureteq.com/asterisk/trixbox.htm&lt;/a&gt; 风云提供链接。&lt;/p&gt;
 &lt;p&gt;以下链接证明克隆卡有回音，原装卡是没有的。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://www.voip-info.org/tiki-index.php?page=X100P+clone&#34;&gt;http://www.voip-info.org/tiki-index.php?page=X100P+clone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.voip-info.org/tiki-index.php?page=X100P+clone"&gt;http://www.voip-info.org/tiki-index.php?page=X100P+clone&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The Digium X100P FXO card, and the DigitNetworks X100P OEM clone card, are actually Intel V92 Data/Fax/Voice modem cards.&lt;/p&gt;
-&lt;p&gt;以上文字说明这个东西就是猫，比较特殊的猫。呵呵！&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;以上文字说明这个东西就是猫，比较特殊的猫。呵呵！&lt;/p&gt;</description></item></channel></rss>

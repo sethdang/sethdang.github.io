@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>SQL Programe on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/sql-programe/</link>
-    <description>Recent content in SQL Programe on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 15 Feb 2007 15:22:19 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/sql-programe/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>sql經典語句匯總（原創）</title>
-      <link>seth.dpdns.org/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</link>
-      <pubDate>Thu, 15 Feb 2007 15:22:19 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</guid>
-      <description>&lt;p&gt;select ( case when gender=1 then &amp;lsquo;男&amp;rsquo; else &amp;lsquo;女&amp;rsquo; end)as gender from rzs_person&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SQL Programe on Seth Dang'S</title><link>seth.dpdns.org/categories/sql-programe/</link><description>Recent content in SQL Programe on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Thu, 15 Feb 2007 15:22:19 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/sql-programe/index.xml" rel="self" type="application/rss+xml"/><item><title>sql經典語句匯總（原創）</title><link>seth.dpdns.org/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</link><pubDate>Thu, 15 Feb 2007 15:22:19 +0800</pubDate><guid>seth.dpdns.org/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</guid><description>&lt;p&gt;select ( case when gender=1 then &amp;lsquo;男&amp;rsquo; else &amp;lsquo;女&amp;rsquo; end)as gender from rzs_person&lt;/p&gt;
 &lt;p&gt;說明：字段轉換。&lt;/p&gt;
 &lt;p&gt;sql=&amp;ldquo;select distinct 籍貫 from 表名&amp;rdquo;&lt;br&gt;
 說明：去除相同部分。&lt;/p&gt;
@@ -26,14 +11,7 @@ select top 3 a,b,c from B&lt;br&gt;
 &lt;p&gt;SQL: insert into b(a, b, c) select d,e,f from b;&lt;br&gt;
 說明：拷貝表(拷貝數據,源表名：a 目標表名：b)&lt;/p&gt;
 &lt;p&gt;SQL: select a,b,c from a union select d,e,f from b;&lt;br&gt;
-說明：合併數據(表名1：a 表名2：b)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>sql解密存儲過程</title>
-      <link>seth.dpdns.org/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</link>
-      <pubDate>Sun, 04 Feb 2007 14:21:41 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</guid>
-      <description>&lt;p&gt;CREATE PROCEDURE sp_decrypt(@objectName varchar(50))&lt;br&gt;
+說明：合併數據(表名1：a 表名2：b)&lt;/p&gt;</description></item><item><title>sql解密存儲過程</title><link>seth.dpdns.org/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</link><pubDate>Sun, 04 Feb 2007 14:21:41 +0800</pubDate><guid>seth.dpdns.org/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</guid><description>&lt;p&gt;CREATE PROCEDURE sp_decrypt(@objectName varchar(50))&lt;br&gt;
 AS&lt;br&gt;
 begin&lt;br&gt;
 set nocount on&lt;br&gt;
@@ -47,7 +25,4 @@ select @type=xtype,@parentid=parent_obj from sysobjects where&lt;/p&gt;
 &lt;p&gt;create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)&lt;br&gt;
 insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)&lt;br&gt;
 select @number=max(number) from #temp&lt;br&gt;
-set @k=0&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+set @k=0&lt;/p&gt;</description></item></channel></rss>

@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>MSDC on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/msdc/</link>
-    <description>Recent content in MSDC on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sun, 16 May 2010 21:35:41 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/msdc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>本地域组和全局组的区别</title>
-      <link>seth.dpdns.org/posts/%E6%9C%AC%E5%9C%B0%E5%9F%9F%E7%BB%84%E5%92%8C%E5%85%A8%E5%B1%80%E7%BB%84%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Sun, 16 May 2010 21:35:41 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E6%9C%AC%E5%9C%B0%E5%9F%9F%E7%BB%84%E5%92%8C%E5%85%A8%E5%B1%80%E7%BB%84%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>&lt;p&gt;全局组： 只能在创建该全局组的域上进行添加用户账户和全局组，而且全局组可以嵌套在其他组中。可以将某个全局组添加到同一个域上的另一个全局组中，或添加到其他域的通用组和域本地组中（注意这里不能它加入到不同域的全局组中，全局组只能在创建它的域中添加用户和组）。虽然可以利用全局组授予访问任何域上的资源的权限，但一般不直接用它来进行权限管理。&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>MSDC on Seth Dang'S</title><link>seth.dpdns.org/categories/msdc/</link><description>Recent content in MSDC on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Sun, 16 May 2010 21:35:41 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/msdc/index.xml" rel="self" type="application/rss+xml"/><item><title>本地域组和全局组的区别</title><link>seth.dpdns.org/posts/%E6%9C%AC%E5%9C%B0%E5%9F%9F%E7%BB%84%E5%92%8C%E5%85%A8%E5%B1%80%E7%BB%84%E7%9A%84%E5%8C%BA%E5%88%AB/</link><pubDate>Sun, 16 May 2010 21:35:41 +0800</pubDate><guid>seth.dpdns.org/posts/%E6%9C%AC%E5%9C%B0%E5%9F%9F%E7%BB%84%E5%92%8C%E5%85%A8%E5%B1%80%E7%BB%84%E7%9A%84%E5%8C%BA%E5%88%AB/</guid><description>&lt;p&gt;全局组： 只能在创建该全局组的域上进行添加用户账户和全局组，而且全局组可以嵌套在其他组中。可以将某个全局组添加到同一个域上的另一个全局组中，或添加到其他域的通用组和域本地组中（注意这里不能它加入到不同域的全局组中，全局组只能在创建它的域中添加用户和组）。虽然可以利用全局组授予访问任何域上的资源的权限，但一般不直接用它来进行权限管理。&lt;br&gt;
 本地域组： 可以从任何域添加用户账户、通用组和全局组。域本地组不能嵌套于其他组中。它主要是用于授予位于本域资源的访问权限。&lt;br&gt;
 通用组：通用组是集合了上面两种组的优点，即可以从任何域中添加用户和组，可以嵌套于其他域组中。但是只能在域处于本机模式的时候使用，也就是说所有域控都必须是2000以上系统。&lt;br&gt;
 比如：有两个域，A和B，A中的5个财务人员和B中的3个财务人员都需要访问B中的“FINA”文件夹，这时，可以在B中建一个DL，因为DL的成员可以来自所有的域，然后把这8个人都加入这个DL，并把FINA的访问权赋给DL。这样做的坏处是什么呢？因为DL是在B域中，所以管理权也在B域，如果A域中的5个人变成6个人，那只能A域管理员通知B域管理员，将DL的成员做一下修改，B域的管理员太累了。&lt;br&gt;
@@ -23,14 +8,7 @@
 全局组的成员只能来自当前域的用户和组，而作用域可以是所有的域&lt;/p&gt;
 &lt;p&gt;本地域组的权利是自身的，全局域的权利是来自其属于的本地域组的&lt;/p&gt;
 &lt;p&gt;打个比方，现在有两个域domainA,domainB,用户UseA,UseB. 在DomainA上有一个文件夹Resource.UseB属于domainB,他想访问Resource.&lt;br&gt;
-这个时候就应该先在domainB上建一个全局组GlobalB,然后将UseB加入GlobalB,然后到Domain域中建立一个域本地组LocalA,将全局组GlobalB加入域本地组LocalA,再针对域本地组LocalA授权对Resource的访问权限。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>重命名AD网域的方式</title>
-      <link>seth.dpdns.org/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/</link>
-      <pubDate>Sun, 16 May 2010 21:32:20 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/</guid>
-      <description>&lt;p&gt;网域&lt;br&gt;
+这个时候就应该先在domainB上建一个全局组GlobalB,然后将UseB加入GlobalB,然后到Domain域中建立一个域本地组LocalA,将全局组GlobalB加入域本地组LocalA,再针对域本地组LocalA授权对Resource的访问权限。&lt;/p&gt;</description></item><item><title>重命名AD网域的方式</title><link>seth.dpdns.org/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/</link><pubDate>Sun, 16 May 2010 21:32:20 +0800</pubDate><guid>seth.dpdns.org/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/</guid><description>&lt;p&gt;网域&lt;br&gt;
 提升域和林的功能级别&lt;br&gt;
 只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。&lt;br&gt;
 提升域功能级别&lt;br&gt;
@@ -58,14 +36,7 @@
 gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com&lt;/p&gt;
 &lt;p&gt;9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。&lt;br&gt;
 10、删除原域名：&lt;br&gt;
-这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>灾难恢复某分公司主域控实录 </title>
-      <link>seth.dpdns.org/posts/%E7%81%BE%E9%9A%BE%E6%81%A2%E5%A4%8D%E6%9F%90%E5%88%86%E5%85%AC%E5%8F%B8%E4%B8%BB%E5%9F%9F%E6%8E%A7%E5%AE%9E%E5%BD%95/</link>
-      <pubDate>Sun, 16 May 2010 21:28:57 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E7%81%BE%E9%9A%BE%E6%81%A2%E5%A4%8D%E6%9F%90%E5%88%86%E5%85%AC%E5%8F%B8%E4%B8%BB%E5%9F%9F%E6%8E%A7%E5%AE%9E%E5%BD%95/</guid>
-      <description>&lt;p&gt;某分公司服务器崩溃,目前无法接收邮件等.&lt;br&gt;
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。&lt;/p&gt;</description></item><item><title>灾难恢复某分公司主域控实录</title><link>seth.dpdns.org/posts/%E7%81%BE%E9%9A%BE%E6%81%A2%E5%A4%8D%E6%9F%90%E5%88%86%E5%85%AC%E5%8F%B8%E4%B8%BB%E5%9F%9F%E6%8E%A7%E5%AE%9E%E5%BD%95/</link><pubDate>Sun, 16 May 2010 21:28:57 +0800</pubDate><guid>seth.dpdns.org/posts/%E7%81%BE%E9%9A%BE%E6%81%A2%E5%A4%8D%E6%9F%90%E5%88%86%E5%85%AC%E5%8F%B8%E4%B8%BB%E5%9F%9F%E6%8E%A7%E5%AE%9E%E5%BD%95/</guid><description>&lt;p&gt;某分公司服务器崩溃,目前无法接收邮件等.&lt;br&gt;
 首先讲讲现有环境:&lt;br&gt;
 NS1:主域控,兼DNS和mdaemon服务器和erp数据库服务器以及财务系统&lt;br&gt;
 NS2:副域控兼文件服务器,未设置为GC(全局编录)&lt;br&gt;
@@ -95,14 +66,7 @@ NS2:副域控兼文件服务器,未设置为GC(全局编录)&lt;br&gt;
 13. 安装erp,然后停止sql服务,将erp的旧数据库覆盖新安装erp产生的新数据库&lt;br&gt;
 14. 启动sql服务,erp恢复正常,然后重新共享财务系统需要的文件夹,财务系统恢复正常.&lt;br&gt;
 15. 重新安装mdaemon,然后将之前备份的目录全部覆盖到新目录,mdaemon也恢复正常.&lt;br&gt;
-OK,总算完成了,有不明白的再与我联络讨论.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>系统禁用U盘策略（转）</title>
-      <link>seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/</link>
-      <pubDate>Fri, 11 Jul 2008 13:56:20 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/</guid>
-      <description>&lt;p&gt;如果计算机上尚未安装 USB 存储设备&lt;/p&gt;
+OK,总算完成了,有不明白的再与我联络讨论.&lt;/p&gt;</description></item><item><title>系统禁用U盘策略（转）</title><link>seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/</link><pubDate>Fri, 11 Jul 2008 13:56:20 +0800</pubDate><guid>seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/</guid><description>&lt;p&gt;如果计算机上尚未安装 USB 存储设备&lt;/p&gt;
 &lt;p&gt;如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：&lt;/p&gt;
 &lt;p&gt;%SystemRoot%\Inf\Usbstor.pnf&lt;/p&gt;
 &lt;p&gt;%SystemRoot%\Inf\Usbstor.inf&lt;/p&gt;
@@ -167,14 +131,7 @@ END ITEMLIST&lt;br&gt;
 END PART&lt;br&gt;
 END POLICY&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Windows日誌文件完全全解讀(轉帖)</title>
-      <link>seth.dpdns.org/posts/windows%E6%97%A5%E8%AA%8C%E6%96%87%E4%BB%B6%E5%AE%8C%E5%85%A8%E5%85%A8%E8%A7%A3%E8%AE%80%E8%BD%89%E5%B8%96/</link>
-      <pubDate>Thu, 15 Mar 2007 17:09:54 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/windows%E6%97%A5%E8%AA%8C%E6%96%87%E4%BB%B6%E5%AE%8C%E5%85%A8%E5%85%A8%E8%A7%A3%E8%AE%80%E8%BD%89%E5%B8%96/</guid>
-      <description>&lt;p&gt;日誌文件，它記錄著Windows系統及其各種服務運行的每個細節，對增強Windows的穩定和安全性，起著非常重要的作用。但許多用戶不注意對它保護，一些“不速之客”很輕易就將日誌文件清空，給系統帶來嚴重的安全隱患。&lt;/p&gt;
+&lt;p&gt;说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。&lt;/p&gt;</description></item><item><title>Windows日誌文件完全全解讀(轉帖)</title><link>seth.dpdns.org/posts/windows%E6%97%A5%E8%AA%8C%E6%96%87%E4%BB%B6%E5%AE%8C%E5%85%A8%E5%85%A8%E8%A7%A3%E8%AE%80%E8%BD%89%E5%B8%96/</link><pubDate>Thu, 15 Mar 2007 17:09:54 +0800</pubDate><guid>seth.dpdns.org/posts/windows%E6%97%A5%E8%AA%8C%E6%96%87%E4%BB%B6%E5%AE%8C%E5%85%A8%E5%85%A8%E8%A7%A3%E8%AE%80%E8%BD%89%E5%B8%96/</guid><description>&lt;p&gt;日誌文件，它記錄著Windows系統及其各種服務運行的每個細節，對增強Windows的穩定和安全性，起著非常重要的作用。但許多用戶不注意對它保護，一些“不速之客”很輕易就將日誌文件清空，給系統帶來嚴重的安全隱患。&lt;/p&gt;
 &lt;p&gt;一、什麼是日誌文件&lt;/p&gt;
 &lt;p&gt;日誌文件是Windows系統中一個比較特殊的文件，它記錄著Windows系統中所發生的一切，如各種系統服務的啟動、運行、關閉等信息。Windows日誌包括應用程序、安全、系統等幾個部分，它的存放路徑是“%systemroot%system32config”，應用程序日誌、安全日誌和系統日誌對應的文件名為AppEvent.evt、SecEvent.evt和SysEvent.evt。這些文件受到“Event Log（事件記錄）”服務的保護不能被刪除，但可以被清空。&lt;/p&gt;
 &lt;p&gt;二、如何查看日誌文件&lt;/p&gt;
@@ -193,14 +150,7 @@ END POLICY&lt;/li&gt;
 &lt;p&gt;1． 查看正常開關機記錄&lt;/p&gt;
 &lt;p&gt;在Windows系統中，我們可以通過事件查看器的系統日誌查看計算機的開、關機記錄，這是因為日誌服務會隨計算機一起啟動或關閉，並在日誌中留下記錄。這裏我們要介紹兩個事件ID“6006和6005”。6005表示事件日誌服務已啟動，如果在事件查看器中發現某日的事件ID號為6005的事件，就說明在這天正常啟動了Windows系統。6006表示事件日誌服務已停止，如果沒有在事件查看器中發現某日的事件ID號為6006的事件，就表示計算機在這天沒有正常關機，可能是因為系統原因或者直接切斷電源導致沒有執行正常的關機操作。&lt;/p&gt;
 &lt;p&gt;2． 查看DHCP配置警告信息&lt;/p&gt;
-&lt;p&gt;在規模較大的網絡中，一般都是採用DHCP服務器配置客戶端IP地址信息，如果客戶機無法找到DHCP服務器，就會自動使用一個內部的IP地址配置客戶端，並且在Windows日誌中產生一個事件ID號為1007的事件。如果用戶在日誌中發現該編號事件，說明該機器無法從DHCP服務器獲得信息，就要查看是該機器網絡故障還是DHCP服務器問題。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>win XP 組策略-應用全過程(轉帖)</title>
-      <link>seth.dpdns.org/posts/win-xp-%E7%B5%84%E7%AD%96%E7%95%A5-%E6%87%89%E7%94%A8%E5%85%A8%E9%81%8E%E7%A8%8B%E8%BD%89%E5%B8%96/</link>
-      <pubDate>Thu, 15 Mar 2007 17:04:29 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/win-xp-%E7%B5%84%E7%AD%96%E7%95%A5-%E6%87%89%E7%94%A8%E5%85%A8%E9%81%8E%E7%A8%8B%E8%BD%89%E5%B8%96/</guid>
-      <description>&lt;p&gt;一、組策略基礎&lt;br&gt;
+&lt;p&gt;在規模較大的網絡中，一般都是採用DHCP服務器配置客戶端IP地址信息，如果客戶機無法找到DHCP服務器，就會自動使用一個內部的IP地址配置客戶端，並且在Windows日誌中產生一個事件ID號為1007的事件。如果用戶在日誌中發現該編號事件，說明該機器無法從DHCP服務器獲得信息，就要查看是該機器網絡故障還是DHCP服務器問題。&lt;/p&gt;</description></item><item><title>win XP 組策略-應用全過程(轉帖)</title><link>seth.dpdns.org/posts/win-xp-%E7%B5%84%E7%AD%96%E7%95%A5-%E6%87%89%E7%94%A8%E5%85%A8%E9%81%8E%E7%A8%8B%E8%BD%89%E5%B8%96/</link><pubDate>Thu, 15 Mar 2007 17:04:29 +0800</pubDate><guid>seth.dpdns.org/posts/win-xp-%E7%B5%84%E7%AD%96%E7%95%A5-%E6%87%89%E7%94%A8%E5%85%A8%E9%81%8E%E7%A8%8B%E8%BD%89%E5%B8%96/</guid><description>&lt;p&gt;一、組策略基礎&lt;br&gt;
 1.什麼是組策略&lt;br&gt;
 註冊表是Windows系統中保存系統軟件和應用軟件配置的數據庫，而隨著Windows功能越來越豐富，註冊表裏的配置項目也越來越多，很多配置都可以自定義設置，但這些配置分佈在註冊表的各個角落，如果是手工配置，可以想像是多麼困難和煩雜。而組策略則將系統重要的配置功能彙集成各種配置模塊，供用戶直接使用，從而達到方便管理計算機的目的。&lt;/p&gt;
 &lt;p&gt;其實簡單地說，組策略設置就是在修改註冊表中的配置。當然，組策略使用了更完善的管理組織方法，可以對各種對象中的設置進行管理和配置，遠比手工修改註冊表方便、靈活，功能也更加強大。&lt;/p&gt;
@@ -254,14 +204,7 @@ END POLICY&lt;/li&gt;
 &lt;p&gt;3.給“開始”菜單減肥&lt;br&gt;
 如果覺得Windows的“開始”菜單太臃腫，你完全可以通過組策略設置將不需要的菜單項從“開始”菜單中刪除。&lt;/p&gt;
 &lt;p&gt;位置：\用戶配置\管理模板\任務欄和“開始”菜單&lt;br&gt;
-在組策略右側窗格中，提供“從‘開始’菜單刪除用戶文件夾”、“刪除到‘Windows Update’的訪問和鏈接”、從‘開始’菜單刪除公用程序組、從‘開始’菜單中刪除“我的文檔”圖標等配置項目。你只要將不需要的菜單項所對應的策略啟用即可。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>用活Win2000域控制器</title>
-      <link>seth.dpdns.org/posts/%E7%94%A8%E6%B4%BBwin2000%E5%9F%9F%E6%8E%A7%E5%88%B6%E5%99%A8/</link>
-      <pubDate>Fri, 05 Jan 2007 15:24:09 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E7%94%A8%E6%B4%BBwin2000%E5%9F%9F%E6%8E%A7%E5%88%B6%E5%99%A8/</guid>
-      <description>&lt;p&gt;也许不少人会认为域控制器的使用，是非常简单的一件事情；但当你与域控制器进行了“亲密”接触之后，你会发现事实并非想象的那样简单，因为在实际管理域控制器的过程中，你或许会碰到许多特殊要求；面对不同的要求，你需要对域控制器进行个性化的控制和管理。&lt;/p&gt;
+在組策略右側窗格中，提供“從‘開始’菜單刪除用戶文件夾”、“刪除到‘Windows Update’的訪問和鏈接”、從‘開始’菜單刪除公用程序組、從‘開始’菜單中刪除“我的文檔”圖標等配置項目。你只要將不需要的菜單項所對應的策略啟用即可。&lt;/p&gt;</description></item><item><title>用活Win2000域控制器</title><link>seth.dpdns.org/posts/%E7%94%A8%E6%B4%BBwin2000%E5%9F%9F%E6%8E%A7%E5%88%B6%E5%99%A8/</link><pubDate>Fri, 05 Jan 2007 15:24:09 +0800</pubDate><guid>seth.dpdns.org/posts/%E7%94%A8%E6%B4%BBwin2000%E5%9F%9F%E6%8E%A7%E5%88%B6%E5%99%A8/</guid><description>&lt;p&gt;也许不少人会认为域控制器的使用，是非常简单的一件事情；但当你与域控制器进行了“亲密”接触之后，你会发现事实并非想象的那样简单，因为在实际管理域控制器的过程中，你或许会碰到许多特殊要求；面对不同的要求，你需要对域控制器进行个性化的控制和管理。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;巧“借”域来装程序&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在包含有多台工作站的局域网中，为每一台工作站安装相同的应用程序，看似是一件轻松而又简单的事情，其实实际操作起来很费时间，如果同时在每台工作站中安装多个应用程序的话，那工作量就更大了！为了能快速、高效地将多个应用程序安装到每台工作站中，你可以按照下面的方法来进行批量操作：&lt;/p&gt;
 &lt;p&gt;首先将局域网服务器升级为域服务器，如果你的服务器还没有完成升级的话，那不妨参考相关资料完成升级任务。倘若这里的网络服务器已经完成了升级操作，而且升级好的域服务器名称为“ad.ycsti.cn”；&lt;/p&gt;
@@ -272,18 +215,11 @@ start/wait \域服务器IP地址\aaa 222.exe&lt;br&gt;
 ……&lt;/p&gt;
 &lt;p&gt;其中“域服务器IP地址”其实就是保存有所有待安装程序的计算机IP地址，“aaa”表示保存有所有待安装程序的共享文件夹，111.exe、222.exe……表示待安装的具体应用程序名，“/wait”参数表示逐一地安装每一个应用程序，倘若没有这个参数的话，那么多个应用程序可能会出现同时安装的现象，这样容易造成安装混乱的现象。完成上面的代码输入后，单击文本编辑界面中的“文件”/“另存为”命令，在其后打开的文件保存对话框中，输入文件名“install.bat”，最后单击“保存”按钮，将上面的命令代码保存成批处理文件“install.bat”。&lt;/p&gt;
 &lt;p&gt;接着在域服务器系统桌面中，依次单击“开始”/“运行”命令，在随后打开的系统运行对话框中，输入字符串命令“DSA.MSC”，单击“确定”按钮后，打开一个标题为“Active Directory用户和计算机”的界面；用鼠标右键单击该界面左侧列表区域处的“ad.ycsti.cn”域服务器名称，从随后出现的右键菜单中单击“属性”命令，再在打开的属性设置框中单击一下“组策略”标签，在对应的标签页面中你将看到一些默认的组策略；下面你可以单击“新建”按钮，来重新创建一个新的组策略，并将该组策略的名字取为“批量安装程序”；随后再选中“批量安装程序”这个选项，并单击一下“编辑”按钮，打开具体的组策略编辑界面，该界面与单台工作站中的组策略编辑界面完全一样。依次展开组策略编辑界面中的“用户设置”、“Windows设置”、“脚本-（登录/注销）”分支，在对应“脚本-（登录/注销）”分支的右侧子窗口中，双击一下“登录”选项，在接着出现的如图1所示的对话框中，将前面创建的“INSTALL.BAT”批处理文件选中并导入进来。如果“INSTALL.BAT”批处理文件不在本地计算机的话，那么你不可以直接进入其他计算机的共享文件夹来选择，而必须通过网上邻居窗口来选择“INSTALL.BAT”批处理文件，这主要是因为工作站是通过网络方式访问“INSTALL.BAT”批处理文件的，所以必须将该批处理文件具体路径调整为网络路径。例如，要是“INSTALL.BAT”批处理文件保存在IP地址为“10.168.160.16”、共享文件夹名为“install”的工作站时，你就可以按照下面的步骤来选择并导入该文件了：先在IE浏览器地址框中输入“\10.168.160.16”，单击回车键后就能见到对应工作站中的所有共享文件夹；接着双击“install”共享文件夹图标，再在其后的界面中选中“INSTALL.BAT”，这样一来你就能在IE地址框中看到完整的网络路径了，以后再将该路径直接复制到图1所示的对话框中，并单击“确定”按钮就可以完成组策略的编辑操作了。&lt;br&gt;
-&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_HThGygRRz7G4rrMNqRuNeO3WnTd_Ra_j&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/B4stcnT584j3gikoSED6Dw==/4513451251555449605.jpg&#34;&gt;&lt;/a&gt; 图1&lt;/p&gt;
+&lt;a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_HThGygRRz7G4rrMNqRuNeO3WnTd_Ra_j"&gt;&lt;img loading="lazy" src="http://img.blog.163.com/photo/B4stcnT584j3gikoSED6Dw==/4513451251555449605.jpg"&gt;&lt;/a&gt; 图1&lt;/p&gt;
 &lt;p&gt;要想实现应用程序的批量安装目的，还需要事先将所有需要在工作站中安装的应用程序全部保存到域服务器中，以便任何拥有域帐号的工作站可以自动从服务器中复制安装源程序。首先需要在域服务器中创建一个共享名为“aaa”的文件夹，然后再把所有待安装的应用程序全部复制到该文件夹中，或者将保存有待安装的应用程序所在的文件夹设置为共享，并且将共享名称设置为“aaa”。&lt;/p&gt;
 &lt;p&gt;为了确保工作站可以顺利登录到域服务器，你还需要事先在域服务器中为每一台工作站创建登录帐号，并将这些帐号全部添加到“Account Operators”组中。如果你的工作站还没有成为域成员的话，还必须进行下面的步骤：用鼠标右键单击“我的电脑”图标，从弹出的右键菜单中执行“属性”命令，在其后出现的属性设置框中，单击“计算机名”标签，再单击对应标签页面中的“属性”按钮，接着选中“隶属于”设置项处的“域”选项，在随后被激活的文本框中输入具体的域名称，例如这里应该输入“ad.ycsti.cn”（如图2所示），再单击“确定”按钮并重新启动一下计算机系统，以后你只要输入域用户名以及密码，顺利登录进域服务器中，工作站就能自动、批量地安装应用程序了。当然在为工作站批量安装好应用程序后，必须及时在域服务器的组策略设置界面中，删除“登录脚本”策略，不然的话工作站下次登录服务器时又将会重新安装以前的应用程序了。另外还要注意的是，工作站登录进域服务器的那个用户帐户还必须具有超级管理员权限才行。&lt;br&gt;
-&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_kHitcsrEvXr1HJafVZjiKO7-Q88UFxzW&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/KRaFqbUqnzL54ERfIRq3yQ==/3970204546503920688.jpg&#34;&gt;&lt;/a&gt; 图2&lt;/p&gt;
-&lt;p&gt;小提示：普通工作站在登录域服务器时，常常可能出现无法登录域的错误提示，这种情况多数是你没有正确设置DNS服务器IP地址造成的。由于在默认状态下，网络服务器被升级为域服务器时，已经自动把自身配置成了DNS服务器，所以其他工作站在登录该服务器时，也必须将工作站的DNS服务器设置成域服务器的IP地址。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>WINDOWS的域和活动目录</title>
-      <link>seth.dpdns.org/posts/windows%E7%9A%84%E5%9F%9F%E5%92%8C%E6%B4%BB%E5%8A%A8%E7%9B%AE%E5%BD%95/</link>
-      <pubDate>Sat, 09 Dec 2006 16:28:55 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/windows%E7%9A%84%E5%9F%9F%E5%92%8C%E6%B4%BB%E5%8A%A8%E7%9B%AE%E5%BD%95/</guid>
-      <description>&lt;p&gt;一、认识Windows 的域&lt;br&gt;
+&lt;a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_kHitcsrEvXr1HJafVZjiKO7-Q88UFxzW"&gt;&lt;img loading="lazy" src="http://img.blog.163.com/photo/KRaFqbUqnzL54ERfIRq3yQ==/3970204546503920688.jpg"&gt;&lt;/a&gt; 图2&lt;/p&gt;
+&lt;p&gt;小提示：普通工作站在登录域服务器时，常常可能出现无法登录域的错误提示，这种情况多数是你没有正确设置DNS服务器IP地址造成的。由于在默认状态下，网络服务器被升级为域服务器时，已经自动把自身配置成了DNS服务器，所以其他工作站在登录该服务器时，也必须将工作站的DNS服务器设置成域服务器的IP地址。&lt;/p&gt;</description></item><item><title>WINDOWS的域和活动目录</title><link>seth.dpdns.org/posts/windows%E7%9A%84%E5%9F%9F%E5%92%8C%E6%B4%BB%E5%8A%A8%E7%9B%AE%E5%BD%95/</link><pubDate>Sat, 09 Dec 2006 16:28:55 +0800</pubDate><guid>seth.dpdns.org/posts/windows%E7%9A%84%E5%9F%9F%E5%92%8C%E6%B4%BB%E5%8A%A8%E7%9B%AE%E5%BD%95/</guid><description>&lt;p&gt;一、认识Windows 的域&lt;br&gt;
 本小节重点从理论上阐述域的概念、作用和Windows 中域的产生。&lt;br&gt;
 一台Windows 计算机，它要么隶属于工作组，要么隶属于域。所以说到域，我们就不得不提一下工作组，工作组是MS 的概念，一般的普遍称谓是对等网。工作组通常是一个由不多于10 台计算机组成的逻辑集合，如果要管理更多的计算机，MS 推荐你使用域的模式进行集中管理，这样的管理更有效。你可以使用域、活动目录、组策略等等各种功能，使你网络管理的工作量达到最小。当然这里的10 台只是一个参考值，11 台甚至20 台，如果你不想进行集中的管理，那么你仍然可以使用工作组模式。工作组的特点就是实现简单，不需要域控制器DC，每台计算机自己管理自己，适用于距离很近的有限数目的计算机。另外工作组名并没有太多的实际意义，只是在网上邻居的列表中实现一个分组而已；再就是对于“计算机浏览服务＂，每一个工作组中，会自动推选出一个主浏览器，负责维护本工作组所有计算机的NetBIOS 名称列表。用户可以使用默认的workgroup，也可以任意起个名字，同一工作组或不同工作组在访问时也没有什么分别。域（Domain）是一个共用“目录服务数据库＂的计算机和用户的集合，实现起来要复杂一些，至少需要一台计算机安装NT/2000/03 Server 版本使其充当DC，来实现集中式的管理。若考虑到容错的话，至少需要两台。对于NT4 域就是一台PDC（具有唯一性），一至多台BDC，对于2000/03 域，已经没有PDC 和BDC 的概念，要容错就需要两至多台DC。域是逻辑分组，与网络的物理拓扑无关，可以很小，比如只有一台DC；也可以很大，包括遍布世界各地的计算机，比如大型跨国公司网络上的域（当然实际中他们多采用多域结构，还可以利用AD 站点来优化AD 复制）。这个“目录服务数据库＂，在NT4 时，保存用户帐号名称和密码等安全安全信息，以及安全规则设置，又被称作安全帐号管理（SAM）数据库，简称SAM 库。在非DC 上的本地的SAM库与DC 上域所用的SAM 库类似，只不过对于NT4 域的SAM 库文件，保存有整个域的用户和计算机，用“域用户管理器＂和“服务器管理器＂来管理，本地的SAM 库文件，保存有本地机的用户，由“用户管理器＂来管理。&lt;br&gt;
 从2000 开始，MS 引入了活动目录AD，DC 通过AD 来提供目录的服务，例如它负责维护AD 数据库、审核用户的账户和密码是否正确、将AD 数据库复制到其它的DC 等。AD 库的核心文件就是winnt ntds ntds.dit 文件。注意组策略的具体设置值，并不存在这个文件中，而是保存在winnt sysvol sysvol 这个共享夹下，用于向其它DC 复制，传播给域成员，来生效。但需要说明的是：2000/XP/03 的非DC 域成员计算机上仍使用和NT4 一样的SAM 库文件来保存本地帐号。正是由于所有域成员计算机和域用户都共用这个域的“目录服务数据库＂，域管理员就可以基于域的“目录服务数据库＂来进行集中管理、共享资源，如用户、组、计算机帐号、权限设置、组策略设置等等。目录服务为管理员提供从网络上任何一个计算机上查看和管理用户和网络资源的能力。目录服务也为用户提供唯一的用户名和密码，用户只需一次登录，即可访问本域或有信任关系的其它域上的所有资源（当然用户得有权限才行），而不需要多次提供用户&lt;br&gt;
@@ -293,7 +229,4 @@ start/wait \域服务器IP地址\aaa 222.exe&lt;br&gt;
 说明：至于是用2000S，还是用2000AS，对于一般的用户差别不大。2000S 支持最多4 个&lt;br&gt;
 CPU，最大4G 内存；2000AS 支持最多8 个CPU，最大内存8G，还支持群集功能。但这些我们一般用户都用不到，所以对于普通用户来说，选择S 或AS 都是一样的。&lt;br&gt;
 1、系统要求&lt;br&gt;
-*一台2000S 或2000AS 独立或成员服务器，2000DS 只有OEM 版，随厂商硬件发售，平常我们是见不到的。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+*一台2000S 或2000AS 独立或成员服务器，2000DS 只有OEM 版，随厂商硬件发售，平常我们是见不到的。&lt;/p&gt;</description></item></channel></rss>

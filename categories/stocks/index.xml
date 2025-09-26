@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Stocks on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/stocks/</link>
-    <description>Recent content in Stocks on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 01 May 2008 09:39:02 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/stocks/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>买点卖点—操作系统―操作纪律</title>
-      <link>seth.dpdns.org/posts/%E4%B9%B0%E7%82%B9%E5%8D%96%E7%82%B9%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E7%BA%AA%E5%BE%8B/</link>
-      <pubDate>Thu, 01 May 2008 09:39:02 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E4%B9%B0%E7%82%B9%E5%8D%96%E7%82%B9%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E7%BA%AA%E5%BE%8B/</guid>
-      <description>&lt;p&gt;买点（满足条件1或2，并且条件3）：&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Stocks on Seth Dang'S</title><link>seth.dpdns.org/categories/stocks/</link><description>Recent content in Stocks on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Thu, 01 May 2008 09:39:02 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/stocks/index.xml" rel="self" type="application/rss+xml"/><item><title>买点卖点—操作系统―操作纪律</title><link>seth.dpdns.org/posts/%E4%B9%B0%E7%82%B9%E5%8D%96%E7%82%B9%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E7%BA%AA%E5%BE%8B/</link><pubDate>Thu, 01 May 2008 09:39:02 +0800</pubDate><guid>seth.dpdns.org/posts/%E4%B9%B0%E7%82%B9%E5%8D%96%E7%82%B9%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%93%8D%E4%BD%9C%E7%BA%AA%E5%BE%8B/</guid><description>&lt;p&gt;买点（满足条件1或2，并且条件3）：&lt;br&gt;
 1. 以日K线股价回调至上升趋势线的支撑点确定买日，前日K线为小阴或小阳线，且该日前成交量呈萎缩后逐渐温和放大；以该日15分钟K线股价回调至上升趋势线的支撑点确定该日的精确买时;&lt;br&gt;
 2.如果行情呈箱型横盘震荡，以日K线股价回调至箱底确定买日，前日K线为小阴或小阳线，该日前成交量呈萎缩后逐渐温和放大；以该日15分钟K线股价回调至箱底确定该日的精确买时;&lt;br&gt;
 3. 股价收盘价跌破布林线的底线或中线提示和确定上述买点；配合BIAS指标;&lt;/p&gt;
@@ -71,7 +56,4 @@ A．根据布林线上下轨确定买卖点时注意同时观察II，B%和BIAS�
 我是个技术派&lt;br&gt;
 以下的我不用&lt;br&gt;
 12 基础分析&lt;br&gt;
-13 题材和消息&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+13 题材和消息&lt;/p&gt;</description></item></channel></rss>

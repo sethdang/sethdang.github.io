@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Network on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/network/</link>
-    <description>Recent content in Network on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sun, 23 Oct 2011 12:03:01 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/network/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>各省市VPI/VCI值(转)</title>
-      <link>seth.dpdns.org/posts/%E5%90%84%E7%9C%81%E5%B8%82vpivci%E5%80%BC%E8%BD%AC/</link>
-      <pubDate>Sun, 23 Oct 2011 12:03:01 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%90%84%E7%9C%81%E5%B8%82vpivci%E5%80%BC%E8%BD%AC/</guid>
-      <description>&lt;p&gt;国内各省市VPI/VCI值&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Network on Seth Dang'S</title><link>seth.dpdns.org/categories/network/</link><description>Recent content in Network on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Sun, 23 Oct 2011 12:03:01 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/network/index.xml" rel="self" type="application/rss+xml"/><item><title>各省市VPI/VCI值(转)</title><link>seth.dpdns.org/posts/%E5%90%84%E7%9C%81%E5%B8%82vpivci%E5%80%BC%E8%BD%AC/</link><pubDate>Sun, 23 Oct 2011 12:03:01 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%90%84%E7%9C%81%E5%B8%82vpivci%E5%80%BC%E8%BD%AC/</guid><description>&lt;p&gt;国内各省市VPI/VCI值&lt;/p&gt;
 &lt;p&gt;地点 电信VPI/VCI 网通VPI/VCI 铁通VPI/VCI DNS&lt;br&gt;
 黑龙江-哈尔滨 VPI/VCI：8/35 VPI/VCI：0/35 DNS：&lt;br&gt;
 佳木斯 VPI/VCI：0/35 VPI/VCI：8/35 DNS：&lt;br&gt;
@@ -192,14 +177,7 @@
 海南-海口 VPI/VCI：0/35&lt;br&gt;
 贵州-贵阳 VPI/VCI：0/35&lt;br&gt;
 六盘水 VPI/VCI：0/35 DNS：202.98.198.168&lt;br&gt;
-遵义 VPI/VCI：0/35&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>64位 Windows IIS 运行32位 程序，不完全兼容(转)</title>
-      <link>seth.dpdns.org/posts/64%E4%BD%8D-windows-iis-%E8%BF%90%E8%A1%8C32%E4%BD%8D-%E7%A8%8B%E5%BA%8F%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E8%BD%AC/</link>
-      <pubDate>Sat, 27 Aug 2011 16:57:48 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/64%E4%BD%8D-windows-iis-%E8%BF%90%E8%A1%8C32%E4%BD%8D-%E7%A8%8B%E5%BA%8F%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E8%BD%AC/</guid>
-      <description>&lt;p&gt;IIS 出问题 ADODB.Connection 错误 &amp;lsquo;800a0ea9&amp;rsquo; 紧接着 就 Service Unavailable 终于解决了&lt;/p&gt;
+遵义 VPI/VCI：0/35&lt;/p&gt;</description></item><item><title>64位 Windows IIS 运行32位 程序，不完全兼容(转)</title><link>seth.dpdns.org/posts/64%E4%BD%8D-windows-iis-%E8%BF%90%E8%A1%8C32%E4%BD%8D-%E7%A8%8B%E5%BA%8F%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E8%BD%AC/</link><pubDate>Sat, 27 Aug 2011 16:57:48 +0800</pubDate><guid>seth.dpdns.org/posts/64%E4%BD%8D-windows-iis-%E8%BF%90%E8%A1%8C32%E4%BD%8D-%E7%A8%8B%E5%BA%8F%E4%B8%8D%E5%AE%8C%E5%85%A8%E5%85%BC%E5%AE%B9%E8%BD%AC/</guid><description>&lt;p&gt;IIS 出问题 ADODB.Connection 错误 &amp;lsquo;800a0ea9&amp;rsquo; 紧接着 就 Service Unavailable 终于解决了&lt;/p&gt;
 &lt;p&gt;ADODB.Connection 错误 &amp;lsquo;800a0ea9&amp;rsquo;&lt;/p&gt;
 &lt;p&gt;未指定提供程序，也没有指派的默认提供程序。&lt;/p&gt;
 &lt;p&gt;/Office_Manage/ConnDB.asp，行 8&lt;/p&gt;
@@ -216,14 +194,7 @@
 选择其下的“IIS ADMIN SERVICE”，右健选择“属性”，找到“安全”，在“启动和激活权限”中编辑“自定义”，添加帐号“NETWORK SERVICE ”，【我后来还补充添加了everyone】&lt;br&gt;
 给该帐号赋予“本地启动”和“本地激活”的权限，重新启动IIS（点“开始”-“运行”-“CMD”，点确定，然后运行IISRESET）&lt;br&gt;
 2.重新打SP2补丁（我认为是最后一招了），我以前部署时也遇到这个问题，后来就是重打补丁解决的。&lt;br&gt;
-3.祝你好运！&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>netscreen命令</title>
-      <link>seth.dpdns.org/posts/netscreen%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Tue, 15 May 2007 13:57:26 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/netscreen%E5%91%BD%E4%BB%A4/</guid>
-      <description>&lt;p&gt;估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。&lt;/p&gt;
+3.祝你好运！&lt;/p&gt;</description></item><item><title>netscreen命令</title><link>seth.dpdns.org/posts/netscreen%E5%91%BD%E4%BB%A4/</link><pubDate>Tue, 15 May 2007 13:57:26 +0800</pubDate><guid>seth.dpdns.org/posts/netscreen%E5%91%BD%E4%BB%A4/</guid><description>&lt;p&gt;估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。&lt;/p&gt;
 &lt;p&gt;登陸：&lt;br&gt;
 代碼:&lt;br&gt;
 Remote Management Console&lt;br&gt;
@@ -322,54 +293,40 @@ vrouter show virtual router info&lt;br&gt;
 webauth webauth settings&lt;br&gt;
 webtrends show webtrends information&lt;br&gt;
 xauth get xauth information&lt;br&gt;
-zone configure zone&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>cisco路由器的基本配置 </title>
-      <link>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Wed, 28 Mar 2007 14:30:16 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
-      <description>&lt;p&gt;1 ． 配 置 以 太 網（Ethernet） 端 口：&lt;/p&gt;
-&lt;h1 id=&#34;conf-t&#34;&gt;conf t&lt;/h1&gt;
+zone configure zone&lt;/p&gt;</description></item><item><title>cisco路由器的基本配置</title><link>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link><pubDate>Wed, 28 Mar 2007 14:30:16 +0800</pubDate><guid>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid><description>&lt;p&gt;1 ． 配 置 以 太 網（Ethernet） 端 口：&lt;/p&gt;
+&lt;h1 id="conf-t"&gt;conf t&lt;/h1&gt;
 &lt;p&gt;從終端配置路由器。&lt;/p&gt;
-&lt;h1 id=&#34;int-e0&#34;&gt;int e0&lt;/h1&gt;
+&lt;h1 id="int-e0"&gt;int e0&lt;/h1&gt;
 &lt;p&gt;指定E0口。&lt;/p&gt;
-&lt;h1 id=&#34;ip-addr-abcd-xxxx&#34;&gt;ip addr ABCD XXXX&lt;/h1&gt;
+&lt;h1 id="ip-addr-abcd-xxxx"&gt;ip addr ABCD XXXX&lt;/h1&gt;
 &lt;p&gt;ABCD為以太網地址,XXXX為子網掩碼。&lt;/p&gt;
-&lt;h1 id=&#34;ip-addr-abcd-xxxx-secondary&#34;&gt;ip addr ABCD XXXX secondary&lt;/h1&gt;
+&lt;h1 id="ip-addr-abcd-xxxx-secondary"&gt;ip addr ABCD XXXX secondary&lt;/h1&gt;
 &lt;p&gt;E0口同時支持兩個地址類型。如果第一個&lt;br&gt;
 為A類地址，則第二個為B或C類地址。&lt;/p&gt;
-&lt;h1 id=&#34;no-shutdown&#34;&gt;no shutdown&lt;/h1&gt;
+&lt;h1 id="no-shutdown"&gt;no shutdown&lt;/h1&gt;
 &lt;p&gt;激活E0口。&lt;/p&gt;
-&lt;h1 id=&#34;exit&#34;&gt;exit&lt;/h1&gt;
+&lt;h1 id="exit"&gt;exit&lt;/h1&gt;
 &lt;p&gt;2．X.25的配置&lt;/p&gt;
-&lt;h1 id=&#34;conf-t-1&#34;&gt;conf t&lt;/h1&gt;
-&lt;h1 id=&#34;int-s0&#34;&gt;int S0&lt;/h1&gt;
+&lt;h1 id="conf-t-1"&gt;conf t&lt;/h1&gt;
+&lt;h1 id="int-s0"&gt;int S0&lt;/h1&gt;
 &lt;p&gt;指定S0口.&lt;/p&gt;
-&lt;h1 id=&#34;ip-addr-abcd-xxxx-1&#34;&gt;ip addr ABCD XXXX&lt;/h1&gt;
+&lt;h1 id="ip-addr-abcd-xxxx-1"&gt;ip addr ABCD XXXX&lt;/h1&gt;
 &lt;p&gt;ABCD為以太網S0的IP地址,XXXX為子網掩碼.。&lt;/p&gt;
-&lt;h1 id=&#34;encap-x25-abc&#34;&gt;encap X25-ABC&lt;/h1&gt;
+&lt;h1 id="encap-x25-abc"&gt;encap X25-ABC&lt;/h1&gt;
 &lt;p&gt;封裝X.25協議。ABC指定X.25為DTC或DCE操作，缺省為DTE。&lt;/p&gt;
-&lt;h1 id=&#34;x25-addr-abcd&#34;&gt;x25 addr ABCD&lt;/h1&gt;
+&lt;h1 id="x25-addr-abcd"&gt;x25 addr ABCD&lt;/h1&gt;
 &lt;p&gt;ABCD為S0的X.25端口地址,由郵電局提供。&lt;/p&gt;
-&lt;h1 id=&#34;x25-map-ip-abcd-xxxx-br&#34;&gt;x25 map ip ABCD XXXX br&lt;/h1&gt;
+&lt;h1 id="x25-map-ip-abcd-xxxx-br"&gt;x25 map ip ABCD XXXX br&lt;/h1&gt;
 &lt;p&gt;映射的X.25地址.ABCD為對方路由器(如:S0)的&lt;br&gt;
 IP地址,XXXX為對方路由器(如:S0)的X.25端口地址。&lt;/p&gt;
-&lt;h1 id=&#34;x25-htc-x&#34;&gt;x25 htc X&lt;/h1&gt;
+&lt;h1 id="x25-htc-x"&gt;x25 htc X&lt;/h1&gt;
 &lt;p&gt;配置最高雙向通道數.X的取值範圍1-4095,&lt;br&gt;
 要根據郵電局實際提供的數字配置。&lt;/p&gt;
-&lt;h1 id=&#34;x25-nvc-x&#34;&gt;x25 nvc X&lt;/h1&gt;
+&lt;h1 id="x25-nvc-x"&gt;x25 nvc X&lt;/h1&gt;
 &lt;p&gt;配置虛電路數。X不可超過據郵電局實際&lt;br&gt;
 提供的數,否則,將影響數據的正常傳輸。&lt;/p&gt;
-&lt;h1 id=&#34;exit-1&#34;&gt;exit&lt;/h1&gt;
-&lt;p&gt;-&amp;mdash; 3 ． 專 線 的 配 置：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>網管(轉帖)</title>
-      <link>seth.dpdns.org/posts/%E7%B6%B2%E7%AE%A1%E8%BD%89%E5%B8%96/</link>
-      <pubDate>Fri, 16 Mar 2007 13:36:55 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E7%B6%B2%E7%AE%A1%E8%BD%89%E5%B8%96/</guid>
-      <description>&lt;p&gt;網管常犯的十個錯誤&lt;br&gt;
+&lt;h1 id="exit-1"&gt;exit&lt;/h1&gt;
+&lt;p&gt;-&amp;mdash; 3 ． 專 線 的 配 置：&lt;/p&gt;</description></item><item><title>網管(轉帖)</title><link>seth.dpdns.org/posts/%E7%B6%B2%E7%AE%A1%E8%BD%89%E5%B8%96/</link><pubDate>Fri, 16 Mar 2007 13:36:55 +0800</pubDate><guid>seth.dpdns.org/posts/%E7%B6%B2%E7%AE%A1%E8%BD%89%E5%B8%96/</guid><description>&lt;p&gt;網管常犯的十個錯誤&lt;br&gt;
 網絡管理階層的工作就是保證網絡的正常工作,從而使得職工們的工作不被打斷。可問題在於事物並非總是按照理想狀況發展，事實上經常會出現平地起風波的狀況。其間有許多原因，這裏我們只討論10種較為常見的網管錯誤。&lt;br&gt;
 1.UPS（不間斷電源）的使用問題&lt;br&gt;
 某商店正在壓榨它的網絡系統的最後生命。儘管那台很老的服務器幾乎難以滿足商店運營的需要，但經營者甚至連更換UPS中的電池都不願意，事實上電池每兩年就應該更換一次。終於有一天突然停電了，而這個UPS實在是太老了，它已經不能控制服務器安全關機了。電池能量大部分早已耗盡，所以它也很快沒電了。結果，防控異常情況的控制器沒能起到正常關閉服務器的作用。 商店每日的正常運轉和交易事宜全靠這個服務器。修復服務器花了三天時間，而彌補由此帶來的損失需要花費更長時間。事實上，一個價值僅75美元的電池就能有效避免上述事情的發生。&lt;br&gt;
@@ -418,14 +375,7 @@ IP地址,XXXX為對方路由器(如:S0)的X.25端口地址。&lt;/p&gt;
 網絡線的佈設&lt;br&gt;
 網絡線的佈設首先要考慮的是對集線器、交換機採用何種方法管理。筆者看到不少機房為了節省網線，採取集線器串接的方法佈線，例如在教師講臺下放置第一台，在第15號學生機下放置第二台，以此類推。這有點兒像上面電源插座的串接型，雖省下了網線，但帶來的缺陷卻很多：不便於集中管理，容易出現故障。而且串接越多，網絡信號衰減越厲害。所以現在的電腦機房一般都將集線器、交換機集中擺放在教師機或服務器旁邊（專門做一個機櫃），大大方便了管理，同樣也降低了網絡故障率。&lt;br&gt;
 需要提醒的是，每一根網線兩端的RJ-45頭一定要按照標準製作，尤其是現在很方便就能實現的100M網絡環境的機房。筆者發現不少新安裝的電腦教室（包括電子閱覽室等），由於RJ-45頭做得不標準而影響通訊質量。按照568B規格，8芯線的排列是白橙、橙、白綠、藍、白藍、綠、白棕、棕。&lt;br&gt;
-以上電源線和網絡線的佈設應該在整個電腦機房安裝的第一步實施，它是保障日後機房安全穩定運行的基礎，必須引起足夠的重視（有不少單位的機房是在安裝了電腦後才佈線）。按照上述優選方案，即主機電源線分組單獨型、顯示器電源線分組單獨型、交換機集中管理型（有條件的選購堆疊式交換機），根據筆者計算，一個擁有60台學生機的機房，電源線（包括多孔插座、牆上多組空氣開關）、網絡線（不包括交換機的）大概需要投資1萬餘元，這樣的投入將得到高效率的回報。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cisco路由器配置資訊及口令的清除</title>
-      <link>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E9%85%8D%E7%BD%AE%E8%B3%87%E8%A8%8A%E5%8F%8A%E5%8F%A3%E4%BB%A4%E7%9A%84%E6%B8%85%E9%99%A4/</link>
-      <pubDate>Thu, 15 Feb 2007 15:03:30 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E9%85%8D%E7%BD%AE%E8%B3%87%E8%A8%8A%E5%8F%8A%E5%8F%A3%E4%BB%A4%E7%9A%84%E6%B8%85%E9%99%A4/</guid>
-      <description>&lt;p&gt;在網路日常管理與維護的工作中，你是否遇到過這種現象：由於忘記了口令，你被原來親切的“朋友”——路由器或交換機強行拒於門外，無法進行參數的重新設置、資訊統計。下面就針對幾種常見而重要的網路設備的口令清除方法談談本人的一點“小竅門”。&lt;br&gt;
+以上電源線和網絡線的佈設應該在整個電腦機房安裝的第一步實施，它是保障日後機房安全穩定運行的基礎，必須引起足夠的重視（有不少單位的機房是在安裝了電腦後才佈線）。按照上述優選方案，即主機電源線分組單獨型、顯示器電源線分組單獨型、交換機集中管理型（有條件的選購堆疊式交換機），根據筆者計算，一個擁有60台學生機的機房，電源線（包括多孔插座、牆上多組空氣開關）、網絡線（不包括交換機的）大概需要投資1萬餘元，這樣的投入將得到高效率的回報。&lt;/p&gt;</description></item><item><title>Cisco路由器配置資訊及口令的清除</title><link>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E9%85%8D%E7%BD%AE%E8%B3%87%E8%A8%8A%E5%8F%8A%E5%8F%A3%E4%BB%A4%E7%9A%84%E6%B8%85%E9%99%A4/</link><pubDate>Thu, 15 Feb 2007 15:03:30 +0800</pubDate><guid>seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E9%85%8D%E7%BD%AE%E8%B3%87%E8%A8%8A%E5%8F%8A%E5%8F%A3%E4%BB%A4%E7%9A%84%E6%B8%85%E9%99%A4/</guid><description>&lt;p&gt;在網路日常管理與維護的工作中，你是否遇到過這種現象：由於忘記了口令，你被原來親切的“朋友”——路由器或交換機強行拒於門外，無法進行參數的重新設置、資訊統計。下面就針對幾種常見而重要的網路設備的口令清除方法談談本人的一點“小竅門”。&lt;br&gt;
 適用範圍：所有IOS在10.0及以上版本的Cisco 2000、2500、3000、4000、7000系列路由器。&lt;br&gt;
 清除步驟如下：&lt;/p&gt;
 &lt;p&gt;1．用路由器所帶的串口線連接到Console口，以下通過Win95的超級終端進行；&lt;/p&gt;
@@ -458,39 +408,25 @@ Intel Express交換機口令的清除&lt;/p&gt;
 &lt;p&gt;1．進入交換機的維護模式（Maintenance Mode），輸入：run defparm，以重啟交換機，把原來的配置變成原始默認設置(原始默認沒有口令)。&lt;/p&gt;
 &lt;p&gt;2．進入維護模式：&lt;/p&gt;
 &lt;p&gt;a．關閉交換機後按下面板上的Maint按鈕，然後給交換機加電；&lt;/p&gt;
-&lt;p&gt;b．按下按鈕保持3秒鐘至System LED 綠色燈快速閃爍；&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Fix the router which can&#39;t saves settings.</title>
-      <link>seth.dpdns.org/posts/fix-the-router-which-cant-saves-settings/</link>
-      <pubDate>Thu, 15 Feb 2007 11:46:19 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/fix-the-router-which-cant-saves-settings/</guid>
-      <description>&lt;p&gt;The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:&lt;/p&gt;
+&lt;p&gt;b．按下按鈕保持3秒鐘至System LED 綠色燈快速閃爍；&lt;/p&gt;</description></item><item><title>Fix the router which can't saves settings.</title><link>seth.dpdns.org/posts/fix-the-router-which-cant-saves-settings/</link><pubDate>Thu, 15 Feb 2007 11:46:19 +0800</pubDate><guid>seth.dpdns.org/posts/fix-the-router-which-cant-saves-settings/</guid><description>&lt;p&gt;The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;After your router boots up, do not enter the initial configuration dialog (choose &lt;strong&gt;No&lt;/strong&gt; when prompted).&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;-&amp;ndash; System Configuration Dialog &amp;mdash;Would you like to enter the initial configuration dialog? [yes/no]: &lt;strong&gt;no&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;ol start=&#34;2&#34;&gt;
+&lt;ol start="2"&gt;
 &lt;li&gt;
 &lt;p&gt;Press &lt;strong&gt;Enter&lt;/strong&gt; to get to the &lt;code&gt;Router&amp;gt;&lt;/code&gt; prompt.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Type &lt;strong&gt;enable&lt;/strong&gt; , and press ENTER to enter the privileged mode.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>公司的南京办事处与上海办事处之间建立VPN联接</title>
-      <link>seth.dpdns.org/posts/%E5%85%AC%E5%8F%B8%E7%9A%84%E5%8D%97%E4%BA%AC%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B8%8E%E4%B8%8A%E6%B5%B7%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8Bvpn%E8%81%94%E6%8E%A5/</link>
-      <pubDate>Fri, 12 Jan 2007 11:16:16 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%85%AC%E5%8F%B8%E7%9A%84%E5%8D%97%E4%BA%AC%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B8%8E%E4%B8%8A%E6%B5%B7%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8Bvpn%E8%81%94%E6%8E%A5/</guid>
-      <description>&lt;p&gt;在公司的南京办事处与上海办事处之间建立VPN联接。&lt;br&gt;
+&lt;p&gt;Type &lt;strong&gt;enable&lt;/strong&gt; , and press ENTER to enter the privileged mode.&lt;/p&gt;</description></item><item><title>公司的南京办事处与上海办事处之间建立VPN联接</title><link>seth.dpdns.org/posts/%E5%85%AC%E5%8F%B8%E7%9A%84%E5%8D%97%E4%BA%AC%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B8%8E%E4%B8%8A%E6%B5%B7%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8Bvpn%E8%81%94%E6%8E%A5/</link><pubDate>Fri, 12 Jan 2007 11:16:16 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%85%AC%E5%8F%B8%E7%9A%84%E5%8D%97%E4%BA%AC%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B8%8E%E4%B8%8A%E6%B5%B7%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8Bvpn%E8%81%94%E6%8E%A5/</guid><description>&lt;p&gt;在公司的南京办事处与上海办事处之间建立VPN联接。&lt;br&gt;
 南京办事处网络设置：&lt;br&gt;
 内网IP 10.1.1.0/24&lt;br&gt;
 外网IP 202.102.1.5/24&lt;br&gt;
 上海办事处网络设置：&lt;br&gt;
 内网IP 10.1.2.0/24&lt;br&gt;
 外网IP 202.102.1.6/24&lt;/p&gt;
-&lt;h1 id=&#34;heading&#34;&gt;南京路由器配置&lt;br&gt;
+&lt;h1 id="heading"&gt;南京路由器配置&lt;br&gt;
 !&lt;br&gt;
 service timestamps debug uptime&lt;br&gt;
 service timestamps log uptime&lt;br&gt;
@@ -562,14 +498,7 @@ password cisco&lt;br&gt;
 login&lt;br&gt;
 !&lt;br&gt;
 end&lt;br&gt;
-!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>全国各地DNS</title>
-      <link>seth.dpdns.org/posts/%E5%85%A8%E5%9B%BD%E5%90%84%E5%9C%B0dns/</link>
-      <pubDate>Wed, 29 Nov 2006 20:17:45 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%85%A8%E5%9B%BD%E5%90%84%E5%9C%B0dns/</guid>
-      <description>&lt;p&gt;全国各地DNS服务器&lt;br&gt;
+!&lt;/p&gt;</description></item><item><title>全国各地DNS</title><link>seth.dpdns.org/posts/%E5%85%A8%E5%9B%BD%E5%90%84%E5%9C%B0dns/</link><pubDate>Wed, 29 Nov 2006 20:17:45 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%85%A8%E5%9B%BD%E5%90%84%E5%9C%B0dns/</guid><description>&lt;p&gt;全国各地DNS服务器&lt;br&gt;
 [广东] [上海]&lt;br&gt;
 pdns=202.96.128.143 pdns=202.96.199.132&lt;br&gt;
 adns=202.96.128.68 adns=202.96.209.133&lt;br&gt;
@@ -614,7 +543,4 @@ pdns=202.103.96.68 pdns=202.106.196.115&lt;br&gt;
 adns=202.103.96.112 adns=202.106.148.1&lt;br&gt;
 [北邮] [北京]&lt;br&gt;
 pdns=202.112.10.36 pdns=202.106.196.152&lt;br&gt;
-adns=202.112.10.37 adns=202.106.196.115&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+adns=202.112.10.37 adns=202.106.196.115&lt;/p&gt;</description></item></channel></rss>

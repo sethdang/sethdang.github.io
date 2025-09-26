@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Photoshop on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/photoshop/</link>
-    <description>Recent content in Photoshop on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 17 Mar 2007 15:38:44 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/photoshop/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>photoshop界面技巧</title>
-      <link>seth.dpdns.org/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Sat, 17 Mar 2007 15:38:44 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</guid>
-      <description>&lt;p&gt;界面技巧：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Photoshop on Seth Dang'S</title><link>seth.dpdns.org/categories/photoshop/</link><description>Recent content in Photoshop on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Sat, 17 Mar 2007 15:38:44 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/photoshop/index.xml" rel="self" type="application/rss+xml"/><item><title>photoshop界面技巧</title><link>seth.dpdns.org/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</link><pubDate>Sat, 17 Mar 2007 15:38:44 +0800</pubDate><guid>seth.dpdns.org/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</guid><description>&lt;p&gt;界面技巧：&lt;/p&gt;
 &lt;p&gt;你可能知道按Tab鍵可以隱藏工具箱和浮動面板，同樣按Shift+Tab鍵可以只隱藏浮動面板( 而工具條可見 )。&lt;/p&gt;
 &lt;p&gt;按住Shift鍵點擊浮動面板的標題欄( 最上方的藍條 )可以使其吸附到最近的屏幕邊緣。&lt;/p&gt;
 &lt;p&gt;雙擊浮動面板的上的每一欄( 就是有標題的那個 )可以使其最小化。通過浮動面板上的最小化按鈕可以在緊湊模式( 只有最少的選項和內容可視 )和正常模式( 顯示面板上所有的選項和內容 )之間切換。&lt;/p&gt;
@@ -29,7 +14,4 @@
 &lt;p&gt;提示：在全屏模式下按Shift+F可以切換是否顯示菜單。&lt;/p&gt;
 &lt;p&gt;雙擊Photoshop的背景空白處為打開文件命令[Ctrl+O] ( File raquo; Open&amp;hellip; )。&lt;/p&gt;
 &lt;p&gt;按住Shift點擊顏色面板下的顏色條可以改變其所顯示的色譜類型。或者，也可以在顏色條上單擊鼠標右鍵，從彈出的顏色條選項菜單中選取其它色彩模式。&lt;/p&gt;
-&lt;p&gt;在圖片窗口的標題欄上單擊鼠標右鍵可以快速調用一些命令，如畫布大小命令、圖像大小命令和複製等等。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;在圖片窗口的標題欄上單擊鼠標右鍵可以快速調用一些命令，如畫布大小命令、圖像大小命令和複製等等。&lt;/p&gt;</description></item></channel></rss>

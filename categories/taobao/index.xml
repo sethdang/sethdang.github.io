@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Taobao on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/taobao/</link>
-    <description>Recent content in Taobao on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sat, 31 Oct 2009 15:09:23 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/taobao/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>快递单号的生成规则</title>
-      <link>seth.dpdns.org/posts/%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E7%9A%84%E7%94%9F%E6%88%90%E8%A7%84%E5%88%99/</link>
-      <pubDate>Sat, 31 Oct 2009 15:09:23 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E7%9A%84%E7%94%9F%E6%88%90%E8%A7%84%E5%88%99/</guid>
-      <description>&lt;p&gt;顺丰快递单号的生成规则是怎么样的？&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Taobao on Seth Dang'S</title><link>seth.dpdns.org/categories/taobao/</link><description>Recent content in Taobao on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Oct 2009 15:09:23 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/taobao/index.xml" rel="self" type="application/rss+xml"/><item><title>快递单号的生成规则</title><link>seth.dpdns.org/posts/%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E7%9A%84%E7%94%9F%E6%88%90%E8%A7%84%E5%88%99/</link><pubDate>Sat, 31 Oct 2009 15:09:23 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%BF%AB%E9%80%92%E5%8D%95%E5%8F%B7%E7%9A%84%E7%94%9F%E6%88%90%E8%A7%84%E5%88%99/</guid><description>&lt;p&gt;顺丰快递单号的生成规则是怎么样的？&lt;/p&gt;
 &lt;p&gt;比如说 571 280 854 669&lt;/p&gt;
 &lt;p&gt;分别代表什么意思？&lt;br&gt;
 我需要打印30张快递单，我首先输入第一张的单号，如何知道后面的29张单的单号？&lt;br&gt;
@@ -22,14 +7,7 @@
 &lt;p&gt;差3个数。&lt;/p&gt;
 &lt;p&gt;571 280 854 669&lt;br&gt;
 571 280 854 672&lt;br&gt;
-571 280 854 675&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>南鞋业代理</title>
-      <link>seth.dpdns.org/posts/%E5%8D%97%E9%9E%8B%E4%B8%9A%E4%BB%A3%E7%90%86/</link>
-      <pubDate>Fri, 30 Oct 2009 16:58:27 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%8D%97%E9%9E%8B%E4%B8%9A%E4%BB%A3%E7%90%86/</guid>
-      <description>&lt;p&gt;关于上架问题：&lt;br&gt;
+571 280 854 675&lt;/p&gt;</description></item><item><title>南鞋业代理</title><link>seth.dpdns.org/posts/%E5%8D%97%E9%9E%8B%E4%B8%9A%E4%BB%A3%E7%90%86/</link><pubDate>Fri, 30 Oct 2009 16:58:27 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%8D%97%E9%9E%8B%E4%B8%9A%E4%BB%A3%E7%90%86/</guid><description>&lt;p&gt;关于上架问题：&lt;br&gt;
 如果产品数量多编好了不要急于上架，每天上架20种就可以，上架时间为晚上7点半至10点半 就下午2点半至4点半！&lt;br&gt;
 （为什么要选这段时间上架，因为是上网购物高峰期，你现在上架产品过7天以后，也是在高峰期下架，这时产品马上要下架的时候你的宝贝排名会靠的很前。买家会更容易找到你的商品。如果不是高峰时间上架产品，那么反之你下架时商品排名靠的很前，但是不是购物高峰期，所以会没什么效果）&lt;br&gt;
 要每天上传一点产品，保持每天有10几种产品下架。如此循环在高峰期上架下架。生意才会好！&lt;/p&gt;
@@ -83,14 +61,7 @@
 &lt;p&gt;第十八计：个人空间管理&lt;br&gt;
 个人空间也是我们店铺的一部分哦！不要只装修店面，不装修空间哦。有注意过你的空间有多少人访问吗？当有人进入到我们空间的时候，就好象走到了我们的店门口，进不进我们的店，那就看我们的大门口有没有装修好啦。我们自己的空间是可以随便发广告的，把我们的宝贝图片做的漂漂亮亮的，再写一些比较让人感兴趣的描述，等有人到我们空间来看的时候，就好象是在店里看宝贝一样，这样是不是等于把逛空间的朋友变成了逛店铺的买家呢？当然空间里不能全是让人索然无味的广告哦，其他加一些内容，让我们的空间丰富多彩，叫人来了一遍还想来第二遍的样子，那样就更完美了。&lt;/p&gt;
 &lt;p&gt;第十九计：赚银币抢广告位&lt;br&gt;
-社区广告位的效果还是很明显的哦！每天论坛里的人不知多少万，能在这里做广告，效果可不是一般的好！不过抢广告位也不容易，抢的人太多不说，还要好多银币呢，新手赚银币不容易，想写精华贴吧，不知道写啥。想回答问题赚银币吧，好像那些问题自己都不知道。只能靠参加活动来赚取银币。不过话又说回来，为了能上社区的广告，辛苦点也值得！不经一番寒彻骨，哪得梅花扑鼻香？&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>封店原因及规避方法</title>
-      <link>seth.dpdns.org/posts/%E5%B0%81%E5%BA%97%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%84%E9%81%BF%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Fri, 30 Oct 2009 15:55:44 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%B0%81%E5%BA%97%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%84%E9%81%BF%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;p&gt;封店原因之一：信誉炒作&lt;br&gt;
+社区广告位的效果还是很明显的哦！每天论坛里的人不知多少万，能在这里做广告，效果可不是一般的好！不过抢广告位也不容易，抢的人太多不说，还要好多银币呢，新手赚银币不容易，想写精华贴吧，不知道写啥。想回答问题赚银币吧，好像那些问题自己都不知道。只能靠参加活动来赚取银币。不过话又说回来，为了能上社区的广告，辛苦点也值得！不经一番寒彻骨，哪得梅花扑鼻香？&lt;/p&gt;</description></item><item><title>封店原因及规避方法</title><link>seth.dpdns.org/posts/%E5%B0%81%E5%BA%97%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%84%E9%81%BF%E6%96%B9%E6%B3%95/</link><pubDate>Fri, 30 Oct 2009 15:55:44 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%B0%81%E5%BA%97%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%84%E9%81%BF%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;封店原因之一：信誉炒作&lt;br&gt;
 避免方法：&lt;br&gt;
 1．不能用同个机器（就是同个ip地址）买卖商品，甚至是同个单位的局域网，&lt;br&gt;
 2．不能在修改价格时，价格差价太大，例如100元的商品，改成1元，会认为成交价就是1元，会被理解为扰乱市场，有炒作信用的嫌疑，会把得到的相关好评删除、&lt;/p&gt;
@@ -138,14 +109,7 @@
 1．转行前为了快速升钻，提高信誉卖货值较低的商品，后来信誉提高了改卖货值较高的如手机数码类的商品，会被怀疑信誉误导买家&lt;/p&gt;
 &lt;p&gt;封店原因之十五：成交商品和店里描述不附&lt;br&gt;
 避免方法&lt;br&gt;
-1．买家实际买到的商品和店里商品描述中不一致，包括图片，文字，甚至是图片和文字的误导，大家都要注意呢&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>潮南鞋业</title>
-      <link>seth.dpdns.org/posts/%E6%BD%AE%E5%8D%97%E9%9E%8B%E4%B8%9A/</link>
-      <pubDate>Thu, 29 Oct 2009 21:44:23 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E6%BD%AE%E5%8D%97%E9%9E%8B%E4%B8%9A/</guid>
-      <description>&lt;p&gt;时尚男鞋运动鞋 免费代理 一件代发 提供数据包&lt;/p&gt;
+1．买家实际买到的商品和店里商品描述中不一致，包括图片，文字，甚至是图片和文字的误导，大家都要注意呢&lt;/p&gt;</description></item><item><title>潮南鞋业</title><link>seth.dpdns.org/posts/%E6%BD%AE%E5%8D%97%E9%9E%8B%E4%B8%9A/</link><pubDate>Thu, 29 Oct 2009 21:44:23 +0800</pubDate><guid>seth.dpdns.org/posts/%E6%BD%AE%E5%8D%97%E9%9E%8B%E4%B8%9A/</guid><description>&lt;p&gt;时尚男鞋运动鞋 免费代理 一件代发 提供数据包&lt;/p&gt;
 &lt;p&gt;潮南鞋业是专业从事网店代理的网络供应商.面向全国诚招男鞋代理，拍拍、有啊、淘宝代理代销,一件代发，提供数据包。我们绝对不用以任何形式向你们收取任何费用,让你真正做上无本生意，我们有完善的售后服务，是有志青年从事网店事业的有力臂膀.我们愿与广大网店代理一起前进,一起辉煌!&lt;/p&gt;
 &lt;p&gt;【如何下单】：可以在我们的淘宝店铺拍下，用支付宝，货到付款，担保交易，使代理零风险。&lt;/p&gt;
 &lt;p&gt;【如何成为我们的代理】&lt;/p&gt;
@@ -179,9 +143,9 @@
 &lt;p&gt;商品款式新颖，精选，货源充足，产品不断更新。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;具体产品款式及最新图片请点击： &lt;a href=&#34;http://shop57174807.taobao.com/&#34;&gt;http://shop57174807.taobao.com&lt;/a&gt; （店内为零售价）&lt;/p&gt;
+&lt;p&gt;具体产品款式及最新图片请点击： &lt;a href="http://shop57174807.taobao.com/"&gt;http://shop57174807.taobao.com&lt;/a&gt; （店内为零售价）&lt;/p&gt;
 &lt;p&gt;代理客服1：351523498 代理客服2：117297271&lt;/p&gt;
-&lt;p&gt;代理网站&lt;a href=&#34;http://www.chaonan.3jmc.com/&#34;&gt;http://www.chaonan.3jmc.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代理网站&lt;a href="http://www.chaonan.3jmc.com/"&gt;http://www.chaonan.3jmc.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;公司名称：
 潮南鞋业
 联 系 人：
@@ -191,24 +155,17 @@
 移动电话：
 15011182668
 电子邮件：
-&lt;a href=&#34;mailto:117297271@qq.com&#34;&gt;117297271@qq.com&lt;/a&gt;
+&lt;a href="mailto:117297271@qq.com"&gt;117297271@qq.com&lt;/a&gt;
 公司网址：
-&lt;a href=&#34;http://chaonan.3jmc.com/&#34;&gt;http://chaonan.3jmc.com&lt;/a&gt;
+&lt;a href="http://chaonan.3jmc.com/"&gt;http://chaonan.3jmc.com&lt;/a&gt;
 详细地址：
 北京市 &amp;gt; 市辖区 &amp;gt; 丰台区 北京市丰台区大红门鞋城B1
 邮政编码：
 100075
 腾讯Q Q：
-&lt;a href=&#34;tencent://message/?uin=351523498&amp;amp;Site=www.3jmc.com&amp;amp;Menu=yes&#34;&gt;351523498&lt;/a&gt;
+&lt;a href="tencent://message/?uin=351523498&amp;amp;Site=www.3jmc.com&amp;amp;Menu=yes"&gt;351523498&lt;/a&gt;
 阿里旺旺：
-zhuangchulong&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>教你14点推广店铺的好方法 </title>
-      <link>seth.dpdns.org/posts/%E6%95%99%E4%BD%A014%E7%82%B9%E6%8E%A8%E5%B9%BF%E5%BA%97%E9%93%BA%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95/</link>
-      <pubDate>Thu, 29 Oct 2009 16:16:11 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E6%95%99%E4%BD%A014%E7%82%B9%E6%8E%A8%E5%B9%BF%E5%BA%97%E9%93%BA%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95/</guid>
-      <description>&lt;p&gt;1.家人和朋友&lt;br&gt;
+zhuangchulong&lt;/p&gt;</description></item><item><title>教你14点推广店铺的好方法</title><link>seth.dpdns.org/posts/%E6%95%99%E4%BD%A014%E7%82%B9%E6%8E%A8%E5%B9%BF%E5%BA%97%E9%93%BA%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95/</link><pubDate>Thu, 29 Oct 2009 16:16:11 +0800</pubDate><guid>seth.dpdns.org/posts/%E6%95%99%E4%BD%A014%E7%82%B9%E6%8E%A8%E5%B9%BF%E5%BA%97%E9%93%BA%E7%9A%84%E5%A5%BD%E6%96%B9%E6%B3%95/</guid><description>&lt;p&gt;1.家人和朋友&lt;br&gt;
 你在淘宝开店铺了，你的家人知道么？你的同学，你的朋友知道么？一定要在第一时间告诉他们，因为你告诉了100个人，每个人还会告诉更多的人，一传十，十传百，会有无数的人短时间就知道你开店铺了。去校友录里留言吧，让同学们和你分享开店的喜悦。&lt;/p&gt;
 &lt;p&gt;2.友情链接&lt;br&gt;
 店铺开了一段时间后，可以私下里和别人联系，交换友情连接。目前每个人可以添加35个连接，所以要好好珍惜哦。大家通过交换店铺连接，可以形成一个小的网络，能增进彼此的影响力。尽量选择和你不是相同类别的，一方面不存在竞争，另一方面，还能很好滴相互促进。如果对方的店名过长，影响你店铺的整体美观，你可以适当地修改对方的显示名字。&lt;/p&gt;
@@ -247,14 +204,7 @@ zhuangchulong&lt;/p&gt;</description>
 我在大连读大学的时候，附近有一间小帽烧烤店，老板很是会经营和宣传。每个城市都有那种电台点歌节目，他们的老板经常打电话点歌，最后总会附带着说：欢迎光临小帽烧烤，我们的地址是×××，电话是×××。打个电话才几角钱，但听节目的人都会听到这则广告。比起那些花钱在电台投广告的人来说，可谓是省钱出效果哦。大家也不妨想想，自己周围是否有能否利用的资源呢？&lt;/p&gt;
 &lt;p&gt;14.趣味广告&lt;br&gt;
 邻校的朋友讲给我的：他们门口一共有两个卖煎饼的，一家总是吆喝，而他对面那个采取了不同的策略，找了一块黑板，上书：煎饼果子 沉默是金；过年前后，他的黑板换成：煎饼果子 常回家看看；有阵子不知道那人去了哪里，再回来的时候，他的黑板换成了：煎饼果子 重出江湖。。。&lt;/p&gt;
-&lt;p&gt;当你和其他人销售的东西没有什么本质区别的时候，你可以通过特别的方式为自己做广告。假如有一天我会在街上看到他和他的黑板，一定会买一个煎饼来吃。只是为了这些年来他的故事带给我的回味。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>淘宝网店经验</title>
-      <link>seth.dpdns.org/posts/%E6%B7%98%E5%AE%9D%E7%BD%91%E5%BA%97%E7%BB%8F%E9%AA%8C/</link>
-      <pubDate>Sun, 25 Oct 2009 14:18:42 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E6%B7%98%E5%AE%9D%E7%BD%91%E5%BA%97%E7%BB%8F%E9%AA%8C/</guid>
-      <description>&lt;p&gt;1：&lt;/p&gt;
+&lt;p&gt;当你和其他人销售的东西没有什么本质区别的时候，你可以通过特别的方式为自己做广告。假如有一天我会在街上看到他和他的黑板，一定会买一个煎饼来吃。只是为了这些年来他的故事带给我的回味。&lt;/p&gt;</description></item><item><title>淘宝网店经验</title><link>seth.dpdns.org/posts/%E6%B7%98%E5%AE%9D%E7%BD%91%E5%BA%97%E7%BB%8F%E9%AA%8C/</link><pubDate>Sun, 25 Oct 2009 14:18:42 +0800</pubDate><guid>seth.dpdns.org/posts/%E6%B7%98%E5%AE%9D%E7%BD%91%E5%BA%97%E7%BB%8F%E9%AA%8C/</guid><description>&lt;p&gt;1：&lt;/p&gt;
 &lt;p&gt;店铺俗话说人靠衣装，马靠鞍。店铺也一样，需要精心的装半。开店之初，首先遇到的一个问题就是店铺装&lt;/p&gt;
 &lt;p&gt;修，看到别人的店铺都漂亮而有特点，再看看自己简陋的小店，那种感觉就像是看着别人的孩子穿着华丽的&lt;/p&gt;
 &lt;p&gt;衣服而自己的孩子穿着粗布衣衫一样，心里很不是滋味，虽然经常收到店铺装修的广告，一切从节约成本出&lt;/p&gt;
@@ -296,7 +246,7 @@ zhuangchulong&lt;/p&gt;</description>
 &lt;p&gt;面最好有一定的额外奖励制度，比如别人成功推荐多少件商品可以给予一定的奖励,一个月内推荐最多的可&lt;/p&gt;
 &lt;p&gt;以奖励等，总之有了丰富的奖励谁还不愿意去推广呢？现在我每天从淘宝客过来的IP都保证在几十以上,如&lt;/p&gt;
 &lt;p&gt;果做得好我相信会更多的,这一步我也在慢慢实践中，有好的经验的亲可以交流哦！&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
+&lt;ol start="5"&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;宝贝设置天数，有的人嫌麻烦，喜欢设置15天，那样15天后上货就可以，错错错！！！！天数少的宝贝很容&lt;/p&gt;
@@ -318,7 +268,4 @@ zhuangchulong&lt;/p&gt;</description>
 &lt;p&gt;，周五周四是高峰期，学生平时不多，周末是高峰期，在高峰期的高峰浏览时段，每隔一段时间上架，这个&lt;/p&gt;
 &lt;p&gt;时间可以密集一些，多上一些商品，锁定你的主要消费群。在平时，将时间放宽松一些，网络零散的客户群&lt;/p&gt;
 &lt;p&gt;，照顾到多方的需要。&lt;/p&gt;
-&lt;p&gt;如高峰时间段可以五分钟到十分钟上架一个商品，非高峰时间可以一小时上架一个商品。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;如高峰时间段可以五分钟到十分钟上架一个商品，非高峰时间可以一小时上架一个商品。&lt;/p&gt;</description></item></channel></rss>

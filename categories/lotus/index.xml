@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Lotus on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/lotus/</link>
-    <description>Recent content in Lotus on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Wed, 09 Jun 2010 23:00:59 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/lotus/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何防止垃圾邮件(转)</title>
-      <link>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E9%98%B2%E6%AD%A2%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BD%AC/</link>
-      <pubDate>Wed, 09 Jun 2010 23:00:59 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E9%98%B2%E6%AD%A2%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BD%AC/</guid>
-      <description>&lt;p&gt;|  | &lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Lotus on Seth Dang'S</title><link>seth.dpdns.org/categories/lotus/</link><description>Recent content in Lotus on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Wed, 09 Jun 2010 23:00:59 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/lotus/index.xml" rel="self" type="application/rss+xml"/><item><title>如何防止垃圾邮件(转)</title><link>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E9%98%B2%E6%AD%A2%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BD%AC/</link><pubDate>Wed, 09 Jun 2010 23:00:59 +0800</pubDate><guid>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E9%98%B2%E6%AD%A2%E5%9E%83%E5%9C%BE%E9%82%AE%E4%BB%B6%E8%BD%AC/</guid><description>&lt;p&gt;| | &lt;br&gt;
 1. 前言&lt;br&gt;
 随着Internet技术的普及与发展，电子邮件已经成为大多数人必不可少的通讯工具。企业拥有自己的邮件系统，已经成为一个企业的形象问题。国内大多数企业都处在建设邮件系统的过程之中。现在，一个日益严重的问题困扰着众多的系统管理员——垃圾邮件。&lt;br&gt;
 垃圾邮件的破坏性是显而易见的，它不仅阻塞有限的网络带宽，而且降低了邮件服务器的信誉度，使得其它邮件服务器可能不接收此服务器发出的邮件。那么，如何有效地预防和限制垃圾邮件呢？在这一方面，Domino提供了各种配置参数，如何有效地使用这些参数，来全面制止垃圾邮件，是本文阐述的目标。&lt;br&gt;
@@ -48,7 +33,4 @@ l 邮件返回控制：允许哪些用户发邮件给本服务器，是否核实
 用户使用Outlook Express接收邮件，而且用户出差或在家中工作时，要求通过Internet访问邮箱，系统不能通过IP地址区分用户的身份。&lt;br&gt;
 这种情况下比较复杂，但经常会有企业提出这样的要求。在Domino的配置中，有两种方法可以用来限制垃圾邮件：&lt;br&gt;
 l 管理员经常观察邮件队列Mail.box中的邮件，记录垃圾邮件的来源或目标地址，然后将该地址添入服务器配置文档的如下两个域中：&lt;br&gt;
-第一项是目标地址限制，第二项是源地址限制。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+第一项是目标地址限制，第二项是源地址限制。&lt;/p&gt;</description></item></channel></rss>

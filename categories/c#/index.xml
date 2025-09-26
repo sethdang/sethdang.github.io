@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>C# on Seth Dang&#39;S</title>
-    <link>seth.dpdns.org/categories/c%23/</link>
-    <description>Recent content in C# on Seth Dang&#39;S</description>
-    <generator>Hugo -- 0.150.0</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 03 Jul 2008 11:22:13 +0800</lastBuildDate>
-    <atom:link href="seth.dpdns.org/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>c#编程实例代码</title>
-      <link>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</link>
-      <pubDate>Thu, 03 Jul 2008 11:22:13 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</guid>
-      <description>&lt;p&gt;//massagebox&lt;br&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>C# on Seth Dang'S</title><link>seth.dpdns.org/categories/c%23/</link><description>Recent content in C# on Seth Dang'S</description><generator>Hugo -- 0.150.0</generator><language>zh-CN</language><lastBuildDate>Thu, 03 Jul 2008 11:22:13 +0800</lastBuildDate><atom:link href="seth.dpdns.org/categories/c%23/index.xml" rel="self" type="application/rss+xml"/><item><title>c#编程实例代码</title><link>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</link><pubDate>Thu, 03 Jul 2008 11:22:13 +0800</pubDate><guid>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</guid><description>&lt;p&gt;//massagebox&lt;br&gt;
 System.Windows.Forms.MessageBox.Show(&amp;ldquo;欢迎使用Vsual Studio 2005！&amp;rdquo;);&lt;/p&gt;
 &lt;p&gt;//tab顺序&lt;br&gt;
 textBox1.TabIndex.ToString( );&lt;/p&gt;
@@ -42,14 +27,7 @@ lblInfo.Text += &amp;ldquo;\n求最小值方法Math.Min(3,2)：&amp;rdquo; + Mat
 lblInfo.Text += &amp;ldquo;\n求幂方法（3的平方）Math.Pow(3,2)：&amp;rdquo; + Math.Pow(3, 2);&lt;br&gt;
 lblInfo.Text += &amp;ldquo;\n求保留小数值方法Math.Round(3.54)：&amp;rdquo; + Math.Round(3.54);&lt;br&gt;
 lblInfo.Text += &amp;ldquo;\n求保留小数值方法（2）Math.Round(3.1415926,3)：&amp;quot;+ Math.Round(3.1415926, 3);&lt;br&gt;
-lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&amp;rdquo; + Math.Sqrt(2);&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>c# 建立多窗口界面(MDI)方法 (转)</title>
-      <link>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</link>
-      <pubDate>Tue, 01 Jul 2008 14:07:43 +0800</pubDate>
-      <guid>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</guid>
-      <description>&lt;p&gt;傳統上，可以為Windows編寫3種應用程序，它們是：&lt;/p&gt;
+lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&amp;rdquo; + Math.Sqrt(2);&lt;/p&gt;</description></item><item><title>c# 建立多窗口界面(MDI)方法 (转)</title><link>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</link><pubDate>Tue, 01 Jul 2008 14:07:43 +0800</pubDate><guid>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</guid><description>&lt;p&gt;傳統上，可以為Windows編寫3種應用程序，它們是：&lt;/p&gt;
 &lt;p&gt;1）基於對話框的應用程序，它們給用戶顯示一個對話框，該 對話框提供了所有的功能。如計算器&lt;/p&gt;
 &lt;p&gt;2）單一文檔界面（SDI），這些應用程序給用戶顯示一個菜單、一個或多個工具欄和一個窗口，在該窗口中，用戶可以執行任務。如WordPad&lt;/p&gt;
 &lt;p&gt;3）多文檔界面（MDI），這些應用程序的執行方式與SDI相同，但可以同時打開多個窗口。&lt;/p&gt;
@@ -63,7 +41,7 @@ lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)�
 &lt;p&gt;注：下面代碼中的序號與上面建立方法的序號對應&lt;/p&gt;
 &lt;p&gt;1、建立兩個窗體：frmContainer窗體，作為主窗體；frmChild窗體，為作子窗體。&lt;/p&gt;
 &lt;p&gt;frmContainer代碼：&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34;&gt;namespace MdiBasic&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="http://www.cnblogs.com/Images/OutliningIndicators/None.gif"&gt;namespace MdiBasic&lt;/p&gt;
 &lt;p&gt;{&lt;/p&gt;
 &lt;p&gt;public partial class frmContainer : Form&lt;/p&gt;
 &lt;p&gt;{&lt;/p&gt;
@@ -79,7 +57,7 @@ lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)�
 &lt;p&gt;}&lt;/p&gt;
 &lt;p&gt;}&lt;/p&gt;
 &lt;p&gt;frmChild代碼：&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34;&gt;namespace MdiBasic&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="http://www.cnblogs.com/Images/OutliningIndicators/None.gif"&gt;namespace MdiBasic&lt;/p&gt;
 &lt;p&gt;{&lt;/p&gt;
 &lt;p&gt;public partial class frmChild : Form&lt;/p&gt;
 &lt;p&gt;{&lt;/p&gt;
@@ -102,7 +80,4 @@ if(MdiChildren[i].GetType() == t)&lt;br&gt;
 MdiChildren[i].Select();&lt;br&gt;
 return;&lt;br&gt;
 }&lt;br&gt;
-}&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+}&lt;/p&gt;</description></item></channel></rss>
