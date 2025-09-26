@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photoshop on Seth Dang博客</title>
+    <link>/categories/photoshop/</link>
+    <description>Recent content in Photoshop on Seth Dang博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 17 Mar 2007 15:38:44 +0800</lastBuildDate>
+    <atom:link href="/categories/photoshop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>photoshop界面技巧</title>
+      <link>/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sat, 17 Mar 2007 15:38:44 +0800</pubDate>
+      <guid>/posts/photoshop%E7%95%8C%E9%9D%A2%E6%8A%80%E5%B7%A7/</guid>
+      <description>&lt;p&gt;界面技巧：&lt;/p&gt;&#xA;&lt;p&gt;你可能知道按Tab鍵可以隱藏工具箱和浮動面板，同樣按Shift+Tab鍵可以只隱藏浮動面板( 而工具條可見 )。&lt;/p&gt;&#xA;&lt;p&gt;按住Shift鍵點擊浮動面板的標題欄( 最上方的藍條 )可以使其吸附到最近的屏幕邊緣。&lt;/p&gt;&#xA;&lt;p&gt;雙擊浮動面板的上的每一欄( 就是有標題的那個 )可以使其最小化。通過浮動面板上的最小化按鈕可以在緊湊模式( 只有最少的選項和內容可視 )和正常模式( 顯示面板上所有的選項和內容 )之間切換。&lt;/p&gt;&#xA;&lt;p&gt;可以通過按回車鍵( 或雙擊工具箱上的工具按鈕 )來打開當前工具的選項面板。不然的話只能通過菜單上的Window raquo; Show Options命令來來打開。&lt;/p&gt;&#xA;&lt;p&gt;利用比例縮放區( 在Photoshop窗體或導航器面板的左下角 )來快速選擇一個準確的顯示比例，當輸入一個值後按Shift+Enter可以使光標仍保持在比例縮放區。&lt;/p&gt;&#xA;&lt;p&gt;要改變狀態欄的顯示信息( 在窗口底部，默認顯示文件大小，可以通過Window raquo; Show Status Bar打開 )，按狀態欄上的按鈕從彈出菜單中選一個新的項目。點擊狀態欄上按鈕的左側區域可以顯示當前文件的打印尺寸、按住Alt點擊顯示文件尺寸和分辨率、按住Ctrl點擊顯示拼貼信息。&lt;/p&gt;&#xA;&lt;p&gt;厭倦了灰色的畫布底色？選擇油漆桶工具[K]( Paint Bucket )按住Shift點擊畫布邊緣即可設置畫布底色為當前的前景色。&lt;/p&gt;&#xA;&lt;p&gt;注意：要還原到默認的顏色，設置前景色為25%灰度( R192,G192,B192 )再次按住Shift點擊畫布邊緣。&lt;/p&gt;&#xA;&lt;p&gt;在Photoshop中所有的對話框中的取消( Cancel )按鈕都可以通過按住Alt鍵變為復位( Reset )按鈕。這使你可以輕易回復到初始值而毋須取消重來。&lt;/p&gt;&#xA;&lt;p&gt;鍵盤上的CapsLock鍵可以控制光標在精確狀態及標準狀態之間切換。&lt;/p&gt;&#xA;&lt;p&gt;注意：如果Photoshop的參數 [Ctrl+K,Ctrl+3] ( File raquo; Preferences raquo; Display &amp;amp; Cursors&amp;hellip; ) 中已經設置光標為精確狀態，這時CapsLock鍵不起作用。&lt;/p&gt;&#xA;&lt;p&gt;按“F”鍵可在Photoshop的三種不同屏幕顯示方式 ( 標準顯示模式→帶菜單的全屏顯示模式→全屏顯示模式 )下切換( 或者可以使用工具箱下端的按鈕 )。&lt;/p&gt;&#xA;&lt;p&gt;提示：在全屏模式下按Shift+F可以切換是否顯示菜單。&lt;/p&gt;&#xA;&lt;p&gt;雙擊Photoshop的背景空白處為打開文件命令[Ctrl+O] ( File raquo; Open&amp;hellip; )。&lt;/p&gt;&#xA;&lt;p&gt;按住Shift點擊顏色面板下的顏色條可以改變其所顯示的色譜類型。或者，也可以在顏色條上單擊鼠標右鍵，從彈出的顏色條選項菜單中選取其它色彩模式。&lt;/p&gt;&#xA;&lt;p&gt;在圖片窗口的標題欄上單擊鼠標右鍵可以快速調用一些命令，如畫布大小命令、圖像大小命令和複製等等。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>c#编程实例代码 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="//massagebox
+System.Windows.Forms.MessageBox.Show(&ldquo;欢迎使用Vsual Studio 2005！&rdquo;);
+//tab顺序
+textBox1.TabIndex.ToString( );
+//日期与时间方法及属性使用示例
+lblInfo.Text &#43;= &ldquo;\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n&rdquo; &#43; DateTime.Now.ToLongDateString();
+lblInfo.Text &#43;= &ldquo;\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n&rdquo; &#43; DateTime.Now.ToLongTimeString();
+lblInfo.Text &#43;= &ldquo;\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n&rdquo; &#43; DateTime.Now.ToShortDateString();
+lblInfo.Text &#43;= &ldquo;\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n&rdquo; &#43; DateTime.Now.ToShortTimeString();
+/*
+lblInfo.Text &#43;= &ldquo;\n获取当前年份DateTime.Now.Year：&rdquo; &#43; DateTime.Now.Year;
+lblInfo.Text &#43;= &ldquo;\n获取当前小时DateTime.Now.Hour：&rdquo; &#43; DateTime.Now.Hour;/
+lblInfo.Text &#43;= &ldquo;\n当前为星期几DateTime.Now.DayOfWeek：&rdquo; &#43; DateTime.Now.DayOfWeek;
+lblInfo.Text &#43;= &ldquo;\n当前为一年中的第几天DateTime.Now.DayOfYear：&rdquo; &#43; DateTime.Now.DayOfYear;
+lblInfo.Text &#43;= &ldquo;\n增减天数后的日期DateTime.Now.AddDays(1.5)：&rdquo; &#43; DateTime.Now.AddDays(1.5);
+/
+lblInfo.Text &#43;= &ldquo;\n增减天数后的日期DateTime.Now.AddDays(-1.5)：&rdquo; &#43; DateTime.Now.AddDays(-1.5);*/
+//数学方法及字段使用示例
+lblInfo.Text &#43;= &ldquo;\n字段，圆周率Math.PI：&rdquo;
+&#43; Math.PI;
+lblInfo.Text &#43;= &ldquo;\n求绝对值方法Math.Abs(-38.5)：&rdquo; &#43; Math.Abs(-38.5);
+lblInfo.Text &#43;= &ldquo;\n求正弦值方法（30度）Math.Sin(Math.PI/6)：&rdquo; &#43; Math.Sin(Math.PI / 6);
+lblInfo.Text &#43;= &ldquo;\n求余弦值方法（60度）Math.Cos(Math.PI/3)：&rdquo; &#43; Math.Cos(Math.PI / 3);
+lblInfo.Text &#43;= &ldquo;\n求正切值方法（45度）Math.Tan(Math.PI/4)：&rdquo; &#43; Math.Tan(Math.PI / 4);
+lblInfo.Text &#43;= &ldquo;\n求最大值方法Math.Max(3,2)：&rdquo; &#43; Math.Max(3, 2);
+lblInfo.Text &#43;= &ldquo;\n求最小值方法Math.Min(3,2)：&rdquo; &#43; Math.Min(3, 2);
+lblInfo.Text &#43;= &ldquo;\n求幂方法（3的平方）Math.Pow(3,2)：&rdquo; &#43; Math.Pow(3, 2);
+lblInfo.Text &#43;= &ldquo;\n求保留小数值方法Math.Round(3.54)：&rdquo; &#43; Math.Round(3.54);
+lblInfo.Text &#43;= &ldquo;\n求保留小数值方法（2）Math.Round(3.1415926,3)：&quot;&#43; Math.Round(3.1415926, 3);
+lblInfo.Text &#43;= &ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&rdquo; &#43; Math.Sqrt(2);">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/">
+    
+
+    <meta property="og:url" content="/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="c#编程实例代码">
+  <meta property="og:description" content="//massagebox
+System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
+//tab顺序
+textBox1.TabIndex.ToString( );
+//日期与时间方法及属性使用示例
+lblInfo.Text &#43;= “\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n” &#43; DateTime.Now.ToLongDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n” &#43; DateTime.Now.ToLongTimeString();
+lblInfo.Text &#43;= “\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n” &#43; DateTime.Now.ToShortDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n” &#43; DateTime.Now.ToShortTimeString();
+/*
+lblInfo.Text &#43;= “\n获取当前年份DateTime.Now.Year：” &#43; DateTime.Now.Year;
+lblInfo.Text &#43;= “\n获取当前小时DateTime.Now.Hour：” &#43; DateTime.Now.Hour;/
+lblInfo.Text &#43;= “\n当前为星期几DateTime.Now.DayOfWeek：” &#43; DateTime.Now.DayOfWeek;
+lblInfo.Text &#43;= “\n当前为一年中的第几天DateTime.Now.DayOfYear：” &#43; DateTime.Now.DayOfYear;
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(1.5)：” &#43; DateTime.Now.AddDays(1.5);
+/
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(-1.5)：” &#43; DateTime.Now.AddDays(-1.5);*/
+//数学方法及字段使用示例
+lblInfo.Text &#43;= “\n字段，圆周率Math.PI：”
+&#43; Math.PI;
+lblInfo.Text &#43;= “\n求绝对值方法Math.Abs(-38.5)：” &#43; Math.Abs(-38.5);
+lblInfo.Text &#43;= “\n求正弦值方法（30度）Math.Sin(Math.PI/6)：” &#43; Math.Sin(Math.PI / 6);
+lblInfo.Text &#43;= “\n求余弦值方法（60度）Math.Cos(Math.PI/3)：” &#43; Math.Cos(Math.PI / 3);
+lblInfo.Text &#43;= “\n求正切值方法（45度）Math.Tan(Math.PI/4)：” &#43; Math.Tan(Math.PI / 4);
+lblInfo.Text &#43;= “\n求最大值方法Math.Max(3,2)：” &#43; Math.Max(3, 2);
+lblInfo.Text &#43;= “\n求最小值方法Math.Min(3,2)：” &#43; Math.Min(3, 2);
+lblInfo.Text &#43;= “\n求幂方法（3的平方）Math.Pow(3,2)：” &#43; Math.Pow(3, 2);
+lblInfo.Text &#43;= “\n求保留小数值方法Math.Round(3.54)：” &#43; Math.Round(3.54);
+lblInfo.Text &#43;= “\n求保留小数值方法（2）Math.Round(3.1415926,3)：&#34;&#43; Math.Round(3.1415926, 3);
+lblInfo.Text &#43;= “\n求平方根方法（2的平方根）Math.Sqrt(2)：” &#43; Math.Sqrt(2);">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2008-07-03T11:22:13+08:00">
+    <meta property="article:modified_time" content="2008-07-03T11:22:13+08:00">
+
+  <meta itemprop="name" content="c#编程实例代码">
+  <meta itemprop="description" content="//massagebox
+System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
+//tab顺序
+textBox1.TabIndex.ToString( );
+//日期与时间方法及属性使用示例
+lblInfo.Text &#43;= “\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n” &#43; DateTime.Now.ToLongDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n” &#43; DateTime.Now.ToLongTimeString();
+lblInfo.Text &#43;= “\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n” &#43; DateTime.Now.ToShortDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n” &#43; DateTime.Now.ToShortTimeString();
+/*
+lblInfo.Text &#43;= “\n获取当前年份DateTime.Now.Year：” &#43; DateTime.Now.Year;
+lblInfo.Text &#43;= “\n获取当前小时DateTime.Now.Hour：” &#43; DateTime.Now.Hour;/
+lblInfo.Text &#43;= “\n当前为星期几DateTime.Now.DayOfWeek：” &#43; DateTime.Now.DayOfWeek;
+lblInfo.Text &#43;= “\n当前为一年中的第几天DateTime.Now.DayOfYear：” &#43; DateTime.Now.DayOfYear;
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(1.5)：” &#43; DateTime.Now.AddDays(1.5);
+/
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(-1.5)：” &#43; DateTime.Now.AddDays(-1.5);*/
+//数学方法及字段使用示例
+lblInfo.Text &#43;= “\n字段，圆周率Math.PI：”
+&#43; Math.PI;
+lblInfo.Text &#43;= “\n求绝对值方法Math.Abs(-38.5)：” &#43; Math.Abs(-38.5);
+lblInfo.Text &#43;= “\n求正弦值方法（30度）Math.Sin(Math.PI/6)：” &#43; Math.Sin(Math.PI / 6);
+lblInfo.Text &#43;= “\n求余弦值方法（60度）Math.Cos(Math.PI/3)：” &#43; Math.Cos(Math.PI / 3);
+lblInfo.Text &#43;= “\n求正切值方法（45度）Math.Tan(Math.PI/4)：” &#43; Math.Tan(Math.PI / 4);
+lblInfo.Text &#43;= “\n求最大值方法Math.Max(3,2)：” &#43; Math.Max(3, 2);
+lblInfo.Text &#43;= “\n求最小值方法Math.Min(3,2)：” &#43; Math.Min(3, 2);
+lblInfo.Text &#43;= “\n求幂方法（3的平方）Math.Pow(3,2)：” &#43; Math.Pow(3, 2);
+lblInfo.Text &#43;= “\n求保留小数值方法Math.Round(3.54)：” &#43; Math.Round(3.54);
+lblInfo.Text &#43;= “\n求保留小数值方法（2）Math.Round(3.1415926,3)：&#34;&#43; Math.Round(3.1415926, 3);
+lblInfo.Text &#43;= “\n求平方根方法（2的平方根）Math.Sqrt(2)：” &#43; Math.Sqrt(2);">
+  <meta itemprop="datePublished" content="2008-07-03T11:22:13+08:00">
+  <meta itemprop="dateModified" content="2008-07-03T11:22:13+08:00">
+  <meta itemprop="wordCount" content="278">
+  <meta itemprop="keywords" content="C#">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="c#编程实例代码">
+  <meta name="twitter:description" content="//massagebox
+System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
+//tab顺序
+textBox1.TabIndex.ToString( );
+//日期与时间方法及属性使用示例
+lblInfo.Text &#43;= “\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n” &#43; DateTime.Now.ToLongDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n” &#43; DateTime.Now.ToLongTimeString();
+lblInfo.Text &#43;= “\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n” &#43; DateTime.Now.ToShortDateString();
+lblInfo.Text &#43;= “\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n” &#43; DateTime.Now.ToShortTimeString();
+/*
+lblInfo.Text &#43;= “\n获取当前年份DateTime.Now.Year：” &#43; DateTime.Now.Year;
+lblInfo.Text &#43;= “\n获取当前小时DateTime.Now.Hour：” &#43; DateTime.Now.Hour;/
+lblInfo.Text &#43;= “\n当前为星期几DateTime.Now.DayOfWeek：” &#43; DateTime.Now.DayOfWeek;
+lblInfo.Text &#43;= “\n当前为一年中的第几天DateTime.Now.DayOfYear：” &#43; DateTime.Now.DayOfYear;
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(1.5)：” &#43; DateTime.Now.AddDays(1.5);
+/
+lblInfo.Text &#43;= “\n增减天数后的日期DateTime.Now.AddDays(-1.5)：” &#43; DateTime.Now.AddDays(-1.5);*/
+//数学方法及字段使用示例
+lblInfo.Text &#43;= “\n字段，圆周率Math.PI：”
+&#43; Math.PI;
+lblInfo.Text &#43;= “\n求绝对值方法Math.Abs(-38.5)：” &#43; Math.Abs(-38.5);
+lblInfo.Text &#43;= “\n求正弦值方法（30度）Math.Sin(Math.PI/6)：” &#43; Math.Sin(Math.PI / 6);
+lblInfo.Text &#43;= “\n求余弦值方法（60度）Math.Cos(Math.PI/3)：” &#43; Math.Cos(Math.PI / 3);
+lblInfo.Text &#43;= “\n求正切值方法（45度）Math.Tan(Math.PI/4)：” &#43; Math.Tan(Math.PI / 4);
+lblInfo.Text &#43;= “\n求最大值方法Math.Max(3,2)：” &#43; Math.Max(3, 2);
+lblInfo.Text &#43;= “\n求最小值方法Math.Min(3,2)：” &#43; Math.Min(3, 2);
+lblInfo.Text &#43;= “\n求幂方法（3的平方）Math.Pow(3,2)：” &#43; Math.Pow(3, 2);
+lblInfo.Text &#43;= “\n求保留小数值方法Math.Round(3.54)：” &#43; Math.Round(3.54);
+lblInfo.Text &#43;= “\n求保留小数值方法（2）Math.Round(3.1415926,3)：&#34;&#43; Math.Round(3.1415926, 3);
+lblInfo.Text &#43;= “\n求平方根方法（2的平方根）Math.Sqrt(2)：” &#43; Math.Sqrt(2);">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">c#编程实例代码</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-07-03T11:22:13+08:00">July 3, 2008</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>//massagebox<br>
+System.Windows.Forms.MessageBox.Show(&ldquo;欢迎使用Vsual Studio 2005！&rdquo;);</p>
+<p>//tab顺序<br>
+textBox1.TabIndex.ToString( );</p>
+<p>//日期与时间方法及属性使用示例<br>
+lblInfo.Text += &ldquo;\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n&rdquo; + DateTime.Now.ToLongDateString();<br>
+lblInfo.Text += &ldquo;\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n&rdquo; + DateTime.Now.ToLongTimeString();<br>
+lblInfo.Text += &ldquo;\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n&rdquo; + DateTime.Now.ToShortDateString();<br>
+lblInfo.Text += &ldquo;\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n&rdquo; + DateTime.Now.ToShortTimeString();<br>
+/*<br>
+lblInfo.Text += &ldquo;\n获取当前年份DateTime.Now.Year：&rdquo; + DateTime.Now.Year;<br>
+lblInfo.Text += &ldquo;\n获取当前小时DateTime.Now.Hour：&rdquo; + DateTime.Now.Hour;<em>/<br>
+lblInfo.Text += &ldquo;\n当前为星期几DateTime.Now.DayOfWeek：&rdquo; + DateTime.Now.DayOfWeek;<br>
+lblInfo.Text += &ldquo;\n当前为一年中的第几天DateTime.Now.DayOfYear：&rdquo; + DateTime.Now.DayOfYear;<br>
+lblInfo.Text += &ldquo;\n增减天数后的日期DateTime.Now.AddDays(1.5)：&rdquo; + DateTime.Now.AddDays(1.5);<br>
+/</em><br>
+lblInfo.Text += &ldquo;\n增减天数后的日期DateTime.Now.AddDays(-1.5)：&rdquo; + DateTime.Now.AddDays(-1.5);*/<br>
+//数学方法及字段使用示例<br>
+lblInfo.Text += &ldquo;\n字段，圆周率Math.PI：&rdquo;<br>
++ Math.PI;<br>
+lblInfo.Text += &ldquo;\n求绝对值方法Math.Abs(-38.5)：&rdquo; + Math.Abs(-38.5);<br>
+lblInfo.Text += &ldquo;\n求正弦值方法（30度）Math.Sin(Math.PI/6)：&rdquo; + Math.Sin(Math.PI / 6);<br>
+lblInfo.Text += &ldquo;\n求余弦值方法（60度）Math.Cos(Math.PI/3)：&rdquo; + Math.Cos(Math.PI / 3);<br>
+lblInfo.Text += &ldquo;\n求正切值方法（45度）Math.Tan(Math.PI/4)：&rdquo; + Math.Tan(Math.PI / 4);<br>
+lblInfo.Text += &ldquo;\n求最大值方法Math.Max(3,2)：&rdquo; + Math.Max(3, 2);<br>
+lblInfo.Text += &ldquo;\n求最小值方法Math.Min(3,2)：&rdquo; + Math.Min(3, 2);<br>
+lblInfo.Text += &ldquo;\n求幂方法（3的平方）Math.Pow(3,2)：&rdquo; + Math.Pow(3, 2);<br>
+lblInfo.Text += &ldquo;\n求保留小数值方法Math.Round(3.54)：&rdquo; + Math.Round(3.54);<br>
+lblInfo.Text += &ldquo;\n求保留小数值方法（2）Math.Round(3.1415926,3)：&quot;+ Math.Round(3.1415926, 3);<br>
+lblInfo.Text += &ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&rdquo; + Math.Sqrt(2);</p>
+<p>private void btnCalculate_Click(object sender, System.EventArgs e)<br>
+{<br>
+int Number1,Number2,Number3; //声明三个整型变量<br>
+Number1=int.Parse(txtNumber1.Text);<br>
+Number2=int.Parse(txtNumber2.Text);<br>
+labResult.Text=&ldquo;计算结果：\n&rdquo;;<br>
+Number3=Number1+Number2;<br>
+labResult.Text+=(&ldquo;两个整数的和为：&quot;+Number3+&quot;\n&rdquo;);<br>
+Number3=Number1-Number2;<br>
+labResult.Text+=(&ldquo;两个整数的差为：&quot;+Number3+&quot;\n&rdquo;);<br>
+Number3=Number1*Number2;<br>
+labResult.Text+=(&ldquo;两个整数的积为：&quot;+Number3+&quot;\n&rdquo;);<br>
+float Number4=(float)Number1/Number2;<br>
+labResult.Text+=(&ldquo;两个整数的商为：&quot;+Number4);<br>
+}</p>
+<p>//字符串方法及属性使用示例<br>
+lblInfo.Text += &ldquo;\n查找指定子串在字符串中的位置&quot;abCDeFg&quot;.IndexOf(&quot;b&quot;,0)：&rdquo; + &ldquo;abCDeFg&rdquo;.IndexOf(&ldquo;b&rdquo;, 0);<br>
+lblInfo.Text += &ldquo;\n在指定位置插入子串&quot;abCDeFg&quot;.Insert(3,&quot;hij&quot;)：&rdquo; + &ldquo;abCDeFg&rdquo;.Insert(3, &ldquo;hij&rdquo;);<br>
+lblInfo.Text += &ldquo;\n指定子串最后一次出现的位置&quot;abCDeFg&quot;.LastIndexOf(&quot;F&quot;))：&rdquo; + &ldquo;abCDeFg&rdquo;.LastIndexOf(&ldquo;F&rdquo;);<br>
+lblInfo.Text += &ldquo;\n字符串中的字符数&quot;abCDeFg&quot;.Length：&rdquo; + &ldquo;abCDeFg&rdquo;.Length;<br>
+lblInfo.Text += &ldquo;\n移除子串&quot;abCDeFg&quot;.Remove(3,2)：&rdquo; + &ldquo;abCDeFg&rdquo;.Remove(3, 2);<br>
+lblInfo.Text += &ldquo;\n替换子串&quot;abCDeFg&quot;.Replace(&quot;eFg&quot;,&quot;hij&quot;)：&rdquo; + &ldquo;abCDeFg&rdquo;.Replace(&ldquo;eFg&rdquo;,&ldquo;hij&rdquo;);<br>
+lblInfo.Text += &ldquo;\n截取子串&quot;abCDeFg&quot;.Substring(3,4)：&rdquo; + &ldquo;abCDeFg&rdquo;.Substring(3, 4);<br>
+lblInfo.Text += &ldquo;\n字符串转小写&quot;abCDeFg&quot;.ToLower( )：&rdquo; + &ldquo;abCDeFg&rdquo;.ToLower();<br>
+lblInfo.Text += &ldquo;\n字符串转大写&quot;abCDeFg&quot;.ToUpper( )：&rdquo; + &ldquo;abCDeFg&rdquo;.ToUpper();<br>
+//随机数方法使用示例（假设随机对象为rn)<br>
+Random rn = new Random();<br>
+lblInfo.Text += &ldquo;\n产生随机整数rn.Next( )：&rdquo; + rn.Next();<br>
+lblInfo.Text += &ldquo;\n产生0～100之间的随机整数rn.Next(100)：&rdquo; + rn.Next(100);<br>
+lblInfo.Text += &ldquo;\n产生-100～100之间的随机整数rn.Next(-100, 100)：&rdquo; + rn.Next(-100, 100);<br>
+lblInfo.Text += &ldquo;\n产生0.0～1.0之间的随机实数rn.NextDouble( )：&rdquo; + rn.NextDouble();<br>
+//文字链接打开<br>
+private void lnkOpen_LinkClicked(object sender,System.Windows.Forms.LinkLabelLinkClickedEventArgs e)<br>
+{<br>
+lnksina.LinkVisited=true;<br>
+//添加“using System.Diagnostics;”可以省略System.Diagnostics引导<br>
+Process.Start(lnksina.Text.Substring(3,15));<br>
+}<br>
+//图片框<br>
+private void btnShowPic1_Click(object sender, System.EventArgs e)<br>
+{<br>
+picBrowse.Image=new Bitmap(&ldquo;001.gif&rdquo;);<br>
+labPicInfo.Text=&ldquo;当前显示为第一张图片&rdquo;;<br>
+}</p>
+<p>private void btnShowPic2_Click(object sender, System.EventArgs e)<br>
+{<br>
+picBrowse.Image=Image.FromFile(&ldquo;004.gif&rdquo;);<br>
+labPicInfo.Text=&ldquo;当前显示为第二张图片&rdquo;;<br>
+}<br>
+//形参不改变参数外部值 引用形参加 ref<br>
+//静态</p>
+<p>//重载(n次声明)<br>
+char.Parse(txtL.Text)<br>
+double.Parse(txtL.Text)；<br>
+int.Parse(txtL.Text);</p>
+<p>//构造函数<br>
+//多态</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

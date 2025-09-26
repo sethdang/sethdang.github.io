@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Fix the router which can&#39;t saves settings. | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:
+
+After your router boots up, do not enter the initial configuration dialog (choose No when prompted).
+
+
+-&ndash; System Configuration Dialog &mdash;Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press Enter to get to the Router&gt; prompt.
+
+
+Type enable , and press ENTER to enter the privileged mode.">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/fix-the-router-which-cant-saves-settings/">
+    
+
+    <meta property="og:url" content="/posts/fix-the-router-which-cant-saves-settings/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="Fix the router which can&#39;t saves settings.">
+  <meta property="og:description" content="The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:
+After your router boots up, do not enter the initial configuration dialog (choose No when prompted). -– System Configuration Dialog —Would you like to enter the initial configuration dialog? [yes/no]: no
+Press Enter to get to the Router&gt; prompt.
+Type enable , and press ENTER to enter the privileged mode.">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2007-02-15T11:46:19+08:00">
+    <meta property="article:modified_time" content="2007-02-15T11:46:19+08:00">
+
+  <meta itemprop="name" content="Fix the router which can&#39;t saves settings.">
+  <meta itemprop="description" content="The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:
+After your router boots up, do not enter the initial configuration dialog (choose No when prompted). -– System Configuration Dialog —Would you like to enter the initial configuration dialog? [yes/no]: no
+Press Enter to get to the Router&gt; prompt.
+Type enable , and press ENTER to enter the privileged mode.">
+  <meta itemprop="datePublished" content="2007-02-15T11:46:19+08:00">
+  <meta itemprop="dateModified" content="2007-02-15T11:46:19+08:00">
+  <meta itemprop="wordCount" content="661">
+  <meta itemprop="keywords" content="Network">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fix the router which can&#39;t saves settings.">
+  <meta name="twitter:description" content="The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:
+After your router boots up, do not enter the initial configuration dialog (choose No when prompted). -– System Configuration Dialog —Would you like to enter the initial configuration dialog? [yes/no]: no
+Press Enter to get to the Router&gt; prompt.
+Type enable , and press ENTER to enter the privileged mode.">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Fix the router which can&#39;t saves settings.</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-02-15T11:46:19+08:00">February 15, 2007</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:</p>
+<ol>
+<li>After your router boots up, do not enter the initial configuration dialog (choose <strong>No</strong> when prompted).</li>
+</ol>
+<blockquote>
+<p>-&ndash; System Configuration Dialog &mdash;Would you like to enter the initial configuration dialog? [yes/no]: <strong>no</strong></p></blockquote>
+<ol start="2">
+<li>
+<p>Press <strong>Enter</strong> to get to the <code>Router&gt;</code> prompt.</p>
+</li>
+<li>
+<p>Type <strong>enable</strong> , and press ENTER to enter the privileged mode.</p>
+</li>
+<li>
+<p>From the <code>Router#</code> prompt, type<strong>show start</strong> and press ENTER. Your configuration must be the one that was saved before reboot or power loss. If you find that the configuration is not the same, it is possible that the router has ignored the startup configuration. Proceed to Step 5.</p>
+</li>
+<li>
+<p>Type <strong>show version</strong> , press ENTER, and look at the last line in the output that appears. Here is an example:</p>
+</li>
+</ol>
+<blockquote>
+<p>Router#<strong>show version</strong> Cisco Internetwork Operating System Software IOS (tm) 2500 Software (C2500-JS-L), Version 12.1(5), RELEASE SOFTWARE (fc1)Copyright (c) 1986-2000 by cisco Systems, Inc.Compiled Wed 25-Oct-00 05:18 by cmongImage text-base: 0x03071DB0, data-base: 0x00001000ROM: System Bootstrap, Version 5.2(8a), RELEASE SOFTWAREBOOTFLASH: 3000 Bootstrap Software (IGS-RXBOOT), Version 10.2(8a), RELEASE SOFTWARE (fc1)Router uptime is 7 minutesSystem returned to ROM by reloadSystem image file is &ldquo;flash:c2500-js-l_121-5.bin&quot;cisco 2500 (68030) processor (revision D) with 16384K/2048K bytes of memory.Processor board ID 03867477, with hardware revision 00000000Bridging software.X.25 software, Version 3.0.0.SuperLAT software (copyright 1990 by Meridian Technology Corp).TN3270 Emulation software.1 Token Ring/IEEE 802.5 interface(s)2 Serial network interface(s)32K bytes of non-volatile configuration memory.16384K bytes of processor board System flash (Read ONLY)<strong>Configuration register is 0x2142</strong></p></blockquote>
+<p>In this example, the configuration register shows 0x2142. The router bypasses the startup configuration stored in NVRAM during its boot sequence. This feature is normally used during a password recovery procedure.</p>
+<table>
+  <thead>
+      <tr>
+          <th>This table explains the configuration register bit meanings:  Bit No.</th>
+          <th>Hex</th>
+          <th>Meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>00-03</td>
+          <td>0x0000-0x000F</td>
+          <td>Boot Field Parameters 0x0000 Stays at the system bootstrap prompt 0x0001 Boots system image on EPROM 0x0002-0x000F Specifies a default netboot filename.</td>
+      </tr>
+      <tr>
+          <td>06</td>
+          <td>0x0040</td>
+          <td>Ignore NVRAM contents.</td>
+      </tr>
+      <tr>
+          <td>07</td>
+          <td>0x0080</td>
+          <td>OEM bit enabled to exclude details in boot messages.</td>
+      </tr>
+      <tr>
+          <td>08</td>
+          <td>0x0100</td>
+          <td>Break disabled.</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>0x0400</td>
+          <td>IP broadcast with all zeros.</td>
+      </tr>
+      <tr>
+          <td>11-12</td>
+          <td>0x0800-0x1000</td>
+          <td>Console line speed.</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td>0x2000</td>
+          <td>Boot default ROM software if network boot fails.</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td>0x4000</td>
+          <td>IP broadcasts do not have net numbers.</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td>0x8000</td>
+          <td>Enable diagnostic messages and ignore NVRAM contents.</td>
+      </tr>
+  </tbody>
+</table>
+<p>The factory-default setting for the configuration register is 0x2102. This indicates that the router should attempt to load a Cisco IOS® software image from Flash memory and load the startup configuration.</p>
+<p><a href="http://www.cisco.com/en/US/products/sw/iosswrel/ps5207/products_command_reference_chapter09186a00801a8090.html#wp1125025">configure terminal</a> , and press ENTER.</p>
+<ul>
+<li>
+<p>Type <strong><a href="http://www.cisco.com/en/US/products/sw/iosswrel/ps5207/products_command_reference_chapter09186a00801a8090.html#wp1124455">config-register</a> 0x2102</strong>, and press ENTER.</p>
+</li>
+<li>
+<p>Type <strong>end</strong> , and press ENTER.</p>
+</li>
+</ul>
+<p>To verify the configuration register change, type <strong>show version</strong> at the <code>Router#</code> prompt, and review your <strong>show version</strong> command output again. Look for the configuration register setting, which must show a new value upon the next reload. Here is an example:</p>
+<blockquote>
+<p>Router#<strong>configure terminal</strong> Enter configuration commands, one per line. End with CNTL/Z. Router(config)#<strong>config-register 0x2102</strong> Router(config)#<strong>end</strong> Router#<strong>show version</strong> Cisco Internetwork Operating System Software IOS (tm) 2500 Software (C2500-JS-L), Version 12.1(5), RELEASE SOFTWARE (fc1)Copyright (c) 1986-2000 by cisco Systems, Inc.Compiled Wed 25-Oct-00 05:18 by cmongImage text-base: 0x03071DB0, data-base: 0x00001000ROM: System Bootstrap, Version 5.2(8a), RELEASE SOFTWAREBOOTFLASH: 3000 Bootstrap Software (IGS-RXBOOT), Version 10.2(8a), RELEASE SOFTWARE (fc1)Router uptime is 11 minutesSystem returned to ROM by reloadSystem image file is &ldquo;flash:c2500-js-l_121-5.bin&quot;cisco 2500 (68030) processor (revision D) with 16384K/2048K bytes of memory.Processor board ID 03867477, with hardware revision 00000000Bridging software.X.25 software, Version 3.0.0.SuperLAT software (copyright 1990 by Meridian Technology Corp).TN3270 Emulation software.1 Token Ring/IEEE 802.5 interface(s)2 Serial network interface(s)32K bytes of non-volatile configuration memory.16384K bytes of processor board System flash (Read ONLY)<strong>Configuration register is 0x2142 (will be 0x2102 at next reload)</strong></p></blockquote>
+<p>When the router is reloaded, the new configuration register setting becomes active.</p>
+<blockquote>
+<p>Router#<strong>reload</strong> System configuration has been modified. Save? [yes/no]: <strong>n</strong> Proceed with reload? [confirm]</p></blockquote>
+<p>Your router now loads with the startup configuration, and the configuration register is set to 0x2102. Your configuration loads properly after the next reload or power cycle.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

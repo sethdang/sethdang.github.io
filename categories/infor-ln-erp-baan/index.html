@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="技术博客与知识分享">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth Dan">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+    
+      <link href="/categories/infor-ln-erp-baan/index.xml" rel="alternate" type="application/rss+xml" title="Seth Dang博客" />
+      <link href="/categories/infor-ln-erp-baan/index.xml" rel="feed" type="application/rss+xml" title="Seth Dang博客" />
+      
+    
+
+    
+      <link rel="canonical" href="/categories/infor-ln-erp-baan/">
+    
+
+    <meta property="og:url" content="/categories/infor-ln-erp-baan/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="Infor LN ERP Baan">
+  <meta property="og:description" content="技术博客与知识分享">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Infor LN ERP Baan">
+  <meta itemprop="description" content="技术博客与知识分享">
+  <meta itemprop="datePublished" content="2011-09-27T11:11:06+08:00">
+  <meta itemprop="dateModified" content="2011-09-27T11:11:06+08:00">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Infor LN ERP Baan">
+  <meta name="twitter:description" content="技术博客与知识分享">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Infor LN ERP Baan
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray">
+      <p>Below you will find pages that utilize the taxonomy term “Infor LN ERP Baan”</p>
+    </div>
+  </article>
+  <div class="mw8 center">
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/infor-ln-erp-baan%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7-%E8%BF%9E%E8%BD%BD1/" class="link black dim">
+        Infor LN ERP baan新增用户 (连载1)
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>摸索了一个月多的Infor LN ERP 还在为用户、权限、VRC、EDM等烦恼，发现baan在国内资料真的很少，什么东西都要靠自己这个ERP做得太辛苦了，可恶的资本家万恶的旧社会，辛苦了我们这些挨踢人。<br>
+做为baanERP系统administrator，新进员工，增加账号，这是最基本的内容了。<br>
+步骤：（服务器windows 2003 SP2 数据库SQL Server ）<br>
+1.登陆服务器，打开控制面板，进入计算机管理&ndash;&gt;本地用户和组&ndash;&gt;用户&mdash;&gt;[以下是新建widnows 2003用户省略，有关密码策略，请参考windows 2003策略篇，此处略去1万字&hellip;&hellip;]，重点说baanerp系统内新增账号步骤<br>
+2.打开具有菜单浏览器权限用户，找到Tools-&gt;用户管理-&gt;用户数据,新建用户。增加用户名，选择子系统组合，公司，语言（o中文，2英文），菜单浏览器，DEM，启动菜单码；默认设置：交互模式，用户数据：Default；权限：输入密码，增加角色（可一次增加完你要给用户分配所有的角色），模板：勾选；通讯录：暂时未用；关闭，运行菜单栏上特定-&gt;将更改的用户数据为运行时数据字典<br>
+3.Tools-&gt;Database Management-&gt;RDBMS管理-&gt;在SSA ERP用户和数据库用户之间链接-&gt;新建SSAERP用户，数据库用户，转换用户至运行时<br>
+4.DEM数据用户：企业建模程序-&gt;模型定义-&gt;组织建模-&gt;员工-&gt;新建用户，员工自己增加，SSA用户（前面建立的）<br>
+企业建模程序-&gt;模型定义-&gt;当前建模版本-&gt;用户的当前建模版本-&gt;新建SSA用户<br>
+企业建模程序-&gt;模型定义-&gt;业务模型-&gt;项目模型-&gt;特定-&gt;按项目模型列出的员工-&gt;新建员工<br>
+企业建模程序-&gt;模型定义-&gt;组织建模-&gt;员工-&gt;特定-&gt;按动态企业建模员工配置用户<br>
+OK.配置客户端，登陆用户</p>
+    </div>
+    <a href="/posts/infor-ln-erp-baan%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7-%E8%BF%9E%E8%BD%BD1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/infor-ln/" class="link black dim">
+        infor LN
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>花了几十万购买了INFOR LN的系统，却要独自研究、安装和实施。8月13开始下载，还好网速很快，不过一天耗在里面罗。</p>
+<p>从事ERP实施维护这么多年也没有很多文字上的积累，记下Baan的第一笔帐，一路坚持，直到胜利。。。</p>
+<p>星期六，天要下雨在独立的会议室坚守了一天</p>
+<p>infor LN 6.7.1遇到安装问题：</p>
+<p>想先装个测试环境，故先装了虚拟机vmare+window2003+sql2000</p>
+<p>1.装好发现LN不支持sql2000，又抽时间下载了sql2005和sql2008</p>
+<p>2.infor什么都要靠下载，在线资料都没有也还下不到，还好我网速快不然下载都要耗10天半个月.几十万什么都没有换到，就一张合同纸而已。</p>
+<p>3.LN要检测到虚拟机，组件装不了正想办法解决，因为我看过顾问用虚拟机，应该能反检测。</p>
+<p>4. 需要安装.NET FRAMEWORKS 2.0 安装程序才能运行。</p>
+    </div>
+    <a href="/posts/infor-ln/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

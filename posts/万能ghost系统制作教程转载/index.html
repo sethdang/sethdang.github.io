@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>万能Ghost系统制作教程(转载)  | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。
+一、前期基础工作
+1、准备所需工具软件
+*S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）
+*Ghost_v8.0 &amp; v8.2（v8.0以上版本才能够支持NTFS分区）
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具
+2、安装操作系统
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，&ldquo;原生&quot;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（&rdquo; 原生&quot;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。
+3、安装应用软件
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。
+4、安装S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+双击 S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。
+5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。
+在配合S&amp;R;&amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;R;&amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。
+二、系统减肥（可选）
+为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。
+1、关闭系统还原
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。
+2、关闭系统休眠
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。
+3、转移虚拟内存页面文件
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。
+4、清理磁盘，删除系统和IE临时文件
+*运行磁盘清理程序删除系统临时文件
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。
+*删除IE临时文件和历史记录
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。
+*删除最近使用的文档记录
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。
+5、使用DllCacheManager备份DllCache目录文件（dll文件）
+此步须在进行完系统封装后再进行。
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。
+三、删除、更改系统硬件驱动（关键）
+1、卸载硬件驱动
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。
+2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/">
+    
+
+    <meta property="og:url" content="/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="万能Ghost系统制作教程(转载) ">
+  <meta property="og:description" content="本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。
+一、前期基础工作 1、准备所需工具软件
+*S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）
+*Ghost_v8.0 &amp; v8.2（v8.0以上版本才能够支持NTFS分区）
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具
+2、安装操作系统
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，“原生&#34;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（” 原生&#34;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。
+3、安装应用软件
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。
+4、安装S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+双击 S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。
+5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。
+在配合S&amp;R;&amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;R;&amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。
+二、系统减肥（可选） 为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。
+1、关闭系统还原
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。
+2、关闭系统休眠
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。
+3、转移虚拟内存页面文件
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。
+4、清理磁盘，删除系统和IE临时文件
+*运行磁盘清理程序删除系统临时文件
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。
+*删除IE临时文件和历史记录
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。
+*删除最近使用的文档记录
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。
+5、使用DllCacheManager备份DllCache目录文件（dll文件）
+此步须在进行完系统封装后再进行。
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。
+三、删除、更改系统硬件驱动（关键） 1、卸载硬件驱动
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。
+2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2006-12-01T16:21:07+08:00">
+    <meta property="article:modified_time" content="2006-12-01T16:21:07+08:00">
+
+  <meta itemprop="name" content="万能Ghost系统制作教程(转载) ">
+  <meta itemprop="description" content="本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。
+一、前期基础工作 1、准备所需工具软件
+*S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）
+*Ghost_v8.0 &amp; v8.2（v8.0以上版本才能够支持NTFS分区）
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具
+2、安装操作系统
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，“原生&#34;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（” 原生&#34;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。
+3、安装应用软件
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。
+4、安装S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+双击 S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。
+5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。
+在配合S&amp;R;&amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;R;&amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。
+二、系统减肥（可选） 为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。
+1、关闭系统还原
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。
+2、关闭系统休眠
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。
+3、转移虚拟内存页面文件
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。
+4、清理磁盘，删除系统和IE临时文件
+*运行磁盘清理程序删除系统临时文件
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。
+*删除IE临时文件和历史记录
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。
+*删除最近使用的文档记录
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。
+5、使用DllCacheManager备份DllCache目录文件（dll文件）
+此步须在进行完系统封装后再进行。
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。
+三、删除、更改系统硬件驱动（关键） 1、卸载硬件驱动
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。
+2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。">
+  <meta itemprop="datePublished" content="2006-12-01T16:21:07+08:00">
+  <meta itemprop="dateModified" content="2006-12-01T16:21:07+08:00">
+  <meta itemprop="wordCount" content="166">
+  <meta itemprop="keywords" content="Softwave">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="万能Ghost系统制作教程(转载) ">
+  <meta name="twitter:description" content="本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。
+一、前期基础工作 1、准备所需工具软件
+*S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）
+*Ghost_v8.0 &amp; v8.2（v8.0以上版本才能够支持NTFS分区）
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具
+2、安装操作系统
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，“原生&#34;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（” 原生&#34;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。
+3、安装应用软件
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。
+4、安装S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具
+双击 S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。
+5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。
+在配合S&amp;R;&amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;R;&amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。
+二、系统减肥（可选） 为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。
+1、关闭系统还原
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。
+2、关闭系统休眠
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。
+3、转移虚拟内存页面文件
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。
+4、清理磁盘，删除系统和IE临时文件
+*运行磁盘清理程序删除系统临时文件
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。
+*删除IE临时文件和历史记录
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。
+*删除最近使用的文档记录
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。
+5、使用DllCacheManager备份DllCache目录文件（dll文件）
+此步须在进行完系统封装后再进行。
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。
+三、删除、更改系统硬件驱动（关键） 1、卸载硬件驱动
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。
+2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">万能Ghost系统制作教程(转载) </h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2006-12-01T16:21:07+08:00">December 1, 2006</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。</p>
+<h1 id="一前期基础工作">一、前期基础工作</h1>
+<p>1、准备所需工具软件<br>
+*S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具<br>
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）<br>
+*Ghost_v8.0 &amp; v8.2（v8.0以上版本才能够支持NTFS分区）<br>
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）<br>
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具</p>
+<p>2、安装操作系统<br>
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，&ldquo;原生&quot;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（&rdquo; 原生&quot;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。<br>
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。</p>
+<p>3、安装应用软件<br>
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。<br>
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。</p>
+<p>4、安装S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具<br>
+双击 S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。</p>
+<p>5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）<br>
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。<br>
+在配合S&amp;R;&amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;R;&amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。</p>
+<h1 id="二系统减肥可选">二、系统减肥（可选）</h1>
+<p>为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。</p>
+<p>1、关闭系统还原<br>
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。<br>
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。</p>
+<p>2、关闭系统休眠<br>
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。<br>
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。</p>
+<p>3、转移虚拟内存页面文件<br>
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。<br>
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。<br>
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。</p>
+<p>4、清理磁盘，删除系统和IE临时文件<br>
+*运行磁盘清理程序删除系统临时文件<br>
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。<br>
+*删除IE临时文件和历史记录<br>
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。<br>
+*删除最近使用的文档记录<br>
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。</p>
+<p>5、使用DllCacheManager备份DllCache目录文件（dll文件）<br>
+此步须在进行完系统封装后再进行。<br>
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。</p>
+<h1 id="三删除更改系统硬件驱动关键">三、删除、更改系统硬件驱动（关键）</h1>
+<p>1、卸载硬件驱动<br>
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。</p>
+<p>2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC<br>
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。<br>
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。</p>
+<p>3、更改IDE ATA/ATAPI控制器为“标准双通道 PCI IDE 控制器”<br>
+打开设备管理器，右键点击“IDE ATA/ATAPI控制器”下的“Intel(r)82801BA Bus Master IDE Controller”（注：不同的主板其显示会不同），选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“标准双通道 PCI IDE 控制器”，再点击下一步，硬件管理器会自动安装标准双通道 PCI IDE 控制器的驱动，之后电脑会提示你重新启动，则选择“否”不启动，完成OK。<br>
+更改说明：这一步为主要关键步骤，若不做，则Ghost到别的机器上时就会造成系统无法启动的问题，因此为了适应各种不同的主板，必须将 IDE 控制器改成“标准的双通道 PCI IDE控制器”。</p>
+<p>注：S&amp;R;&amp;S;_V9.5.0828 智能系统封装工具已内置了“更改计算机电源管理模式”和“更改IDE ATA/ATAPI控制器”功能，因此在配合S&amp;R;&amp;S;封装时可不做这两步工作，但必须在封装完系统后进入设备管理器查看是否更改成功。</p>
+<h1 id="四整理磁盘碎片推荐">四、整理磁盘碎片（推荐）</h1>
+<p>在完成以上工作后，一定要进行磁盘碎片整理，保证系统分区上没有文件碎片，其好处就不用多说了。当然这一步也可放在系统封装完后再做或在系统封装完成后再做一次。</p>
+<p>至此，如果要Ghost就已经可以进行了。但为了让克隆系统硬件驱动安装更准确、运行更稳定，我们需要用微软的企业部署工具包DEPLOY.CAB里面的Sysprep.exe对系统进行重新封装，这样在恢复GHO文件后的第一次启动时，系统会重新安装所有新硬件的驱动，有效避免了万能克隆系统的不稳定现象。</p>
+<h1 id="五系统封装推荐">五、系统封装（推荐）</h1>
+<p>系统重新封装可采用系统安装光盘自带的企业部署工具包DEPLOY.CAB里的Sysprep.exe对系统直接进行重新封装，也可采用S&amp;R;&amp;S;_V9.5.0828智能系统封装工具通过调用Sysprep.exe进行智能封装（推荐）。它们的区别是前者在Ghost到新机完成安装后，需手动将计算机的电源管理模式由Standard PC更改为新机所对应的电源管理模式，而后者则能够自动检测硬件抽象层HAL类型，实现电源模式的自动识别更改。由于S&amp;R;&amp;S;_V9.5.0828智能系统封装工具采用了longhorn 的detecthal技术，因此hal准确率可达100%，而且是直接进入封装过程，封装速度快，无需多次重启计算机。<br>
+注意：Windows2k/XP/2003 各版本的系统安装光盘都自带有封装工具，但并不通用！</p>
+<p>1、创建sysprep.inf自动应答文件<br>
+系统无论是进行工厂模式安装，还是进行重新封装，都会要求用户输入一些必要的内容，如用户名，电脑名，安装序列号等。但有一个问题，就是在新机进行Ghost克隆安装过程中，需要我们输入这些信息时，系统还未找到键盘鼠标的驱动，键盘鼠标处于假死状态，这时就必须让系统进行自动应答安装，所以就需要有一个自动应答文件sysprep.inf来完成相关信息输入。创建过程基本很傻瓜的，只要按照提示一步一步做下去就可以了，需要注意的是安装类型这一步必须选择“sysprep安装”，许可协议这一步最好选择“完全自动安装”，这样可以在安装过程中无需人工干预，你还可以在“运行一次”里加入你所需要运行的命令，比如把FAT32转换为NTFS的命令“convert C:/FS:NTFS”等，这个命令可以在安装完成后启动时运行一次。<br>
+创建步骤：双击sysprep文件夹里的setupmgr.exe文件&mdash;创建新文件&mdash;sysprep安装&mdash;Windows XP Professional&mdash;是，完全自动安装&mdash;输入名称/单位&mdash;输入产品密钥&mdash;自动产生计算机名&hellip;&hellip;确定&mdash;完成。<br>
+注：自动应答文件的文件名一定要是 sysprep.inf，所在目录一定要在c: sysprep目录下。</p>
+<p>2、修改恢复安装时的背景图<br>
+在sysprep文件夹下放置一张自己的setup.bmp背景图，修改sysprep.ini文件，增加：<br>
+[OEM_Ads]<br>
+Background=setup.bmp<br>
+即可。<br>
+此方法并没有把autohal生成的setup.bmp替换掉，恢复安装时在注册画面过后，最小化安装之前还是会出现一下默认logo，但是时间很短，在最小化安装过程中显示的就是自己的setup.bmp背景图了。</p>
+<p>3、重新封装系统<br>
+重新封装系统可运行Sysprep目录中的Sysprep.exe对系统直接进行封装或运行msprep.exe智能封装工具通过调用Sysprep.exe对系统进行智能封装，在运行Sysprep.exe或msprep.exe后，按照提示完成系统重新封装即可。<br>
+需要注意的是进行封装时的选项设置：*在系统封装画面的4个选项中，第二项“使用最小化安装”即无残留驱动安装项正是我们需要的，因此必须要选上。第一项“不重置激活的宽限期”和第三项“不重新产生安全标识符”都是正版用户激活用的，而我们所用的是免激活版，因此这两项选与不选无所谓，对GHOST克隆后的系统在使用上都无影响。第四项“检测非即插即用硬件”这一选项不用选。*关机模式可以根据需要选择，建议选择“退出”，以便下一步进行DllCache目录文件备份。*选项设置好后就可以点击“重新封装”按钮，大约半分钟过后系统就重新封装好了。</p>
+<p>4、备份DllCache目录文件（dll文件）<br>
+运行%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）下的DllCacheManager.exe 按提示完成DllCache目录文件备份即可，可减少磁盘占用空间300M左右。<br>
+注：在与S&amp;R;&amp;S;配合使用时，因DllCacheManager使用注册表runonce的方式，当S&amp;R;&amp;S;更改IDE为标准或者更改电源模式为Standard PC时，runonce就会被激发，所以要先进行系统封装后再用DllCacheManager备份DllCache目录文件（如果先备份再封装，会造成开始封装时就自动进行备份的还原）。</p>
+<p>5、由于备份DllCache目录文件（dll文件）后，系统减少了300M左右的磁盘空间占用，因此此时最好再进行一次磁盘碎片整理。</p>
+<p>在完成以上步骤后，C盘中的系统已经是一个经过重新封装的干净系统了，至此整个封装系统的制作就算完成，可以关闭计算机了（注意千万不要启动这个封装过的系统，如果重启，刚才制作好的封装系统将进行恢复安装，以上工作就白做了）。接下来的工作就是用DOS启动计算机，将制作好的干净系统制作成Ghost镜像文件，以便装机时使用。</p>
+<h1 id="六制作ghost系统镜像文件">六、制作Ghost系统镜像文件</h1>
+<p>用DOS启动计算机运行Ghost，依次选择菜单中的“local→Partition→To Image”，在弹出的对话框中选择硬盘的第一分区(C盘)，并设置好镜像文件保存路径和文件名，例如“D: ghost xpghost.gho”，然后在选择了压缩方式后，按“YES”。最终生成的xpghost.gho文件就是Ghost系统镜像文件了。<br>
+注意：<br>
+*建议使用 Ghost_v8.0 &amp; v8.2 版本，一方面v8.0以上版本能够支持NTFS分区，另一方面，v8.0以上版本能够在制作镜像文件时自动删除虚拟内存页面文件“pagefile.sys”，减少镜像文件体积。<br>
+*如果希望制作出的万能克隆可以安装更多软件，那么很可能镜像文件会超出一张光盘的容量，这时可以使用Ghost分卷压缩功能，例如想设置分卷大小为650MB，则可以输入命令“ghost -split=650”运行Ghost，之后的操作与前面的介绍没有任何区别。</p>
+<h1 id="七恢复万能ghost系统镜像略">七、恢复万能Ghost系统镜像（略）</h1>
+<p>注意：建议使用 Ghost_v8.0 &amp; v8.2 版本。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

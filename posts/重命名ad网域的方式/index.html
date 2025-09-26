@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>重命名AD网域的方式 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="网域
+提升域和林的功能级别
+只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。
+提升域功能级别
+按下列步骤提升域功能级别：
+1、打开【Active Directory 用户和计算机】。在控制台树中，右键单击【Active Directory 用户和计算机】节点，然后单击【提升域的功能级别】。
+2、在【选择可用的域功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+提升林功能级别
+按下列步骤提升林功能级别：
+1、打开【Active Directory 域和信任关系】。在控制台树中，右键单击【Active Directory 域和信任关系】节点，然后单击【提升林的功能级别】。
+2、在【选择可用的林功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+实现域名更改
+现在我们以将域名esstest.com更改为sky.com为例进行讲解。更改域名需按以下步骤进行：
+1、在DNS中建立新域名的活动目录集成区域-SKY.COM
+2、将Windows Server 2003的安装光盘插入光驱，将“\VALUEADD\MSFT\MGMT”下的DOMREN目录复制到系统的C盘根目录下。
+3、在打开的“命令提示符”窗口中的命令行下使用CD命令进入DOMREN目录后，输入“Rendom /list”命令为当前林生成描述信息（将会使用XML编码结构将信息写入到一个输出文件中，默认文件名为domainlist.xml）。该文件包含了一些列表，列出了林中的所有域和应用程序目录分区，以及它们相应的DNS和NetBIOS名（应用程序目录分区没有NetBIOS名）
+4、因为“Rendom /list”命令生成的当前林的描述文件是一个文本文件，所以现在可以使用系统中的“记事本”功能对它进行编辑。按下“Ctrl&#43;H”键，在弹出的“替换”对话框中将所有的“esstest.com”替换成新域的名称“sky.cn”，并将NetBIOS的名称也进行相应的更换后，将该文件存盘。
+5、接着返回到命令符提示窗口，在命令行中输入“Rendom /upload”命令。这条命令在运行后，域的命名主控会做出一些修改，以便为重命名操作的实际执行做好准备。
+提示： upload命令执行的操作和目录因此而发生的变化都是为将来的重命名操作做准备。在本步骤中不对域名进行任何的修改。
+6、接着再依次输入“Rendom /prepare”命令和“Rendom /execute”命令。
+“Rendom /prepare”命令主要是用于校验连到该域的所有DC是否准备就绪，如果看到有“Successfully”信息，那么则表示连接各DC成功。此外，本测试还对每台DC进行授权情况检查，以确定运行rendom /prepare命令的用户是否得到了授权执行重命名指令。如果用户没有得到“写”授权，命令将失败，并产生一个错误。
+“Rendom /execute”命令用于发出正式更改域名的指令，如果看到有“Successfully”的信息，那么表示域的重命名过程成功完成了。
+7、在上述命令执行完毕后，系统将会自动关闭重启。此外还必需对域中所有计算机执行两遍手工关机，第一次关机用于使新域成员资格生效；第二次关机则用于将计算机的DNS后缀自动转换为新域名称。
+提示：如果DNS后缀没有自动更改，请右击“我的电脑”图标，在弹出的菜单中选择“属性”，切换到“计算机名”选项卡设置界面后，点击“更改”按钮并根据提示操作即可。
+8、调整组策略：因为在完成域的重命名应用后，希望组策略中的相关设置能够继续得到应用。所以还需要在命令符提示窗口的命令行中输入如下命令：
+gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com
+9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。
+10、删除原域名：
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/">
+    
+
+    <meta property="og:url" content="/posts/%E9%87%8D%E5%91%BD%E5%90%8Dad%E7%BD%91%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="重命名AD网域的方式">
+  <meta property="og:description" content="网域
+提升域和林的功能级别
+只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。
+提升域功能级别
+按下列步骤提升域功能级别：
+1、打开【Active Directory 用户和计算机】。在控制台树中，右键单击【Active Directory 用户和计算机】节点，然后单击【提升域的功能级别】。
+2、在【选择可用的域功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+提升林功能级别
+按下列步骤提升林功能级别：
+1、打开【Active Directory 域和信任关系】。在控制台树中，右键单击【Active Directory 域和信任关系】节点，然后单击【提升林的功能级别】。
+2、在【选择可用的林功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+实现域名更改
+现在我们以将域名esstest.com更改为sky.com为例进行讲解。更改域名需按以下步骤进行：
+1、在DNS中建立新域名的活动目录集成区域-SKY.COM
+2、将Windows Server 2003的安装光盘插入光驱，将“\VALUEADD\MSFT\MGMT”下的DOMREN目录复制到系统的C盘根目录下。
+3、在打开的“命令提示符”窗口中的命令行下使用CD命令进入DOMREN目录后，输入“Rendom /list”命令为当前林生成描述信息（将会使用XML编码结构将信息写入到一个输出文件中，默认文件名为domainlist.xml）。该文件包含了一些列表，列出了林中的所有域和应用程序目录分区，以及它们相应的DNS和NetBIOS名（应用程序目录分区没有NetBIOS名）
+4、因为“Rendom /list”命令生成的当前林的描述文件是一个文本文件，所以现在可以使用系统中的“记事本”功能对它进行编辑。按下“Ctrl&#43;H”键，在弹出的“替换”对话框中将所有的“esstest.com”替换成新域的名称“sky.cn”，并将NetBIOS的名称也进行相应的更换后，将该文件存盘。
+5、接着返回到命令符提示窗口，在命令行中输入“Rendom /upload”命令。这条命令在运行后，域的命名主控会做出一些修改，以便为重命名操作的实际执行做好准备。
+提示： upload命令执行的操作和目录因此而发生的变化都是为将来的重命名操作做准备。在本步骤中不对域名进行任何的修改。
+6、接着再依次输入“Rendom /prepare”命令和“Rendom /execute”命令。
+“Rendom /prepare”命令主要是用于校验连到该域的所有DC是否准备就绪，如果看到有“Successfully”信息，那么则表示连接各DC成功。此外，本测试还对每台DC进行授权情况检查，以确定运行rendom /prepare命令的用户是否得到了授权执行重命名指令。如果用户没有得到“写”授权，命令将失败，并产生一个错误。
+“Rendom /execute”命令用于发出正式更改域名的指令，如果看到有“Successfully”的信息，那么表示域的重命名过程成功完成了。
+7、在上述命令执行完毕后，系统将会自动关闭重启。此外还必需对域中所有计算机执行两遍手工关机，第一次关机用于使新域成员资格生效；第二次关机则用于将计算机的DNS后缀自动转换为新域名称。
+提示：如果DNS后缀没有自动更改，请右击“我的电脑”图标，在弹出的菜单中选择“属性”，切换到“计算机名”选项卡设置界面后，点击“更改”按钮并根据提示操作即可。
+8、调整组策略：因为在完成域的重命名应用后，希望组策略中的相关设置能够继续得到应用。所以还需要在命令符提示窗口的命令行中输入如下命令：
+gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com
+9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。
+10、删除原域名：
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-05-16T21:32:20+08:00">
+    <meta property="article:modified_time" content="2010-05-16T21:32:20+08:00">
+
+  <meta itemprop="name" content="重命名AD网域的方式">
+  <meta itemprop="description" content="网域
+提升域和林的功能级别
+只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。
+提升域功能级别
+按下列步骤提升域功能级别：
+1、打开【Active Directory 用户和计算机】。在控制台树中，右键单击【Active Directory 用户和计算机】节点，然后单击【提升域的功能级别】。
+2、在【选择可用的域功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+提升林功能级别
+按下列步骤提升林功能级别：
+1、打开【Active Directory 域和信任关系】。在控制台树中，右键单击【Active Directory 域和信任关系】节点，然后单击【提升林的功能级别】。
+2、在【选择可用的林功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+实现域名更改
+现在我们以将域名esstest.com更改为sky.com为例进行讲解。更改域名需按以下步骤进行：
+1、在DNS中建立新域名的活动目录集成区域-SKY.COM
+2、将Windows Server 2003的安装光盘插入光驱，将“\VALUEADD\MSFT\MGMT”下的DOMREN目录复制到系统的C盘根目录下。
+3、在打开的“命令提示符”窗口中的命令行下使用CD命令进入DOMREN目录后，输入“Rendom /list”命令为当前林生成描述信息（将会使用XML编码结构将信息写入到一个输出文件中，默认文件名为domainlist.xml）。该文件包含了一些列表，列出了林中的所有域和应用程序目录分区，以及它们相应的DNS和NetBIOS名（应用程序目录分区没有NetBIOS名）
+4、因为“Rendom /list”命令生成的当前林的描述文件是一个文本文件，所以现在可以使用系统中的“记事本”功能对它进行编辑。按下“Ctrl&#43;H”键，在弹出的“替换”对话框中将所有的“esstest.com”替换成新域的名称“sky.cn”，并将NetBIOS的名称也进行相应的更换后，将该文件存盘。
+5、接着返回到命令符提示窗口，在命令行中输入“Rendom /upload”命令。这条命令在运行后，域的命名主控会做出一些修改，以便为重命名操作的实际执行做好准备。
+提示： upload命令执行的操作和目录因此而发生的变化都是为将来的重命名操作做准备。在本步骤中不对域名进行任何的修改。
+6、接着再依次输入“Rendom /prepare”命令和“Rendom /execute”命令。
+“Rendom /prepare”命令主要是用于校验连到该域的所有DC是否准备就绪，如果看到有“Successfully”信息，那么则表示连接各DC成功。此外，本测试还对每台DC进行授权情况检查，以确定运行rendom /prepare命令的用户是否得到了授权执行重命名指令。如果用户没有得到“写”授权，命令将失败，并产生一个错误。
+“Rendom /execute”命令用于发出正式更改域名的指令，如果看到有“Successfully”的信息，那么表示域的重命名过程成功完成了。
+7、在上述命令执行完毕后，系统将会自动关闭重启。此外还必需对域中所有计算机执行两遍手工关机，第一次关机用于使新域成员资格生效；第二次关机则用于将计算机的DNS后缀自动转换为新域名称。
+提示：如果DNS后缀没有自动更改，请右击“我的电脑”图标，在弹出的菜单中选择“属性”，切换到“计算机名”选项卡设置界面后，点击“更改”按钮并根据提示操作即可。
+8、调整组策略：因为在完成域的重命名应用后，希望组策略中的相关设置能够继续得到应用。所以还需要在命令符提示窗口的命令行中输入如下命令：
+gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com
+9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。
+10、删除原域名：
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。">
+  <meta itemprop="datePublished" content="2010-05-16T21:32:20+08:00">
+  <meta itemprop="dateModified" content="2010-05-16T21:32:20+08:00">
+  <meta itemprop="wordCount" content="75">
+  <meta itemprop="keywords" content="MSDC">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="重命名AD网域的方式">
+  <meta name="twitter:description" content="网域
+提升域和林的功能级别
+只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。
+提升域功能级别
+按下列步骤提升域功能级别：
+1、打开【Active Directory 用户和计算机】。在控制台树中，右键单击【Active Directory 用户和计算机】节点，然后单击【提升域的功能级别】。
+2、在【选择可用的域功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+提升林功能级别
+按下列步骤提升林功能级别：
+1、打开【Active Directory 域和信任关系】。在控制台树中，右键单击【Active Directory 域和信任关系】节点，然后单击【提升林的功能级别】。
+2、在【选择可用的林功能级别】中单击“Windows Server 2003”，然后单击【提升】。
+实现域名更改
+现在我们以将域名esstest.com更改为sky.com为例进行讲解。更改域名需按以下步骤进行：
+1、在DNS中建立新域名的活动目录集成区域-SKY.COM
+2、将Windows Server 2003的安装光盘插入光驱，将“\VALUEADD\MSFT\MGMT”下的DOMREN目录复制到系统的C盘根目录下。
+3、在打开的“命令提示符”窗口中的命令行下使用CD命令进入DOMREN目录后，输入“Rendom /list”命令为当前林生成描述信息（将会使用XML编码结构将信息写入到一个输出文件中，默认文件名为domainlist.xml）。该文件包含了一些列表，列出了林中的所有域和应用程序目录分区，以及它们相应的DNS和NetBIOS名（应用程序目录分区没有NetBIOS名）
+4、因为“Rendom /list”命令生成的当前林的描述文件是一个文本文件，所以现在可以使用系统中的“记事本”功能对它进行编辑。按下“Ctrl&#43;H”键，在弹出的“替换”对话框中将所有的“esstest.com”替换成新域的名称“sky.cn”，并将NetBIOS的名称也进行相应的更换后，将该文件存盘。
+5、接着返回到命令符提示窗口，在命令行中输入“Rendom /upload”命令。这条命令在运行后，域的命名主控会做出一些修改，以便为重命名操作的实际执行做好准备。
+提示： upload命令执行的操作和目录因此而发生的变化都是为将来的重命名操作做准备。在本步骤中不对域名进行任何的修改。
+6、接着再依次输入“Rendom /prepare”命令和“Rendom /execute”命令。
+“Rendom /prepare”命令主要是用于校验连到该域的所有DC是否准备就绪，如果看到有“Successfully”信息，那么则表示连接各DC成功。此外，本测试还对每台DC进行授权情况检查，以确定运行rendom /prepare命令的用户是否得到了授权执行重命名指令。如果用户没有得到“写”授权，命令将失败，并产生一个错误。
+“Rendom /execute”命令用于发出正式更改域名的指令，如果看到有“Successfully”的信息，那么表示域的重命名过程成功完成了。
+7、在上述命令执行完毕后，系统将会自动关闭重启。此外还必需对域中所有计算机执行两遍手工关机，第一次关机用于使新域成员资格生效；第二次关机则用于将计算机的DNS后缀自动转换为新域名称。
+提示：如果DNS后缀没有自动更改，请右击“我的电脑”图标，在弹出的菜单中选择“属性”，切换到“计算机名”选项卡设置界面后，点击“更改”按钮并根据提示操作即可。
+8、调整组策略：因为在完成域的重命名应用后，希望组策略中的相关设置能够继续得到应用。所以还需要在命令符提示窗口的命令行中输入如下命令：
+gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com
+9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。
+10、删除原域名：
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">重命名AD网域的方式</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2010-05-16T21:32:20+08:00">May 16, 2010</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>网域<br>
+提升域和林的功能级别<br>
+只能重命名其中所有的域控制器都在运行 Windows Server 2003 并且林功能级别已被提升到 Windows Server 2003 的林中的域。<br>
+提升域功能级别<br>
+按下列步骤提升域功能级别：<br>
+1、打开【Active Directory 用户和计算机】。在控制台树中，右键单击【Active Directory 用户和计算机】节点，然后单击【提升域的功能级别】。<br>
+2、在【选择可用的域功能级别】中单击“Windows Server 2003”，然后单击【提升】。</p>
+<p>提升林功能级别<br>
+按下列步骤提升林功能级别：<br>
+1、打开【Active Directory 域和信任关系】。在控制台树中，右键单击【Active Directory 域和信任关系】节点，然后单击【提升林的功能级别】。<br>
+2、在【选择可用的林功能级别】中单击“Windows Server 2003”，然后单击【提升】。<br>
+实现域名更改<br>
+现在我们以将域名esstest.com更改为sky.com为例进行讲解。更改域名需按以下步骤进行：<br>
+1、在DNS中建立新域名的活动目录集成区域-SKY.COM</p>
+<p>2、将Windows Server 2003的安装光盘插入光驱，将“\VALUEADD\MSFT\MGMT”下的DOMREN目录复制到系统的C盘根目录下。<br>
+3、在打开的“命令提示符”窗口中的命令行下使用CD命令进入DOMREN目录后，输入“Rendom /list”命令为当前林生成描述信息（将会使用XML编码结构将信息写入到一个输出文件中，默认文件名为domainlist.xml）。该文件包含了一些列表，列出了林中的所有域和应用程序目录分区，以及它们相应的DNS和NetBIOS名（应用程序目录分区没有NetBIOS名）<br>
+4、因为“Rendom /list”命令生成的当前林的描述文件是一个文本文件，所以现在可以使用系统中的“记事本”功能对它进行编辑。按下“Ctrl+H”键，在弹出的“替换”对话框中将所有的“esstest.com”替换成新域的名称“sky.cn”，并将NetBIOS的名称也进行相应的更换后，将该文件存盘。<br>
+5、接着返回到命令符提示窗口，在命令行中输入“Rendom /upload”命令。这条命令在运行后，域的命名主控会做出一些修改，以便为重命名操作的实际执行做好准备。<br>
+提示： upload命令执行的操作和目录因此而发生的变化都是为将来的重命名操作做准备。在本步骤中不对域名进行任何的修改。</p>
+<p>6、接着再依次输入“Rendom /prepare”命令和“Rendom /execute”命令。<br>
+“Rendom /prepare”命令主要是用于校验连到该域的所有DC是否准备就绪，如果看到有“Successfully”信息，那么则表示连接各DC成功。此外，本测试还对每台DC进行授权情况检查，以确定运行rendom /prepare命令的用户是否得到了授权执行重命名指令。如果用户没有得到“写”授权，命令将失败，并产生一个错误。</p>
+<p>“Rendom /execute”命令用于发出正式更改域名的指令，如果看到有“Successfully”的信息，那么表示域的重命名过程成功完成了。</p>
+<p>7、在上述命令执行完毕后，系统将会自动关闭重启。此外还必需对域中所有计算机执行两遍手工关机，第一次关机用于使新域成员资格生效；第二次关机则用于将计算机的DNS后缀自动转换为新域名称。</p>
+<p>提示：如果DNS后缀没有自动更改，请右击“我的电脑”图标，在弹出的菜单中选择“属性”，切换到“计算机名”选项卡设置界面后，点击“更改”按钮并根据提示操作即可。</p>
+<p>8、调整组策略：因为在完成域的重命名应用后，希望组策略中的相关设置能够继续得到应用。所以还需要在命令符提示窗口的命令行中输入如下命令：<br>
+gpfixup /olddns:esstest.com /newdns:sky.com /oldnb:SHYZHONG /newnbOVEBOOK /dc:sky.com</p>
+<p>9、在执行上述命令后（中间域名部分请自行根据实际情况进行修改），如果看到“Start fixing non-site group policy links”信息，则表示上述命令已经得到了成功执行。<br>
+10、删除原域名：<br>
+这个操作只需使用“Rendom /clean”命令即可轻松完成从Active Directory中删除原域名的操作了。在成功运行了“Rendom /clean”命令后，新森林便准备就绪，可以进行下一次的森林结构调整工作。这一点只需从“Active Directory 域和信任关系”窗口就可以看出来了。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

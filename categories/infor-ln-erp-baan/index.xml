@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Infor LN ERP Baan on Seth Dang博客</title>
+    <link>/categories/infor-ln-erp-baan/</link>
+    <description>Recent content in Infor LN ERP Baan on Seth Dang博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 27 Sep 2011 11:11:06 +0800</lastBuildDate>
+    <atom:link href="/categories/infor-ln-erp-baan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Infor LN ERP baan新增用户 (连载1)</title>
+      <link>/posts/infor-ln-erp-baan%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7-%E8%BF%9E%E8%BD%BD1/</link>
+      <pubDate>Tue, 27 Sep 2011 11:11:06 +0800</pubDate>
+      <guid>/posts/infor-ln-erp-baan%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7-%E8%BF%9E%E8%BD%BD1/</guid>
+      <description>&lt;p&gt;摸索了一个月多的Infor LN ERP 还在为用户、权限、VRC、EDM等烦恼，发现baan在国内资料真的很少，什么东西都要靠自己这个ERP做得太辛苦了，可恶的资本家万恶的旧社会，辛苦了我们这些挨踢人。&lt;br&gt;&#xA;做为baanERP系统administrator，新进员工，增加账号，这是最基本的内容了。&lt;br&gt;&#xA;步骤：（服务器windows 2003 SP2 数据库SQL Server ）&lt;br&gt;&#xA;1.登陆服务器，打开控制面板，进入计算机管理&amp;ndash;&amp;gt;本地用户和组&amp;ndash;&amp;gt;用户&amp;mdash;&amp;gt;[以下是新建widnows 2003用户省略，有关密码策略，请参考windows 2003策略篇，此处略去1万字&amp;hellip;&amp;hellip;]，重点说baanerp系统内新增账号步骤&lt;br&gt;&#xA;2.打开具有菜单浏览器权限用户，找到Tools-&amp;gt;用户管理-&amp;gt;用户数据,新建用户。增加用户名，选择子系统组合，公司，语言（o中文，2英文），菜单浏览器，DEM，启动菜单码；默认设置：交互模式，用户数据：Default；权限：输入密码，增加角色（可一次增加完你要给用户分配所有的角色），模板：勾选；通讯录：暂时未用；关闭，运行菜单栏上特定-&amp;gt;将更改的用户数据为运行时数据字典&lt;br&gt;&#xA;3.Tools-&amp;gt;Database Management-&amp;gt;RDBMS管理-&amp;gt;在SSA ERP用户和数据库用户之间链接-&amp;gt;新建SSAERP用户，数据库用户，转换用户至运行时&lt;br&gt;&#xA;4.DEM数据用户：企业建模程序-&amp;gt;模型定义-&amp;gt;组织建模-&amp;gt;员工-&amp;gt;新建用户，员工自己增加，SSA用户（前面建立的）&lt;br&gt;&#xA;企业建模程序-&amp;gt;模型定义-&amp;gt;当前建模版本-&amp;gt;用户的当前建模版本-&amp;gt;新建SSA用户&lt;br&gt;&#xA;企业建模程序-&amp;gt;模型定义-&amp;gt;业务模型-&amp;gt;项目模型-&amp;gt;特定-&amp;gt;按项目模型列出的员工-&amp;gt;新建员工&lt;br&gt;&#xA;企业建模程序-&amp;gt;模型定义-&amp;gt;组织建模-&amp;gt;员工-&amp;gt;特定-&amp;gt;按动态企业建模员工配置用户&lt;br&gt;&#xA;OK.配置客户端，登陆用户&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>infor LN</title>
+      <link>/posts/infor-ln/</link>
+      <pubDate>Sat, 13 Aug 2011 15:49:42 +0800</pubDate>
+      <guid>/posts/infor-ln/</guid>
+      <description>&lt;p&gt;花了几十万购买了INFOR LN的系统，却要独自研究、安装和实施。8月13开始下载，还好网速很快，不过一天耗在里面罗。&lt;/p&gt;&#xA;&lt;p&gt;从事ERP实施维护这么多年也没有很多文字上的积累，记下Baan的第一笔帐，一路坚持，直到胜利。。。&lt;/p&gt;&#xA;&lt;p&gt;星期六，天要下雨在独立的会议室坚守了一天&lt;/p&gt;&#xA;&lt;p&gt;infor LN 6.7.1遇到安装问题：&lt;/p&gt;&#xA;&lt;p&gt;想先装个测试环境，故先装了虚拟机vmare+window2003+sql2000&lt;/p&gt;&#xA;&lt;p&gt;1.装好发现LN不支持sql2000，又抽时间下载了sql2005和sql2008&lt;/p&gt;&#xA;&lt;p&gt;2.infor什么都要靠下载，在线资料都没有也还下不到，还好我网速快不然下载都要耗10天半个月.几十万什么都没有换到，就一张合同纸而已。&lt;/p&gt;&#xA;&lt;p&gt;3.LN要检测到虚拟机，组件装不了正想办法解决，因为我看过顾问用虚拟机，应该能反检测。&lt;/p&gt;&#xA;&lt;p&gt;4. 需要安装.NET FRAMEWORKS 2.0 安装程序才能运行。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

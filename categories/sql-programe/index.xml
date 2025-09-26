@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL Programe on Seth Dang博客</title>
+    <link>/categories/sql-programe/</link>
+    <description>Recent content in SQL Programe on Seth Dang博客</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 15 Feb 2007 15:22:19 +0800</lastBuildDate>
+    <atom:link href="/categories/sql-programe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sql經典語句匯總（原創）</title>
+      <link>/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</link>
+      <pubDate>Thu, 15 Feb 2007 15:22:19 +0800</pubDate>
+      <guid>/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/</guid>
+      <description>&lt;p&gt;select ( case when gender=1 then &amp;lsquo;男&amp;rsquo; else &amp;lsquo;女&amp;rsquo; end)as gender from rzs_person&lt;/p&gt;&#xA;&lt;p&gt;說明：字段轉換。&lt;/p&gt;&#xA;&lt;p&gt;sql=&amp;ldquo;select distinct 籍貫 from 表名&amp;rdquo;&lt;br&gt;&#xA;說明：去除相同部分。&lt;/p&gt;&#xA;&lt;p&gt;SQL: insert into A（a,b,c）&lt;br&gt;&#xA;select top 3 a,b,c from B&lt;br&gt;&#xA;說明：A,B是表，而且字段對應。&lt;/p&gt;&#xA;&lt;p&gt;select * from t_dingfang where now_time between &amp;lsquo;&amp;quot;&amp;amp;time;_fir&amp;amp; &amp;ldquo;&amp;rsquo; and &amp;lsquo;&amp;rdquo; &amp;amp;time;_end&amp;amp; &amp;ldquo;&amp;lsquo;order by id&lt;/p&gt;&#xA;&lt;p&gt;SQL: select * into b from a where 1&amp;lt;&amp;gt;1&lt;br&gt;&#xA;說明：複製表(只複製結構,源表名：a 新表名：b)&lt;/p&gt;&#xA;&lt;p&gt;SQL: insert into b(a, b, c) select d,e,f from b;&lt;br&gt;&#xA;說明：拷貝表(拷貝數據,源表名：a 目標表名：b)&lt;/p&gt;&#xA;&lt;p&gt;SQL: select a,b,c from a union select d,e,f from b;&lt;br&gt;&#xA;說明：合併數據(表名1：a 表名2：b)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>sql解密存儲過程</title>
+      <link>/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</link>
+      <pubDate>Sun, 04 Feb 2007 14:21:41 +0800</pubDate>
+      <guid>/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/</guid>
+      <description>&lt;p&gt;CREATE PROCEDURE sp_decrypt(@objectName varchar(50))&lt;br&gt;&#xA;AS&lt;br&gt;&#xA;begin&lt;br&gt;&#xA;set nocount on&lt;br&gt;&#xA;begin tran&lt;br&gt;&#xA;declare @objectname1 varchar(100),@orgvarbin varbinary(8000)&lt;br&gt;&#xA;declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)&lt;br&gt;&#xA;DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)&lt;br&gt;&#xA;declare @i int,@status int,@type varchar(10),@parentid int&lt;br&gt;&#xA;declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int&lt;br&gt;&#xA;select @type=xtype,@parentid=parent_obj from sysobjects where&lt;/p&gt;&#xA;&lt;p&gt;create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)&lt;br&gt;&#xA;insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)&lt;br&gt;&#xA;select @number=max(number) from #temp&lt;br&gt;&#xA;set @k=0&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

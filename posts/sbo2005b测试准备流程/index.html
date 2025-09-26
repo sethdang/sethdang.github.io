@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>SBO2005b测试准备&amp;流程 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="
+第一部分（基础数据准备&amp;编码规则&amp;初始化设置）：
+一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母&#43;2位数字&#43;3位数字顺序编号）eg:a01001 部门编码参照下表)
+
+  
+      
+          部门
+          部门代码
+      
+  
+  
+      
+          总经一办
+          a01
+      
+      
+          销售一部
+          b01
+      
+      
+          研制一部
+          c01
+      
+      
+          加工一部
+          d01
+      
+      
+          采购一部
+          e01
+      
+      
+          质量一部
+          f01
+      
+      
+          人力一部
+          g01
+      
+      
+          财务一部
+          h01
+      
+      
+          服务一部
+          i01
+      
+  
+
+**二． **用户权限设置：
+正确分配许可证权限
+正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组
+正确设置 数据所有权
+对于查询可以设置权限组来处理;
+对于字段隐藏可以采用凭证设置和编辑凭证表;
+对于成本/进价可以采用科目余额存取机密科目等方式处理;
+对于单据权限可以运用所有者权限处理.
+
+  
+      
+          具体问题
+          权限设置
+      
+  
+  
+      
+          提示无表格
+          许可证-》许可证管理员
+      
+      
+          发送消息
+          常规 -****》发送消息 销售应收帐款 -****》凭证打印
+      
+      
+          **导出到 MS-EXECEL /**导出到 MS-WORD
+          **导出到 MS-EXECEL /**导出到 MS-WORD
+      
+      
+          无法开启凭证界面
+          管理 -》序列 -》。。
+      
+      
+          **生产收货 /**生产发货
+          价格清单（只读权限）
+      
+      
+          ****
+          ****
+      
+      
+          ****
+          ****
+      
+      
+          ****
+          ****
+      
+      
+          ****
+          ****
+      
+  
+
+三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/sbo2005b%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87%E6%B5%81%E7%A8%8B/">
+    
+
+    <meta property="og:url" content="/posts/sbo2005b%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87%E6%B5%81%E7%A8%8B/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="SBO2005b测试准备&流程">
+  <meta property="og:description" content="第一部分（基础数据准备&amp;编码规则&amp;初始化设置）： 一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母&#43;2位数字&#43;3位数字顺序编号）eg:a01001 部门编码参照下表)
+部门 部门代码 总经一办 a01 销售一部 b01 研制一部 c01 加工一部 d01 采购一部 e01 质量一部 f01 人力一部 g01 财务一部 h01 服务一部 i01 **二． **用户权限设置：
+正确分配许可证权限
+正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组
+正确设置 数据所有权
+对于查询可以设置权限组来处理;
+对于字段隐藏可以采用凭证设置和编辑凭证表;
+对于成本/进价可以采用科目余额存取机密科目等方式处理;
+对于单据权限可以运用所有者权限处理.
+具体问题 权限设置 提示无表格 许可证-》许可证管理员 发送消息 常规 -****》发送消息 销售应收帐款 -****》凭证打印 **导出到 MS-EXECEL /**导出到 MS-WORD **导出到 MS-EXECEL /**导出到 MS-WORD 无法开启凭证界面 管理 -》序列 -》。。 **生产收货 /**生产发货 价格清单（只读权限） **** **** **** **** **** **** **** **** 三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2008-05-28T17:38:23+08:00">
+    <meta property="article:modified_time" content="2008-05-28T17:38:23+08:00">
+
+  <meta itemprop="name" content="SBO2005b测试准备&流程">
+  <meta itemprop="description" content="第一部分（基础数据准备&amp;编码规则&amp;初始化设置）： 一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母&#43;2位数字&#43;3位数字顺序编号）eg:a01001 部门编码参照下表)
+部门 部门代码 总经一办 a01 销售一部 b01 研制一部 c01 加工一部 d01 采购一部 e01 质量一部 f01 人力一部 g01 财务一部 h01 服务一部 i01 **二． **用户权限设置：
+正确分配许可证权限
+正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组
+正确设置 数据所有权
+对于查询可以设置权限组来处理;
+对于字段隐藏可以采用凭证设置和编辑凭证表;
+对于成本/进价可以采用科目余额存取机密科目等方式处理;
+对于单据权限可以运用所有者权限处理.
+具体问题 权限设置 提示无表格 许可证-》许可证管理员 发送消息 常规 -****》发送消息 销售应收帐款 -****》凭证打印 **导出到 MS-EXECEL /**导出到 MS-WORD **导出到 MS-EXECEL /**导出到 MS-WORD 无法开启凭证界面 管理 -》序列 -》。。 **生产收货 /**生产发货 价格清单（只读权限） **** **** **** **** **** **** **** **** 三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）">
+  <meta itemprop="datePublished" content="2008-05-28T17:38:23+08:00">
+  <meta itemprop="dateModified" content="2008-05-28T17:38:23+08:00">
+  <meta itemprop="wordCount" content="498">
+  <meta itemprop="keywords" content="ERP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SBO2005b测试准备&流程">
+  <meta name="twitter:description" content="第一部分（基础数据准备&amp;编码规则&amp;初始化设置）： 一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母&#43;2位数字&#43;3位数字顺序编号）eg:a01001 部门编码参照下表)
+部门 部门代码 总经一办 a01 销售一部 b01 研制一部 c01 加工一部 d01 采购一部 e01 质量一部 f01 人力一部 g01 财务一部 h01 服务一部 i01 **二． **用户权限设置：
+正确分配许可证权限
+正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组
+正确设置 数据所有权
+对于查询可以设置权限组来处理;
+对于字段隐藏可以采用凭证设置和编辑凭证表;
+对于成本/进价可以采用科目余额存取机密科目等方式处理;
+对于单据权限可以运用所有者权限处理.
+具体问题 权限设置 提示无表格 许可证-》许可证管理员 发送消息 常规 -****》发送消息 销售应收帐款 -****》凭证打印 **导出到 MS-EXECEL /**导出到 MS-WORD **导出到 MS-EXECEL /**导出到 MS-WORD 无法开启凭证界面 管理 -》序列 -》。。 **生产收货 /**生产发货 价格清单（只读权限） **** **** **** **** **** **** **** **** 三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">SBO2005b测试准备&amp;流程</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-05-28T17:38:23+08:00">May 28, 2008</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h3></h3>
+<h3 id="第一部分基础数据准备编码规则初始化设置">第一部分（基础数据准备&amp;编码规则&amp;初始化设置）：</h3>
+<p>一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母+2位数字+3位数字顺序编号）eg:a01001 部门编码参照下表)</p>
+<table>
+  <thead>
+      <tr>
+          <th>部门</th>
+          <th>部门代码</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>总经一办</td>
+          <td>a01</td>
+      </tr>
+      <tr>
+          <td>销售一部</td>
+          <td>b01</td>
+      </tr>
+      <tr>
+          <td>研制一部</td>
+          <td>c01</td>
+      </tr>
+      <tr>
+          <td>加工一部</td>
+          <td>d01</td>
+      </tr>
+      <tr>
+          <td>采购一部</td>
+          <td>e01</td>
+      </tr>
+      <tr>
+          <td>质量一部</td>
+          <td>f01</td>
+      </tr>
+      <tr>
+          <td>人力一部</td>
+          <td>g01</td>
+      </tr>
+      <tr>
+          <td>财务一部</td>
+          <td>h01</td>
+      </tr>
+      <tr>
+          <td>服务一部</td>
+          <td>i01</td>
+      </tr>
+  </tbody>
+</table>
+<p>**二． **用户权限设置：</p>
+<p>正确分配许可证权限</p>
+<p>正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组</p>
+<p>正确设置 数据所有权</p>
+<p>对于查询可以设置权限组来处理;</p>
+<p>对于字段隐藏可以采用凭证设置和编辑凭证表;</p>
+<p>对于成本/进价可以采用科目余额存取机密科目等方式处理;</p>
+<p>对于单据权限可以运用所有者权限处理.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>具体问题</strong></th>
+          <th><strong>权限设置</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>提示无表格</td>
+          <td>许可证-》许可证管理员</td>
+      </tr>
+      <tr>
+          <td><strong>发送消息</strong></td>
+          <td><strong>常规 -****》发送消息</strong> <strong>销售应收帐款 -****》凭证打印</strong></td>
+      </tr>
+      <tr>
+          <td>**导出到 MS-EXECEL /**<strong>导出到 MS-WORD</strong></td>
+          <td>**导出到 MS-EXECEL /**<strong>导出到 MS-WORD</strong></td>
+      </tr>
+      <tr>
+          <td><strong>无法开启凭证界面</strong></td>
+          <td><strong>管理 -<strong><strong>》序列 -</strong></strong>》。。</strong></td>
+      </tr>
+      <tr>
+          <td>**生产收货 /**<strong>生产发货</strong></td>
+          <td><strong>价格清单（只读权限）</strong></td>
+      </tr>
+      <tr>
+          <td>****</td>
+          <td>****</td>
+      </tr>
+      <tr>
+          <td>****</td>
+          <td>****</td>
+      </tr>
+      <tr>
+          <td>****</td>
+          <td>****</td>
+      </tr>
+      <tr>
+          <td>****</td>
+          <td>****</td>
+      </tr>
+  </tbody>
+</table>
+<p>三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）</p>
+<p>需要增加的科目明细：期初余额中转科目（含库存、业务伙伴）</p>
+<p>**四． ****总帐科目 **<strong>定义</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>选项卡</strong></th>
+          <th><strong>项目</strong></th>
+          <th><strong>确认对应科目（说明）</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>库存</strong></td>
+          <td><strong>在产品库存科目</strong></td>
+          <td>**124101****自制半成品 **<strong>（影响生产收货）</strong></td>
+      </tr>
+      <tr>
+          <td><strong>销售 1</strong></td>
+          <td><strong>应收帐款 -****》可接受的预付定金</strong></td>
+          <td><strong>（ 1-3****影响预收款作业）</strong></td>
+      </tr>
+      <tr>
+          <td><strong>销售 2</strong></td>
+          <td><strong>预付款清算科目</strong></td>
+          <td><strong>（ 1-3****影响预收款作业）</strong></td>
+      </tr>
+      <tr>
+          <td><strong>销售 3</strong></td>
+          <td><strong>预付定金税收抵消科目</strong></td>
+          <td><strong>（ 1-3****影响预收款作业）</strong></td>
+      </tr>
+      <tr>
+          <td><strong>销售</strong></td>
+          <td><strong>默认应收发票和付款客户</strong></td>
+          <td><strong>按实际情况设置业务伙伴资料</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>五．税收组 定义</p>
+<p>六．设置 装运类型设置：（如：公路，海运，航空，铁路，客户自提）</p>
+<p>七．设置 采购 到岸成本：（如：关税，运费，劳务）</p>
+<p>八．付款方式 定义</p>
+<p>**九． ****定义 **<strong>仓库</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>编号</strong></th>
+          <th><strong>描述</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>f01</strong></td>
+          <td><strong>主成品仓</strong></td>
+      </tr>
+      <tr>
+          <td><strong>s01</strong></td>
+          <td><strong>主零件仓</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p>**确认仓库对应会计科目：零件仓库 -<strong><strong>》会计 -</strong></strong>》库存科目 ****设成 121101 **<strong>原材料</strong></p>
+<p><strong>十． <strong><strong>定义 <strong><strong>价格清单（如： 1</strong></strong>销售标准价 2</strong></strong>采购标准价）</strong></p>
+<p>**十一． **<strong>导入业务伙伴数据：（属性分为如：华东客户，华南客户等，设置好对应客户和供应商对应的价格清单）</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>编号</strong></th>
+          <th><strong>类型</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>ca0001</strong></td>
+          <td>**代表客户 &amp;**<strong>潜在客户</strong></td>
+      </tr>
+      <tr>
+          <td><strong>sa0001</strong></td>
+          <td><strong>供应商</strong></td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><strong>十二． <strong><strong>物料主数据导入：从 PDM</strong></strong>导入到 ERP</strong>**（需要进一步设置 ****对应会计科目，物料属性） **</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>一般商品或产品</strong></th>
+          <th><strong>采购物料</strong>**+<strong><strong>销售物料</strong></strong>+**<strong>仓库物料</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>采购物料（不销售内部生产用）</strong></td>
+          <td><strong>采购物料</strong>**+**<strong>仓库物料</strong></td>
+      </tr>
+      <tr>
+          <td><strong>销售物料（不采购内部生产获得人力（服务）或差旅）</strong></td>
+          <td><strong>销售物料</strong>**+**<strong>仓库物料</strong></td>
+      </tr>
+      <tr>
+          <td><strong>低值易耗品（不做库存跟踪）</strong></td>
+          <td><strong>采购物料</strong></td>
+      </tr>
+      <tr>
+          <td><strong>固定资产（不做库存跟踪）</strong></td>
+          <td><strong>采购物料</strong>**+**<strong>固定资产</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>BOM****的导入</strong></p>
+<p>**确认 ****默认仓库设置、装运方式、计量 ****和 ****计量单位 **<strong>的设置</strong></p>
+<p>**确认 ****物料需求计划物料 &amp;****安全库存 &amp;****采购方法 **<strong>的设置</strong></p>
+<p><strong>考虑固定资产的编码规则</strong></p>
+<p>**十三． **库存余额录入</p>
+<p>库存—》库存交易-》初始数量，库存跟踪和库存过帐-》库存跟踪&amp;库存过帐；</p>
+<p>注意<em>过帐时的 价格选项 和分仓库</em></p>
+<p>十四． 期初余额录入（建立期初中转科目 先伙伴再总帐）</p>
+<p>**十五． ****建立物料单（分为： ****生产 ****销售 **<strong>组装）</strong></p>
+<h3 id="第二部分销售">第二部分（销售）</h3>
+<p>**一、 **确认定义好价格清单&amp;确认业务伙伴使用正确的价格清单</p>
+<p>二、确认定义好 付款方式（如30天，60天）</p>
+<p>三、确认定义好 单据编号</p>
+<p>四、确认定义好 业务伙伴期初余额 和 库存期初余额</p>
+<p>**五、 *<em>销售流程（标准：先发货后开发票）1：销售订单-》交货-》应收发票</em>-》收款-》交货</p>
+<p>六、销售流程（先开发票后发货）2：销售订单-》应收预留发票-》交货*-》收款-》交货</p>
+<p>七、销售流程（预收款业务：部分预收）3：销售订单-》预收款发票*-》收款-》应收发票-》*-》收款-》交货</p>
+<h3 id="第三部分采购">第三部分（采购）</h3>
+<p>**一、 **确认定义好价格清单&amp;确认业务伙伴使用正确的价格清单</p>
+<p>二、确认定义好 付款方式（如30天，60天）</p>
+<p>三、确认定义好 单据编号</p>
+<p>四、确认定义好 业务伙伴期初余额 和 库存期初余额</p>
+<p>五、确认定义好 到岸成本(如：运输费 包装费 和分摊标准)</p>
+<p>**六、 *<em>销售流程（标准先收到货再收发票）1：采购订购单（可由销售订单转入）-》收货采购订购单-》应付发票</em>-》付款</p>
+<p>七、销售流程（先收到发票后收货）2：建立虚拟仓库-》采购订购单（可由销售订单转入）-》收货采购订购单-》应付发票*-》付款-》库存转储</p>
+<p>八、固定资产采购同标准流程</p>
+<p>九、预付款业务参照 预收业务</p>
+<p>十、维护到岸成本</p>
+<h3 id="第四部分收付款">第四部分（收付款）</h3>
+<p>**一、 **<strong>收款</strong></p>
+<p>**二、 **付款</p>
+<h3 id="第五部分生产">第五部分（生产）</h3>
+<p>一、生产流程 物料单-》生产定单-》生产收货</p>
+<h3 id="第六部分财务">第六部分（财务）</h3>
+<p>**一、 ****确认定义好 ****总帐科目确认 **<strong>仓库</strong></p>
+<p>**二、 ****确认录入好 ****业务伙伴 ****仓库库存 **<strong>余额</strong></p>
+<p>**三、 **确认录入好 期初余额（主要录入除 控制科目（应收、应付）和库存科目以外的总帐科目余额。余额输入正数，贷方余额输入负数）</p>
+<p>四、（凭证处理自动）前期业务自动生成</p>
+<p>五、定义 过帐模板（如：t001 计提工资及福利费 14：100）&amp;周期性过帐模板（如：z001 计提机器及设备折旧 需要在 一般设置 服务中设置）</p>
+<p>六、成本会计-》利润中心&amp;分配规则（如： c001 分摊电费）</p>
+<p>七、预算安装-》预算方案 ?&gt;预算分摊方法-》预算</p>
+<p>八、确认定义好 现金流 定义现金流行项目 相关设置</p>
+<p>**九、 <strong><strong>（凭证处理手工填写一）日记帐凭单 -</strong></strong>》日记帐分录（注意录入 ****利润中心 ****冲销 **<strong>现金流主表项目）</strong></p>
+<p>**十、 ****（凭证处理手工填写二）日记帐分录（注意录入 ****利润中心 ****冲销 **<strong>现金流主表项目）</strong></p>
+<p>**十一、 **<strong>对帐</strong></p>
+<p>**十二、 ****结帐（月末 &amp;**<strong>年末）</strong></p>
+<p>第一部分（基础数据准备&amp;编码规则）：</p>
+<p>一．用户 定义、销售员 定义：（用户名命名规则部门代码(字母+2位数字 总经一办 a01总经二办 a02销售一部 b01销售二部 b02 研制一部 c01 研制三部c03 加工一部 d01 采购一部 e01 质量一部 f01 人力一部 g01 财务一部 h01 服务一部 i01 )+3位数字顺序编号）</p>
+<p>二．会计科目 定义（有 成本 收入 支出 3种类型 设好标题和明细）</p>
+<p>三．付款方式 定义</p>
+<p>**四． ****总帐科目 ****定义（半成品入库 **<strong>对应科目）</strong></p>
+<p><strong>五． <strong>税收组 定义</strong></strong></p>
+<p>**六． ****定义 <strong><strong>仓库（如： wf01 <strong><strong>主成品仓 wf02</strong></strong>附成品仓 ws01</strong></strong>主零件仓 ws02 ****附零件仓 wt01 **<strong>预收发票中转仓）</strong></p>
+<p>七．设置 装运类型设置：（如：公路，海运，航空，铁路，客户自提）</p>
+<p><strong>八． <strong><strong>物料主数据导入：从 PDM</strong></strong>导入到 ERP</strong>**（需要进一步设置 **<strong>对应会计科目，物料属性， <strong><strong>一般商品或产品（采购物料</strong></strong>+<strong><strong>销售物料</strong></strong>+<strong><strong>仓库物料）人力（服务）或差旅（销售物料）固定资产 （采购物料</strong></strong>+<strong><strong>固定资产</strong></strong>））</strong></p>
+<p>**考虑默认仓库设置、装运方式、计量 ****和 ****计量单位 **<strong>的导入问题</strong></p>
+<p>**考虑是否物料需求计划物料 &amp;****安全库存 &amp;****采购方法 **</p>
+<p><strong>考虑固定资产的编码规则</strong></p>
+<p>九．确认仓库对应会计科目</p>
+<p>**十． ****定义 ****价格清单（如：采购标准价 **<strong>销售标准价）</strong></p>
+<p>**十一． ****导入业务伙伴数据：（如： ca0001 ****代表客户 &amp;****潜在客户 sa0001 ****代表供应商 **<strong>属性分为如：华东客户，华南客户等）</strong></p>
+<p>**十二． **<strong>库存余额录入</strong></p>
+<p>**库存—》库存交易 -<strong><strong>》初始数量，库存跟踪和库存过帐 -</strong></strong>》库存跟踪 &amp;**<strong>库存过帐；</strong></p>
+<p>**注意 *** **过帐时的 ****价格选项 ****和分仓库 ***</p>
+<p>十三． 期初余额录入（建立期初中转科目 先伙伴再总帐）</p>
+<p>**十四． ****建立物料单（分为： ****生产 ****销售 **<strong>组装）</strong></p>
+<h3 id="第二部分销售-1">第二部分（销售）</h3>
+<p>**一、 ****确认定义好价格清单 &amp;**<strong>确认业务伙伴使用正确的价格清单</strong></p>
+<p>二、确认定义好 付款方式（如30天，60天）</p>
+<p>三、确认定义好 单据编号</p>
+<p>四、确认定义好 业务伙伴期初余额 和 库存期初余额</p>
+<p><strong>五、 <strong><strong>销售流程（标准：先发货后开发票） 1</strong></strong>：销售订单 -<strong><strong>》交货 -</strong></strong>》应收发票 <em>-</em>***》收款</strong></p>
+<p><strong>六、 <strong><strong>销售流程（先开发票后发货） 2</strong></strong>：销售订单 -<strong><strong>》应收预留发票 -</strong></strong>》交货 <em>-</em>***》收款</strong></p>
+<h3 id="第三部分采购-1">第三部分（采购）</h3>
+<p>**一、 ****确认定义好价格清单 &amp;**<strong>确认业务伙伴使用正确的价格清单</strong></p>
+<p>二、确认定义好 付款方式（如30天，60天）</p>
+<p>三、确认定义好 单据编号</p>
+<p>四、确认定义好 业务伙伴期初余额 和 库存期初余额</p>
+<p>五、确认定义好 到岸成本(如：运输费 包装费 和分摊标准)</p>
+<p><strong>六、 <strong><strong>销售流程（标准先收到货再收发票） 1</strong></strong>：采购订购单（可由销售订单转入） -<strong><strong>》收货采购订购单 -</strong></strong>》应付发票 <em>-</em>***》付款</strong></p>
+<p><strong>七、 <strong><strong>销售流程（先收到发票后收货） 2</strong></strong>：建立虚拟仓库 -<strong><strong>》采购订购单（可由销售订单转入） -</strong></strong>》收货采购订购单 -<em><em><strong>》应付发票 <em>-</em></strong></em>》付款 -</em>***》库存转储</strong></p>
+<p>**八、 **<strong>固定资产采购同标准流程</strong></p>
+<p>九、维护到岸成本</p>
+<h3 id="第四部分收付款-1">第四部分（收付款）</h3>
+<p>**一、 **<strong>收款</strong></p>
+<p>**二、 **<strong>付款</strong></p>
+<h3 id="第五部分生产-1">第五部分（生产）</h3>
+<p>一、<strong>生产流程（标准先收到货再收发票）</strong> 物料单-》生产定单-》生产收货</p>
+<h3 id="第六部分财务-1">第六部分（财务）</h3>
+<p>**一、 ****确认定义好 ****总帐科目确认 **<strong>仓库</strong></p>
+<p>**二、 ****确认录入好 ****业务伙伴 ****仓库库存 **<strong>余额</strong></p>
+<p>**三、 ****确认录入好 ****期初余额（<strong><strong>主要录入除 控制科目（应收、应付）和库存科目以外的总帐科目余额。余额输入正数，贷方余额输入负数</strong></strong>） **</p>
+<p>四、（凭证处理自动）前期业务自动生成</p>
+<p>五、定义 过帐模板（如：t001 计提工资及福利费 14：100）&amp;周期性过帐模板（如：z001 计提机器及设备折旧 需要在 一般设置 服务中设置）</p>
+<p>六、成本会计-》利润中心&amp;分配规则（如： c001 分摊电费）</p>
+<p>七、预算安装-》预算方案 &amp;8722;&gt;预算分摊方法-》预算</p>
+<p>八、确认定义好 现金流 定义现金流行项目 相关设置</p>
+<p>**九、 <strong><strong>（凭证处理手工填写一）日记帐凭单 -</strong></strong>》日记帐分录（注意录入 ****利润中心 ****冲销 **<strong>现金流主表项目）</strong></p>
+<p>**十、 ****（凭证处理手工填写二）日记帐分录（注意录入 ****利润中心 ****冲销 **<strong>现金流主表项目）</strong></p>
+<p>**十一、 **<strong>对帐</strong></p>
+<p>**十二、 ****结帐（月末 &amp;**<strong>年末）</strong></p>
+<hr>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

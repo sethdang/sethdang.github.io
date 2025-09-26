@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>IBM  伺服器  RAID-1的建立 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。
+第一個介面是這樣的有兩個可選項：
+“AIC -7902 A at slot 00 03:03:00”
+“AIC -7902 B at slot 00 03:03:00”
+我們選擇下面的這個就是B通道。
+4：你會看到如下的兩個選項：
+“Configure/View SCSI Comtroller Settings”
+“SCSI Disk Utilities”
+我們選擇第一個就是上面長的那個
+5：進入了 “contiguration”頁面
+請用上下鍵選到“HOST RAID” 選項上並回車
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。
+“Configure/View SCSI Comtroller Settings”
+“Configure/View Hos RAID Settings”
+“SCSI Disk Utilities”
+沒錯是第二個。請選它。並回車
+7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/ibm-%E4%BC%BA%E6%9C%8D%E5%99%A8-raid-1%E7%9A%84%E5%BB%BA%E7%AB%8B/">
+    
+
+    <meta property="og:url" content="/posts/ibm-%E4%BC%BA%E6%9C%8D%E5%99%A8-raid-1%E7%9A%84%E5%BB%BA%E7%AB%8B/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="IBM  伺服器  RAID-1的建立">
+  <meta property="og:description" content="前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。
+第一個介面是這樣的有兩個可選項：
+“AIC -7902 A at slot 00 03:03:00”
+“AIC -7902 B at slot 00 03:03:00”
+我們選擇下面的這個就是B通道。
+4：你會看到如下的兩個選項：
+“Configure/View SCSI Comtroller Settings”
+“SCSI Disk Utilities”
+我們選擇第一個就是上面長的那個
+5：進入了 “contiguration”頁面
+請用上下鍵選到“HOST RAID” 選項上並回車
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。
+“Configure/View SCSI Comtroller Settings”
+“Configure/View Hos RAID Settings”
+“SCSI Disk Utilities”
+沒錯是第二個。請選它。並回車
+7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2007-02-15T08:41:10+08:00">
+    <meta property="article:modified_time" content="2007-02-15T08:41:10+08:00">
+
+  <meta itemprop="name" content="IBM  伺服器  RAID-1的建立">
+  <meta itemprop="description" content="前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。
+第一個介面是這樣的有兩個可選項：
+“AIC -7902 A at slot 00 03:03:00”
+“AIC -7902 B at slot 00 03:03:00”
+我們選擇下面的這個就是B通道。
+4：你會看到如下的兩個選項：
+“Configure/View SCSI Comtroller Settings”
+“SCSI Disk Utilities”
+我們選擇第一個就是上面長的那個
+5：進入了 “contiguration”頁面
+請用上下鍵選到“HOST RAID” 選項上並回車
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。
+“Configure/View SCSI Comtroller Settings”
+“Configure/View Hos RAID Settings”
+“SCSI Disk Utilities”
+沒錯是第二個。請選它。並回車
+7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。">
+  <meta itemprop="datePublished" content="2007-02-15T08:41:10+08:00">
+  <meta itemprop="dateModified" content="2007-02-15T08:41:10+08:00">
+  <meta itemprop="wordCount" content="62">
+  <meta itemprop="keywords" content="Hardwave">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IBM  伺服器  RAID-1的建立">
+  <meta name="twitter:description" content="前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。
+第一個介面是這樣的有兩個可選項：
+“AIC -7902 A at slot 00 03:03:00”
+“AIC -7902 B at slot 00 03:03:00”
+我們選擇下面的這個就是B通道。
+4：你會看到如下的兩個選項：
+“Configure/View SCSI Comtroller Settings”
+“SCSI Disk Utilities”
+我們選擇第一個就是上面長的那個
+5：進入了 “contiguration”頁面
+請用上下鍵選到“HOST RAID” 選項上並回車
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。
+“Configure/View SCSI Comtroller Settings”
+“Configure/View Hos RAID Settings”
+“SCSI Disk Utilities”
+沒錯是第二個。請選它。並回車
+7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">IBM  伺服器  RAID-1的建立</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-02-15T08:41:10+08:00">February 15, 2007</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧<br>
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。<br>
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。<br>
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。<br>
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。<br>
+第一個介面是這樣的有兩個可選項：<br>
+“AIC -7902 A at slot 00 03:03:00”<br>
+“AIC -7902 B at slot 00 03:03:00”<br>
+我們選擇下面的這個就是B通道。<br>
+4：你會看到如下的兩個選項：<br>
+“Configure/View SCSI Comtroller Settings”<br>
+“SCSI Disk Utilities”<br>
+我們選擇第一個就是上面長的那個<br>
+5：進入了 “contiguration”頁面<br>
+請用上下鍵選到“HOST RAID” 選項上並回車<br>
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”<br>
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。<br>
+“Configure/View SCSI Comtroller Settings”<br>
+“Configure/View Hos RAID Settings”<br>
+“SCSI Disk Utilities”<br>
+沒錯是第二個。請選它。並回車</p>
+<p>7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。<br>
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。<br>
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。<br>
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。<br>
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

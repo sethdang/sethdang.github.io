@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>接口定義 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="PS/2 鍵盤接口為 6 針母插，外觀為：
+
+引腳定義
+1
+DATA
+Key Data
+2
+n/c
+Not connected
+3
+GND
+Gnd
+4
+VCC
+Power , &#43;5 VDC
+5
+CLK
+Clock
+6
+n/c
+Not connected
+老式PC/aT 鍵盤接口的引腳定義
+鍵盤接口為 5 針母插座
+
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+n/c
+Not connected
+Reset on some very old keyboards.
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC
+老式PC/XT 鍵盤接口的引腳定義稍有不同
+鍵盤接口為 5 針母插座：
+
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+Reset
+Reset
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/%E6%8E%A5%E5%8F%A3%E5%AE%9A%E7%BE%A9/">
+    
+
+    <meta property="og:url" content="/posts/%E6%8E%A5%E5%8F%A3%E5%AE%9A%E7%BE%A9/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="接口定義">
+  <meta property="og:description" content="PS/2 鍵盤接口為 6 針母插，外觀為：
+引腳定義
+1
+DATA
+Key Data
+2
+n/c
+Not connected
+3
+GND
+Gnd
+4
+VCC
+Power , &#43;5 VDC
+5
+CLK
+Clock
+6
+n/c
+Not connected
+老式PC/aT 鍵盤接口的引腳定義
+鍵盤接口為 5 針母插座
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+n/c
+Not connected
+Reset on some very old keyboards.
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC
+老式PC/XT 鍵盤接口的引腳定義稍有不同
+鍵盤接口為 5 針母插座：
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+Reset
+Reset
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2007-04-10T16:15:35+08:00">
+    <meta property="article:modified_time" content="2007-04-10T16:15:35+08:00">
+
+  <meta itemprop="name" content="接口定義">
+  <meta itemprop="description" content="PS/2 鍵盤接口為 6 針母插，外觀為：
+引腳定義
+1
+DATA
+Key Data
+2
+n/c
+Not connected
+3
+GND
+Gnd
+4
+VCC
+Power , &#43;5 VDC
+5
+CLK
+Clock
+6
+n/c
+Not connected
+老式PC/aT 鍵盤接口的引腳定義
+鍵盤接口為 5 針母插座
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+n/c
+Not connected
+Reset on some very old keyboards.
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC
+老式PC/XT 鍵盤接口的引腳定義稍有不同
+鍵盤接口為 5 針母插座：
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+Reset
+Reset
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC">
+  <meta itemprop="datePublished" content="2007-04-10T16:15:35+08:00">
+  <meta itemprop="dateModified" content="2007-04-10T16:15:35+08:00">
+  <meta itemprop="wordCount" content="533">
+  <meta itemprop="keywords" content="Hardwave">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="接口定義">
+  <meta name="twitter:description" content="PS/2 鍵盤接口為 6 針母插，外觀為：
+引腳定義
+1
+DATA
+Key Data
+2
+n/c
+Not connected
+3
+GND
+Gnd
+4
+VCC
+Power , &#43;5 VDC
+5
+CLK
+Clock
+6
+n/c
+Not connected
+老式PC/aT 鍵盤接口的引腳定義
+鍵盤接口為 5 針母插座
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+n/c
+Not connected
+Reset on some very old keyboards.
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC
+老式PC/XT 鍵盤接口的引腳定義稍有不同
+鍵盤接口為 5 針母插座：
+1
+CLOCK
+Clock
+CLK/CTS, Open-collector
+2
+DATA
+Data
+RxD/TxD/RTS, Open-collector
+3
+Reset
+Reset
+4
+GND
+Ground
+5
+VCC
+&#43;5 VDC">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">接口定義</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-04-10T16:15:35+08:00">April 10, 2007</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>PS/2 鍵盤接口為 6 針母插，外觀為：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_5afvF71jpQbIr7OAOxddisJUu1aag2Wj"><img src="http://img.blog.163.com/photo/-YfI7pnESU-bA35onIZZOg==/4016929392637920900.jpg" alt=""></a></p>
+<p>引腳定義<br>
+1<br>
+DATA<br>
+Key Data<br>
+2<br>
+n/c<br>
+Not connected<br>
+3<br>
+GND<br>
+Gnd<br>
+4<br>
+VCC<br>
+Power , +5 VDC<br>
+5<br>
+CLK<br>
+Clock<br>
+6<br>
+n/c<br>
+Not connected</p>
+<p>老式PC/aT 鍵盤接口的引腳定義</p>
+<p>鍵盤接口為 5 針母插座</p>
+<p><img src="http://img.blog.163.com/photo/jWMfsaLXJlQBhmaBzSEbMA==/4564116747363388169.jpg" alt=""></p>
+<p>1<br>
+CLOCK<br>
+Clock<br>
+CLK/CTS, Open-collector<br>
+2<br>
+DATA<br>
+Data<br>
+RxD/TxD/RTS, Open-collector<br>
+3<br>
+n/c<br>
+Not connected<br>
+Reset on some very old keyboards.<br>
+4<br>
+GND<br>
+Ground<br>
+5<br>
+VCC<br>
++5 VDC</p>
+<p>老式PC/XT 鍵盤接口的引腳定義稍有不同</p>
+<p>鍵盤接口為 5 針母插座：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_r-4USrKNSx3Jnc4Q2xlQ9_FX-WAyJfH1"><img src="http://img.blog.163.com/photo/jWMfsaLXJlQBhmaBzSEbMA==/4564116747363388169.jpg" alt=""></a><br>
+1<br>
+CLOCK<br>
+Clock<br>
+CLK/CTS, Open-collector<br>
+2<br>
+DATA<br>
+Data<br>
+RxD/TxD/RTS, Open-collector<br>
+3<br>
+Reset<br>
+Reset<br>
+4<br>
+GND<br>
+Ground<br>
+5<br>
+VCC<br>
++5 VDC</p>
+<p>PC/AT 机上的RS-232串行接口定義</p>
+<p>PC/AT 机上的串行口是 9 针公插座，引脚定义为：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_WFn8mzN1EVh7GL0GuPEgnqmWdwC4YrsO"><img src="http://img.blog.163.com/photo/p5VHdHyLdWNBaxQ8csxWng==/4008766618313311938.jpg" alt=""></a><br>
+1<br>
+CD<br>
+Carrier Detect<br>
+2<br>
+RXD<br>
+Receive Data<br>
+3<br>
+TXD<br>
+Transmit Data<br>
+4<br>
+DTR<br>
+Data Terminal Ready<br>
+5<br>
+GND<br>
+System Ground<br>
+6<br>
+DSR<br>
+Data Set Ready<br>
+7<br>
+RTS<br>
+Request to Send<br>
+8<br>
+CTS<br>
+Clear to Send<br>
+9<br>
+RI<br>
+Ring Indicator</p>
+<p>PC 并行接口定义</p>
+<p>PC 并行接口外观是 25 针母插座：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_kkStUb7c3eAsnQ56_R6dMi-mn17FDhk5"><img src="http://img.blog.163.com/photo/UhC2Dw-Avw2IwAKKHu9dbw==/4821103401100218961.jpg" alt=""></a></p>
+<p>1<br>
+/STROBE<br>
+Strobe<br>
+2<br>
+D0<br>
+Data Bit 0<br>
+3<br>
+D1<br>
+Data Bit 1<br>
+4<br>
+D2<br>
+Data Bit 2<br>
+5<br>
+D3<br>
+Data Bit 3<br>
+6<br>
+D4<br>
+Data Bit 4<br>
+7<br>
+D5<br>
+Data Bit 5<br>
+8<br>
+D6<br>
+Data Bit 6<br>
+9<br>
+D7<br>
+Data Bit 7<br>
+10<br>
+/ACK<br>
+Acknowledge<br>
+11<br>
+BUSY<br>
+Busy<br>
+12<br>
+PE<br>
+Paper End<br>
+13<br>
+SEL<br>
+Select<br>
+14<br>
+/AUTOFD<br>
+Autofeed<br>
+15<br>
+/ERROR<br>
+Error<br>
+16<br>
+/INIT<br>
+Initialize<br>
+17<br>
+/SELIN<br>
+Select In<br>
+18<br>
+GND<br>
+Signal Ground<br>
+19<br>
+GND<br>
+Signal Ground<br>
+20<br>
+GND<br>
+Signal Ground<br>
+21<br>
+GND<br>
+Signal Ground<br>
+22<br>
+GND<br>
+Signal Ground<br>
+23<br>
+GND<br>
+Signal Ground<br>
+24<br>
+GND<br>
+Signal Ground<br>
+25<br>
+GND<br>
+Signal Ground</p>
+<p>PC/XT機上的 RS-422 串行接口</p>
+<p>計算機側 RS-422 串行接口的插口是 25 針公插：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_jJw7ltFmJO6TDazRRlk9ohQmpCn4Ibfk"><img src="http://img.blog.163.com/photo/5H2lqxGESolARD9WTtDycw==/2833608590546321737.jpg" alt=""></a></p>
+<p>設備側 RS-422 串行接口插頭是 25 針母插：</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_jJw7ltFmJO7GMQwr1IlYc6cOTAGZYpCO"><img src="http://img.blog.163.com/photo/_rRGdOmR4tgWyM0UGQbHyQ==/3966263896830001562.jpg" alt=""></a></p>
+<p>1</p>
+<p>GND</p>
+<p>Shield Ground</p>
+<p>2</p>
+<p>SRI</p>
+<p>Signal Rate Indicator</p>
+<p>3</p>
+<p>n/c</p>
+<ul>
+<li></li>
+</ul>
+<p>Spare</p>
+<p>4</p>
+<p>SD</p>
+<p>Send Data</p>
+<p>5</p>
+<p>ST</p>
+<p>Send Timing</p>
+<p>6</p>
+<p>RD</p>
+<p>Receive Data</p>
+<p>7</p>
+<p>RTS</p>
+<p>Request To Send</p>
+<p>8</p>
+<p>RR</p>
+<p>Receiver Ready</p>
+<p>9</p>
+<p>CTS</p>
+<p>Clear To Send</p>
+<p>10</p>
+<p>LL</p>
+<p>Local Loopback</p>
+<p>11</p>
+<p>DM</p>
+<p>Data Modem</p>
+<p>12</p>
+<p>TR</p>
+<p>Terminal Ready</p>
+<p>13</p>
+<p>RR</p>
+<p>Receiver Ready</p>
+<p>14</p>
+<p>RL</p>
+<p>Remote Loopback</p>
+<p>15</p>
+<p>IC</p>
+<p>Incoming Call</p>
+<p>16</p>
+<p>SF/SR</p>
+<p>Select Frequency/Select Rate</p>
+<p>17</p>
+<p>TT</p>
+<p>Terminal Timing</p>
+<p>18</p>
+<p>TM</p>
+<p>Test Mode</p>
+<p>19</p>
+<p>GND</p>
+<p>Ground</p>
+<p>20</p>
+<p>RC</p>
+<p>Receive Twister-Pair Common</p>
+<p>21</p>
+<p>GND</p>
+<p>Spare Twister-Pair Return</p>
+<p>22</p>
+<p>/SD</p>
+<p>Send Data TPR</p>
+<p>23</p>
+<p>GND</p>
+<p>Send Timing TPR</p>
+<p>24</p>
+<p>GND</p>
+<p>Receive Timing TPR</p>
+<p>25</p>
+<p>/RS</p>
+<p>Request To Send TPR</p>
+<p>26</p>
+<p>/RT</p>
+<p>Receive Timing TPR</p>
+<p>27</p>
+<p>/CS</p>
+<p>Clear To Send TPR</p>
+<p>28</p>
+<p>IS</p>
+<p>Terminal In Service</p>
+<p>29</p>
+<p>/DM</p>
+<p>Data Mode TPR</p>
+<p>30</p>
+<p>/TR</p>
+<p>Terminal Ready TPR</p>
+<p>31</p>
+<p>/RR</p>
+<p>PC/XT機上的RS-232串行接口定義</p>
+<p>計算機側為25針公插:</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_7x1cKvAlQXxLz_LtF8WfvW6RY5uWibvN"><img src="http://img.blog.163.com/photo/-DmJBQMoDCm4WCEnhL64GQ==/331296047588577295.jpg" alt=""></a><br>
+設備側為25針母插:</p>
+<p><a href="http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_7x1cKvAlQXzjkI7LkvaBdrJKke1kH43I"><img src="http://img.blog.163.com/photo/nOAUrXxolNRQApuX5y5NRQ==/2004383309156738735.jpg" alt=""></a><br>
+1</p>
+<p>GND</p>
+<p>101</p>
+<p>Shield Ground</p>
+<p>2</p>
+<p>TXD</p>
+<p>103</p>
+<p>Transmit Data</p>
+<p>3</p>
+<p>RXD</p>
+<p>104</p>
+<p>Receive Data</p>
+<p>4</p>
+<p>RTS</p>
+<p>105</p>
+<p>Request to Send</p>
+<p>5</p>
+<p>CTS</p>
+<p>106</p>
+<p>Clear to Send</p>
+<p>6</p>
+<p>DSR</p>
+<p>107</p>
+<p>Data Set Ready</p>
+<p>7</p>
+<p>GND</p>
+<p>102</p>
+<p>System Ground</p>
+<p>8</p>
+<p>CD</p>
+<p>109</p>
+<p>Carrier Detect</p>
+<p>9</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p>RESERVED</p>
+<p>10</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p>RESERVED</p>
+<p>11</p>
+<p>STF</p>
+<p>126</p>
+<p>Select Transmit Channel</p>
+<p>12</p>
+<p>S.CD</p>
+<p>?</p>
+<p>Secondary Carrier Detect</p>
+<p>13</p>
+<p>S.CTS</p>
+<p>?</p>
+<p>Secondary Clear to Send</p>
+<p>14</p>
+<p>S.TXD</p>
+<p>?</p>
+<p>Secondary Transmit Data</p>
+<p>15</p>
+<p>TCK</p>
+<p>114</p>
+<p>Transmission Signal Element Timing</p>
+<p>16</p>
+<p>S.RXD</p>
+<p>?</p>
+<p>Secondary Receive Data</p>
+<p>17</p>
+<p>RCK</p>
+<p>115</p>
+<p>Receiver Signal Element Timing</p>
+<p>18</p>
+<p>LL</p>
+<p>141</p>
+<p>Local Loop Control</p>
+<p>19</p>
+<p>S.RTS</p>
+<p>?</p>
+<p>Secondary Request to Send</p>
+<p>20</p>
+<p>DTR</p>
+<p>108</p>
+<p>Data Terminal Ready</p>
+<p>21</p>
+<p>RL</p>
+<p>140</p>
+<p>Remote Loop Control</p>
+<p>22</p>
+<p>RI</p>
+<p>125</p>
+<p>Ring Indicator</p>
+<p>23</p>
+<p>DSR</p>
+<p>111</p>
+<p>Data Signal Rate Selector</p>
+<p>24</p>
+<p>XCK</p>
+<p>113</p>
+<p>Transmit Signal Element Timing</p>
+<p>25</p>
+<p>TI</p>
+<p>142</p>
+<p>Test Indicator</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

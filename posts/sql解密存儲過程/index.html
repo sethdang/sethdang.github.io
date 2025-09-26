@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>sql解密存儲過程 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="CREATE PROCEDURE sp_decrypt(@objectName varchar(50))
+AS
+begin
+set nocount on
+begin tran
+declare @objectname1 varchar(100),@orgvarbin varbinary(8000)
+declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)
+DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)
+declare @i int,@status int,@type varchar(10),@parentid int
+declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int
+select @type=xtype,@parentid=parent_obj from sysobjects where
+create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)
+insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)
+select @number=max(number) from #temp
+set @k=0">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/">
+    
+
+    <meta property="og:url" content="/posts/sql%E8%A7%A3%E5%AF%86%E5%AD%98%E5%84%B2%E9%81%8E%E7%A8%8B/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="sql解密存儲過程">
+  <meta property="og:description" content="CREATE PROCEDURE sp_decrypt(@objectName varchar(50))
+AS
+begin
+set nocount on
+begin tran
+declare @objectname1 varchar(100),@orgvarbin varbinary(8000)
+declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)
+DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)
+declare @i int,@status int,@type varchar(10),@parentid int
+declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int
+select @type=xtype,@parentid=parent_obj from sysobjects where
+create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)
+insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)
+select @number=max(number) from #temp
+set @k=0">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2007-02-04T14:21:41+08:00">
+    <meta property="article:modified_time" content="2007-02-04T14:21:41+08:00">
+
+  <meta itemprop="name" content="sql解密存儲過程">
+  <meta itemprop="description" content="CREATE PROCEDURE sp_decrypt(@objectName varchar(50))
+AS
+begin
+set nocount on
+begin tran
+declare @objectname1 varchar(100),@orgvarbin varbinary(8000)
+declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)
+DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)
+declare @i int,@status int,@type varchar(10),@parentid int
+declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int
+select @type=xtype,@parentid=parent_obj from sysobjects where
+create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)
+insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)
+select @number=max(number) from #temp
+set @k=0">
+  <meta itemprop="datePublished" content="2007-02-04T14:21:41+08:00">
+  <meta itemprop="dateModified" content="2007-02-04T14:21:41+08:00">
+  <meta itemprop="wordCount" content="558">
+  <meta itemprop="keywords" content="SQL Programe">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="sql解密存儲過程">
+  <meta name="twitter:description" content="CREATE PROCEDURE sp_decrypt(@objectName varchar(50))
+AS
+begin
+set nocount on
+begin tran
+declare @objectname1 varchar(100),@orgvarbin varbinary(8000)
+declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)
+DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)
+declare @i int,@status int,@type varchar(10),@parentid int
+declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int
+select @type=xtype,@parentid=parent_obj from sysobjects where
+create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)
+insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)
+select @number=max(number) from #temp
+set @k=0">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">sql解密存儲過程</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-02-04T14:21:41+08:00">February 4, 2007</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>CREATE PROCEDURE sp_decrypt(@objectName varchar(50))<br>
+AS<br>
+begin<br>
+set nocount on<br>
+begin tran<br>
+declare @objectname1 varchar(100),@orgvarbin varbinary(8000)<br>
+declare @sql1 nvarchar(4000),@sql2 varchar(8000),@sql3 nvarchar(4000),@sql4 nvarchar(4000)<br>
+DECLARE @OrigSpText1 nvarchar(4000), @OrigSpText2 nvarchar(4000) , @OrigSpText3 nvarchar(4000), @resultsp nvarchar(4000)<br>
+declare @i int,@status int,@type varchar(10),@parentid int<br>
+declare @colid int,@n int,@q int,@j int,@k int,@encrypted int,@number int<br>
+select @type=xtype,@parentid=parent_obj from sysobjects where</p>
+<p>create table #temp(number int,colid int,ctext varbinary(8000),encrypted int,status int)<br>
+insert #temp SELECT number,colid,ctext,encrypted,status FROM syscomments WHERE id = object_id(@objectName)<br>
+select @number=max(number) from #temp<br>
+set @k=0</p>
+<p>while @k&lt;<a href="mailto:=@number">=@number</a><br>
+begin<br>
+if exists(select 1 from syscomments where and <a href="mailto:number=@k">number=@k</a>)<br>
+begin<br>
+if @type=&lsquo;P&rsquo;<br>
+set @sql1=(case when @number&gt;1 then &lsquo;ALTER PROCEDURE &lsquo;+ @objectName +&rsquo;;&rsquo;+rtrim(@k)+&rsquo; WITH ENCRYPTION AS &rsquo;<br>
+else &lsquo;ALTER PROCEDURE &lsquo;+ @objectName+&rsquo; WITH ENCRYPTION AS &rsquo;<br>
+end)</p>
+<p>if @type=&lsquo;TR&rsquo;<br>
+begin<br>
+declare @parent_obj varchar(255),@tr_parent_xtype varchar(10)<br>
+select @parent_obj=parent_obj from sysobjects where<br>
+select @tr_parent_xtype=xtype from sysobjects where <a href="mailto:id=@parent_obj">id=@parent_obj</a><br>
+if @tr_parent_xtype=&lsquo;V&rsquo;<br>
+begin<br>
+set @sql1=&lsquo;ALTER TRIGGER <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> ON &lsquo;+OBJECT_NAME(@parentid)+&rsquo; WITH ENCRYPTION INSTERD OF INSERT AS PRINT 1 &rsquo;<br>
+end<br>
+else<br>
+begin<br>
+set @sql1=&lsquo;ALTER TRIGGER <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> ON &lsquo;+OBJECT_NAME(@parentid)+&rsquo; WITH ENCRYPTION FOR INSERT AS PRINT 1 &rsquo;<br>
+end</p>
+<p>end<br>
+if @type=&lsquo;FN&rsquo; or @type=&lsquo;TF&rsquo; or @type=&lsquo;IF&rsquo;<br>
+set @sql1=(case @type when &lsquo;TF&rsquo; then<br>
+&lsquo;ALTER FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns @b table(a varchar(10)) with encryption as begin insert @b select @a return end &rsquo;<br>
+when &lsquo;FN&rsquo; then<br>
+&lsquo;ALTER FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns char(1) with encryption as begin return @a end&rsquo;<br>
+when &lsquo;IF&rsquo; then<br>
+&lsquo;ALTER FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns table with encryption as return select @a as a&rsquo;<br>
+end)</p>
+<p>if @type=&lsquo;V&rsquo;<br>
+set @sql1=&lsquo;ALTER VIEW <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> WITH ENCRYPTION AS SELECT 1 as f&rsquo;</p>
+<p>set @q=len(@sql1)<br>
+set @sql1=@sql1+REPLICATE(&rsquo;-&rsquo;,4000-@q)<br>
+select @sql2=REPLICATE(&rsquo;-&rsquo;,8000)<br>
+set @sql3=&lsquo;exec(@sql1&rsquo;<br>
+select @colid=max(colid) from #temp where <a href="mailto:number=@k">number=@k</a><br>
+set @n=1<br>
+while @n&lt;=CEILING(1.0*(@colid-1)/2) and len(@sQL3)&lt;=3996<br>
+begin<br>
+set @sql3=@sql3+&rsquo;+@&rsquo;<br>
+set @n=@n+1<br>
+end<br>
+set @sql3=@sql3+&rsquo;)&rsquo;<br>
+exec sp_executesql @sql3,N&rsquo;@Sql1 nvarchar(4000),@ varchar(8000)&rsquo;,@sql1=@sql1,@=@sql2</p>
+<p>end<br>
+set @k=@k+1<br>
+end</p>
+<p>set @k=0<br>
+while @k&lt;<a href="mailto:=@number">=@number</a><br>
+begin</p>
+<p>if exists(select 1 from syscomments where and <a href="mailto:number=@k">number=@k</a>)<br>
+begin<br>
+select @colid=max(colid) from #temp where <a href="mailto:number=@k">number=@k</a><br>
+set @n=1</p>
+<p>while @n&lt;<a href="mailto:=@colid">=@colid</a><br>
+begin<br>
+select @OrigSpText1=ctext,@encrypted=encrypted,@status=status FROM #temp WHERE <a href="mailto:colid=@n">colid=@n</a> and <a href="mailto:number=@k">number=@k</a></p>
+<p>SET @OrigSpText3=(SELECT ctext FROM syscomments WHERE and <a href="mailto:colid=@n">colid=@n</a> and <a href="mailto:number=@k">number=@k</a>)<br>
+if @n=1<br>
+begin<br>
+if @type=&lsquo;P&rsquo;<br>
+SET @OrigSpText2=(case when @number&gt;1 then &lsquo;CREATE PROCEDURE &lsquo;+ @objectName +&rsquo;;&rsquo;+rtrim(@k)+&rsquo; WITH ENCRYPTION AS &rsquo;<br>
+else &lsquo;CREATE PROCEDURE &lsquo;+ @objectName +&rsquo; WITH ENCRYPTION AS &rsquo;<br>
+end)</p>
+<p>if @type=&lsquo;FN&rsquo; or @type=&lsquo;TF&rsquo; or @type=&lsquo;IF&rsquo;<br>
+SET @OrigSpText2=(case @type when &lsquo;TF&rsquo; then<br>
+&lsquo;CREATE FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns @b table(a varchar(10)) with encryption as begin insert @b select @a return end &rsquo;<br>
+when &lsquo;FN&rsquo; then<br>
+&lsquo;CREATE FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns char(1) with encryption as begin return @a end&rsquo;<br>
+when &lsquo;IF&rsquo; then<br>
+&lsquo;CREATE FUNCTION &lsquo;+ @objectName+&rsquo;(@a char(1)) returns table with encryption as return select @a as a&rsquo;<br>
+end)</p>
+<p>if @type=&lsquo;TR&rsquo;<br>
+begin</p>
+<p>if @tr_parent_xtype=&lsquo;V&rsquo;<br>
+begin<br>
+set @OrigSpText2=&lsquo;CREATE TRIGGER <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> ON &lsquo;+OBJECT_NAME(@parentid)+&rsquo; WITH ENCRYPTION INSTEAD OF INSERT AS PRINT 1 &rsquo;<br>
+end<br>
+else<br>
+begin<br>
+set @OrigSpText2=&lsquo;CREATE TRIGGER <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> ON &lsquo;+OBJECT_NAME(@parentid)+&rsquo; WITH ENCRYPTION FOR INSERT AS PRINT 1 &rsquo;<br>
+end</p>
+<p>end</p>
+<p>if @type=&lsquo;V&rsquo;<br>
+set @OrigSpText2=&lsquo;CREATE VIEW <a href="mailto:'+@objectname+'">&rsquo;+@objectname+&rsquo;</a> WITH ENCRYPTION AS SELECT 1 as f&rsquo;</p>
+<p>set @q=4000-len(@OrigSpText2)<br>
+set @OrigSpText2=@OrigSpText2+REPLICATE(&rsquo;-&rsquo;,@q)<br>
+end<br>
+else<br>
+begin<br>
+SET @OrigSpText2=REPLICATE(&rsquo;-&rsquo;, 4000)<br>
+end<br>
+SET @i=1</p>
+<p>SET @resultsp = replicate(N&rsquo;A&rsquo;, (datalength(@OrigSpText1) / 2))</p>
+<p>WHILE @i&lt;=datalength(@OrigSpText1)/2<br>
+BEGIN</p>
+<p>SET @resultsp = stuff(@resultsp, @i, 1, NCHAR(UNICODE(substring(@OrigSpText1, @i, 1)) ^<br>
+(UNICODE(substring(@OrigSpText2, @i, 1)) ^<br>
+UNICODE(substring(@OrigSpText3, @i, 1)))))<br>
+SET @i=@i+1<br>
+END<br>
+set @orgvarbin=cast(@OrigSpText1 as varbinary(8000))<br>
+set @resultsp=(case when @encrypted=1<br>
+then @resultsp<br>
+else convert(nvarchar(4000),case when @status&amp;2=2 then uncompress(@orgvarbin) else @orgvarbin end)<br>
+end)<br>
+print @resultsp</p>
+<p>set @n=@n+1</p>
+<p>end</p>
+<p>end<br>
+set @k=@k+1<br>
+end</p>
+<p>drop table #temp<br>
+rollback tran<br>
+end</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

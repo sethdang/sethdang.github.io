@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>netscreen命令 | Seth Dang博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。
+登陸：
+代碼:
+Remote Management Console
+login: netscreen
+password:
+部分命令
+代碼:
+ns5gt-&gt; ?
+clear clear dynamic system info
+delete delete persistent info in flash
+exec exec system commands
+exit exit command console
+get get system information
+ping ping other host
+reset reset system
+save save command
+set configure system parameters
+trace-route trace route
+unset unconfigure system parameters
+ns5gt-&gt; get ?
+address show address book
+admin show admin information
+alarm show alarm info
+alias get alias definitions
+arp show ARP entries
+attack show attacks
+auth show authentication information
+auth-server authentication server settings
+clock show system clock
+config show system configuration
+console show console parameters
+counter show counters
+di get deep inspection parameters
+dip show all dips in a vsys or root
+dns show dns info
+domain show domain name
+driver show driver info
+envar show environment variables
+event show event messages
+failover get failover status
+file show file information
+firewall show firewall protection information
+gate show gate info
+global-pro global-pro settings
+group show groups
+group-expression group expressions details
+hostname show host name
+ike get IKE info
+interface show interfaces
+ip get ip parameters
+ip-classification Show IP classification
+ippool get ippool info
+l2tp get l2tp information
+license-key show feature configuration
+log show log info
+mac-learn show mac learning table
+memory show memory info
+mip show all mips in a vsys or root
+modem modem dialup for failover
+nrtp show nrtp information
+nsmgmt show NSM agent status/configuration
+nsrp show nsrp info
+ntp get ntp parameters
+os show task information
+performance get performance info
+pki show the pki settings
+policy show policy
+pppoe show pppoe configuration and statistics
+proxy-id vpn proxy-id setting
+rm show resource management info
+route show routes in a vrouter
+sa show security association
+sa-filter config debug message per SA filter
+scheduler show scheduler
+scp show SCP status
+service show service book
+session show all sessions
+sip show SIP ALG info
+snmp show SNMP information
+socket show socket info
+ssh show SSH status
+ssl show ssl info
+syslog show syslog information
+system show system info
+tech-support show tech support information
+timer show timer info
+traffic-shaping show traffic shaping info
+url show url filter information
+user show user
+user-group user group settings
+vip show virtual IP info
+vpn show vpn session
+vpn-group Keyword for showing vpn group setup
+vpnmonitor show vpn monitor parameters
+vrouter show virtual router info
+webauth webauth settings
+webtrends show webtrends information
+xauth get xauth information
+zone configure zone">
+    <meta name="generator" content="Hugo 0.150.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    <meta name="author" content="Seth">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/posts/netscreen%E5%91%BD%E4%BB%A4/">
+    
+
+    <meta property="og:url" content="/posts/netscreen%E5%91%BD%E4%BB%A4/">
+  <meta property="og:site_name" content="Seth Dang博客">
+  <meta property="og:title" content="netscreen命令">
+  <meta property="og:description" content="估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。
+登陸：
+代碼:
+Remote Management Console
+login: netscreen
+password:
+部分命令
+代碼:
+ns5gt-&gt; ?
+clear clear dynamic system info
+delete delete persistent info in flash
+exec exec system commands
+exit exit command console
+get get system information
+ping ping other host
+reset reset system
+save save command
+set configure system parameters
+trace-route trace route
+unset unconfigure system parameters
+ns5gt-&gt; get ?
+address show address book
+admin show admin information
+alarm show alarm info
+alias get alias definitions
+arp show ARP entries
+attack show attacks
+auth show authentication information
+auth-server authentication server settings
+clock show system clock
+config show system configuration
+console show console parameters
+counter show counters
+di get deep inspection parameters
+dip show all dips in a vsys or root
+dns show dns info
+domain show domain name
+driver show driver info
+envar show environment variables
+event show event messages
+failover get failover status
+file show file information
+firewall show firewall protection information
+gate show gate info
+global-pro global-pro settings
+group show groups
+group-expression group expressions details
+hostname show host name
+ike get IKE info
+interface show interfaces
+ip get ip parameters
+ip-classification Show IP classification
+ippool get ippool info
+l2tp get l2tp information
+license-key show feature configuration
+log show log info
+mac-learn show mac learning table
+memory show memory info
+mip show all mips in a vsys or root
+modem modem dialup for failover
+nrtp show nrtp information
+nsmgmt show NSM agent status/configuration
+nsrp show nsrp info
+ntp get ntp parameters
+os show task information
+performance get performance info
+pki show the pki settings
+policy show policy
+pppoe show pppoe configuration and statistics
+proxy-id vpn proxy-id setting
+rm show resource management info
+route show routes in a vrouter
+sa show security association
+sa-filter config debug message per SA filter
+scheduler show scheduler
+scp show SCP status
+service show service book
+session show all sessions
+sip show SIP ALG info
+snmp show SNMP information
+socket show socket info
+ssh show SSH status
+ssl show ssl info
+syslog show syslog information
+system show system info
+tech-support show tech support information
+timer show timer info
+traffic-shaping show traffic shaping info
+url show url filter information
+user show user
+user-group user group settings
+vip show virtual IP info
+vpn show vpn session
+vpn-group Keyword for showing vpn group setup
+vpnmonitor show vpn monitor parameters
+vrouter show virtual router info
+webauth webauth settings
+webtrends show webtrends information
+xauth get xauth information
+zone configure zone">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2007-05-15T13:57:26+08:00">
+    <meta property="article:modified_time" content="2007-05-15T13:57:26+08:00">
+
+  <meta itemprop="name" content="netscreen命令">
+  <meta itemprop="description" content="估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。
+登陸：
+代碼:
+Remote Management Console
+login: netscreen
+password:
+部分命令
+代碼:
+ns5gt-&gt; ?
+clear clear dynamic system info
+delete delete persistent info in flash
+exec exec system commands
+exit exit command console
+get get system information
+ping ping other host
+reset reset system
+save save command
+set configure system parameters
+trace-route trace route
+unset unconfigure system parameters
+ns5gt-&gt; get ?
+address show address book
+admin show admin information
+alarm show alarm info
+alias get alias definitions
+arp show ARP entries
+attack show attacks
+auth show authentication information
+auth-server authentication server settings
+clock show system clock
+config show system configuration
+console show console parameters
+counter show counters
+di get deep inspection parameters
+dip show all dips in a vsys or root
+dns show dns info
+domain show domain name
+driver show driver info
+envar show environment variables
+event show event messages
+failover get failover status
+file show file information
+firewall show firewall protection information
+gate show gate info
+global-pro global-pro settings
+group show groups
+group-expression group expressions details
+hostname show host name
+ike get IKE info
+interface show interfaces
+ip get ip parameters
+ip-classification Show IP classification
+ippool get ippool info
+l2tp get l2tp information
+license-key show feature configuration
+log show log info
+mac-learn show mac learning table
+memory show memory info
+mip show all mips in a vsys or root
+modem modem dialup for failover
+nrtp show nrtp information
+nsmgmt show NSM agent status/configuration
+nsrp show nsrp info
+ntp get ntp parameters
+os show task information
+performance get performance info
+pki show the pki settings
+policy show policy
+pppoe show pppoe configuration and statistics
+proxy-id vpn proxy-id setting
+rm show resource management info
+route show routes in a vrouter
+sa show security association
+sa-filter config debug message per SA filter
+scheduler show scheduler
+scp show SCP status
+service show service book
+session show all sessions
+sip show SIP ALG info
+snmp show SNMP information
+socket show socket info
+ssh show SSH status
+ssl show ssl info
+syslog show syslog information
+system show system info
+tech-support show tech support information
+timer show timer info
+traffic-shaping show traffic shaping info
+url show url filter information
+user show user
+user-group user group settings
+vip show virtual IP info
+vpn show vpn session
+vpn-group Keyword for showing vpn group setup
+vpnmonitor show vpn monitor parameters
+vrouter show virtual router info
+webauth webauth settings
+webtrends show webtrends information
+xauth get xauth information
+zone configure zone">
+  <meta itemprop="datePublished" content="2007-05-15T13:57:26+08:00">
+  <meta itemprop="dateModified" content="2007-05-15T13:57:26+08:00">
+  <meta itemprop="wordCount" content="653">
+  <meta itemprop="keywords" content="Network">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="netscreen命令">
+  <meta name="twitter:description" content="估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。
+登陸：
+代碼:
+Remote Management Console
+login: netscreen
+password:
+部分命令
+代碼:
+ns5gt-&gt; ?
+clear clear dynamic system info
+delete delete persistent info in flash
+exec exec system commands
+exit exit command console
+get get system information
+ping ping other host
+reset reset system
+save save command
+set configure system parameters
+trace-route trace route
+unset unconfigure system parameters
+ns5gt-&gt; get ?
+address show address book
+admin show admin information
+alarm show alarm info
+alias get alias definitions
+arp show ARP entries
+attack show attacks
+auth show authentication information
+auth-server authentication server settings
+clock show system clock
+config show system configuration
+console show console parameters
+counter show counters
+di get deep inspection parameters
+dip show all dips in a vsys or root
+dns show dns info
+domain show domain name
+driver show driver info
+envar show environment variables
+event show event messages
+failover get failover status
+file show file information
+firewall show firewall protection information
+gate show gate info
+global-pro global-pro settings
+group show groups
+group-expression group expressions details
+hostname show host name
+ike get IKE info
+interface show interfaces
+ip get ip parameters
+ip-classification Show IP classification
+ippool get ippool info
+l2tp get l2tp information
+license-key show feature configuration
+log show log info
+mac-learn show mac learning table
+memory show memory info
+mip show all mips in a vsys or root
+modem modem dialup for failover
+nrtp show nrtp information
+nsmgmt show NSM agent status/configuration
+nsrp show nsrp info
+ntp get ntp parameters
+os show task information
+performance get performance info
+pki show the pki settings
+policy show policy
+pppoe show pppoe configuration and statistics
+proxy-id vpn proxy-id setting
+rm show resource management info
+route show routes in a vrouter
+sa show security association
+sa-filter config debug message per SA filter
+scheduler show scheduler
+scp show SCP status
+service show service book
+session show all sessions
+sip show SIP ALG info
+snmp show SNMP information
+socket show socket info
+ssh show SSH status
+ssl show ssl info
+syslog show syslog information
+system show system info
+tech-support show tech support information
+timer show timer info
+traffic-shaping show traffic shaping info
+url show url filter information
+user show user
+user-group user group settings
+vip show virtual IP info
+vpn show vpn session
+vpn-group Keyword for showing vpn group setup
+vpnmonitor show vpn monitor parameters
+vrouter show virtual router info
+webauth webauth settings
+webtrends show webtrends information
+xauth get xauth information
+zone configure zone">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Seth Dang博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">netscreen命令</h1>
+      
+      <p class="tracked"><strong>Seth</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2007-05-15T13:57:26+08:00">May 15, 2007</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>估計很多人沒有見過這些硬防，所以我把一些命令抓下來，展示下。</p>
+<p>登陸：<br>
+代碼:<br>
+Remote Management Console<br>
+login: netscreen<br>
+password:</p>
+<p>部分命令<br>
+代碼:<br>
+ns5gt-&gt; ?<br>
+clear clear dynamic system info<br>
+delete delete persistent info in flash<br>
+exec exec system commands<br>
+exit exit command console<br>
+get get system information<br>
+ping ping other host<br>
+reset reset system<br>
+save save command<br>
+set configure system parameters<br>
+trace-route trace route<br>
+unset unconfigure system parameters<br>
+ns5gt-&gt; get ?<br>
+address show address book<br>
+admin show admin information<br>
+alarm show alarm info<br>
+alias get alias definitions<br>
+arp show ARP entries<br>
+attack show attacks<br>
+auth show authentication information<br>
+auth-server authentication server settings<br>
+clock show system clock<br>
+config show system configuration<br>
+console show console parameters<br>
+counter show counters<br>
+di get deep inspection parameters<br>
+dip show all dips in a vsys or root<br>
+dns show dns info<br>
+domain show domain name<br>
+driver show driver info<br>
+envar show environment variables<br>
+event show event messages<br>
+failover get failover status<br>
+file show file information<br>
+firewall show firewall protection information<br>
+gate show gate info<br>
+global-pro global-pro settings<br>
+group show groups<br>
+group-expression group expressions details<br>
+hostname show host name<br>
+ike get IKE info<br>
+interface show interfaces<br>
+ip get ip parameters<br>
+ip-classification Show IP classification<br>
+ippool get ippool info<br>
+l2tp get l2tp information<br>
+license-key show feature configuration<br>
+log show log info<br>
+mac-learn show mac learning table<br>
+memory show memory info<br>
+mip show all mips in a vsys or root<br>
+modem modem dialup for failover<br>
+nrtp show nrtp information<br>
+nsmgmt show NSM agent status/configuration<br>
+nsrp show nsrp info<br>
+ntp get ntp parameters<br>
+os show task information<br>
+performance get performance info<br>
+pki show the pki settings<br>
+policy show policy<br>
+pppoe show pppoe configuration and statistics<br>
+proxy-id vpn proxy-id setting<br>
+rm show resource management info<br>
+route show routes in a vrouter<br>
+sa show security association<br>
+sa-filter config debug message per SA filter<br>
+scheduler show scheduler<br>
+scp show SCP status<br>
+service show service book<br>
+session show all sessions<br>
+sip show SIP ALG info<br>
+snmp show SNMP information<br>
+socket show socket info<br>
+ssh show SSH status<br>
+ssl show ssl info<br>
+syslog show syslog information<br>
+system show system info<br>
+tech-support show tech support information<br>
+timer show timer info<br>
+traffic-shaping show traffic shaping info<br>
+url show url filter information<br>
+user show user<br>
+user-group user group settings<br>
+vip show virtual IP info<br>
+vpn show vpn session<br>
+vpn-group Keyword for showing vpn group setup<br>
+vpnmonitor show vpn monitor parameters<br>
+vrouter show virtual router info<br>
+webauth webauth settings<br>
+webtrends show webtrends information<br>
+xauth get xauth information<br>
+zone configure zone</p>
+<p>ns5gt-&gt; set ?</p>
+<p>address define address book entry<br>
+admin admin command<br>
+alarm set alarm parameters<br>
+alias set alias<br>
+arp set ARP entries<br>
+attack set attack<br>
+auth user authentication settings<br>
+auth-server authentication server settings<br>
+clock system clock adjustment<br>
+common-criteria Common Criteria function<br>
+config set/unset config<br>
+console console parameters<br>
+dbuf set debug buffer<br>
+di set deep inspection parameters<br>
+dip port-translated dip attribute &amp; dip group configuration<br>
+dns dns configuration<br>
+domain domain name<br>
+envar set environment variables<br>
+failover set failover command<br>
+ffilter flow filter configuration<br>
+firewall enable firewall protection<br>
+flow flow configuration<br>
+group define address/service groups<br>
+group-expression group expression details<br>
+hostname name of this host<br>
+ike config Internet Key Exchange<br>
+interface interface command<br>
+ip set ip parameters<br>
+ippool ippool settings<br>
+l2tp l2tp configuration<br>
+license-key set license configuration<br>
+log set log config<br>
+mac configure static mac entry<br>
+modem modem dialup for failover<br>
+nsmgmt set NSM agent configuration<br>
+nsrp NetScreen Redundancy Protocol command<br>
+ntp set ntp parameters<br>
+pki PKI Configuration<br>
+policy policy configuration<br>
+pppoe pppoe configuration<br>
+proxy-id vpn proxy-id setting<br>
+sa-filter config debug message per SA filter<br>
+scheduler scheduler parameters<br>
+scp set SCP<br>
+service service configuration<br>
+sip set SIP configuration<br>
+snmp snmp command<br>
+ssh set SSH<br>
+ssl set ssl configuration<br>
+syslog syslog configuration<br>
+tftp tftp settings<br>
+timer timer configuration<br>
+traffic-shaping set traffic shaping info<br>
+url url filtering configuration<br>
+user user database<br>
+user-group user group settings<br>
+vip virtual ip configuration<br>
+vpn vpn configuration<br>
+vpn-group Keyword for define vpn group<br>
+vpnmonitor vpn monitor parameters<br>
+vrouter configure vrouter<br>
+webauth webauth settings<br>
+webtrends webtrends configuration<br>
+xauth xauth configuration<br>
+zone configure security zone</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
+    &copy;  Seth Dang博客 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
