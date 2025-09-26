@@ -1,26 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>C# on Seth Dang博客</title>
-    <link>/categories/c%23/</link>
-    <description>Recent content in C# on Seth Dang博客</description>
-    <generator>Hugo</generator>
+    <title>C# on Seth Dang&#39;S</title>
+    <link>seth.dpdns.org/categories/c%23/</link>
+    <description>Recent content in C# on Seth Dang&#39;S</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 03 Jul 2008 11:22:13 +0800</lastBuildDate>
-    <atom:link href="/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="seth.dpdns.org/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c#编程实例代码</title>
-      <link>/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</link>
+      <link>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Thu, 03 Jul 2008 11:22:13 +0800</pubDate>
-      <guid>/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</guid>
-      <description>&lt;p&gt;//massagebox&lt;br&gt;&#xA;System.Windows.Forms.MessageBox.Show(&amp;ldquo;欢迎使用Vsual Studio 2005！&amp;rdquo;);&lt;/p&gt;&#xA;&lt;p&gt;//tab顺序&lt;br&gt;&#xA;textBox1.TabIndex.ToString( );&lt;/p&gt;&#xA;&lt;p&gt;//日期与时间方法及属性使用示例&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n&amp;rdquo; + DateTime.Now.ToLongDateString();&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n&amp;rdquo; + DateTime.Now.ToLongTimeString();&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n&amp;rdquo; + DateTime.Now.ToShortDateString();&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n&amp;rdquo; + DateTime.Now.ToShortTimeString();&lt;br&gt;&#xA;/*&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前年份DateTime.Now.Year：&amp;rdquo; + DateTime.Now.Year;&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n获取当前小时DateTime.Now.Hour：&amp;rdquo; + DateTime.Now.Hour;&lt;em&gt;/&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n当前为星期几DateTime.Now.DayOfWeek：&amp;rdquo; + DateTime.Now.DayOfWeek;&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n当前为一年中的第几天DateTime.Now.DayOfYear：&amp;rdquo; + DateTime.Now.DayOfYear;&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n增减天数后的日期DateTime.Now.AddDays(1.5)：&amp;rdquo; + DateTime.Now.AddDays(1.5);&lt;br&gt;&#xA;/&lt;/em&gt;&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n增减天数后的日期DateTime.Now.AddDays(-1.5)：&amp;rdquo; + DateTime.Now.AddDays(-1.5);*/&lt;br&gt;&#xA;//数学方法及字段使用示例&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n字段，圆周率Math.PI：&amp;rdquo;&lt;br&gt;&#xA;+ Math.PI;&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求绝对值方法Math.Abs(-38.5)：&amp;rdquo; + Math.Abs(-38.5);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求正弦值方法（30度）Math.Sin(Math.PI/6)：&amp;rdquo; + Math.Sin(Math.PI / 6);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求余弦值方法（60度）Math.Cos(Math.PI/3)：&amp;rdquo; + Math.Cos(Math.PI / 3);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求正切值方法（45度）Math.Tan(Math.PI/4)：&amp;rdquo; + Math.Tan(Math.PI / 4);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求最大值方法Math.Max(3,2)：&amp;rdquo; + Math.Max(3, 2);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求最小值方法Math.Min(3,2)：&amp;rdquo; + Math.Min(3, 2);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求幂方法（3的平方）Math.Pow(3,2)：&amp;rdquo; + Math.Pow(3, 2);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求保留小数值方法Math.Round(3.54)：&amp;rdquo; + Math.Round(3.54);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求保留小数值方法（2）Math.Round(3.1415926,3)：&amp;quot;+ Math.Round(3.1415926, 3);&lt;br&gt;&#xA;lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&amp;rdquo; + Math.Sqrt(2);&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/</guid>
+      <description>&lt;p&gt;//massagebox&lt;br&gt;
+System.Windows.Forms.MessageBox.Show(&amp;ldquo;欢迎使用Vsual Studio 2005！&amp;rdquo;);&lt;/p&gt;
+&lt;p&gt;//tab顺序&lt;br&gt;
+textBox1.TabIndex.ToString( );&lt;/p&gt;
+&lt;p&gt;//日期与时间方法及属性使用示例&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n&amp;rdquo; + DateTime.Now.ToLongDateString();&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n&amp;rdquo; + DateTime.Now.ToLongTimeString();&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n&amp;rdquo; + DateTime.Now.ToShortDateString();&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n&amp;rdquo; + DateTime.Now.ToShortTimeString();&lt;br&gt;
+/*&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前年份DateTime.Now.Year：&amp;rdquo; + DateTime.Now.Year;&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n获取当前小时DateTime.Now.Hour：&amp;rdquo; + DateTime.Now.Hour;&lt;em&gt;/&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n当前为星期几DateTime.Now.DayOfWeek：&amp;rdquo; + DateTime.Now.DayOfWeek;&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n当前为一年中的第几天DateTime.Now.DayOfYear：&amp;rdquo; + DateTime.Now.DayOfYear;&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n增减天数后的日期DateTime.Now.AddDays(1.5)：&amp;rdquo; + DateTime.Now.AddDays(1.5);&lt;br&gt;
+/&lt;/em&gt;&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n增减天数后的日期DateTime.Now.AddDays(-1.5)：&amp;rdquo; + DateTime.Now.AddDays(-1.5);*/&lt;br&gt;
+//数学方法及字段使用示例&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n字段，圆周率Math.PI：&amp;rdquo;&lt;br&gt;
++ Math.PI;&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求绝对值方法Math.Abs(-38.5)：&amp;rdquo; + Math.Abs(-38.5);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求正弦值方法（30度）Math.Sin(Math.PI/6)：&amp;rdquo; + Math.Sin(Math.PI / 6);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求余弦值方法（60度）Math.Cos(Math.PI/3)：&amp;rdquo; + Math.Cos(Math.PI / 3);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求正切值方法（45度）Math.Tan(Math.PI/4)：&amp;rdquo; + Math.Tan(Math.PI / 4);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求最大值方法Math.Max(3,2)：&amp;rdquo; + Math.Max(3, 2);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求最小值方法Math.Min(3,2)：&amp;rdquo; + Math.Min(3, 2);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求幂方法（3的平方）Math.Pow(3,2)：&amp;rdquo; + Math.Pow(3, 2);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求保留小数值方法Math.Round(3.54)：&amp;rdquo; + Math.Round(3.54);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求保留小数值方法（2）Math.Round(3.1415926,3)：&amp;quot;+ Math.Round(3.1415926, 3);&lt;br&gt;
+lblInfo.Text += &amp;ldquo;\n求平方根方法（2的平方根）Math.Sqrt(2)：&amp;rdquo; + Math.Sqrt(2);&lt;/p&gt;</description>
     </item>
     <item>
       <title>c# 建立多窗口界面(MDI)方法 (转)</title>
-      <link>/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</link>
+      <link>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</link>
       <pubDate>Tue, 01 Jul 2008 14:07:43 +0800</pubDate>
-      <guid>/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</guid>
-      <description>&lt;p&gt;傳統上，可以為Windows編寫3種應用程序，它們是：&lt;/p&gt;&#xA;&lt;p&gt;1）基於對話框的應用程序，它們給用戶顯示一個對話框，該 對話框提供了所有的功能。如計算器&lt;/p&gt;&#xA;&lt;p&gt;2）單一文檔界面（SDI），這些應用程序給用戶顯示一個菜單、一個或多個工具欄和一個窗口，在該窗口中，用戶可以執行任務。如WordPad&lt;/p&gt;&#xA;&lt;p&gt;3）多文檔界面（MDI），這些應用程序的執行方式與SDI相同，但可以同時打開多個窗口。&lt;/p&gt;&#xA;&lt;p&gt;MDI應用程序至少要由兩個截然不同的窗口組成。第一個窗口叫作MDI容器（Container）,第二個為 可以在容器中顯示的窗口叫作MDI子窗口。創建MDI時，只需把窗體的IsMdiContainer屬性設為True即可。&lt;/p&gt;&#xA;&lt;p&gt;創建子窗體時，要把這個窗體的MdiParent屬性設置為主窗口的一個引用，該窗體就變成子窗體了。不能通過Properties面板設置這個屬性，只能通過代碼來設置。&lt;/p&gt;&#xA;&lt;p&gt;建立MDI的方法&lt;/p&gt;&#xA;&lt;p&gt;1、建立兩個窗體。將其中的一個作為主窗體的IsMdiContainer屬性設為True。&lt;/p&gt;&#xA;&lt;p&gt;2、將作為子窗體的窗體構造函數中傳入主窗體。並將MdiParent設為傳為的主窗體，&lt;/p&gt;&#xA;&lt;p&gt;3、在主窗體中呼叫子窗體。&lt;/p&gt;&#xA;&lt;p&gt;示例：&lt;/p&gt;&#xA;&lt;p&gt;注：下面代碼中的序號與上面建立方法的序號對應&lt;/p&gt;&#xA;&lt;p&gt;1、建立兩個窗體：frmContainer窗體，作為主窗體；frmChild窗體，為作子窗體。&lt;/p&gt;&#xA;&lt;p&gt;frmContainer代碼：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34; alt=&#34;&#34;&gt;namespace MdiBasic&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;public partial class frmContainer : Form&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;public frmContainer()&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;InitializeComponent();&lt;/p&gt;&#xA;&lt;p&gt;//1、將窗體設為主窗體容器&lt;/p&gt;&#xA;&lt;p&gt;IsMdiContainer = true;&lt;/p&gt;&#xA;&lt;p&gt;//3、顯示子窗體&lt;/p&gt;&#xA;&lt;p&gt;MdiBasic.frmChild child = new frmChild(this);&lt;/p&gt;&#xA;&lt;p&gt;child.Show();&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;frmChild代碼：&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34; alt=&#34;&#34;&gt;namespace MdiBasic&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;public partial class frmChild : Form&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;//2、傳入主窗體&lt;/p&gt;&#xA;&lt;p&gt;public frmChild(MdiBasic.frmContainer parent)&lt;/p&gt;&#xA;&lt;p&gt;{&lt;/p&gt;&#xA;&lt;p&gt;InitializeComponent();&lt;/p&gt;&#xA;&lt;p&gt;//2、將子窗體注冊到容器中&lt;/p&gt;&#xA;&lt;p&gt;this.MdiParent = parent;&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;}&lt;/p&gt;&#xA;&lt;p&gt;防止子FORM重復打開的函數&lt;br&gt;&#xA;public void showMDIChildForm( Form Aform,Form Pform)&lt;br&gt;&#xA;{&lt;br&gt;&#xA;Type t = Type.GetType(&amp;ldquo;GenesisHR.&amp;quot;+Aform.Name);&lt;br&gt;&#xA;for (int i=0;i {&lt;br&gt;&#xA;if(MdiChildren[i].GetType() == t)&lt;br&gt;&#xA;{&lt;br&gt;&#xA;MdiChildren[i].Select();&lt;br&gt;&#xA;return;&lt;br&gt;&#xA;}&lt;br&gt;&#xA;}&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/</guid>
+      <description>&lt;p&gt;傳統上，可以為Windows編寫3種應用程序，它們是：&lt;/p&gt;
+&lt;p&gt;1）基於對話框的應用程序，它們給用戶顯示一個對話框，該 對話框提供了所有的功能。如計算器&lt;/p&gt;
+&lt;p&gt;2）單一文檔界面（SDI），這些應用程序給用戶顯示一個菜單、一個或多個工具欄和一個窗口，在該窗口中，用戶可以執行任務。如WordPad&lt;/p&gt;
+&lt;p&gt;3）多文檔界面（MDI），這些應用程序的執行方式與SDI相同，但可以同時打開多個窗口。&lt;/p&gt;
+&lt;p&gt;MDI應用程序至少要由兩個截然不同的窗口組成。第一個窗口叫作MDI容器（Container）,第二個為 可以在容器中顯示的窗口叫作MDI子窗口。創建MDI時，只需把窗體的IsMdiContainer屬性設為True即可。&lt;/p&gt;
+&lt;p&gt;創建子窗體時，要把這個窗體的MdiParent屬性設置為主窗口的一個引用，該窗體就變成子窗體了。不能通過Properties面板設置這個屬性，只能通過代碼來設置。&lt;/p&gt;
+&lt;p&gt;建立MDI的方法&lt;/p&gt;
+&lt;p&gt;1、建立兩個窗體。將其中的一個作為主窗體的IsMdiContainer屬性設為True。&lt;/p&gt;
+&lt;p&gt;2、將作為子窗體的窗體構造函數中傳入主窗體。並將MdiParent設為傳為的主窗體，&lt;/p&gt;
+&lt;p&gt;3、在主窗體中呼叫子窗體。&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;p&gt;注：下面代碼中的序號與上面建立方法的序號對應&lt;/p&gt;
+&lt;p&gt;1、建立兩個窗體：frmContainer窗體，作為主窗體；frmChild窗體，為作子窗體。&lt;/p&gt;
+&lt;p&gt;frmContainer代碼：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34;&gt;namespace MdiBasic&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;public partial class frmContainer : Form&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;public frmContainer()&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;InitializeComponent();&lt;/p&gt;
+&lt;p&gt;//1、將窗體設為主窗體容器&lt;/p&gt;
+&lt;p&gt;IsMdiContainer = true;&lt;/p&gt;
+&lt;p&gt;//3、顯示子窗體&lt;/p&gt;
+&lt;p&gt;MdiBasic.frmChild child = new frmChild(this);&lt;/p&gt;
+&lt;p&gt;child.Show();&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;frmChild代碼：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://www.cnblogs.com/Images/OutliningIndicators/None.gif&#34;&gt;namespace MdiBasic&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;public partial class frmChild : Form&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;//2、傳入主窗體&lt;/p&gt;
+&lt;p&gt;public frmChild(MdiBasic.frmContainer parent)&lt;/p&gt;
+&lt;p&gt;{&lt;/p&gt;
+&lt;p&gt;InitializeComponent();&lt;/p&gt;
+&lt;p&gt;//2、將子窗體注冊到容器中&lt;/p&gt;
+&lt;p&gt;this.MdiParent = parent;&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;防止子FORM重復打開的函數&lt;br&gt;
+public void showMDIChildForm( Form Aform,Form Pform)&lt;br&gt;
+{&lt;br&gt;
+Type t = Type.GetType(&amp;ldquo;GenesisHR.&amp;quot;+Aform.Name);&lt;br&gt;
+for (int i=0;i {&lt;br&gt;
+if(MdiChildren[i].GetType() == t)&lt;br&gt;
+{&lt;br&gt;
+MdiChildren[i].Select();&lt;br&gt;
+return;&lt;br&gt;
+}&lt;br&gt;
+}&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

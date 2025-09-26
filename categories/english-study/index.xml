@@ -1,89 +1,705 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>English Study on Seth Dang博客</title>
-    <link>/categories/english-study/</link>
-    <description>Recent content in English Study on Seth Dang博客</description>
-    <generator>Hugo</generator>
+    <title>English Study on Seth Dang&#39;S</title>
+    <link>seth.dpdns.org/categories/english-study/</link>
+    <description>Recent content in English Study on Seth Dang&#39;S</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 26 Oct 2010 23:30:50 +0800</lastBuildDate>
-    <atom:link href="/categories/english-study/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="seth.dpdns.org/categories/english-study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>英语写作常见错误分析</title>
-      <link>/posts/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</link>
+      <link>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</link>
       <pubDate>Tue, 26 Oct 2010 23:30:50 +0800</pubDate>
-      <guid>/posts/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</guid>
-      <description>&lt;p&gt;下面我们对一些在&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;&lt;a href=&#34;http://www.3edu.net/ws/&#34;&gt;写作&lt;/a&gt;中典型的病句实例逐一加以剖析．&lt;/p&gt;&#xA;&lt;p&gt;一． 不一致（Disagreements）&lt;br&gt;&#xA;所谓不一致不光指主谓不一致，它还包括了数的不一致 时态不一致及代词不一 致等．&lt;br&gt;&#xA;例１． When one have money ,he can do what he want to .&lt;br&gt;&#xA;(人一旦有了钱，他就能想干什么就干什么．)&lt;br&gt;&#xA;剖析：one是单数第三人称，因而本句的have应改为has ;同理，want应改为wants.本句是典型的主谓不一致．&lt;br&gt;&#xA;改为： Once one has money ,he can do what he wants (to do)&lt;/p&gt;&#xA;&lt;p&gt;二． 修饰语错位（Misplaced Modifiers）&lt;br&gt;&#xA;&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;与汉语不同，同一个修饰语置于句子不同的位置，句子的含义可能引起变化．对于这一点中国学生往往没有引起足够的重视，因而造成了不必要的误解．例１． I believe I can do it well and I will better know the world outside the campus.&lt;br&gt;&#xA;剖析：better位置不当，应置于句末．&lt;/p&gt;&#xA;&lt;p&gt;三． 句子不完整（Sentence Fragments）&lt;br&gt;&#xA;在口语中，交际双方可借助手势语气上下文等，不完整的句子完全可以被理解．可是书面语就不同了，句子结构不完整会令意思表达不清，这种情况常常发生在主句写完以后，笔者又想加些补充说明时发生．&lt;br&gt;&#xA;例１． There are many ways to know the society. For example by TV ,radio ,newspaper and so on .&lt;br&gt;&#xA;剖析：本句后半部分＂for example by TV ,radio ,newspaper and so on .”不是一个完整的句子，仅为一些不连贯的词语，不能独立成句．&lt;br&gt;&#xA;改为：There are many ways to know society ,for example ,by TV ,radio ,and newspaper.&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E5%88%86%E6%9E%90/</guid>
+      <description>&lt;p&gt;下面我们对一些在&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;&lt;a href=&#34;http://www.3edu.net/ws/&#34;&gt;写作&lt;/a&gt;中典型的病句实例逐一加以剖析．&lt;/p&gt;
+&lt;p&gt;一． 不一致（Disagreements）&lt;br&gt;
+所谓不一致不光指主谓不一致，它还包括了数的不一致 时态不一致及代词不一 致等．&lt;br&gt;
+例１． When one have money ,he can do what he want to .&lt;br&gt;
+(人一旦有了钱，他就能想干什么就干什么．)&lt;br&gt;
+剖析：one是单数第三人称，因而本句的have应改为has ;同理，want应改为wants.本句是典型的主谓不一致．&lt;br&gt;
+改为： Once one has money ,he can do what he wants (to do)&lt;/p&gt;
+&lt;p&gt;二． 修饰语错位（Misplaced Modifiers）&lt;br&gt;
+&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;与汉语不同，同一个修饰语置于句子不同的位置，句子的含义可能引起变化．对于这一点中国学生往往没有引起足够的重视，因而造成了不必要的误解．例１． I believe I can do it well and I will better know the world outside the campus.&lt;br&gt;
+剖析：better位置不当，应置于句末．&lt;/p&gt;
+&lt;p&gt;三． 句子不完整（Sentence Fragments）&lt;br&gt;
+在口语中，交际双方可借助手势语气上下文等，不完整的句子完全可以被理解．可是书面语就不同了，句子结构不完整会令意思表达不清，这种情况常常发生在主句写完以后，笔者又想加些补充说明时发生．&lt;br&gt;
+例１． There are many ways to know the society. For example by TV ,radio ,newspaper and so on .&lt;br&gt;
+剖析：本句后半部分＂for example by TV ,radio ,newspaper and so on .”不是一个完整的句子，仅为一些不连贯的词语，不能独立成句．&lt;br&gt;
+改为：There are many ways to know society ,for example ,by TV ,radio ,and newspaper.&lt;/p&gt;</description>
     </item>
     <item>
       <title>如何写英文信件</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1%E4%BB%B6/</link>
+      <link>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1%E4%BB%B6/</link>
       <pubDate>Tue, 26 Oct 2010 23:19:39 +0800</pubDate>
-      <guid>/posts/%E5%A6%82%E4%BD%95%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1%E4%BB%B6/</guid>
-      <description>&lt;p&gt;说明：&lt;/p&gt;&#xA;&lt;p&gt;英文信件的写法在许多方面与中文信件有很大的不同，下面我们简单介绍一下英文信件的格式和写法。&lt;/p&gt;&#xA;&lt;p&gt;I． 信封的格式&lt;/p&gt;&#xA;&lt;p&gt;Ms Wang Xiaolan&lt;/p&gt;&#xA;&lt;p&gt;15 Huaihai Street&lt;/p&gt;&#xA;&lt;p&gt;Shanghai 210088&lt;/p&gt;&#xA;&lt;p&gt;China&lt;/p&gt;&#xA;&lt;p&gt;Stamp&lt;/p&gt;&#xA;&lt;p&gt;Peter Brown&lt;/p&gt;&#xA;&lt;p&gt;22, Blachpool Road&lt;/p&gt;&#xA;&lt;p&gt;Sydney 2140&lt;/p&gt;&#xA;&lt;p&gt;Australia&lt;/p&gt;&#xA;&lt;p&gt;1）写信人的姓名、地址写在信封正面的左上角。&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;收信人的姓名、地址写在信封正面中央稍偏右的地方。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;邮票贴在信封的右上角。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;地址的写法是先写收信人或寄信人的姓名，然后按照从小到大顺序依次写出门牌号、街道、城市、省&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;或州名、邮编，最后写国名。&lt;/p&gt;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;收信人名前应根据需要加：Mr（先生）、Mrs（太太、夫人）、Miss（小姐）、Ms（女士，已婚或&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;未婚均可）、Dr（博士）、Prof（教授）等称呼，以示礼貌。有些中国学生给老师写信常&lt;/p&gt;&#xA;&lt;p&gt;用&amp;quot;teacher&amp;quot;作为称呼，这种用法不正确。在&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;中&amp;quot;teacher&amp;quot;就跟&amp;quot;worker，driver，farmer&amp;quot;等一&lt;/p&gt;&#xA;&lt;p&gt;样是一种职业，不能作为称呼。男老师我们可以用Mr，女老师我们用Mrs、Miss或Ms作为称呼。&lt;/p&gt;&#xA;&lt;p&gt;II．信文的格式&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;把寄信人的地址和日期 （简称&amp;quot;信头&amp;quot;）写在信纸的右上角。地址的写法同信封。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;把收信人的姓名、地址（简称&amp;quot;内地址&amp;quot;）写在寄信人地址和日期的左下方，即信纸的左边，低寄信人&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;日期一至二行处。私人信件此项内容可以不写。&lt;/p&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;把称呼写在收信人姓名、地址下面，相距一行处。称呼一般以&amp;quot;Dear …&amp;ldquo;开头，后面用逗号。如无&amp;quot;内&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;地址&amp;rdquo;，可以把称呼向上顺移。&lt;/p&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;书信正文从称呼下一行的3至5个字母开始。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;如同汉语信一样，英文信的结尾也常写有&amp;quot;祝好&amp;quot;、&amp;ldquo;盼来信&amp;rdquo;、&amp;ldquo;代向……问好&amp;quot;之类的话，我们称之&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;为&amp;quot;结束语&amp;rdquo;。&lt;/p&gt;&#xA;&lt;ol start=&#34;6&#34;&gt;&#xA;&lt;li&gt;在信的结尾下面签上自己的姓名。除了对熟人或亲密的人以外，签名必须写全姓名，而且不管什么&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;信件，都应由写信人亲笔签名。&lt;/p&gt;&#xA;&lt;p&gt;15 Huaihai Street&lt;/p&gt;&#xA;&lt;p&gt;Shanghai, China&lt;/p&gt;&#xA;&lt;p&gt;Feb 6th, 2001&lt;/p&gt;&#xA;&lt;p&gt;Peter Brown&lt;/p&gt;&#xA;&lt;p&gt;22, Blachpool Road (可以省略)&lt;/p&gt;&#xA;&lt;p&gt;Sydney 2140&lt;/p&gt;&#xA;&lt;p&gt;Australia&lt;/p&gt;&#xA;&lt;p&gt;Dear Peter,&lt;/p&gt;&#xA;&lt;p&gt;I am very glad to hear from you.______________________&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1%E4%BB%B6/</guid>
+      <description>&lt;p&gt;说明：&lt;/p&gt;
+&lt;p&gt;英文信件的写法在许多方面与中文信件有很大的不同，下面我们简单介绍一下英文信件的格式和写法。&lt;/p&gt;
+&lt;p&gt;I． 信封的格式&lt;/p&gt;
+&lt;p&gt;Ms Wang Xiaolan&lt;/p&gt;
+&lt;p&gt;15 Huaihai Street&lt;/p&gt;
+&lt;p&gt;Shanghai 210088&lt;/p&gt;
+&lt;p&gt;China&lt;/p&gt;
+&lt;p&gt;Stamp&lt;/p&gt;
+&lt;p&gt;Peter Brown&lt;/p&gt;
+&lt;p&gt;22, Blachpool Road&lt;/p&gt;
+&lt;p&gt;Sydney 2140&lt;/p&gt;
+&lt;p&gt;Australia&lt;/p&gt;
+&lt;p&gt;1）写信人的姓名、地址写在信封正面的左上角。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;收信人的姓名、地址写在信封正面中央稍偏右的地方。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;邮票贴在信封的右上角。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;地址的写法是先写收信人或寄信人的姓名，然后按照从小到大顺序依次写出门牌号、街道、城市、省&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;或州名、邮编，最后写国名。&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;收信人名前应根据需要加：Mr（先生）、Mrs（太太、夫人）、Miss（小姐）、Ms（女士，已婚或&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;未婚均可）、Dr（博士）、Prof（教授）等称呼，以示礼貌。有些中国学生给老师写信常&lt;/p&gt;
+&lt;p&gt;用&amp;quot;teacher&amp;quot;作为称呼，这种用法不正确。在&lt;a href=&#34;http://e.3edu.net/&#34;&gt;英语&lt;/a&gt;中&amp;quot;teacher&amp;quot;就跟&amp;quot;worker，driver，farmer&amp;quot;等一&lt;/p&gt;
+&lt;p&gt;样是一种职业，不能作为称呼。男老师我们可以用Mr，女老师我们用Mrs、Miss或Ms作为称呼。&lt;/p&gt;
+&lt;p&gt;II．信文的格式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;把寄信人的地址和日期 （简称&amp;quot;信头&amp;quot;）写在信纸的右上角。地址的写法同信封。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把收信人的姓名、地址（简称&amp;quot;内地址&amp;quot;）写在寄信人地址和日期的左下方，即信纸的左边，低寄信人&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;日期一至二行处。私人信件此项内容可以不写。&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;把称呼写在收信人姓名、地址下面，相距一行处。称呼一般以&amp;quot;Dear …&amp;ldquo;开头，后面用逗号。如无&amp;quot;内&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;地址&amp;rdquo;，可以把称呼向上顺移。&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;书信正文从称呼下一行的3至5个字母开始。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如同汉语信一样，英文信的结尾也常写有&amp;quot;祝好&amp;quot;、&amp;ldquo;盼来信&amp;rdquo;、&amp;ldquo;代向……问好&amp;quot;之类的话，我们称之&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为&amp;quot;结束语&amp;rdquo;。&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;在信的结尾下面签上自己的姓名。除了对熟人或亲密的人以外，签名必须写全姓名，而且不管什么&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;信件，都应由写信人亲笔签名。&lt;/p&gt;
+&lt;p&gt;15 Huaihai Street&lt;/p&gt;
+&lt;p&gt;Shanghai, China&lt;/p&gt;
+&lt;p&gt;Feb 6th, 2001&lt;/p&gt;
+&lt;p&gt;Peter Brown&lt;/p&gt;
+&lt;p&gt;22, Blachpool Road (可以省略)&lt;/p&gt;
+&lt;p&gt;Sydney 2140&lt;/p&gt;
+&lt;p&gt;Australia&lt;/p&gt;
+&lt;p&gt;Dear Peter,&lt;/p&gt;
+&lt;p&gt;I am very glad to hear from you.______________________&lt;/p&gt;</description>
     </item>
     <item>
       <title>怎样写英文信</title>
-      <link>/posts/%E6%80%8E%E6%A0%B7%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1/</link>
+      <link>seth.dpdns.org/posts/%E6%80%8E%E6%A0%B7%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1/</link>
       <pubDate>Tue, 26 Oct 2010 22:26:42 +0800</pubDate>
-      <guid>/posts/%E6%80%8E%E6%A0%B7%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1/</guid>
-      <description>&lt;p&gt;| 以下仅供网赚新朋友们参考：&lt;br&gt;&#xA;范例信是你和公司打交道时的一个参考。这里的例子用词比较简单，也没有按写信的格式，但是清楚、明了。&lt;br&gt;&#xA;◆ 帐号被删&lt;br&gt;&#xA;◆ 收不到支票&lt;br&gt;&#xA;◆ 统计不符&lt;br&gt;&#xA;◆ 无法登陆&lt;br&gt;&#xA;◆ 无法跑surfbar&lt;br&gt;&#xA;◆ 取消帐户&lt;br&gt;&#xA;网赚比较重要的英文范例信!&lt;br&gt;&#xA;1.帐号被删：&lt;br&gt;&#xA;My account is 帐户名 .I have receive company&amp;rsquo;s and said&lt;br&gt;&#xA;that I have cheat!However, I have never cheat !Can you&lt;br&gt;&#xA;help me to check about it?&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我收到公司信说我作弊，但是我并没有作弊，请问你可不可以帮我检查一下？&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;2.收不到支票：&lt;br&gt;&#xA;My account is 帐户名 .I still have not got the cheque of 月&lt;br&gt;&#xA;份！Can you help me to check about it?&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我还没有收到X月的支票！请问你可不可以帮我检查一下？&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;3.统计不符：&lt;br&gt;&#xA;My account is 帐户名 .I should have $ X in my&lt;br&gt;&#xA;account.However, there are only $Y,Can you help me to&lt;br&gt;&#xA;check about it?&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我应该有X元在帐户中，但是帐户只有Y元，请问你可不可以帮我检查一下？&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;4.无法登陆：&lt;br&gt;&#xA;My account is 帐 户 名 .I used to login everyday.However, i&lt;br&gt;&#xA;cannot login today!Can you help me to check about it?&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我平常可以正常登陆的，但是今天多次登陆，都无法成功！请问你可不可以帮我检查一下？&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;5.无法跑surfbar：&lt;br&gt;&#xA;My account is 帐 户 名 .I cannot use the viewbar,everytime&lt;br&gt;&#xA;i use it ,it said XXXXX.What should i do?&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我用不到viewbar，每次我用它时，它也说XXXXX。我应该怎样办？&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;6.取消帐户：&lt;br&gt;&#xA;My account is 帐 户 名 .My password is 密 码. I would like to&lt;br&gt;&#xA;cancel my account.&lt;br&gt;&#xA;Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是……我的密码是……我想取消帐户。&lt;br&gt;&#xA;谢谢你！&lt;br&gt;&#xA;常用的要求付款、催要付款等：&lt;br&gt;&#xA;一）写信给老板要求支付！&lt;br&gt;&#xA;Dear Admin:&lt;br&gt;&#xA;Payment requested!Thanks&lt;br&gt;&#xA;Here is the info&lt;br&gt;&#xA;my id is wumeigirl ,my account balance: $******&lt;br&gt;&#xA;Payment account My e-gold # is : *******&lt;br&gt;&#xA;Please paid me as soon as possible&lt;br&gt;&#xA;Thank you!&lt;br&gt;&#xA;Have a nice day!&lt;br&gt;&#xA;Regard&lt;br&gt;&#xA;二）写信给老板催要付款&lt;br&gt;&#xA;Greetings,&lt;br&gt;&#xA;I have been waiting for so long to receive my&lt;br&gt;&#xA;payment.What&amp;rsquo;s going on? Please check my account and pay&lt;br&gt;&#xA;me in time to show your prestige. My username is&lt;br&gt;&#xA;******，my e-gold accout is *******.&lt;br&gt;&#xA;Thank you!&lt;br&gt;&#xA;三）帐户无法登陆时写信给老板询问无法登陆的情况&lt;br&gt;&#xA;Dear Admin,&lt;br&gt;&#xA;My account was ******* and my email address registed&lt;br&gt;&#xA;with your site is **********.&lt;br&gt;&#xA;Today I could not log into my account and when I tried&lt;br&gt;&#xA;to retrieve my password the system told me that my email&lt;br&gt;&#xA;is not in the database. I am not sure whether it is&lt;br&gt;&#xA;because of a system problem, my account being hacked or&lt;br&gt;&#xA;my account being deleted.&lt;br&gt;&#xA;Please help me check this up. Thanks.&lt;br&gt;&#xA;四）帐户内统计出错写信给老板咨询具体情况&lt;br&gt;&#xA;Dear sir:&lt;br&gt;&#xA;My account is ******，I should have $ X in my 站长网,最新站长资讯&lt;br&gt;&#xA;account.However, there are only $Y,Can you help me check&lt;br&gt;&#xA;about it? Thank you for your kind attention!&lt;br&gt;&#xA;我的帐户是。。。我应该有X元在帐户中，但是帐户只有Y元，请问你可不可以帮我检查一下？谢谢你！&lt;br&gt;&#xA;五）帐户被删除，写信要回帐户&lt;br&gt;&#xA;Greetings,&lt;br&gt;&#xA;My account has been deleted with unknown reason,maybe I&lt;br&gt;&#xA;clicked the cheat link, can not remember clearly, I am&lt;br&gt;&#xA;busy and must be too tired these days. If so, I&amp;rsquo;m sorry,&lt;br&gt;&#xA;pls accept my apology. I&amp;rsquo;m always a supportive and&lt;br&gt;&#xA;honest member and have built many refs. I&amp;rsquo;m serious at&lt;br&gt;&#xA;your prog,so pls let me know why account was&lt;br&gt;&#xA;deleted.Thanks.My origin username is *******.&lt;br&gt;&#xA;Thank you!&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E6%80%8E%E6%A0%B7%E5%86%99%E8%8B%B1%E6%96%87%E4%BF%A1/</guid>
+      <description>&lt;p&gt;| 以下仅供网赚新朋友们参考：&lt;br&gt;
+范例信是你和公司打交道时的一个参考。这里的例子用词比较简单，也没有按写信的格式，但是清楚、明了。&lt;br&gt;
+◆ 帐号被删&lt;br&gt;
+◆ 收不到支票&lt;br&gt;
+◆ 统计不符&lt;br&gt;
+◆ 无法登陆&lt;br&gt;
+◆ 无法跑surfbar&lt;br&gt;
+◆ 取消帐户&lt;br&gt;
+网赚比较重要的英文范例信!&lt;br&gt;
+1.帐号被删：&lt;br&gt;
+My account is 帐户名 .I have receive company&amp;rsquo;s and said&lt;br&gt;
+that I have cheat!However, I have never cheat !Can you&lt;br&gt;
+help me to check about it?&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我收到公司信说我作弊，但是我并没有作弊，请问你可不可以帮我检查一下？&lt;br&gt;
+谢谢你！&lt;br&gt;
+2.收不到支票：&lt;br&gt;
+My account is 帐户名 .I still have not got the cheque of 月&lt;br&gt;
+份！Can you help me to check about it?&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我还没有收到X月的支票！请问你可不可以帮我检查一下？&lt;br&gt;
+谢谢你！&lt;br&gt;
+3.统计不符：&lt;br&gt;
+My account is 帐户名 .I should have $ X in my&lt;br&gt;
+account.However, there are only $Y,Can you help me to&lt;br&gt;
+check about it?&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我应该有X元在帐户中，但是帐户只有Y元，请问你可不可以帮我检查一下？&lt;br&gt;
+谢谢你！&lt;br&gt;
+4.无法登陆：&lt;br&gt;
+My account is 帐 户 名 .I used to login everyday.However, i&lt;br&gt;
+cannot login today!Can you help me to check about it?&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我平常可以正常登陆的，但是今天多次登陆，都无法成功！请问你可不可以帮我检查一下？&lt;br&gt;
+谢谢你！&lt;br&gt;
+5.无法跑surfbar：&lt;br&gt;
+My account is 帐 户 名 .I cannot use the viewbar,everytime&lt;br&gt;
+i use it ,it said XXXXX.What should i do?&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我用不到viewbar，每次我用它时，它也说XXXXX。我应该怎样办？&lt;br&gt;
+谢谢你！&lt;br&gt;
+6.取消帐户：&lt;br&gt;
+My account is 帐 户 名 .My password is 密 码. I would like to&lt;br&gt;
+cancel my account.&lt;br&gt;
+Thank you for your kind attention!&lt;br&gt;
+我的帐户是……我的密码是……我想取消帐户。&lt;br&gt;
+谢谢你！&lt;br&gt;
+常用的要求付款、催要付款等：&lt;br&gt;
+一）写信给老板要求支付！&lt;br&gt;
+Dear Admin:&lt;br&gt;
+Payment requested!Thanks&lt;br&gt;
+Here is the info&lt;br&gt;
+my id is wumeigirl ,my account balance: $******&lt;br&gt;
+Payment account My e-gold # is : *******&lt;br&gt;
+Please paid me as soon as possible&lt;br&gt;
+Thank you!&lt;br&gt;
+Have a nice day!&lt;br&gt;
+Regard&lt;br&gt;
+二）写信给老板催要付款&lt;br&gt;
+Greetings,&lt;br&gt;
+I have been waiting for so long to receive my&lt;br&gt;
+payment.What&amp;rsquo;s going on? Please check my account and pay&lt;br&gt;
+me in time to show your prestige. My username is&lt;br&gt;
+******，my e-gold accout is *******.&lt;br&gt;
+Thank you!&lt;br&gt;
+三）帐户无法登陆时写信给老板询问无法登陆的情况&lt;br&gt;
+Dear Admin,&lt;br&gt;
+My account was ******* and my email address registed&lt;br&gt;
+with your site is **********.&lt;br&gt;
+Today I could not log into my account and when I tried&lt;br&gt;
+to retrieve my password the system told me that my email&lt;br&gt;
+is not in the database. I am not sure whether it is&lt;br&gt;
+because of a system problem, my account being hacked or&lt;br&gt;
+my account being deleted.&lt;br&gt;
+Please help me check this up. Thanks.&lt;br&gt;
+四）帐户内统计出错写信给老板咨询具体情况&lt;br&gt;
+Dear sir:&lt;br&gt;
+My account is ******，I should have $ X in my 站长网,最新站长资讯&lt;br&gt;
+account.However, there are only $Y,Can you help me check&lt;br&gt;
+about it? Thank you for your kind attention!&lt;br&gt;
+我的帐户是。。。我应该有X元在帐户中，但是帐户只有Y元，请问你可不可以帮我检查一下？谢谢你！&lt;br&gt;
+五）帐户被删除，写信要回帐户&lt;br&gt;
+Greetings,&lt;br&gt;
+My account has been deleted with unknown reason,maybe I&lt;br&gt;
+clicked the cheat link, can not remember clearly, I am&lt;br&gt;
+busy and must be too tired these days. If so, I&amp;rsquo;m sorry,&lt;br&gt;
+pls accept my apology. I&amp;rsquo;m always a supportive and&lt;br&gt;
+honest member and have built many refs. I&amp;rsquo;m serious at&lt;br&gt;
+your prog,so pls let me know why account was&lt;br&gt;
+deleted.Thanks.My origin username is *******.&lt;br&gt;
+Thank you!&lt;/p&gt;</description>
     </item>
     <item>
       <title>面试常用英语（中英对照）</title>
-      <link>/posts/%E9%9D%A2%E8%AF%95%E5%B8%B8%E7%94%A8%E8%8B%B1%E8%AF%AD%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</link>
+      <link>seth.dpdns.org/posts/%E9%9D%A2%E8%AF%95%E5%B8%B8%E7%94%A8%E8%8B%B1%E8%AF%AD%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</link>
       <pubDate>Sat, 26 Apr 2008 10:04:56 +0800</pubDate>
-      <guid>/posts/%E9%9D%A2%E8%AF%95%E5%B8%B8%E7%94%A8%E8%8B%B1%E8%AF%AD%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</guid>
-      <description>&lt;p&gt;First One: Please tell me about your work experience.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;work experience&amp;rdquo; is the type of work you&amp;rsquo;ve done in the past. If you haven&amp;rsquo;t started working yet you can say &amp;ldquo;Right now I&amp;rsquo;m still a student.&amp;rdquo; or &amp;ldquo;I&amp;rsquo;m a recent grad and I haven&amp;rsquo;t started working yet.&amp;rdquo; In the second sentence, &amp;ldquo;recent grad&amp;rdquo; is short for &amp;ldquo;recent graduate&amp;rdquo; and means that you have just finished school.&lt;/p&gt;&#xA;&lt;p&gt;请告诉我你过去的工作经验。工作经验就是你过去所做的工作。如果尚未开始工作，就可以回答&amp;quot;Right now I&amp;rsquo;m still a student.&amp;quot;(现在我还是个学生。)或者说&amp;quot;I&amp;rsquo;m a recent grad and I haven&amp;rsquo;t started working yet.&amp;quot;(我刚刚毕业，还没有开始工作。)&amp;ldquo;recent grad&amp;quot;是&amp;quot;recent graduate&amp;quot;的缩写，意思是刚刚毕业。&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E9%9D%A2%E8%AF%95%E5%B8%B8%E7%94%A8%E8%8B%B1%E8%AF%AD%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7/</guid>
+      <description>&lt;p&gt;First One: Please tell me about your work experience.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;work experience&amp;rdquo; is the type of work you&amp;rsquo;ve done in the past. If you haven&amp;rsquo;t started working yet you can say &amp;ldquo;Right now I&amp;rsquo;m still a student.&amp;rdquo; or &amp;ldquo;I&amp;rsquo;m a recent grad and I haven&amp;rsquo;t started working yet.&amp;rdquo; In the second sentence, &amp;ldquo;recent grad&amp;rdquo; is short for &amp;ldquo;recent graduate&amp;rdquo; and means that you have just finished school.&lt;/p&gt;
+&lt;p&gt;请告诉我你过去的工作经验。工作经验就是你过去所做的工作。如果尚未开始工作，就可以回答&amp;quot;Right now I&amp;rsquo;m still a student.&amp;quot;(现在我还是个学生。)或者说&amp;quot;I&amp;rsquo;m a recent grad and I haven&amp;rsquo;t started working yet.&amp;quot;(我刚刚毕业，还没有开始工作。)&amp;ldquo;recent grad&amp;quot;是&amp;quot;recent graduate&amp;quot;的缩写，意思是刚刚毕业。&lt;/p&gt;</description>
     </item>
     <item>
       <title>會計英語</title>
-      <link>/posts/%E6%9C%83%E8%A8%88%E8%8B%B1%E8%AA%9E/</link>
+      <link>seth.dpdns.org/posts/%E6%9C%83%E8%A8%88%E8%8B%B1%E8%AA%9E/</link>
       <pubDate>Wed, 16 May 2007 14:07:19 +0800</pubDate>
-      <guid>/posts/%E6%9C%83%E8%A8%88%E8%8B%B1%E8%AA%9E/</guid>
-      <description>&lt;p&gt;acceptance承兌&lt;br&gt;&#xA;account賬戶&lt;br&gt;&#xA;accountant會計員&lt;br&gt;&#xA;accounting會計&lt;br&gt;&#xA;accounting system會計制度&lt;br&gt;&#xA;accounts payable應付賬款&lt;br&gt;&#xA;accounts receivable應收賬款&lt;br&gt;&#xA;accumulated profits累積利益&lt;br&gt;&#xA;adjusting entry調整記錄&lt;br&gt;&#xA;adjustment調整&lt;br&gt;&#xA;administration expense管理費用&lt;br&gt;&#xA;advances預付&lt;br&gt;&#xA;advertising expense廣告費&lt;br&gt;&#xA;agency代理&lt;br&gt;&#xA;agent代理人&lt;br&gt;&#xA;agreement契約&lt;br&gt;&#xA;allotments分配數&lt;br&gt;&#xA;allowance津貼&lt;br&gt;&#xA;amalgamation合併&lt;br&gt;&#xA;amortization攤銷&lt;br&gt;&#xA;amortized cost應攤成本&lt;br&gt;&#xA;annuities年金&lt;br&gt;&#xA;applied cost已分配成本&lt;br&gt;&#xA;applied expense已分配費用&lt;br&gt;&#xA;applied manufacturing expense己分配製造費用&lt;br&gt;&#xA;apportioned charge攤派費用&lt;br&gt;&#xA;appreciation漲價&lt;br&gt;&#xA;article of association公司章程&lt;br&gt;&#xA;assessment課稅&lt;br&gt;&#xA;assets資產&lt;br&gt;&#xA;attorney fee律師費&lt;br&gt;&#xA;audit審計&lt;br&gt;&#xA;auditor審計員&lt;br&gt;&#xA;average平均數&lt;br&gt;&#xA;average cost平均成本&lt;br&gt;&#xA;bad debt壞賬&lt;br&gt;&#xA;balance餘額&lt;br&gt;&#xA;balance sheet資產負債表&lt;br&gt;&#xA;bank account銀行賬戶&lt;br&gt;&#xA;bank balance銀行結存&lt;br&gt;&#xA;bank charge銀行手續費&lt;br&gt;&#xA;bank deposit銀行存款&lt;br&gt;&#xA;bank discount銀行貼現&lt;br&gt;&#xA;bank draft銀行匯票&lt;br&gt;&#xA;bank loan銀行借款&lt;br&gt;&#xA;bank overdraft銀行透支&lt;br&gt;&#xA;bankers acceptance銀行承兌&lt;br&gt;&#xA;bankruptcy破產&lt;br&gt;&#xA;bearer持票人&lt;br&gt;&#xA;beneficiary受益人&lt;br&gt;&#xA;bequest遺產&lt;br&gt;&#xA;bill票據&lt;br&gt;&#xA;bill of exchange匯票&lt;br&gt;&#xA;bill of lading提單&lt;br&gt;&#xA;bills discounted貼現票據&lt;br&gt;&#xA;bills payable應付票據&lt;br&gt;&#xA;bills receivable應收票據&lt;br&gt;&#xA;board of directors董事會&lt;br&gt;&#xA;bonds債券&lt;br&gt;&#xA;bonus紅利&lt;br&gt;&#xA;book value賬面價值&lt;br&gt;&#xA;bookkeeper簿記員&lt;br&gt;&#xA;bookkeeping簿記&lt;br&gt;&#xA;branch office general ledger支店往來賬戶&lt;br&gt;&#xA;broker經紀人&lt;br&gt;&#xA;brought down接前&lt;br&gt;&#xA;brought forward接上頁&lt;br&gt;&#xA;budget預算&lt;br&gt;&#xA;by-product副產品&lt;br&gt;&#xA;by-product sales副產品銷售&lt;br&gt;&#xA;capital股本&lt;br&gt;&#xA;capital income資本收益&lt;br&gt;&#xA;capital outlay資本支出&lt;br&gt;&#xA;capital stock股本&lt;br&gt;&#xA;capital stock certificate股票&lt;br&gt;&#xA;carried down移後&lt;br&gt;&#xA;carried forward移下頁&lt;br&gt;&#xA;cash現金&lt;br&gt;&#xA;cash account現金賬戶&lt;br&gt;&#xA;cash in bank存銀行現金&lt;br&gt;&#xA;cash on delivery交貨收款&lt;br&gt;&#xA;cash on hand庫存現金&lt;br&gt;&#xA;cash payment現金支付&lt;br&gt;&#xA;cash purchase現購&lt;br&gt;&#xA;cash sale現沽&lt;br&gt;&#xA;cashier出納員&lt;br&gt;&#xA;cashiers check本票&lt;br&gt;&#xA;certificate of deposit存款單折&lt;br&gt;&#xA;certificate of indebtedness借據&lt;br&gt;&#xA;certified check保付支票&lt;br&gt;&#xA;certified public accountant會計師&lt;br&gt;&#xA;charges費用&lt;br&gt;&#xA;charge for remittances匯水手續費&lt;br&gt;&#xA;charter營業執照&lt;br&gt;&#xA;chartered accountant會計師&lt;br&gt;&#xA;chattles動產&lt;br&gt;&#xA;check支票&lt;br&gt;&#xA;checkbook stub支票存根&lt;br&gt;&#xA;closed account己結清賬戶&lt;br&gt;&#xA;closing結算&lt;br&gt;&#xA;closing entries結賬紀錄&lt;br&gt;&#xA;closing stock期末存貨&lt;br&gt;&#xA;closing the book結賬&lt;br&gt;&#xA;columnar journal多欄日記賬&lt;br&gt;&#xA;combination聯合&lt;br&gt;&#xA;commission傭金&lt;br&gt;&#xA;commodity商品&lt;br&gt;&#xA;common stock普通股&lt;br&gt;&#xA;company公司&lt;br&gt;&#xA;compensation賠償&lt;br&gt;&#xA;compound interest複利&lt;br&gt;&#xA;consignee承銷人&lt;br&gt;&#xA;consignment寄銷&lt;br&gt;&#xA;consignor寄銷人&lt;br&gt;&#xA;consolidated balance sheet合併資產負債表&lt;br&gt;&#xA;consolidated profit and loss account合併損益表&lt;br&gt;&#xA;consolidation合併&lt;br&gt;&#xA;construction cost營建成本&lt;br&gt;&#xA;construction revenue營建收入&lt;br&gt;&#xA;contract合同&lt;br&gt;&#xA;control account統制賬戶&lt;br&gt;&#xA;copyright版權&lt;br&gt;&#xA;corporation公司&lt;br&gt;&#xA;cost成本&lt;br&gt;&#xA;cost accounting成本會計&lt;br&gt;&#xA;cost of labour勞工成本&lt;br&gt;&#xA;cost of production生產成本&lt;br&gt;&#xA;cost of manufacture製造成本&lt;br&gt;&#xA;cost of sales銷貨成本&lt;br&gt;&#xA;cost price成本價格&lt;br&gt;&#xA;credit貸方&lt;br&gt;&#xA;credit note收款通知單&lt;br&gt;&#xA;creditor債權人&lt;br&gt;&#xA;crossed check橫線支票&lt;br&gt;&#xA;current account往來活期賬戶&lt;br&gt;&#xA;current asset流動資產&lt;br&gt;&#xA;current liability流動負債&lt;br&gt;&#xA;current profit and loss本期損益&lt;br&gt;&#xA;debit借方&lt;br&gt;&#xA;debt債務&lt;br&gt;&#xA;debtor債務人&lt;br&gt;&#xA;deed契據&lt;br&gt;&#xA;deferred assets遞延資產&lt;br&gt;&#xA;deferred liabilities遞延負債&lt;br&gt;&#xA;delivery交貨&lt;br&gt;&#xA;delivery expense送貨費&lt;br&gt;&#xA;delivery order出貨單&lt;br&gt;&#xA;demand draft即期匯票&lt;br&gt;&#xA;demand note即期票據&lt;br&gt;&#xA;demurrage charge延期費&lt;br&gt;&#xA;deposit存款&lt;br&gt;&#xA;deposit slip存款單&lt;br&gt;&#xA;depreciation折舊&lt;br&gt;&#xA;direct cost直接成本&lt;br&gt;&#xA;direct labour直接人工&lt;br&gt;&#xA;director董事&lt;br&gt;&#xA;discount折扣&lt;br&gt;&#xA;discount on purchase進貨折扣&lt;br&gt;&#xA;discount on sale銷貨折扣&lt;br&gt;&#xA;dishonoured check退票&lt;br&gt;&#xA;dissolution解散&lt;br&gt;&#xA;dividend股利&lt;br&gt;&#xA;dividend payable應付股利&lt;br&gt;&#xA;documentary bill押匯匯票&lt;br&gt;&#xA;documents單據&lt;br&gt;&#xA;double entry bookkeeping複式簿記&lt;br&gt;&#xA;draft匯票&lt;br&gt;&#xA;drawee付款人&lt;br&gt;&#xA;drawer出票人&lt;br&gt;&#xA;drawing提款&lt;br&gt;&#xA;duplicate副本&lt;br&gt;&#xA;duties and taxes稅捐&lt;br&gt;&#xA;earnings業務收益&lt;br&gt;&#xA;endorser背書人&lt;br&gt;&#xA;entertainment交際費&lt;br&gt;&#xA;enterprise企業&lt;br&gt;&#xA;equipment設備&lt;br&gt;&#xA;estate財產&lt;br&gt;&#xA;estimated cost估計成本&lt;br&gt;&#xA;estimates概算&lt;br&gt;&#xA;exchange兌換&lt;br&gt;&#xA;exchange loss兌換損失&lt;br&gt;&#xA;expenditure經費&lt;br&gt;&#xA;expense費用&lt;br&gt;&#xA;extension延期&lt;br&gt;&#xA;face value票面價值&lt;br&gt;&#xA;factor代理商&lt;br&gt;&#xA;fair value公平價值&lt;br&gt;&#xA;financial statement財務報表&lt;br&gt;&#xA;financial year財政年度&lt;br&gt;&#xA;finished goods製成品&lt;br&gt;&#xA;finished parts製成零件&lt;br&gt;&#xA;fixed asset固定資產&lt;br&gt;&#xA;fixed cost固定成本&lt;br&gt;&#xA;fixed deposit定期存款&lt;br&gt;&#xA;fixed expense固定費用&lt;br&gt;&#xA;foreman工頭&lt;br&gt;&#xA;franchise專營權&lt;br&gt;&#xA;freight運費&lt;br&gt;&#xA;funds資金&lt;br&gt;&#xA;furniture and fixture傢俬及器具&lt;br&gt;&#xA;gain利益&lt;br&gt;&#xA;general expense總務費用&lt;br&gt;&#xA;general ledger總分類賬&lt;br&gt;&#xA;goods貨物&lt;br&gt;&#xA;goods in transit在運貨物&lt;br&gt;&#xA;goodwill商譽&lt;br&gt;&#xA;government bonds政府債券&lt;br&gt;&#xA;gross profit毛利&lt;br&gt;&#xA;guarantee保證&lt;br&gt;&#xA;guarantor保證人&lt;br&gt;&#xA;idle time停工時間&lt;br&gt;&#xA;import duty進口稅&lt;br&gt;&#xA;income收入&lt;br&gt;&#xA;income tax所得稅&lt;br&gt;&#xA;income from joint venture合營收益&lt;br&gt;&#xA;income from sale of assets出售資產收入&lt;br&gt;&#xA;indirect cost間接成本&lt;br&gt;&#xA;indirect expense間接費用&lt;br&gt;&#xA;indirect labour間接人工&lt;br&gt;&#xA;indorsement背書&lt;br&gt;&#xA;installment分期付款&lt;br&gt;&#xA;insurance保險&lt;br&gt;&#xA;intangible asset無形資產&lt;br&gt;&#xA;interest利息&lt;br&gt;&#xA;interest rate利率&lt;br&gt;&#xA;interest received利息收入&lt;br&gt;&#xA;inter office account內部往來&lt;br&gt;&#xA;intrinsic value內在價值&lt;br&gt;&#xA;inventory存貨&lt;br&gt;&#xA;investment投資&lt;br&gt;&#xA;investment income投資收益&lt;br&gt;&#xA;invoice發票&lt;br&gt;&#xA;item項目&lt;br&gt;&#xA;job工作&lt;br&gt;&#xA;job cost工程成本&lt;br&gt;&#xA;joint venture短期合夥&lt;br&gt;&#xA;journal日記賬&lt;br&gt;&#xA;labour人工&lt;br&gt;&#xA;labour cost人工成本&lt;br&gt;&#xA;land土地&lt;br&gt;&#xA;lease租約&lt;br&gt;&#xA;leasehold租約&lt;br&gt;&#xA;ledger分類賬&lt;br&gt;&#xA;legal expense律師費&lt;br&gt;&#xA;letter of credit信用狀&lt;br&gt;&#xA;liability負債&lt;br&gt;&#xA;limited company有限公司&lt;br&gt;&#xA;limited liability有限負債&lt;br&gt;&#xA;limited partnership有限合夥&lt;br&gt;&#xA;liquidation清盤&lt;br&gt;&#xA;loan借款&lt;br&gt;&#xA;long term liability長期負債&lt;br&gt;&#xA;loss損失&lt;br&gt;&#xA;loss on exchange兌換損失&lt;br&gt;&#xA;machinery equipment機器設備&lt;br&gt;&#xA;manufacturing expense製造費用&lt;br&gt;&#xA;manufacturing cost製造成本&lt;br&gt;&#xA;market price市價&lt;br&gt;&#xA;materials原村料&lt;br&gt;&#xA;material requisition領料單&lt;br&gt;&#xA;medical fee醫藥費&lt;br&gt;&#xA;merchandise商品&lt;br&gt;&#xA;miscellaneous expense雜項費用&lt;br&gt;&#xA;mortgage抵押&lt;br&gt;&#xA;mortgagor抵押人&lt;br&gt;&#xA;mortgagee承押人&lt;br&gt;&#xA;movable property動產&lt;br&gt;&#xA;net amount淨額&lt;br&gt;&#xA;net asset資產淨額&lt;br&gt;&#xA;net income淨收入&lt;br&gt;&#xA;net loss淨虧損&lt;br&gt;&#xA;net profit純利&lt;br&gt;&#xA;net value淨值&lt;br&gt;&#xA;notes票據&lt;br&gt;&#xA;notes payable應付票據&lt;br&gt;&#xA;notes receivable應收票據&lt;br&gt;&#xA;opening stock期初存貨&lt;br&gt;&#xA;operating expense營業費用&lt;br&gt;&#xA;order訂單&lt;br&gt;&#xA;organization expense開辦費&lt;br&gt;&#xA;original document原始單據&lt;br&gt;&#xA;outlay支出&lt;br&gt;&#xA;output產量&lt;br&gt;&#xA;overdraft透支&lt;br&gt;&#xA;opening stock期初存貨&lt;br&gt;&#xA;operating expense營業費用&lt;br&gt;&#xA;order訂單&lt;br&gt;&#xA;organization expense開辦費&lt;br&gt;&#xA;original document原始單據&lt;br&gt;&#xA;outlay支出&lt;br&gt;&#xA;output產量&lt;br&gt;&#xA;overdraft透支&lt;br&gt;&#xA;quotation報價&lt;br&gt;&#xA;rate比率&lt;br&gt;&#xA;raw material原料&lt;br&gt;&#xA;rebate回扣&lt;br&gt;&#xA;receipt收據&lt;br&gt;&#xA;receivable應收款&lt;br&gt;&#xA;recoup補償&lt;br&gt;&#xA;redemption償還&lt;br&gt;&#xA;refund退款&lt;br&gt;&#xA;remittance匯款&lt;br&gt;&#xA;rent租金&lt;br&gt;&#xA;repair修理費&lt;br&gt;&#xA;reserve準備&lt;br&gt;&#xA;residual value剩餘價值&lt;br&gt;&#xA;retailer零售商&lt;br&gt;&#xA;returns退貨&lt;br&gt;&#xA;revenue收入&lt;br&gt;&#xA;salary薪金&lt;br&gt;&#xA;sales銷貨&lt;br&gt;&#xA;sale return銷貨退回&lt;br&gt;&#xA;sale discount銷貨折扣&lt;br&gt;&#xA;salvage殘值&lt;br&gt;&#xA;sample fee樣品&lt;br&gt;&#xA;scrap廢料&lt;br&gt;&#xA;scrap value殘餘價值&lt;br&gt;&#xA;securities證券&lt;br&gt;&#xA;security抵押品&lt;br&gt;&#xA;selling commission銷貨傭金&lt;br&gt;&#xA;selling expense銷貨費用&lt;br&gt;&#xA;selling price售價&lt;br&gt;&#xA;share capital股份&lt;br&gt;&#xA;share certificate股票&lt;br&gt;&#xA;shareholder股東&lt;br&gt;&#xA;short term loan短期借款&lt;br&gt;&#xA;sole proprietorship獨資&lt;br&gt;&#xA;spare parts配件&lt;br&gt;&#xA;standard cost標準成本&lt;br&gt;&#xA;stock存貨&lt;br&gt;&#xA;stocktake盤點&lt;br&gt;&#xA;stock sheet存貨表&lt;br&gt;&#xA;subsidies補助金&lt;br&gt;&#xA;sundry expense雜項費用&lt;br&gt;&#xA;supporting document附表&lt;br&gt;&#xA;surplus盈餘&lt;br&gt;&#xA;suspense account暫記賬戶&lt;br&gt;&#xA;taxable profit可徵稅利潤&lt;br&gt;&#xA;tax稅捐&lt;br&gt;&#xA;temporary payment暫付款&lt;br&gt;&#xA;temporary receipt暫收款&lt;br&gt;&#xA;time deposit定期存款&lt;br&gt;&#xA;total合計&lt;br&gt;&#xA;total cost總成本&lt;br&gt;&#xA;trade creditor進貨客戶&lt;br&gt;&#xA;trade debtor銷貨客戶&lt;br&gt;&#xA;trademark商標&lt;br&gt;&#xA;transaction交易&lt;br&gt;&#xA;transfer轉賬&lt;br&gt;&#xA;transfer voucher轉賬傳票&lt;br&gt;&#xA;transportation運輸費&lt;br&gt;&#xA;travelling差旅費&lt;br&gt;&#xA;trial balance試算表&lt;br&gt;&#xA;trust信託&lt;br&gt;&#xA;turnover營業額&lt;br&gt;&#xA;unappropriated surplus未分配盈餘&lt;br&gt;&#xA;unit cost單位成本&lt;br&gt;&#xA;unlimited company無限公司&lt;br&gt;&#xA;unlimited liability無限責任&lt;br&gt;&#xA;unpaid dividend未付股利&lt;br&gt;&#xA;valuation估價&lt;br&gt;&#xA;value價值&lt;br&gt;&#xA;vendor賣主&lt;br&gt;&#xA;voucher傳票&lt;br&gt;&#xA;wage rate工資率&lt;br&gt;&#xA;wage工資&lt;br&gt;&#xA;wage allocation sheet工資分配表&lt;br&gt;&#xA;warehouse receipt倉庫收據&lt;br&gt;&#xA;welfare expense褔利費&lt;br&gt;&#xA;wear and tear秏損&lt;br&gt;&#xA;work order工作通知單&lt;br&gt;&#xA;year end年結&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E6%9C%83%E8%A8%88%E8%8B%B1%E8%AA%9E/</guid>
+      <description>&lt;p&gt;acceptance承兌&lt;br&gt;
+account賬戶&lt;br&gt;
+accountant會計員&lt;br&gt;
+accounting會計&lt;br&gt;
+accounting system會計制度&lt;br&gt;
+accounts payable應付賬款&lt;br&gt;
+accounts receivable應收賬款&lt;br&gt;
+accumulated profits累積利益&lt;br&gt;
+adjusting entry調整記錄&lt;br&gt;
+adjustment調整&lt;br&gt;
+administration expense管理費用&lt;br&gt;
+advances預付&lt;br&gt;
+advertising expense廣告費&lt;br&gt;
+agency代理&lt;br&gt;
+agent代理人&lt;br&gt;
+agreement契約&lt;br&gt;
+allotments分配數&lt;br&gt;
+allowance津貼&lt;br&gt;
+amalgamation合併&lt;br&gt;
+amortization攤銷&lt;br&gt;
+amortized cost應攤成本&lt;br&gt;
+annuities年金&lt;br&gt;
+applied cost已分配成本&lt;br&gt;
+applied expense已分配費用&lt;br&gt;
+applied manufacturing expense己分配製造費用&lt;br&gt;
+apportioned charge攤派費用&lt;br&gt;
+appreciation漲價&lt;br&gt;
+article of association公司章程&lt;br&gt;
+assessment課稅&lt;br&gt;
+assets資產&lt;br&gt;
+attorney fee律師費&lt;br&gt;
+audit審計&lt;br&gt;
+auditor審計員&lt;br&gt;
+average平均數&lt;br&gt;
+average cost平均成本&lt;br&gt;
+bad debt壞賬&lt;br&gt;
+balance餘額&lt;br&gt;
+balance sheet資產負債表&lt;br&gt;
+bank account銀行賬戶&lt;br&gt;
+bank balance銀行結存&lt;br&gt;
+bank charge銀行手續費&lt;br&gt;
+bank deposit銀行存款&lt;br&gt;
+bank discount銀行貼現&lt;br&gt;
+bank draft銀行匯票&lt;br&gt;
+bank loan銀行借款&lt;br&gt;
+bank overdraft銀行透支&lt;br&gt;
+bankers acceptance銀行承兌&lt;br&gt;
+bankruptcy破產&lt;br&gt;
+bearer持票人&lt;br&gt;
+beneficiary受益人&lt;br&gt;
+bequest遺產&lt;br&gt;
+bill票據&lt;br&gt;
+bill of exchange匯票&lt;br&gt;
+bill of lading提單&lt;br&gt;
+bills discounted貼現票據&lt;br&gt;
+bills payable應付票據&lt;br&gt;
+bills receivable應收票據&lt;br&gt;
+board of directors董事會&lt;br&gt;
+bonds債券&lt;br&gt;
+bonus紅利&lt;br&gt;
+book value賬面價值&lt;br&gt;
+bookkeeper簿記員&lt;br&gt;
+bookkeeping簿記&lt;br&gt;
+branch office general ledger支店往來賬戶&lt;br&gt;
+broker經紀人&lt;br&gt;
+brought down接前&lt;br&gt;
+brought forward接上頁&lt;br&gt;
+budget預算&lt;br&gt;
+by-product副產品&lt;br&gt;
+by-product sales副產品銷售&lt;br&gt;
+capital股本&lt;br&gt;
+capital income資本收益&lt;br&gt;
+capital outlay資本支出&lt;br&gt;
+capital stock股本&lt;br&gt;
+capital stock certificate股票&lt;br&gt;
+carried down移後&lt;br&gt;
+carried forward移下頁&lt;br&gt;
+cash現金&lt;br&gt;
+cash account現金賬戶&lt;br&gt;
+cash in bank存銀行現金&lt;br&gt;
+cash on delivery交貨收款&lt;br&gt;
+cash on hand庫存現金&lt;br&gt;
+cash payment現金支付&lt;br&gt;
+cash purchase現購&lt;br&gt;
+cash sale現沽&lt;br&gt;
+cashier出納員&lt;br&gt;
+cashiers check本票&lt;br&gt;
+certificate of deposit存款單折&lt;br&gt;
+certificate of indebtedness借據&lt;br&gt;
+certified check保付支票&lt;br&gt;
+certified public accountant會計師&lt;br&gt;
+charges費用&lt;br&gt;
+charge for remittances匯水手續費&lt;br&gt;
+charter營業執照&lt;br&gt;
+chartered accountant會計師&lt;br&gt;
+chattles動產&lt;br&gt;
+check支票&lt;br&gt;
+checkbook stub支票存根&lt;br&gt;
+closed account己結清賬戶&lt;br&gt;
+closing結算&lt;br&gt;
+closing entries結賬紀錄&lt;br&gt;
+closing stock期末存貨&lt;br&gt;
+closing the book結賬&lt;br&gt;
+columnar journal多欄日記賬&lt;br&gt;
+combination聯合&lt;br&gt;
+commission傭金&lt;br&gt;
+commodity商品&lt;br&gt;
+common stock普通股&lt;br&gt;
+company公司&lt;br&gt;
+compensation賠償&lt;br&gt;
+compound interest複利&lt;br&gt;
+consignee承銷人&lt;br&gt;
+consignment寄銷&lt;br&gt;
+consignor寄銷人&lt;br&gt;
+consolidated balance sheet合併資產負債表&lt;br&gt;
+consolidated profit and loss account合併損益表&lt;br&gt;
+consolidation合併&lt;br&gt;
+construction cost營建成本&lt;br&gt;
+construction revenue營建收入&lt;br&gt;
+contract合同&lt;br&gt;
+control account統制賬戶&lt;br&gt;
+copyright版權&lt;br&gt;
+corporation公司&lt;br&gt;
+cost成本&lt;br&gt;
+cost accounting成本會計&lt;br&gt;
+cost of labour勞工成本&lt;br&gt;
+cost of production生產成本&lt;br&gt;
+cost of manufacture製造成本&lt;br&gt;
+cost of sales銷貨成本&lt;br&gt;
+cost price成本價格&lt;br&gt;
+credit貸方&lt;br&gt;
+credit note收款通知單&lt;br&gt;
+creditor債權人&lt;br&gt;
+crossed check橫線支票&lt;br&gt;
+current account往來活期賬戶&lt;br&gt;
+current asset流動資產&lt;br&gt;
+current liability流動負債&lt;br&gt;
+current profit and loss本期損益&lt;br&gt;
+debit借方&lt;br&gt;
+debt債務&lt;br&gt;
+debtor債務人&lt;br&gt;
+deed契據&lt;br&gt;
+deferred assets遞延資產&lt;br&gt;
+deferred liabilities遞延負債&lt;br&gt;
+delivery交貨&lt;br&gt;
+delivery expense送貨費&lt;br&gt;
+delivery order出貨單&lt;br&gt;
+demand draft即期匯票&lt;br&gt;
+demand note即期票據&lt;br&gt;
+demurrage charge延期費&lt;br&gt;
+deposit存款&lt;br&gt;
+deposit slip存款單&lt;br&gt;
+depreciation折舊&lt;br&gt;
+direct cost直接成本&lt;br&gt;
+direct labour直接人工&lt;br&gt;
+director董事&lt;br&gt;
+discount折扣&lt;br&gt;
+discount on purchase進貨折扣&lt;br&gt;
+discount on sale銷貨折扣&lt;br&gt;
+dishonoured check退票&lt;br&gt;
+dissolution解散&lt;br&gt;
+dividend股利&lt;br&gt;
+dividend payable應付股利&lt;br&gt;
+documentary bill押匯匯票&lt;br&gt;
+documents單據&lt;br&gt;
+double entry bookkeeping複式簿記&lt;br&gt;
+draft匯票&lt;br&gt;
+drawee付款人&lt;br&gt;
+drawer出票人&lt;br&gt;
+drawing提款&lt;br&gt;
+duplicate副本&lt;br&gt;
+duties and taxes稅捐&lt;br&gt;
+earnings業務收益&lt;br&gt;
+endorser背書人&lt;br&gt;
+entertainment交際費&lt;br&gt;
+enterprise企業&lt;br&gt;
+equipment設備&lt;br&gt;
+estate財產&lt;br&gt;
+estimated cost估計成本&lt;br&gt;
+estimates概算&lt;br&gt;
+exchange兌換&lt;br&gt;
+exchange loss兌換損失&lt;br&gt;
+expenditure經費&lt;br&gt;
+expense費用&lt;br&gt;
+extension延期&lt;br&gt;
+face value票面價值&lt;br&gt;
+factor代理商&lt;br&gt;
+fair value公平價值&lt;br&gt;
+financial statement財務報表&lt;br&gt;
+financial year財政年度&lt;br&gt;
+finished goods製成品&lt;br&gt;
+finished parts製成零件&lt;br&gt;
+fixed asset固定資產&lt;br&gt;
+fixed cost固定成本&lt;br&gt;
+fixed deposit定期存款&lt;br&gt;
+fixed expense固定費用&lt;br&gt;
+foreman工頭&lt;br&gt;
+franchise專營權&lt;br&gt;
+freight運費&lt;br&gt;
+funds資金&lt;br&gt;
+furniture and fixture傢俬及器具&lt;br&gt;
+gain利益&lt;br&gt;
+general expense總務費用&lt;br&gt;
+general ledger總分類賬&lt;br&gt;
+goods貨物&lt;br&gt;
+goods in transit在運貨物&lt;br&gt;
+goodwill商譽&lt;br&gt;
+government bonds政府債券&lt;br&gt;
+gross profit毛利&lt;br&gt;
+guarantee保證&lt;br&gt;
+guarantor保證人&lt;br&gt;
+idle time停工時間&lt;br&gt;
+import duty進口稅&lt;br&gt;
+income收入&lt;br&gt;
+income tax所得稅&lt;br&gt;
+income from joint venture合營收益&lt;br&gt;
+income from sale of assets出售資產收入&lt;br&gt;
+indirect cost間接成本&lt;br&gt;
+indirect expense間接費用&lt;br&gt;
+indirect labour間接人工&lt;br&gt;
+indorsement背書&lt;br&gt;
+installment分期付款&lt;br&gt;
+insurance保險&lt;br&gt;
+intangible asset無形資產&lt;br&gt;
+interest利息&lt;br&gt;
+interest rate利率&lt;br&gt;
+interest received利息收入&lt;br&gt;
+inter office account內部往來&lt;br&gt;
+intrinsic value內在價值&lt;br&gt;
+inventory存貨&lt;br&gt;
+investment投資&lt;br&gt;
+investment income投資收益&lt;br&gt;
+invoice發票&lt;br&gt;
+item項目&lt;br&gt;
+job工作&lt;br&gt;
+job cost工程成本&lt;br&gt;
+joint venture短期合夥&lt;br&gt;
+journal日記賬&lt;br&gt;
+labour人工&lt;br&gt;
+labour cost人工成本&lt;br&gt;
+land土地&lt;br&gt;
+lease租約&lt;br&gt;
+leasehold租約&lt;br&gt;
+ledger分類賬&lt;br&gt;
+legal expense律師費&lt;br&gt;
+letter of credit信用狀&lt;br&gt;
+liability負債&lt;br&gt;
+limited company有限公司&lt;br&gt;
+limited liability有限負債&lt;br&gt;
+limited partnership有限合夥&lt;br&gt;
+liquidation清盤&lt;br&gt;
+loan借款&lt;br&gt;
+long term liability長期負債&lt;br&gt;
+loss損失&lt;br&gt;
+loss on exchange兌換損失&lt;br&gt;
+machinery equipment機器設備&lt;br&gt;
+manufacturing expense製造費用&lt;br&gt;
+manufacturing cost製造成本&lt;br&gt;
+market price市價&lt;br&gt;
+materials原村料&lt;br&gt;
+material requisition領料單&lt;br&gt;
+medical fee醫藥費&lt;br&gt;
+merchandise商品&lt;br&gt;
+miscellaneous expense雜項費用&lt;br&gt;
+mortgage抵押&lt;br&gt;
+mortgagor抵押人&lt;br&gt;
+mortgagee承押人&lt;br&gt;
+movable property動產&lt;br&gt;
+net amount淨額&lt;br&gt;
+net asset資產淨額&lt;br&gt;
+net income淨收入&lt;br&gt;
+net loss淨虧損&lt;br&gt;
+net profit純利&lt;br&gt;
+net value淨值&lt;br&gt;
+notes票據&lt;br&gt;
+notes payable應付票據&lt;br&gt;
+notes receivable應收票據&lt;br&gt;
+opening stock期初存貨&lt;br&gt;
+operating expense營業費用&lt;br&gt;
+order訂單&lt;br&gt;
+organization expense開辦費&lt;br&gt;
+original document原始單據&lt;br&gt;
+outlay支出&lt;br&gt;
+output產量&lt;br&gt;
+overdraft透支&lt;br&gt;
+opening stock期初存貨&lt;br&gt;
+operating expense營業費用&lt;br&gt;
+order訂單&lt;br&gt;
+organization expense開辦費&lt;br&gt;
+original document原始單據&lt;br&gt;
+outlay支出&lt;br&gt;
+output產量&lt;br&gt;
+overdraft透支&lt;br&gt;
+quotation報價&lt;br&gt;
+rate比率&lt;br&gt;
+raw material原料&lt;br&gt;
+rebate回扣&lt;br&gt;
+receipt收據&lt;br&gt;
+receivable應收款&lt;br&gt;
+recoup補償&lt;br&gt;
+redemption償還&lt;br&gt;
+refund退款&lt;br&gt;
+remittance匯款&lt;br&gt;
+rent租金&lt;br&gt;
+repair修理費&lt;br&gt;
+reserve準備&lt;br&gt;
+residual value剩餘價值&lt;br&gt;
+retailer零售商&lt;br&gt;
+returns退貨&lt;br&gt;
+revenue收入&lt;br&gt;
+salary薪金&lt;br&gt;
+sales銷貨&lt;br&gt;
+sale return銷貨退回&lt;br&gt;
+sale discount銷貨折扣&lt;br&gt;
+salvage殘值&lt;br&gt;
+sample fee樣品&lt;br&gt;
+scrap廢料&lt;br&gt;
+scrap value殘餘價值&lt;br&gt;
+securities證券&lt;br&gt;
+security抵押品&lt;br&gt;
+selling commission銷貨傭金&lt;br&gt;
+selling expense銷貨費用&lt;br&gt;
+selling price售價&lt;br&gt;
+share capital股份&lt;br&gt;
+share certificate股票&lt;br&gt;
+shareholder股東&lt;br&gt;
+short term loan短期借款&lt;br&gt;
+sole proprietorship獨資&lt;br&gt;
+spare parts配件&lt;br&gt;
+standard cost標準成本&lt;br&gt;
+stock存貨&lt;br&gt;
+stocktake盤點&lt;br&gt;
+stock sheet存貨表&lt;br&gt;
+subsidies補助金&lt;br&gt;
+sundry expense雜項費用&lt;br&gt;
+supporting document附表&lt;br&gt;
+surplus盈餘&lt;br&gt;
+suspense account暫記賬戶&lt;br&gt;
+taxable profit可徵稅利潤&lt;br&gt;
+tax稅捐&lt;br&gt;
+temporary payment暫付款&lt;br&gt;
+temporary receipt暫收款&lt;br&gt;
+time deposit定期存款&lt;br&gt;
+total合計&lt;br&gt;
+total cost總成本&lt;br&gt;
+trade creditor進貨客戶&lt;br&gt;
+trade debtor銷貨客戶&lt;br&gt;
+trademark商標&lt;br&gt;
+transaction交易&lt;br&gt;
+transfer轉賬&lt;br&gt;
+transfer voucher轉賬傳票&lt;br&gt;
+transportation運輸費&lt;br&gt;
+travelling差旅費&lt;br&gt;
+trial balance試算表&lt;br&gt;
+trust信託&lt;br&gt;
+turnover營業額&lt;br&gt;
+unappropriated surplus未分配盈餘&lt;br&gt;
+unit cost單位成本&lt;br&gt;
+unlimited company無限公司&lt;br&gt;
+unlimited liability無限責任&lt;br&gt;
+unpaid dividend未付股利&lt;br&gt;
+valuation估價&lt;br&gt;
+value價值&lt;br&gt;
+vendor賣主&lt;br&gt;
+voucher傳票&lt;br&gt;
+wage rate工資率&lt;br&gt;
+wage工資&lt;br&gt;
+wage allocation sheet工資分配表&lt;br&gt;
+warehouse receipt倉庫收據&lt;br&gt;
+welfare expense褔利費&lt;br&gt;
+wear and tear秏損&lt;br&gt;
+work order工作通知單&lt;br&gt;
+year end年結&lt;/p&gt;</description>
     </item>
     <item>
       <title>MRP&amp;ERP英文與中文意義備注</title>
-      <link>/posts/mrperp%E8%8B%B1%E6%96%87%E8%88%87%E4%B8%AD%E6%96%87%E6%84%8F%E7%BE%A9%E5%82%99%E6%B3%A8/</link>
+      <link>seth.dpdns.org/posts/mrperp%E8%8B%B1%E6%96%87%E8%88%87%E4%B8%AD%E6%96%87%E6%84%8F%E7%BE%A9%E5%82%99%E6%B3%A8/</link>
       <pubDate>Tue, 15 May 2007 16:38:28 +0800</pubDate>
-      <guid>/posts/mrperp%E8%8B%B1%E6%96%87%E8%88%87%E4%B8%AD%E6%96%87%E6%84%8F%E7%BE%A9%E5%82%99%E6%B3%A8/</guid>
-      <description>&lt;p&gt;重要的名詞解釋：&lt;br&gt;&#xA;Enterprise resource planning(ERP) 企業資源計劃&lt;br&gt;&#xA;Manufacturing Resource Planning(MRP2) 製造資源計劃 為了與物料需求計劃MRP區別，後面加了two&lt;br&gt;&#xA;material requiremants planning(MRP) 物料需求計劃&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;A字母&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;acquisition cost,ordering cost 定貨費&lt;br&gt;&#xA;assemble-to-order 定貨組裝&lt;br&gt;&#xA;automated storage/retrieval system(AS/RS) 自動化倉儲系統&lt;br&gt;&#xA;activity cost pool 作業成本集&lt;br&gt;&#xA;activity-based costing 作業基準成本法&lt;br&gt;&#xA;available to promise(ATP) 可供銷售量&lt;br&gt;&#xA;American Production and Inventory Control Society,Inc.(APICS) 美國生產與庫存管理系統&lt;br&gt;&#xA;agile manufacturing 敏捷製造&lt;br&gt;&#xA;APICS Applied Manufacturing Education Series 實用製造管理系列培訓教材&lt;br&gt;&#xA;Advanced Manufacturing Technology(AMT) 先進製造技術&lt;br&gt;&#xA;anticipation inventory 預期儲備&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;&lt;em&gt;B字母&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;back scheduling 倒排計劃&lt;br&gt;&#xA;backflushing 反沖法&lt;br&gt;&#xA;bill of resource(BOR) 資源清單&lt;br&gt;&#xA;business plan 經營規劃&lt;br&gt;&#xA;batch process 批流程&lt;br&gt;&#xA;bottleneck 瓶頸資源(工序)&lt;br&gt;&#xA;business process reengineering(BPR) 企業業務流程重組&lt;br&gt;&#xA;back order 脫期定單&lt;br&gt;&#xA;backlog 拖欠定單&lt;br&gt;&#xA;bill of materials 物料清單&lt;br&gt;&#xA;bucketless system 無時段系統&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/mrperp%E8%8B%B1%E6%96%87%E8%88%87%E4%B8%AD%E6%96%87%E6%84%8F%E7%BE%A9%E5%82%99%E6%B3%A8/</guid>
+      <description>&lt;p&gt;重要的名詞解釋：&lt;br&gt;
+Enterprise resource planning(ERP) 企業資源計劃&lt;br&gt;
+Manufacturing Resource Planning(MRP2) 製造資源計劃 為了與物料需求計劃MRP區別，後面加了two&lt;br&gt;
+material requiremants planning(MRP) 物料需求計劃&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A字母&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;acquisition cost,ordering cost 定貨費&lt;br&gt;
+assemble-to-order 定貨組裝&lt;br&gt;
+automated storage/retrieval system(AS/RS) 自動化倉儲系統&lt;br&gt;
+activity cost pool 作業成本集&lt;br&gt;
+activity-based costing 作業基準成本法&lt;br&gt;
+available to promise(ATP) 可供銷售量&lt;br&gt;
+American Production and Inventory Control Society,Inc.(APICS) 美國生產與庫存管理系統&lt;br&gt;
+agile manufacturing 敏捷製造&lt;br&gt;
+APICS Applied Manufacturing Education Series 實用製造管理系列培訓教材&lt;br&gt;
+Advanced Manufacturing Technology(AMT) 先進製造技術&lt;br&gt;
+anticipation inventory 預期儲備&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;B字母&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;back scheduling 倒排計劃&lt;br&gt;
+backflushing 反沖法&lt;br&gt;
+bill of resource(BOR) 資源清單&lt;br&gt;
+business plan 經營規劃&lt;br&gt;
+batch process 批流程&lt;br&gt;
+bottleneck 瓶頸資源(工序)&lt;br&gt;
+business process reengineering(BPR) 企業業務流程重組&lt;br&gt;
+back order 脫期定單&lt;br&gt;
+backlog 拖欠定單&lt;br&gt;
+bill of materials 物料清單&lt;br&gt;
+bucketless system 無時段系統&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to write an english resume</title>
-      <link>/posts/how-to-write-an-english-resume/</link>
+      <link>seth.dpdns.org/posts/how-to-write-an-english-resume/</link>
       <pubDate>Sun, 04 Feb 2007 16:14:40 +0800</pubDate>
-      <guid>/posts/how-to-write-an-english-resume/</guid>
-      <description>&lt;p&gt;An effective resume is the foundation of every successful job campaign. Most students write their first resume when they are seeking internships or summer employment, but resume writing skills are equally important for seniors approaching graduation and alumni seeking advancement.&lt;br&gt;&#xA;As most people know, the purpose of the resume is to summarize the key elements of your past experience that you would like employers to consider when you are seeking employment. Naturally, a resume needs to be revised periodically during your career to reflect changes in your qualifications. Keep in mind that a good resume alone won&amp;rsquo;t get you a job; however, it can help you get an interview and influence an employer&amp;rsquo;s perception of your skills and potential for a particular kind of work.&lt;br&gt;&#xA;There are several standard formats for resumes, but most employers prefer the chronological format, which is outlined and illustrated below. A few students might prefer to use a functional format to call attention to particular skill areas. Additional information on various resume formats is available in the Career Development Center. The organization of the resume can be adapted as necessary to emphasize an individual&amp;rsquo;s most outstanding characteristics. In general, however, the resume should include:&lt;br&gt;&#xA;IDENTIFICATION DATA: name, address (or two addresses&amp;ndash;present and permanent), and phone number(s) (including area code).&lt;br&gt;&#xA;OBJECTIVE: a single phrase expressing the specific type of employment you are seeking and/or the principal skills you want to use on the job. Some people prepare two or more resumes with different objectives. Once you formulate a clear objective, you can use it almost as a thesis for the remainder of your resume; only information that supports your career objective should be in&lt;br&gt;&#xA;cluded on the resume.&lt;br&gt;&#xA;EDUCATION: basic details about your education, including college location (city and state), degree, date of graduation (or expected graduation), major, related course work and (possibly) G.P.A. Most college students do not need to include information about secondary school, but it is important to summarize education attained through community colleges, other colleges (i.e., transfer credits), and specialized training programs.&lt;br&gt;&#xA;EMPLOYMENT: brief summaries of principle employment to date. Start with your current (or most recent) position and work backward. Include all employment relevant to your career objective in any way. Internships and cooperative experience can be listed either under employment or under education.&lt;br&gt;&#xA;Provide the name of the employer, the employer&amp;rsquo;s location, your job title, dates of employment, and simple verb phrases to summarize your main activities on the job (see action verb list). When ever possible quantify and qualify data with specific details and statistics that illustrate your potential.&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/how-to-write-an-english-resume/</guid>
+      <description>&lt;p&gt;An effective resume is the foundation of every successful job campaign. Most students write their first resume when they are seeking internships or summer employment, but resume writing skills are equally important for seniors approaching graduation and alumni seeking advancement.&lt;br&gt;
+As most people know, the purpose of the resume is to summarize the key elements of your past experience that you would like employers to consider when you are seeking employment. Naturally, a resume needs to be revised periodically during your career to reflect changes in your qualifications. Keep in mind that a good resume alone won&amp;rsquo;t get you a job; however, it can help you get an interview and influence an employer&amp;rsquo;s perception of your skills and potential for a particular kind of work.&lt;br&gt;
+There are several standard formats for resumes, but most employers prefer the chronological format, which is outlined and illustrated below. A few students might prefer to use a functional format to call attention to particular skill areas. Additional information on various resume formats is available in the Career Development Center. The organization of the resume can be adapted as necessary to emphasize an individual&amp;rsquo;s most outstanding characteristics. In general, however, the resume should include:&lt;br&gt;
+IDENTIFICATION DATA: name, address (or two addresses&amp;ndash;present and permanent), and phone number(s) (including area code).&lt;br&gt;
+OBJECTIVE: a single phrase expressing the specific type of employment you are seeking and/or the principal skills you want to use on the job. Some people prepare two or more resumes with different objectives. Once you formulate a clear objective, you can use it almost as a thesis for the remainder of your resume; only information that supports your career objective should be in&lt;br&gt;
+cluded on the resume.&lt;br&gt;
+EDUCATION: basic details about your education, including college location (city and state), degree, date of graduation (or expected graduation), major, related course work and (possibly) G.P.A. Most college students do not need to include information about secondary school, but it is important to summarize education attained through community colleges, other colleges (i.e., transfer credits), and specialized training programs.&lt;br&gt;
+EMPLOYMENT: brief summaries of principle employment to date. Start with your current (or most recent) position and work backward. Include all employment relevant to your career objective in any way. Internships and cooperative experience can be listed either under employment or under education.&lt;br&gt;
+Provide the name of the employer, the employer&amp;rsquo;s location, your job title, dates of employment, and simple verb phrases to summarize your main activities on the job (see action verb list). When ever possible quantify and qualify data with specific details and statistics that illustrate your potential.&lt;/p&gt;</description>
     </item>
     <item>
       <title>英语经典赞美三十句 </title>
-      <link>/posts/%E8%8B%B1%E8%AF%AD%E7%BB%8F%E5%85%B8%E8%B5%9E%E7%BE%8E%E4%B8%89%E5%8D%81%E5%8F%A5/</link>
+      <link>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E7%BB%8F%E5%85%B8%E8%B5%9E%E7%BE%8E%E4%B8%89%E5%8D%81%E5%8F%A5/</link>
       <pubDate>Wed, 29 Nov 2006 20:43:08 +0800</pubDate>
-      <guid>/posts/%E8%8B%B1%E8%AF%AD%E7%BB%8F%E5%85%B8%E8%B5%9E%E7%BE%8E%E4%B8%89%E5%8D%81%E5%8F%A5/</guid>
-      <description>&lt;p&gt;1. You look great today.（你今天看上去很棒。）【每天都可以用！】&lt;/p&gt;&#xA;&lt;p&gt;2. You did a good job. （你干得非常好。）【国际最通用的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;3. We’re so proud of you.（我们十分为你骄傲。）【最高级的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;4. I’m very pleased with your work.（我对你的工作非常满意。）【正式、真诚的赞扬！】&lt;/p&gt;&#xA;&lt;p&gt;5. This is really a nice place.（这真是个好地方！）【随口就说、但效果很好的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;6. You’re looking sharp! （你看上去真精神/真棒/真漂亮。）【与众不同的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;7. You always know the right thing to say. = 8. You’re very eloquent.（你总是说话得体。）【高层次的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;9. Nice going! = you did a good job.（干得好！）【极其地道的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;10. The food is delicious.（好吃！）【最普通、但非常重要的表扬！】&lt;/p&gt;&#xA;&lt;p&gt;11. Everything tastes great.（每样东西都很美味！）&lt;/p&gt;&#xA;&lt;p&gt;12. Your son/daughter is so cute.（你的孩子很可爱。）【外国人绝对喜欢听的表扬！】&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E7%BB%8F%E5%85%B8%E8%B5%9E%E7%BE%8E%E4%B8%89%E5%8D%81%E5%8F%A5/</guid>
+      <description>&lt;p&gt;1. You look great today.（你今天看上去很棒。）【每天都可以用！】&lt;/p&gt;
+&lt;p&gt;2. You did a good job. （你干得非常好。）【国际最通用的表扬！】&lt;/p&gt;
+&lt;p&gt;3. We’re so proud of you.（我们十分为你骄傲。）【最高级的表扬！】&lt;/p&gt;
+&lt;p&gt;4. I’m very pleased with your work.（我对你的工作非常满意。）【正式、真诚的赞扬！】&lt;/p&gt;
+&lt;p&gt;5. This is really a nice place.（这真是个好地方！）【随口就说、但效果很好的表扬！】&lt;/p&gt;
+&lt;p&gt;6. You’re looking sharp! （你看上去真精神/真棒/真漂亮。）【与众不同的表扬！】&lt;/p&gt;
+&lt;p&gt;7. You always know the right thing to say. = 8. You’re very eloquent.（你总是说话得体。）【高层次的表扬！】&lt;/p&gt;
+&lt;p&gt;9. Nice going! = you did a good job.（干得好！）【极其地道的表扬！】&lt;/p&gt;
+&lt;p&gt;10. The food is delicious.（好吃！）【最普通、但非常重要的表扬！】&lt;/p&gt;
+&lt;p&gt;11. Everything tastes great.（每样东西都很美味！）&lt;/p&gt;
+&lt;p&gt;12. Your son/daughter is so cute.（你的孩子很可爱。）【外国人绝对喜欢听的表扬！】&lt;/p&gt;</description>
     </item>
     <item>
       <title>英语抢先学</title>
-      <link>/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/</link>
+      <link>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/</link>
       <pubDate>Wed, 29 Nov 2006 20:21:35 +0800</pubDate>
-      <guid>/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/</guid>
-      <description>&lt;p&gt;You&amp;rsquo;re going to love it here. /表达喜欢一个地方&lt;br&gt;&#xA;要表达喜欢一个地方，你可以说I like / love this place.，或是说成更道地的I like /love it here.。这里的it是指“气氛”atmosphere而言，若是你要跟别人保证，担保他一定会喜欢上某个地方，你就可以对他说You&amp;rsquo;re going to (You&amp;rsquo;ll) like / love it here.。&lt;/p&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t seem to fit./我跟这里格格不入&lt;br&gt;&#xA;fit是指“合适”之意，这句话的意思就是“我跟这里格格不入。”之意。通常也会说成I don’t seem to fit in.当你觉得某个地方或场合，和你犯冲，待在那里就是让你浑身不对劲时，你就可以说：I don’t seem to fit in.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;re well on the way./有慧根，悟性高。&lt;br&gt;&#xA;如果说way是指一段路途的话，那么be well on the way就是指在这段路途上很顺遂，有着好的开始。用be well on the way这个句型用来形容一个人学习的路途，就是指他“有慧根，悟性高”。&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;re out of your mind./丧失神智。&lt;br&gt;&#xA;mind是指“心智状态，神智”，be out of&amp;hellip;是指“没有了…‥，用完了……”，be out of one&amp;rsquo;s mind的意思就是“(某人)丧失神智”，也就是“(某人)发疯”的意思。当你觉得有人做了非一般正常人会做的事，你就可以对他说You&amp;rsquo;re out of your mind.。当然这可以指暂时丧失神智，也可能是真的发了疯。&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/</guid>
+      <description>&lt;p&gt;You&amp;rsquo;re going to love it here. /表达喜欢一个地方&lt;br&gt;
+要表达喜欢一个地方，你可以说I like / love this place.，或是说成更道地的I like /love it here.。这里的it是指“气氛”atmosphere而言，若是你要跟别人保证，担保他一定会喜欢上某个地方，你就可以对他说You&amp;rsquo;re going to (You&amp;rsquo;ll) like / love it here.。&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t seem to fit./我跟这里格格不入&lt;br&gt;
+fit是指“合适”之意，这句话的意思就是“我跟这里格格不入。”之意。通常也会说成I don’t seem to fit in.当你觉得某个地方或场合，和你犯冲，待在那里就是让你浑身不对劲时，你就可以说：I don’t seem to fit in.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re well on the way./有慧根，悟性高。&lt;br&gt;
+如果说way是指一段路途的话，那么be well on the way就是指在这段路途上很顺遂，有着好的开始。用be well on the way这个句型用来形容一个人学习的路途，就是指他“有慧根，悟性高”。&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;re out of your mind./丧失神智。&lt;br&gt;
+mind是指“心智状态，神智”，be out of&amp;hellip;是指“没有了…‥，用完了……”，be out of one&amp;rsquo;s mind的意思就是“(某人)丧失神智”，也就是“(某人)发疯”的意思。当你觉得有人做了非一般正常人会做的事，你就可以对他说You&amp;rsquo;re out of your mind.。当然这可以指暂时丧失神智，也可能是真的发了疯。&lt;/p&gt;</description>
     </item>
     <item>
       <title>英语吵架</title>
-      <link>/posts/%E8%8B%B1%E8%AF%AD%E5%90%B5%E6%9E%B6/</link>
+      <link>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E5%90%B5%E6%9E%B6/</link>
       <pubDate>Wed, 29 Nov 2006 20:10:04 +0800</pubDate>
-      <guid>/posts/%E8%8B%B1%E8%AF%AD%E5%90%B5%E6%9E%B6/</guid>
-      <description>&lt;p&gt;讲英语难, 吵架更难. 虽说人在国外总是想尽办法以和为贵, 但要跟人家吵架怎麽办? 很多人一生气, 所有的英文都忘光了, 平常英文就说不出口, 更何况是吵架, 所以满脑子浮现的不是 Fxxx 就是 Sxxx 这样是很不好的. 我还听过有一个人很绝, 英文骂不过人家就用中文骂, 反正对方听得懂听不懂都无关紧要, 重要的是让他知道你很凶, 而且你正在骂他就行了. 这集还是让我们来看看一些比较文雅的骂人以及吵架的方式.&lt;/p&gt;&#xA;&lt;p&gt;1. I&amp;rsquo;m so fed up with your BS. Cut the crap.&lt;/p&gt;&#xA;&lt;p&gt;我受够了你的废话, 少说废话吧.&lt;/p&gt;&#xA;&lt;p&gt;美女 (美国的女人) 是不喜欢说 shit 这个不雅的字的, 所以她们就说 shoot, 或是 BS (=Bull shit) 来表示她们还是很有气质的. &amp;ldquo;Cut your crap.&amp;rdquo; 是当你听到对方废话连篇, 讲个不停时, 你就可以说, &amp;ldquo;Cut the crap.&amp;rdquo; 相当於中文 的废话少话.&lt;/p&gt;&#xA;&lt;p&gt;2. Hey! wise up!&lt;/p&gt;&#xA;&lt;p&gt;放聪明点好吗?&lt;/p&gt;&#xA;&lt;p&gt;当别人作了什麽愚蠢的事时, 你可以说, &amp;ldquo;Don&amp;rsquo;t be stupid&amp;rdquo; 或是 &amp;ldquo;Don&amp;rsquo;t be silly.&amp;rdquo; 但是这是非常不礼貌的说法. 比较客气一点的说法就是, wise up! 它就相当於中文 的放聪明点. 你也可以用坚酸刻薄的语气说. Wise up, please. 然後故意把 please 的尾音拉得长长的.&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E5%90%B5%E6%9E%B6/</guid>
+      <description>&lt;p&gt;讲英语难, 吵架更难. 虽说人在国外总是想尽办法以和为贵, 但要跟人家吵架怎麽办? 很多人一生气, 所有的英文都忘光了, 平常英文就说不出口, 更何况是吵架, 所以满脑子浮现的不是 Fxxx 就是 Sxxx 这样是很不好的. 我还听过有一个人很绝, 英文骂不过人家就用中文骂, 反正对方听得懂听不懂都无关紧要, 重要的是让他知道你很凶, 而且你正在骂他就行了. 这集还是让我们来看看一些比较文雅的骂人以及吵架的方式.&lt;/p&gt;
+&lt;p&gt;1. I&amp;rsquo;m so fed up with your BS. Cut the crap.&lt;/p&gt;
+&lt;p&gt;我受够了你的废话, 少说废话吧.&lt;/p&gt;
+&lt;p&gt;美女 (美国的女人) 是不喜欢说 shit 这个不雅的字的, 所以她们就说 shoot, 或是 BS (=Bull shit) 来表示她们还是很有气质的. &amp;ldquo;Cut your crap.&amp;rdquo; 是当你听到对方废话连篇, 讲个不停时, 你就可以说, &amp;ldquo;Cut the crap.&amp;rdquo; 相当於中文 的废话少话.&lt;/p&gt;
+&lt;p&gt;2. Hey! wise up!&lt;/p&gt;
+&lt;p&gt;放聪明点好吗?&lt;/p&gt;
+&lt;p&gt;当别人作了什麽愚蠢的事时, 你可以说, &amp;ldquo;Don&amp;rsquo;t be stupid&amp;rdquo; 或是 &amp;ldquo;Don&amp;rsquo;t be silly.&amp;rdquo; 但是这是非常不礼貌的说法. 比较客气一点的说法就是, wise up! 它就相当於中文 的放聪明点. 你也可以用坚酸刻薄的语气说. Wise up, please. 然後故意把 please 的尾音拉得长长的.&lt;/p&gt;</description>
     </item>
     <item>
       <title>美國人常說的話 </title>
-      <link>/posts/%E7%BE%8E%E5%9C%8B%E4%BA%BA%E5%B8%B8%E8%AA%AA%E7%9A%84%E8%A9%B1/</link>
+      <link>seth.dpdns.org/posts/%E7%BE%8E%E5%9C%8B%E4%BA%BA%E5%B8%B8%E8%AA%AA%E7%9A%84%E8%A9%B1/</link>
       <pubDate>Wed, 29 Nov 2006 20:00:12 +0800</pubDate>
-      <guid>/posts/%E7%BE%8E%E5%9C%8B%E4%BA%BA%E5%B8%B8%E8%AA%AA%E7%9A%84%E8%A9%B1/</guid>
-      <description>&lt;p&gt;1. After you.&lt;/p&gt;&#xA;&lt;p&gt;你先请。这是一句很常用的客套话，在进／出门,上车得场合你都可以表现一下。&lt;br&gt;&#xA;2. I just couldn’t help it.&lt;/p&gt;&#xA;&lt;p&gt;我就是忍不住。想想看，这样一个漂亮的句子可用于多少个场合？ 下面是随意举的一个例子：&lt;br&gt;&#xA;I was deeply moved by the film and I cried and cried. I just couldn’t help it.&lt;br&gt;&#xA;3. Don’t take it to heart.&lt;/p&gt;&#xA;&lt;p&gt;别往心里去，别为此而忧虑伤神。 生活实例：&lt;/p&gt;&#xA;&lt;p&gt;This test isn’t that important. Don’t take it to heart.&lt;br&gt;&#xA;4. We’d better be off.&lt;/p&gt;&#xA;&lt;p&gt;我们该走了。&lt;/p&gt;&#xA;&lt;p&gt;It’s getting late. We’d better be off .&lt;br&gt;&#xA;5. Let’s face it.&lt;/p&gt;&#xA;&lt;p&gt;面对现实吧。常表明说话人不愿意逃避困难的现状。参考例句：&lt;br&gt;&#xA;I know it’s a difficult situation. Let’s face it, OK?&lt;br&gt;&#xA;6. Let’s get started.&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E7%BE%8E%E5%9C%8B%E4%BA%BA%E5%B8%B8%E8%AA%AA%E7%9A%84%E8%A9%B1/</guid>
+      <description>&lt;p&gt;1. After you.&lt;/p&gt;
+&lt;p&gt;你先请。这是一句很常用的客套话，在进／出门,上车得场合你都可以表现一下。&lt;br&gt;
+2. I just couldn’t help it.&lt;/p&gt;
+&lt;p&gt;我就是忍不住。想想看，这样一个漂亮的句子可用于多少个场合？ 下面是随意举的一个例子：&lt;br&gt;
+I was deeply moved by the film and I cried and cried. I just couldn’t help it.&lt;br&gt;
+3. Don’t take it to heart.&lt;/p&gt;
+&lt;p&gt;别往心里去，别为此而忧虑伤神。 生活实例：&lt;/p&gt;
+&lt;p&gt;This test isn’t that important. Don’t take it to heart.&lt;br&gt;
+4. We’d better be off.&lt;/p&gt;
+&lt;p&gt;我们该走了。&lt;/p&gt;
+&lt;p&gt;It’s getting late. We’d better be off .&lt;br&gt;
+5. Let’s face it.&lt;/p&gt;
+&lt;p&gt;面对现实吧。常表明说话人不愿意逃避困难的现状。参考例句：&lt;br&gt;
+I know it’s a difficult situation. Let’s face it, OK?&lt;br&gt;
+6. Let’s get started.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

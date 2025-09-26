@@ -1,26 +1,92 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Voip on Seth Dang博客</title>
-    <link>/categories/voip/</link>
-    <description>Recent content in Voip on Seth Dang博客</description>
-    <generator>Hugo</generator>
+    <title>Voip on Seth Dang&#39;S</title>
+    <link>seth.dpdns.org/categories/voip/</link>
+    <description>Recent content in Voip on Seth Dang&#39;S</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sun, 08 Nov 2009 23:08:41 +0800</lastBuildDate>
-    <atom:link href="/categories/voip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="seth.dpdns.org/categories/voip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>浅析电信封杀解决  </title>
-      <link>/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</link>
+      <link>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</link>
       <pubDate>Sun, 08 Nov 2009 23:08:41 +0800</pubDate>
-      <guid>/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</guid>
-      <description>&lt;p&gt;VOIP电信封杀与反封杀&lt;br&gt;&#xA;一、 封软交换平台的端口&lt;br&gt;&#xA;国际电联定义的IP通信信令端口是1719、1720等，终端（不管是软电话、ip电话还是语音网关）连上网后都需要注册到软交换平台，就像QQ上网要注册到QQ的服务器一样，这样系统才知道这个终端上线了，终端的ip和端口号是多少，并记录下来。有别的终端呼叫这个终端系统就会在数据库中找出这个终端注册后记录下来的ip和端口号，把数据发往这个地址。&lt;br&gt;&#xA;1、 电信封杀手段&lt;br&gt;&#xA;电信可以封了1719、1720端口，就是在数据包中目的地址的端口为1719的数据包，把这样的数据包处理掉，使终端无法在软交换平台进行数据交换，这个时候，你听到电话连接不通的声音，在平台查看网关注册在线，但是信令不通，电话也就拨打不通。&lt;br&gt;&#xA;2、 反封杀手段&lt;br&gt;&#xA;可以不使用H323约定的1719端口，使用别的端口，这样就规避了电信的封杀端口的手段。不过这需要终端的配合，终端中设置软交换平台的端口号改成软交换平台设置的端口号。&lt;br&gt;&#xA;有人建议把端口改成80，这样可以在有防火墙并且只开放少数常有端口（比如http的80、ftp的21、邮件的13和10）的环境中使用 ，但是需要你的平台和终端都支持端口的修改和调整。&lt;br&gt;&#xA;二、 封软交换平台的ip&lt;br&gt;&#xA;软交换平台是IP通信系统的核心，指挥中心，它负责用户的管理、终端的注册、通话的管理等。&lt;br&gt;&#xA;1、 电信的封杀手段&lt;br&gt;&#xA;电信不仅可以封端口，还可以把整个软交换平台的ip地址给封掉，就是在数据包中目的地址的ip为软交换平台的ip的数据包，把这样的数据包处理掉，使终端无法注册到软交换平台。&lt;br&gt;&#xA;2、 反封杀手段&lt;br&gt;&#xA;这个手段十分毒辣，把所有发往软交换平台的数据包都处理掉，数据无法到达软交换平台。换端口是没有用了，只能是换ip，就是换软交换平台的ip。一般软交换平台都是安装在托管的服务器，拥有一个固定的ip地址，要换软交换平台的ip还是比较麻烦的。有两个方法：&lt;br&gt;&#xA;2.1、 多个软交换平台备份&lt;br&gt;&#xA;多准备几个软交换平台服务器，不同的ip地址，几个软交换平台同时工作。需要终端具有支持主从备份的功能，终端中可以设置多个软交换平台，自动备份，一个注册不上自动换另一个注册。这样可以部分的对付封杀软交换平台的ip问题，当然，如果几个软交换平台同时被封，还是玩完。&lt;br&gt;&#xA;2.2、 采用动态ip的软交换平台服务器&lt;br&gt;&#xA;一般拨号上网的方式都是动态的ip，每次拨号后都会被分配一个不同ip地址，像ADSL，小区宽带用虚拟拨号的都是这样。可以采用带宽较宽的小区宽带（一般有10M的带宽）来做动态软交换平台服务器。申请一个域名，用花生壳之类的动态域名系统做动态域名的解析，不管这个软交换平台服务器的ip怎么变，这个域名解析出来的ip总是软交换平台服务器目前的ip。&lt;br&gt;&#xA;这样可以人为的让软交换平台服务器定期的重新拨号获取不同的ip地址，电信估计抓也来不及。&lt;br&gt;&#xA;不过这个做法需要终端的配合，终端软交换平台的设置只能设置成软交换平台的域名，如果只能设置软交换平台为ip形式的终端就不适用了。&lt;br&gt;&#xA;注意：还是不要给他发现你的软交换IP是关键，不要使用特殊端口传输数据。&lt;br&gt;&#xA;三、 封落地网关的ip&lt;br&gt;&#xA;voip系统是由终端、软交换平台、中继网关、PSTN共同组成的，其中中继网关是voip语音从网络通往普通电话网的桥梁。&lt;br&gt;&#xA;一般的，终端注册到软交换平台，终端呼叫某个电话时，软交换平台会控制通话双方的信令传送，送振铃、忙音等信号，一旦通话双方连接上后，语音信号会在软交换平台的指引下直接从终端到中继网关之间传送。&lt;br&gt;&#xA;1、 电信的封杀手段&lt;br&gt;&#xA;电信可以把中继网关（落地网关）的ip给封掉，跟封软交换平台的ip一样，在数据包中目的地址的ip为中继网关的ip的数据包，把这样的数据包处理掉。这样的话，一般的结果就是，终端注册到软交换平台正常，但是一拨电话就会断，因为通往中继网关的语音数据走不到中继网关。&lt;br&gt;&#xA;2、 反封杀手段&lt;br&gt;&#xA;使用具有中继网关备份功能的软交换平台系统，然后多找几个落地服务商，多个落地备份使用。在一个网关走不通时自动走下一个网关，再不行再换。&lt;br&gt;&#xA;四、 封杀voip的协议&lt;br&gt;&#xA;目前为止，voip的协议大概有三种：H323、SIP、MGCP。&lt;br&gt;&#xA;其中SIP跟TCP一样是传输层的协议，H323是一个协议族，部分协议是在TCP之上的应用层协议，部分是在UDP之上的应用协议，对MGCP不甚了解。这些协议都是有标准的，都是建立在ip协议之上的，用ip数据包传送的。&lt;br&gt;&#xA;1、 电信的封杀手段&lt;br&gt;&#xA;电信可以把经过电信网络的数据进行过滤，发现包含上述协议的数据包就处理掉。这就需要电信解开数据包就行处理了，至于电信那采用什么方法去每个数据包都解开分析，比较困难。&lt;br&gt;&#xA;2、 反封杀手段&lt;br&gt;&#xA;封杀协议是要分析数据包，找到其中协议的特征字段来判断的，是标准的协议，就能根据协议的标准来判断一个数据包是不是这个协议的数据包。但是可以将标准的协议数据重新编码，然后将数据包中的协议标志字段改成一个非标准的标志，然后在接受端将数据重新解码，恢复成原来的协议数据。这样，电信就不会认得你传送的是什么协议的数据包，也无从封杀了。&lt;br&gt;&#xA;五、 UDP端口的封杀&lt;br&gt;&#xA;一般IP通信都是采用UDP端口来传输媒体流数据包，一般采用大的UDP端口数来传输，所以电信可以在自己的网络上封住这些端口。&lt;br&gt;&#xA;1、 电信的封杀手段&lt;br&gt;&#xA;电信一般是设置20000以上的UDP端口或者30000以上的UDP端口的数据包给处理掉，这样一来，你的电话可以拨打通，双方听不到声音。&lt;br&gt;&#xA;2、 反封杀手段&lt;br&gt;&#xA;改变你的语音包在UDP端口传输的端口，一般电信不敢把自己用户的UDP端口都封，因为那样封，上网的很多功能都无法实现，电信是很难给其网络用户交待，所以你只要改变这些端口就可以解决，改变是需要你的软交换平台和终端都支持才可以。&lt;br&gt;&#xA;六、目前超级解决办法&lt;br&gt;&#xA;建立IP通信用户的私网或者VPN，但是成本太高。尤其是虚拟运营商，需要在用户端、软交换平台、落地网关都建立这种私网或者VPN，成本还是很高。&lt;br&gt;&#xA;总之，只要做IP通信技术的公司做了技术准备，你的IP通信注册、信令、语音所使用的端口可以随意调整，最好是可以自己寻找端口来传输，做虚拟运营的时候考虑得周到一些，全面一些，电信一般还是比较在流量众多的IP网络里把你的包给纠出来，查找你的IP再封杀的。&lt;/p&gt;&#xA;&lt;p&gt;技术革新，行业才能进步！&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E6%B5%85%E6%9E%90%E7%94%B5%E4%BF%A1%E5%B0%81%E6%9D%80%E8%A7%A3%E5%86%B3/</guid>
+      <description>&lt;p&gt;VOIP电信封杀与反封杀&lt;br&gt;
+一、 封软交换平台的端口&lt;br&gt;
+国际电联定义的IP通信信令端口是1719、1720等，终端（不管是软电话、ip电话还是语音网关）连上网后都需要注册到软交换平台，就像QQ上网要注册到QQ的服务器一样，这样系统才知道这个终端上线了，终端的ip和端口号是多少，并记录下来。有别的终端呼叫这个终端系统就会在数据库中找出这个终端注册后记录下来的ip和端口号，把数据发往这个地址。&lt;br&gt;
+1、 电信封杀手段&lt;br&gt;
+电信可以封了1719、1720端口，就是在数据包中目的地址的端口为1719的数据包，把这样的数据包处理掉，使终端无法在软交换平台进行数据交换，这个时候，你听到电话连接不通的声音，在平台查看网关注册在线，但是信令不通，电话也就拨打不通。&lt;br&gt;
+2、 反封杀手段&lt;br&gt;
+可以不使用H323约定的1719端口，使用别的端口，这样就规避了电信的封杀端口的手段。不过这需要终端的配合，终端中设置软交换平台的端口号改成软交换平台设置的端口号。&lt;br&gt;
+有人建议把端口改成80，这样可以在有防火墙并且只开放少数常有端口（比如http的80、ftp的21、邮件的13和10）的环境中使用 ，但是需要你的平台和终端都支持端口的修改和调整。&lt;br&gt;
+二、 封软交换平台的ip&lt;br&gt;
+软交换平台是IP通信系统的核心，指挥中心，它负责用户的管理、终端的注册、通话的管理等。&lt;br&gt;
+1、 电信的封杀手段&lt;br&gt;
+电信不仅可以封端口，还可以把整个软交换平台的ip地址给封掉，就是在数据包中目的地址的ip为软交换平台的ip的数据包，把这样的数据包处理掉，使终端无法注册到软交换平台。&lt;br&gt;
+2、 反封杀手段&lt;br&gt;
+这个手段十分毒辣，把所有发往软交换平台的数据包都处理掉，数据无法到达软交换平台。换端口是没有用了，只能是换ip，就是换软交换平台的ip。一般软交换平台都是安装在托管的服务器，拥有一个固定的ip地址，要换软交换平台的ip还是比较麻烦的。有两个方法：&lt;br&gt;
+2.1、 多个软交换平台备份&lt;br&gt;
+多准备几个软交换平台服务器，不同的ip地址，几个软交换平台同时工作。需要终端具有支持主从备份的功能，终端中可以设置多个软交换平台，自动备份，一个注册不上自动换另一个注册。这样可以部分的对付封杀软交换平台的ip问题，当然，如果几个软交换平台同时被封，还是玩完。&lt;br&gt;
+2.2、 采用动态ip的软交换平台服务器&lt;br&gt;
+一般拨号上网的方式都是动态的ip，每次拨号后都会被分配一个不同ip地址，像ADSL，小区宽带用虚拟拨号的都是这样。可以采用带宽较宽的小区宽带（一般有10M的带宽）来做动态软交换平台服务器。申请一个域名，用花生壳之类的动态域名系统做动态域名的解析，不管这个软交换平台服务器的ip怎么变，这个域名解析出来的ip总是软交换平台服务器目前的ip。&lt;br&gt;
+这样可以人为的让软交换平台服务器定期的重新拨号获取不同的ip地址，电信估计抓也来不及。&lt;br&gt;
+不过这个做法需要终端的配合，终端软交换平台的设置只能设置成软交换平台的域名，如果只能设置软交换平台为ip形式的终端就不适用了。&lt;br&gt;
+注意：还是不要给他发现你的软交换IP是关键，不要使用特殊端口传输数据。&lt;br&gt;
+三、 封落地网关的ip&lt;br&gt;
+voip系统是由终端、软交换平台、中继网关、PSTN共同组成的，其中中继网关是voip语音从网络通往普通电话网的桥梁。&lt;br&gt;
+一般的，终端注册到软交换平台，终端呼叫某个电话时，软交换平台会控制通话双方的信令传送，送振铃、忙音等信号，一旦通话双方连接上后，语音信号会在软交换平台的指引下直接从终端到中继网关之间传送。&lt;br&gt;
+1、 电信的封杀手段&lt;br&gt;
+电信可以把中继网关（落地网关）的ip给封掉，跟封软交换平台的ip一样，在数据包中目的地址的ip为中继网关的ip的数据包，把这样的数据包处理掉。这样的话，一般的结果就是，终端注册到软交换平台正常，但是一拨电话就会断，因为通往中继网关的语音数据走不到中继网关。&lt;br&gt;
+2、 反封杀手段&lt;br&gt;
+使用具有中继网关备份功能的软交换平台系统，然后多找几个落地服务商，多个落地备份使用。在一个网关走不通时自动走下一个网关，再不行再换。&lt;br&gt;
+四、 封杀voip的协议&lt;br&gt;
+目前为止，voip的协议大概有三种：H323、SIP、MGCP。&lt;br&gt;
+其中SIP跟TCP一样是传输层的协议，H323是一个协议族，部分协议是在TCP之上的应用层协议，部分是在UDP之上的应用协议，对MGCP不甚了解。这些协议都是有标准的，都是建立在ip协议之上的，用ip数据包传送的。&lt;br&gt;
+1、 电信的封杀手段&lt;br&gt;
+电信可以把经过电信网络的数据进行过滤，发现包含上述协议的数据包就处理掉。这就需要电信解开数据包就行处理了，至于电信那采用什么方法去每个数据包都解开分析，比较困难。&lt;br&gt;
+2、 反封杀手段&lt;br&gt;
+封杀协议是要分析数据包，找到其中协议的特征字段来判断的，是标准的协议，就能根据协议的标准来判断一个数据包是不是这个协议的数据包。但是可以将标准的协议数据重新编码，然后将数据包中的协议标志字段改成一个非标准的标志，然后在接受端将数据重新解码，恢复成原来的协议数据。这样，电信就不会认得你传送的是什么协议的数据包，也无从封杀了。&lt;br&gt;
+五、 UDP端口的封杀&lt;br&gt;
+一般IP通信都是采用UDP端口来传输媒体流数据包，一般采用大的UDP端口数来传输，所以电信可以在自己的网络上封住这些端口。&lt;br&gt;
+1、 电信的封杀手段&lt;br&gt;
+电信一般是设置20000以上的UDP端口或者30000以上的UDP端口的数据包给处理掉，这样一来，你的电话可以拨打通，双方听不到声音。&lt;br&gt;
+2、 反封杀手段&lt;br&gt;
+改变你的语音包在UDP端口传输的端口，一般电信不敢把自己用户的UDP端口都封，因为那样封，上网的很多功能都无法实现，电信是很难给其网络用户交待，所以你只要改变这些端口就可以解决，改变是需要你的软交换平台和终端都支持才可以。&lt;br&gt;
+六、目前超级解决办法&lt;br&gt;
+建立IP通信用户的私网或者VPN，但是成本太高。尤其是虚拟运营商，需要在用户端、软交换平台、落地网关都建立这种私网或者VPN，成本还是很高。&lt;br&gt;
+总之，只要做IP通信技术的公司做了技术准备，你的IP通信注册、信令、语音所使用的端口可以随意调整，最好是可以自己寻找端口来传输，做虚拟运营的时候考虑得周到一些，全面一些，电信一般还是比较在流量众多的IP网络里把你的包给纠出来，查找你的IP再封杀的。&lt;/p&gt;
+&lt;p&gt;技术革新，行业才能进步！&lt;/p&gt;</description>
     </item>
     <item>
       <title> Original X100P 原装卡 Trixbox(Asterisk) voip 不是兼容卡哦 </title>
-      <link>/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</link>
+      <link>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</link>
       <pubDate>Sun, 08 Nov 2009 21:51:11 +0800</pubDate>
-      <guid>/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</guid>
-      <description>&lt;p&gt;之前断货有1个多月了，现在又找到一些了，请抓紧购买。&lt;/p&gt;&#xA;&lt;p&gt;支持各类流行的Asterisk软件，如Trixbox, Asterisk, Elastix ,asterCC-BOX,Askozia等等&lt;/p&gt;&#xA;&lt;p&gt;注：我们没有办法提供任何软件使用上的技术支持的，你会使用才买，若没有任何使用经验请谨慎购买，我们提供不了帮助的。&lt;/p&gt;&#xA;&lt;p&gt;这个 单口（虽然你看到2个口，他们其实是并联的，方便接一台电话机做逃生口）FXO卡是给Asterisk/Trixbox系统用来落地用的。&lt;/p&gt;&#xA;&lt;p&gt;本物品淘宝直接购买，请想要在淘宝做分销的免谈。主要照顾asterisk的初学者。&lt;/p&gt;&#xA;&lt;p&gt;二手货，更换了新挡板，没有螺丝印，只有一张卡，防静电袋彩盒包装；无电话线，说明书，光盘。保修一年。包邮98元，多买不加减邮费。这可不是替代品或者兼容卡，原装卡行情在28USD左右，因为帮国外客户OEM，所以成本价照顾China客户。库存备品，卖完为止，请抓紧时间购买。这个可是带来电显示FSK制式，深圳电信环境测试后发货。&lt;/p&gt;&#xA;&lt;p&gt;Wildcard X100P&lt;br&gt;&#xA;A single port FXO PCI interface card for interfacing with a standard analog phone line.&lt;/p&gt;&#xA;&lt;p&gt;不是兼容卡（兼容卡用 Ambient 3200芯片），是原装卡。&lt;/p&gt;&#xA;&lt;p&gt;1.没有回音感谢motorola的工程师的大力协助！&lt;/p&gt;&#xA;&lt;p&gt;2.带来电显示（FSK制式，不支持DTMF 广州，山东某些地方）&lt;/p&gt;&#xA;&lt;p&gt;3.忙音检测 不需要补丁&lt;/p&gt;&#xA;&lt;p&gt;市面上其他兼容卡都有1，2，3的问题。所以还是抓紧时间买原装卡划算。保值，原装卡芯片已经停产了，有收藏价值。价格根据库存调整，起始价格98元。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.asterisk.org/hardware&#34;&gt;http://www.asterisk.org/hardware&lt;/a&gt; 官方只有克隆卡，原装卡国外都买不到了&lt;/p&gt;&#xA;&lt;p&gt;我们快递公司一定走申通速递，平邮我也一样走快递。&lt;/p&gt;&#xA;&lt;p&gt;新手先去看看一下后面的丰富的参考链接，然后再去&lt;a href=&#34;http://www.trixbox.com.cn/&#34;&gt;www.trixbox.com.cn&lt;/a&gt;问问题。本人所有卡亲自测试，所以一般卡是没问题的，关于开源的事情还是去论坛看看。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.x100p.com/&#34;&gt;www.x100p.com&lt;/a&gt;不要认为我们的卡和这家一样，他们在卖的卡和我的芯片封装不一样，我的品质和他们不相上下，甚至比他们要好。不过我们的设备X100P的ID是一样的（motorola）。&lt;/p&gt;&#xA;&lt;p&gt;复制以下链接，粘贴到浏览器，就可以看到了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.sureteq.com/asterisk/trixbox.htm&#34;&gt;http://www.sureteq.com/asterisk/trixbox.htm&lt;/a&gt; 风云提供链接。&lt;/p&gt;&#xA;&lt;p&gt;以下链接证明克隆卡有回音，原装卡是没有的。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://www.voip-info.org/tiki-index.php?page=X100P+clone&#34;&gt;http://www.voip-info.org/tiki-index.php?page=X100P+clone&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The Digium X100P FXO card, and the DigitNetworks X100P OEM clone card, are actually Intel V92 Data/Fax/Voice modem cards.&lt;/p&gt;&#xA;&lt;p&gt;以上文字说明这个东西就是猫，比较特殊的猫。呵呵！&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/original-x100p-%E5%8E%9F%E8%A3%85%E5%8D%A1-trixboxasterisk-voip-%E4%B8%8D%E6%98%AF%E5%85%BC%E5%AE%B9%E5%8D%A1%E5%93%A6/</guid>
+      <description>&lt;p&gt;之前断货有1个多月了，现在又找到一些了，请抓紧购买。&lt;/p&gt;
+&lt;p&gt;支持各类流行的Asterisk软件，如Trixbox, Asterisk, Elastix ,asterCC-BOX,Askozia等等&lt;/p&gt;
+&lt;p&gt;注：我们没有办法提供任何软件使用上的技术支持的，你会使用才买，若没有任何使用经验请谨慎购买，我们提供不了帮助的。&lt;/p&gt;
+&lt;p&gt;这个 单口（虽然你看到2个口，他们其实是并联的，方便接一台电话机做逃生口）FXO卡是给Asterisk/Trixbox系统用来落地用的。&lt;/p&gt;
+&lt;p&gt;本物品淘宝直接购买，请想要在淘宝做分销的免谈。主要照顾asterisk的初学者。&lt;/p&gt;
+&lt;p&gt;二手货，更换了新挡板，没有螺丝印，只有一张卡，防静电袋彩盒包装；无电话线，说明书，光盘。保修一年。包邮98元，多买不加减邮费。这可不是替代品或者兼容卡，原装卡行情在28USD左右，因为帮国外客户OEM，所以成本价照顾China客户。库存备品，卖完为止，请抓紧时间购买。这个可是带来电显示FSK制式，深圳电信环境测试后发货。&lt;/p&gt;
+&lt;p&gt;Wildcard X100P&lt;br&gt;
+A single port FXO PCI interface card for interfacing with a standard analog phone line.&lt;/p&gt;
+&lt;p&gt;不是兼容卡（兼容卡用 Ambient 3200芯片），是原装卡。&lt;/p&gt;
+&lt;p&gt;1.没有回音感谢motorola的工程师的大力协助！&lt;/p&gt;
+&lt;p&gt;2.带来电显示（FSK制式，不支持DTMF 广州，山东某些地方）&lt;/p&gt;
+&lt;p&gt;3.忙音检测 不需要补丁&lt;/p&gt;
+&lt;p&gt;市面上其他兼容卡都有1，2，3的问题。所以还是抓紧时间买原装卡划算。保值，原装卡芯片已经停产了，有收藏价值。价格根据库存调整，起始价格98元。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.asterisk.org/hardware&#34;&gt;http://www.asterisk.org/hardware&lt;/a&gt; 官方只有克隆卡，原装卡国外都买不到了&lt;/p&gt;
+&lt;p&gt;我们快递公司一定走申通速递，平邮我也一样走快递。&lt;/p&gt;
+&lt;p&gt;新手先去看看一下后面的丰富的参考链接，然后再去&lt;a href=&#34;http://www.trixbox.com.cn/&#34;&gt;www.trixbox.com.cn&lt;/a&gt;问问题。本人所有卡亲自测试，所以一般卡是没问题的，关于开源的事情还是去论坛看看。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.x100p.com/&#34;&gt;www.x100p.com&lt;/a&gt;不要认为我们的卡和这家一样，他们在卖的卡和我的芯片封装不一样，我的品质和他们不相上下，甚至比他们要好。不过我们的设备X100P的ID是一样的（motorola）。&lt;/p&gt;
+&lt;p&gt;复制以下链接，粘贴到浏览器，就可以看到了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.sureteq.com/asterisk/trixbox.htm&#34;&gt;http://www.sureteq.com/asterisk/trixbox.htm&lt;/a&gt; 风云提供链接。&lt;/p&gt;
+&lt;p&gt;以下链接证明克隆卡有回音，原装卡是没有的。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.voip-info.org/tiki-index.php?page=X100P+clone&#34;&gt;http://www.voip-info.org/tiki-index.php?page=X100P+clone&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Digium X100P FXO card, and the DigitNetworks X100P OEM clone card, are actually Intel V92 Data/Fax/Voice modem cards.&lt;/p&gt;
+&lt;p&gt;以上文字说明这个东西就是猫，比较特殊的猫。呵呵！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.150.0"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Seth Dang&#39;S</title>
+
+<meta name="description" content="技术博客与知识分享">
+<meta name="author" content="Seth">
+<link rel="canonical" href="seth.dpdns.org/">
+<link crossorigin="anonymous" href="seth.dpdns.org/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css" integrity="sha256-4fXEyuRFmWVff/lRlf&#43;JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="seth.dpdns.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="seth.dpdns.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="seth.dpdns.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="seth.dpdns.org/apple-touch-icon.png">
+<link rel="mask-icon" href="seth.dpdns.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="seth.dpdns.org/index.xml">
+<link rel="alternate" hreflang="en" href="seth.dpdns.org/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="seth.dpdns.org/">
+  <meta property="og:site_name" content="Seth Dang&#39;S">
+  <meta property="og:title" content="Seth Dang&#39;S">
+  <meta property="og:description" content="技术博客与知识分享">
+  <meta property="og:locale" content="zh-CN">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Seth Dang&#39;S">
+<meta name="twitter:description" content="技术博客与知识分享">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Seth Dang'S",
+  "url": "seth.dpdns.org/",
+  "description": "技术博客与知识分享",
+  "logo": "seth.dpdns.org/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="seth.dpdns.org/" accesskey="h" title="Seth Dang&#39;S (Alt + H)">Seth Dang&#39;S</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">2007新年快樂
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-16 15:06:06 +0800 +0800'>February 16, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to 2007新年快樂" href="seth.dpdns.org/posts/2007%E6%96%B0%E5%B9%B4%E5%BF%AB%E6%A8%82/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">sql經典語句匯總（原創）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>select ( case when gender=1 then ‘男’ else ‘女’ end)as gender from rzs_person
+說明：字段轉換。
+sql=“select distinct 籍貫 from 表名”
+說明：去除相同部分。
+SQL: insert into A（a,b,c）
+select top 3 a,b,c from B
+說明：A,B是表，而且字段對應。
+select * from t_dingfang where now_time between ‘&#34;&amp;time;_fir&amp; “’ and ‘” &amp;time;_end&amp; “‘order by id
+SQL: select * into b from a where 1&lt;&gt;1
+說明：複製表(只複製結構,源表名：a 新表名：b)
+SQL: insert into b(a, b, c) select d,e,f from b;
+說明：拷貝表(拷貝數據,源表名：a 目標表名：b)
+SQL: select a,b,c from a union select d,e,f from b;
+說明：合併數據(表名1：a 表名2：b)
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-15 15:22:19 +0800 +0800'>February 15, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to sql經典語句匯總（原創）" href="seth.dpdns.org/posts/sql%E7%B6%93%E5%85%B8%E8%AA%9E%E5%8F%A5%E5%8C%AF%E7%B8%BD%E5%8E%9F%E5%89%B5/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cisco路由器配置資訊及口令的清除
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在網路日常管理與維護的工作中，你是否遇到過這種現象：由於忘記了口令，你被原來親切的“朋友”——路由器或交換機強行拒於門外，無法進行參數的重新設置、資訊統計。下面就針對幾種常見而重要的網路設備的口令清除方法談談本人的一點“小竅門”。
+適用範圍：所有IOS在10.0及以上版本的Cisco 2000、2500、3000、4000、7000系列路由器。
+清除步驟如下：
+1．用路由器所帶的串口線連接到Console口，以下通過Win95的超級終端進行；
+2．路由器加電後60秒內，按下CTRL(如果不行按CTRL－BREAK)鍵，等待出現“〉”提示符；
+3．鍵入“〉e/s 2000002”命令，並記錄下返回值，用在後面“Router(config)＃config－register 0x2102”命令中；(通常返回值是2102)
+4．在“〉”符號後鍵入“o/r 0x42”；
+5．鍵入“i”, 路由器將重新初始化，對於出現的提示問題，回答No；
+6．鍵入“Enable”(沒有口令，按回車即可)；
+7．改變口令(無論是否加密)：
+a. 輸入“config mem”或“copy startup－config mem”；
+b. 輸入“write”；
+c. 輸入“config term”並輸入“enable secret〈password〉”和“enable password〈password〉”，改變口令；
+8．去掉用戶提示及口令：
+a．進入虛擬行配置模式，輸入“line vty 0 4”；
+b．輸入“password〈password〉”，改變口令；
+c．輸入“login”（可以去掉用戶提示，原來是login local）；
+9．完成後按Ctrl－z結束；
+10．輸入“write”保存所做的改變；
+11．進入特權配置模式，鍵入“config－register 0x2102”(注意，必須完成此步)；
+12．Write保存配置資訊；
+13．退出配置模式，Reload完成重新啟動路由器即可。
+說明：o/r 0x42是從Flash中引導路由器，如果不成功，可採用o/r 0x41從ROM中引導路由器，其餘操作與o/r 0x42相同，但是最好只在Flash引導不成功或Flash內容被刪除、沒有Flash情況下才用。使用0x41只能查看或刪除配置資訊而不能更改口令。
+Cisco Catalyst 3000配置資訊的清除
+1．在交換機加電啟動時，按住交換機後面板上的Sys Req按鈕5秒鐘，然後鬆開；
+2．進入配置選單，選擇“Clear Non－Volatile RAM”，即可清除交換機的所有配置資訊（包括口令）。
+3．根據需要，重新配置參數、口令等。
+Intel Express交換機口令的清除
+適用範圍：Intel Express 10 Switch/10 Switch＋/100FX Switch交換機
+方法一：
+1．進入交換機的維護模式（Maintenance Mode），輸入：run defparm，以重啟交換機，把原來的配置變成原始默認設置(原始默認沒有口令)。
+2．進入維護模式：
+a．關閉交換機後按下面板上的Maint按鈕，然後給交換機加電；
+b．按下按鈕保持3秒鐘至System LED 綠色燈快速閃爍；
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-15 15:03:30 +0800 +0800'>February 15, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to Cisco路由器配置資訊及口令的清除" href="seth.dpdns.org/posts/cisco%E8%B7%AF%E7%94%B1%E5%99%A8%E9%85%8D%E7%BD%AE%E8%B3%87%E8%A8%8A%E5%8F%8A%E5%8F%A3%E4%BB%A4%E7%9A%84%E6%B8%85%E9%99%A4/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fix the router which can&#39;t saves settings.
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The router can bypass the startup configuration stored in non-volatile RAM (NVRAM) during its boot sequence. In order to check whether this problem occurs, complete these steps:
+After your router boots up, do not enter the initial configuration dialog (choose No when prompted). -– System Configuration Dialog —Would you like to enter the initial configuration dialog? [yes/no]: no
+Press Enter to get to the Router&gt; prompt.
+Type enable , and press ENTER to enter the privileged mode.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-15 11:46:19 +0800 +0800'>February 15, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to Fix the router which can&#39;t saves settings." href="seth.dpdns.org/posts/fix-the-router-which-cant-saves-settings/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">IBM  伺服器  RAID-1的建立
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>前幾朋友問如何做IBM伺服器集成RAID 7E 做RAID 1總結了一下做法現在和大家共用一下。一同學習。好了不多說了。現在開始開題吧
+我說的詳細一點。老鳥們不要笑話。畢經還有很多菜鳥，如果你明白就不要看了。
+1：開啟伺服器。。這個也不會。那算了。。你還是做點更有意義的事去吧。
+2：在第一屏時請同時按下“CTRL”和“A”兩個鍵。
+3：如果你按了。好了我們進入了RAID的設置介面了，什麼看不懂E文，沒關係一點也不難的。再往下看吧。
+第一個介面是這樣的有兩個可選項：
+“AIC -7902 A at slot 00 03:03:00”
+“AIC -7902 B at slot 00 03:03:00”
+我們選擇下面的這個就是B通道。
+4：你會看到如下的兩個選項：
+“Configure/View SCSI Comtroller Settings”
+“SCSI Disk Utilities”
+我們選擇第一個就是上面長的那個
+5：進入了 “contiguration”頁面
+請用上下鍵選到“HOST RAID” 選項上並回車
+新的伺服器默認的是“Disabled”,我們要做RAID當然不能用這個所以請選“Enabled”並回車。此時系統問人是不是要確認所做的改動。我們選“YES”
+6：這時你發現沒有我們看到的介面和剛剛看到的。不一樣了。多了一項了。
+“Configure/View SCSI Comtroller Settings”
+“Configure/View Hos RAID Settings”
+“SCSI Disk Utilities”
+沒錯是第二個。請選它。並回車
+7：此時你會看到兩個硬碟了。當然做RAID最少也要兩個要不也做不了這時請用你的小手按下“C”鍵。不用回車了。
+8：這時我們進入到了。Select RAID Type 介面了裏面有可選的RAID和種類，選擇你需要的就可以了也就只有三個可選。我要做的是“RAID-1”所以我選第二個。選定回車。
+9：這時你可以看到兩個硬碟，請把游標打到上面空格一下。這樣就選定了這個硬碟了。你會看到它的後面多了一個“X”號。注意請把兩個都選上。回車吧。
+10：這時請選擇“Create new RAID-1”這一項。回車。這時系統要你給這個RAID起個名字，你想起什麼都行但是特殊字元是不行的。只能是數位和字母。好了回車吧。
+11：這時系統問是不是確認。請先“YES”不記的要選幾個“YES”了。好像三個。是問是否要格式化硬碟和同步硬碟。不用管它只管選“YES”就好了。現在就算是在功告成了。機器會自己同步硬碟。只能等了。這個時間嗎。大約在一個小時左右吧。那要看你硬碟的大小了。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-15 08:41:10 +0800 +0800'>February 15, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to IBM  伺服器  RAID-1的建立" href="seth.dpdns.org/posts/ibm-%E4%BC%BA%E6%9C%8D%E5%99%A8-raid-1%E7%9A%84%E5%BB%BA%E7%AB%8B/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Something about myself .
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>有網友開始說我到處抄東西沒有自己的風格，沒有辦法作為一個IT人ctrl&#43;c一定會用得很熟。期待我的東西show給大家看？其實每個人都在希望展示自己，確也同樣懷一種恐懼去展示自己。而大家在乎的只是自己的想法，這樣我的日志加密碼了，你的日志也加了。
+在163開BLOG不只是想記錄什麼，很多是COPY下的我平時很有用的東西，很不錯的想法和我一段時間的思緒。積累下來沉澱下來這樣的東西就是我的技術和思維，博友看到的也會是我的東東。或許這些東東對你有用，那請您多關注我的博客，留個聯系方式大家也可以交心。
+日子過得真快，快年關了，過去的一年我日子絕對的糟糕，新的一年希望會有好運相伴隨。也希望我的朋友們都有好運。呵呵.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-10 09:09:55 +0800 +0800'>February 10, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to Something about myself ." href="seth.dpdns.org/posts/something-about-myself/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">一個浙江人的23條經典經商法則(很值得借鑒）
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1.堅持看CCTV-1新聞聯播。
+要想把握經濟命脈，必須關注政局，新聞聯播圖文並茂，有聲有色，著實為中國商人的最佳晴雨錶。
+2.不要輕易相信合約或合同
+哪怕合約讓你的律師看過了，公證處公證了都不要輕易相信，甚至當你的客戶把錢已經匯入你指定的帳戶以後你都必須確認，這筆錢你能不能拿出來，能不能動，而合約以外的涉及到利益衝突的任何口頭承諾與解釋你都必須當他是放屁，無論香還是臭，在對方兌現承諾以前都不要沉湎其中，更無論對方是誰，哪怕那是你交了十年的朋友甚至是和你上了床的女人都必須如此。
+3.你自己必須守信，一諾千斤，但對不守信的人例外！！
+你確認你一定能夠做到的事情你才可以承諾，但不要誇大其辭；你如果想一直做個商人，那麼你必須樹立自己的信譽！雖然你可以不在乎外界對你的爭議甚至你也可以製造爭議但你不能失去信譽，否則你就不是一個商人而是一個騙子；信譽具體包括你如果和別人約了2：00見面，那麼你絕對不可以1：50以前或者2：01以後出現，如遇交通堵塞或意外事件，那你必須及時通知對方，除非你出了車禍遇到空難昏迷不醒或者已經死亡，否則你都沒有理由爽約、早到太早或遲到太遲，而你的涵養則體現在對待對方不守時不守承諾的態度與包容等方面；而一旦當你確認對方是在為了利益而一再欺騙你，那麼你對對方做出的一切行為都不過分，甚至你可以將計就計，反過來給他畫一個餅！
+4.你能贏得起但你可能輸不起的生意最好不做！
+在做任何生意以前，你都必須考慮清楚，如果你輸了，那麼你是否輸得起，而不是去考慮你如果贏了會怎樣怎樣，輸不起的事情你最好別做！而考慮輸的範圍時你也不要只考慮錢財方面，作為半個商人，有些東西你永遠都輸不起，包括你愛的女人，你的家人，你的江湖地位甚至你的信譽；所以你必須在做任何生意以前全面考慮清楚你究竟輸得起輸不起，如果輸得起，那麼OK，你去義無反顧的做吧！
+5.不要先期投入太多，給自己留夠底牌
+不要把自己手裏所有的牌全部亮出來，因為牌局隨時會中途停止，而對方也隨時會出新的牌，不到最後關鍵時刻，最好不要亮出你手裏最有分量的牌，最後的贏家才是真正的贏家！
+6.天下無事不可為，但商人有所為也有所不為
+《菜根潭》上有句話說的好“毋以善小而不為，毋以惡小而為之”，說的是做人的道理，而生意也是如此：“不要因為利潤少就不去做，也不要因為風險小就去做”；而同樣在中國，違背法律的事情可以做，但違背道義的事情則堅決不能做。
+7.慎重選擇合作夥伴
+無論是團隊，還是個人，很多時候我們都渴望有能夠和我們一起聯手打天下的黃金搭檔，但親密戰友是一定要慎重慎重再慎重的選擇的，慎重是對彼此而言並非只針對單方，而親密戰友一定要符合下面這些前提條件才可以成為你的親密戰友；其一，他和你一定需要在一個戰壕裏一起戰鬥過至少一年；其二，在你沒有負他的前提他對你所說的每一句話他自己都能負責任；其三，他必須是個實在而且能塌實幹事的人；其四，他考慮得更多的是你們之間共同的利益(無論是短期的還是長期的)，而這個共同利益高於個人利益；其五，關鍵時刻他沒有躲開更沒有出賣你或者大家在他能獲得比合作利益還大的更大利益的前提下，五點缺一不可，否則彼此之間的合作不會長久。
+8.不要在你的團隊裏有你家庭成員的影子
+無論是你老婆還是你父母，都不可以在以你為核心之一的商業團隊裏有太多插手，因為以你為核心之一的團隊接受的是你，而不是你的家庭成員，在你的團隊全體成員主動接受並邀請你的家庭成員成為你們團隊一員以前，無論你的家庭成員是誰，有多大的本事，或者可以給你們的團隊帶來多大的前進幫助，都不能成為你讓你的家庭成員成為團隊一員的理由；而當在你團隊(三人或三人以上)裏的異性成員一旦與你上了床，那麼你必須考慮讓對方立刻離開這個團隊，要麼她(他)另謀高就，要麼她(他)成為你的專職情人或者太太(老公)，總之，她(他)已經不能繼續留在這個團隊，所以在團隊裏不要隨便考慮和異性上床或者動情。
+9.不要與和你有利益衝突的女人上床
+無論誰會占誰的便宜，或者大家之間可以同時並行兩種關係，都不應該與之上床，更無論這個女人有多性感，多煽情；這樣的女人包括：與你有生意往來的女人，在你手下工作的女人或者是你手下與同事的家眷，甚至是管理著你的政府機構、職能部門裏的女公務員，原因有二：其一，這樣的女人可以讓你死都不知道是怎麼死的，其二你雖然是半個商人，但另一半也不是出賣肉〈！—-&gt;體的男ji。
+10.不要給你的女人講你的商業細節
+無論這個女人是你包了的changji、二奶，還是你眾多情人之中的一個更或者是你已經結婚多年的妻子，你都應該不和她們談你的商業細節：第一，你談了可能她們也不懂；第二，你談的商業細節裏面會有能讓你入獄的內容；第三，那涉及到商業機密；無論你有多少信任你的女人，都不應該談太多和你有關的商業內容；還有一個無須單列的商規就是千萬不要在夜總會歌廳等色情場所給小姐和應招女郎發名片，一定要記住！
+11.你可以行賄但不要做污點證人到法庭去舉證
+不管收受你賄賂的官員多麼無恥，多麼不夠意思，你只可以行賄而絕不可以去做污點證人到法庭舉證；除非你以後連半個商人都不想做了；而如果是你主動行賄，對方收受了而且也為你辦了事情，那你更不應該由此來當做能抓住對方小辮子的罪證要脅對方繼續為你頂風開綠燈，也無論對方是政府官員還是執法人員還是銀行官員甚至辦事人員的；最基本的，請客送禮吃飯洗桑拿甚至大到澳門遊，這些感情投入都千萬不要單獨記小黑賬，而財務帳面上的處理也一定要不留痕跡。
+12.不要偷稅漏稅但要學會合理避稅
+大頭小尾的發票最好別開，營業稅以及附加的教育基金等你該交多少交多少，增值稅你更別動腦子(記得找上家要稅票正常抵扣就可以了)，除此以外關稅你掂量掂量自己的分量，具體情況具體對待，企業所得稅是可以全部避掉一分錢都不交的，但最好給地稅點面子，少交點別一分錢都不交，交多交少你自己看著辦，而個人所得稅呢，視當地政府給納稅人辦了多少實事是否把咱納稅人真當納稅人人看待的具體情況而造工資表吧。
+13.你可以利用新聞記者但不要相信記者
+你可以給記者一些錢或禮品，但你不能告訴記者很多你的底細更不能相信記者會給你保守商業秘密，甚至你不能和記者靠的太近且必須學會面對記者而設防，無論你面對是是否是漂亮風騷的女記者還是能發內參的大腕記者都如此
+14.不要擺大，哪怕你真的是老大
+切記天外有天，不要在任何場合擺大，哪怕你真的很大，而當對方是個擺大而且膚淺的人，你如果想滅掉他，那麼最好隨便找塊磚頭砸他一個跟頭，然後你走你的路！但切記，這個磚頭一定不是你自己的磚頭，而且這個磚頭最好和你自己沒什麼關係。
+15.保持中立，不要捲入政治派系紛爭
+在任何派系紛爭面前都應該保持中立，尤其是在政治派系紛爭面前，事實證明，把商業利益的希望寄託在有派系紛爭可能的任何一方面都是危險而且不明智的，在派系紛爭之間，你必須冷靜的保持中立。
+16.不要太在乎金錢與利益得失
+切記有所得就有所失，而有所失就有所得的古訓，錢沒有了還可以再賺，天下自然有得是你賺不完的錢和商業機會，所以何妨在金錢與利益面前大度一些呢？更何況，更大的商業機會正在等著你去把握呢？基本上你應該沒有時間計較一時的得失才對，哪怕你有的是時間去品茗賞色。
+17.不要過多用金錢粉飾自己
+雖然面子對你而言很重要，但相對於你自己的人格魅力而言，有沒有名車，帶游泳池的別墅，高爾夫以及你的服飾，甚至髮型這些都會顯得微不足道；當然你可以按自己的喜歡穿一雙“內聯升”的布鞋，甚至可以在有時間的時候飛到異國他鄉去看一場你喜歡的球隊的主場或客場比賽，更甚至你可以在很多人面前抽你自己喜歡抽的劣質香煙！
+18.資本決定發言權，但你不應該輕易讓別人知道你有多大的發言權
+關心一下你的屬於你的資本和你能控制的資本是正確的，甚至你該關心的包括你的壞帳和現金收益以及現金流量，但這些不應該讓太多人知道；而當你以外的獲得一筆巨大財富的時候，你更應該學會別把這個消息告訴別人，包括已經和你患難很久的妻子，否則她可能會要求離婚並分割你的這筆不小的資產！記住，男人的金錢應該和女人的年齡一樣永遠屬於秘密，哪怕有一天連女人的年齡都已經不是秘密的時候，你的金錢也應該還是秘密；除非在你臨死時即將捐獻你的全部家產時，你都絕對不可告訴別人！
+19.總結別人的成敗得失，但國外的案例你可以不用理會
+不要羡慕別人的成功，更不要鄙夷別人的失敗，你首要應該做的是學會分析和總結現象背後的本質，找出別人失敗或者成功的全部原因，取其長，補其短，做你自己該做的事情；而國外類似微軟等那些故事，離你實在太遙遠，你大可以不去管他，所以一定意義上，現有的MBA對在中國做生意的你而言並沒有多大實際意義！
+20.不要用黑白道的規矩去解決商業上的衝突
+商業永遠是商業，而商業是有商業自身的遊戲規則在的，所以哪怕你確實是黑道人物，也不能隨便利用黑道規矩去解決商業衝突，同樣，即將你有很好的白道背景與資源，你也不能輕易利用這些資源來解決你在商業中的衝突！既然選擇了商人，那你必須遵守商業中的一切遊戲規則，願賭就得服輸！
+21.在能把握全局的前提下，不要追求事必躬親
+不要把自己搞的沒有時間與朋友交流，更不要讓自己沒有時間去泡女人和INTERNET，最要緊的是不要讓自己沒有時間放鬆與思考，所以，應該學會讓別人去幫你打點生意，處理業務，雖然，業務的核心部分你自己必須牢牢把握；同樣，把事情交給別人去做的風險你要考慮清楚並能夠預防，以免你把事情交給別人去做以後，你自己又成了一名忙碌的救火隊員，記住消防和救火是有區別的，消防的口號是“消防結合，預防為主”。
+22.給自己留條後路，預防眾叛親離你
+可以在沉寂江湖多年以後重整旗鼓，但你不可以倒下以後就不再起來，因為你是一個男人！所以你必須給自己留一條屬於你自己的後路，後路包括藏起一個存錢罐，雖然裏面只有幾塊錢但你將來就是要靠這幾塊錢東山再起；後路也包括一棟法律意義上並不在你名下的房子(你可以有個地方一個人療傷，恢復元氣)，更包括一個並不經常來往的但很仗義而且你也給過他很多幫助的朋友(他可以在關鍵時候收留你，陪你喝酒，而這樣的朋友一生中你能遇到一個也已經很幸運了)；如果實在沒有後路，那麼你就必須有去露宿街頭沿街乞討的心理準備，但那時候你只可以去向陌生人伸手，而絕對不要向你過去幫助過的還欠著你很多債務或者人情但裝做不認識你的人低頭
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-08 20:25:48 +0800 +0800'>February 8, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to 一個浙江人的23條經典經商法則(很值得借鑒）" href="seth.dpdns.org/posts/%E4%B8%80%E5%80%8B%E6%B5%99%E6%B1%9F%E4%BA%BA%E7%9A%8423%E6%A2%9D%E7%B6%93%E5%85%B8%E7%B6%93%E5%95%86%E6%B3%95%E5%89%87%E5%BE%88%E5%80%BC%E5%BE%97%E5%80%9F%E9%91%92/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">人生值得珍藏的80句話
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>01. 每天告訴自己一次，“我真的很不錯”。
+02. 生氣是拿別人做錯的事來懲罰自己。
+03. 生活中若沒有朋友，就像生活中沒有陽光一樣。
+04. 明天的希望，讓我們忘了今天的痛苦。
+05. 生活若剝去理想、夢想、幻想，那生命便只是一堆空架子。
+06. 發光並非太陽的專利，你也可以發光。
+07. 愚者用肉體監視心靈，智者用心靈監視肉體。
+08. 獲得幸福的不二法門是珍視你所擁有的、遺忘你所沒有的。
+09. 貪婪是最真實的貧窮，滿足是最真實的財富。
+10. 你可以用愛得到全世界，你也可以用恨失去全世界。
+11. 人的價值，在遭受誘惑的一瞬間被決定。
+12. 年輕是我們唯一擁有權利去編織夢想的時光。
+13. 青春一經典當即永不再贖。
+14. 沒有了愛的語言，所有的文字都是乏味的。
+15. 真正的愛，超越生命的長度、心靈的寬度、靈魂的湛深度。
+16. 愛的力量大到可以使人忘記一切，卻又小到連一粒嫉妒的沙石也不能容納。
+17. 當一個人真正的覺悟的一刻，他放棄追尋外在世界的財富，而開始追尋他內心世界的真正財富。
+18. 只要有信心，人永遠不會被挫敗。
+19. 不論你在什麼時候開始，重要的是開始之後就不要停止。
+20. 不論你在什麼時候結束，重要的是結束之後就不要悔恨。
+21. 人若軟弱就是自己最大的敵人。
+22. 人若勇敢就是自己最好的朋友。
+23. “不可能”只存在於蠢人的字典裏。
+24. 抱最大的希望，盡最大的努力，做最壞的打算。
+25. 家！甜蜜的家！天下最美好的莫過於家。
+26. 遊手好閒會使人心智生銹。
+27. 每一件事都要用多方面的角度來看它。
+28. 有理想在的地方，地獄就是天堂。
+29. 有希望在的地方，痛苦也成歡樂。
+30. 所有的勝利，與征服自己的勝利比起來，都是微不足道。
+31. 所有的失敗，與失去自己的失敗比起來，更是微不足道。
+32. 上帝從不埋怨人們的愚昧，人們卻埋怨上帝的不公平。
+33. 美好的生命應該充滿期待、驚喜和感激。
+34. 世上最累人的事，莫過於虛偽地過日子。
+35. 覺得自己做得到和做不到，其實只在一念之間。
+36. 第一個青春是上帝給的；第二個青春是靠自己努力的。
+37. 少一點預設的期待，那份對人的關懷會更自在。
+38. 思想如鑽子，必須集中在一點鑽下去才有力量。
+39. 人只要不失去方向，就不會失去自己。
+40. 如果你曾歌頌黎明，那麼也請你擁抱黑夜。
+41. 問候不一定要慎重其事，但一定要真誠感人。
+42. 人生重要的不是所站的位置，而是所朝的方向。
+43. 當你能飛的時候就不要放棄飛。
+44. 當你能夢的時候就不要放棄夢。
+45. 當你能愛的時候就不要放棄愛。
+46. 生命太過於短暫，今天放棄了明天不一定能得到。
+47. 天才是百分之一的靈感加上百分之九十九的努力。
+48. 人總是珍惜未得到的，而遺忘了了所擁有的。
+49. 快樂要懂得分亨，才能加倍的快樂。
+50. 自己要先看得起自己，別人才會看得起你。
+51. 一個今天勝過兩個明天。
+52. 要銘記在心：每天都是一年中最美好的日子。
+53. 樂觀者在災禍中看到機會，悲觀者在機會中看到災禍。
+54. 有勇氣並不表示恐懼不存在，而是敢面對恐懼、克服恐懼。
+55. 肯承認錯誤則錯已改了一半。
+56. 明天是世上增值最快的一塊土地，因它充滿了期望。
+57. 理想的路總是為有信心的人預備著。
+58. 所有欺騙中，自欺是最為嚴重的。
+59. 人生最大的錯誤是不斷擔心會犯錯誤。
+60. 把你的臉迎向陽光，那就不會有陰影。
+61. 經驗是由痛苦中萃取出來的。
+62. 用最少的悔恨面對過去。
+63. 用最少的浪費面對現實。
+64. 用最多的夢對面未來。
+65. 快樂不是因為擁有的多而是計較的少。
+66. 你的選擇是做或不做，但不做就永遠不會有機會。
+67. 如果你想擁有完美無瑕的友誼，可能是一輩子找不到朋友
+68. 不如意的時候不要盡往悲傷裏鑽，想想有笑聲的日子吧。
+69. 把自己當傻瓜，不懂就問，你會學得更多。
+70. 要糾正別人之前，先反省自己有沒有犯錯。
+71. 因害怕失敗而不敢放手一搏，永遠不會成功。
+72. 要克服生活的焦慮和沮喪，得先學會做自己的主人。
+73. 你不能左右天氣，但你能轉變你的心情。
+74. 孤單寂寞與被踱感是最可怕的貧窮。
+75. 想像力比知識更重要。
+76. 漫無目的的生活就像出海航行而沒有指南針。
+77. 好好扮演自己的角色，做自己該做的事。
+78. 一切偉大的行動和思想，都有一個微不足道的開始。
+79. 得意時應善待他人，因為你失意時會有需要他們。
+80. 學做任何事得按部就班，急不得。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-08 20:21:56 +0800 +0800'>February 8, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to 人生值得珍藏的80句話" href="seth.dpdns.org/posts/%E4%BA%BA%E7%94%9F%E5%80%BC%E5%BE%97%E7%8F%8D%E8%97%8F%E7%9A%8480%E5%8F%A5%E8%A9%B1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">每個人的人生都要找的四個人
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>人生就是為了找尋愛的過程，每個人的人生都要找到四個人。
+第一個是自己,
+第二個是你最愛的人，
+第三個是最愛你的人，
+第四個是共度一生的人.
+首先會遇到你最愛的人，然後體會到愛的感覺；
+因為瞭解被愛的感覺，所以才能發現最愛你的人；
+當你經歷過愛人與被愛，學會了愛，才會知道什麼是你需要的，
+也才會找到最適合你，能夠相處一輩子的人。
+但很悲哀的，在現實生活中，這三個人通常不是同一個人；
+你最愛的，往往沒有選擇你；
+最愛你的，往往不是你最愛的；
+而最長久的，偏偏不是你最愛也不是最愛你的，
+只是在最適合的時間出現的那個人。
+你，會是別人生命中的第幾個人呢？
+沒有人是故意要變心的，他愛你的時候是真的愛你，
+可是他不愛你的時候也是真的不愛你了，
+他愛你的時候沒有辦法假裝不愛你；
+同樣的，他不愛你的時候也沒有辦法假裝愛你 。
+當一個人不愛你要離開你，
+你要問自己還愛不愛他，
+如果你也不愛他了，千萬別為了可憐的自尊而不肯離開；
+如果你還愛他，你應該會希望他過得幸福快樂，
+希望他跟真正愛的人在一起，絕不會阻止，
+你要是阻止他得到真正的幸福，就表示你已經不愛他了，
+而如果你不愛他，你又有什麼資格指責他變心呢？
+愛不是佔有，
+你喜歡月亮，不可能把月亮拿下來放在臉盆裏，
+但月亮的光芒仍可照進你的房間。
+換句話說，你愛一個人，也可以用另一種方式擁有，
+讓愛人成為生命裏的永恆回憶，
+如果你真愛一個人，就要愛他原來的樣子─愛他的好，也愛他的壞：
+愛他的優點，也愛他的缺點，
+絕不能因為愛他，就希望他變成自己所希望的樣子，
+萬一變不成就不愛他了。
+真正愛一個人是無法說出原因的，
+你只知道無論何時何地、心情好壞，你都希望這個人陪著你；
+真正的感情是兩人能在最艱苦中相守，也就是沒有絲毫要求。
+畢竟，感情必須付出，而不是只想獲得；
+分開是一種必然的考驗，
+如果你們感情不夠穩固，只好認輸，
+真愛是不會變成怨恨的。
+兩人在談情說愛的時候，
+最喜歡叫對方發誓，許下承諾我們為什麼要對方發誓，
+就是因為我們不相信對方，我們根本不相信情人，
+而這些山盟海誓又很不切實際：
+海枯石爛、地老天荒，都不能改變我對你的愛!
+明知道海不會枯、石不會爛、地不會老、天不會荒；
+就算會，也活不到那時候。
+許下諾言的時候千萬注意，不要許下可以實現的諾言，
+最好是承諾做不到的事，
+反正做不到的，隨便說說也不要緊，
+請記住：”不可能實現的諾言最動人”
+在愛情裏，說的是一套，做的是另一套；
+講的人不相信，聽的人也不相信。
+你呢？找到了第幾個？
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-07 08:45:08 +0800 +0800'>February 7, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to 每個人的人生都要找的四個人" href="seth.dpdns.org/posts/%E6%AF%8F%E5%80%8B%E4%BA%BA%E7%9A%84%E4%BA%BA%E7%94%9F%E9%83%BD%E8%A6%81%E6%89%BE%E7%9A%84%E5%9B%9B%E5%80%8B%E4%BA%BA/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">bat的常用命令
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
+==== 注 ===========
+首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:
+CR(0D) 命令行結束符
+Escape(1B) ANSI轉義字符引導符
+Space(20) 常用的參數界定符
+Tab(09) ; = 不常用的參數界定符
+&#43; COPY命令文件連接符
+? 文件通配符
+&#34;&#34; 字符串界定符
+| 命令管道符
+&lt; &gt; » 文件重定向符
+@ 命令行回顯屏蔽符
+/ 參數開關引導符
+: 批處理標籤引導符
+% 批處理變量引導符 其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:
+第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.
+第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中. echo 表示顯示此命令後的字符
+echo off 表示在此語句後所有運行的命令都不顯示命令行本身
+@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。
+call 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。
+pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue…的提示，等待用戶按任意鍵後繼續
+rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。
+==== 注 =====
+此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2007-02-06 10:26:57 +0800 +0800'>February 6, 2007</span>&nbsp;·&nbsp;Seth</footer>
+  <a class="entry-link" aria-label="post link to bat的常用命令" href="seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="seth.dpdns.org/seth.dpdns.org/page/20/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="seth.dpdns.org/seth.dpdns.org/page/22/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="seth.dpdns.org/">Seth Dang&#39;S</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

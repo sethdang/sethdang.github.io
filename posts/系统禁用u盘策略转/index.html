@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>系统禁用U盘策略（转） | Seth Dang博客</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="如果计算机上尚未安装 USB 存储设备
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>系统禁用U盘策略（转） | Seth Dang&#39;S</title>
+<meta name="keywords" content="">
+<meta name="description" content="如果计算机上尚未安装 USB 存储设备
 如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
 %SystemRoot%\Inf\Usbstor.pnf
 %SystemRoot%\Inf\Usbstor.inf
@@ -72,37 +73,55 @@ END PART
 END POLICY
 
 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。">
-    <meta name="generator" content="Hugo 0.150.0">
-    
-    
-    
-      <meta name="robots" content="index, follow">
-    
-    <meta name="author" content="Seth">
-    
+<meta name="author" content="Seth">
+<link rel="canonical" href="seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/">
+<link crossorigin="anonymous" href="seth.dpdns.org/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css" integrity="sha256-4fXEyuRFmWVff/lRlf&#43;JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="seth.dpdns.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="seth.dpdns.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="seth.dpdns.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="seth.dpdns.org/apple-touch-icon.png">
+<link rel="mask-icon" href="seth.dpdns.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
+            .list {
+                background: var(--theme);
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-
-
-    
-      
-
-    
-
-    
-
-    
-      <link rel="canonical" href="/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/">
-    
-
-    <meta property="og:url" content="/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/">
-  <meta property="og:site_name" content="Seth Dang博客">
+    </style>
+</noscript><meta property="og:url" content="seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/">
+  <meta property="og:site_name" content="Seth Dang&#39;S">
   <meta property="og:title" content="系统禁用U盘策略（转）">
   <meta property="og:description" content="如果计算机上尚未安装 USB 存储设备
 如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
@@ -166,14 +185,14 @@ NAME !!RestNoDrives VALUE NUMERIC 0
 END ITEMLIST
 END PART
 END POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale" content="zh-CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2008-07-11T13:56:20+08:00">
     <meta property="article:modified_time" content="2008-07-11T13:56:20+08:00">
-
-  <meta itemprop="name" content="系统禁用U盘策略（转）">
-  <meta itemprop="description" content="如果计算机上尚未安装 USB 存储设备
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="系统禁用U盘策略（转）">
+<meta name="twitter:description" content="如果计算机上尚未安装 USB 存储设备
 如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
 %SystemRoot%\Inf\Usbstor.pnf
 %SystemRoot%\Inf\Usbstor.inf
@@ -202,12 +221,13 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
 屏蔽U盘
 1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器
 我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。
-2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到&#34;屏蔽U盘&#34;的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。
+2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到&quot;屏蔽U盘&quot;的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。
 3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：
+
 POLICY !!NoDrives
 EXPLAIN !!NoDrives_Help
 PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoDrives”
+VALUENAME &ldquo;NoDrives&rdquo;
 ITEMLIST
 NAME !!ABOnly VALUE NUMERIC 3
 NAME !!COnly VALUE NUMERIC 4
@@ -219,10 +239,11 @@ NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT
 NAME !!RestNoDrives VALUE NUMERIC 0
 END ITEMLIST
 END PART
-END POLICY POLICY !!NoViewOnDrive
+END POLICY
+POLICY !!NoViewOnDrive
 EXPLAIN !!NoViewOnDrive_Help
 PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoViewOnDrive”
+VALUENAME &ldquo;NoViewOnDrive&rdquo;
 ITEMLIST
 NAME !!ABOnly VALUE NUMERIC 3
 NAME !!COnly VALUE NUMERIC 4
@@ -234,133 +255,122 @@ NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）
 NAME !!RestNoDrives VALUE NUMERIC 0
 END ITEMLIST
 END PART
-END POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。">
-  <meta itemprop="datePublished" content="2008-07-11T13:56:20+08:00">
-  <meta itemprop="dateModified" content="2008-07-11T13:56:20+08:00">
-  <meta itemprop="wordCount" content="246">
-  <meta itemprop="keywords" content="MSDC">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="系统禁用U盘策略（转）">
-  <meta name="twitter:description" content="如果计算机上尚未安装 USB 存储设备
-如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
-%SystemRoot%\Inf\Usbstor.pnf
-%SystemRoot%\Inf\Usbstor.inf
-这样，用户将无法在计算机上安装 USB 存储设备。 要向用户或组分配对 Usbstor.pnf 和 Usbstor.inf 文件的“拒绝”权限，请按照下列步骤操作：
-启动 Windows 资源管理器，然后找到 %SystemRoot%\Inf 文件夹。
-右键单击“Usbstor.pnf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-右键单击“Usbstor.inf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-如果计算机上已经安装了 USB 存储设备
-警告： “注册表编辑器”使用不当可导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因“注册表编辑器”使用不当而导致的问题。使用注册表编辑器需要您自担风险。 如果计算机上已经安装了 USB 存储设备，请将以下注册表项中的“Start”值设置为 4：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-这样，当用户将 USB 存储设备连接到计算机时，该设备将无法运行。要设置“Start”的值，请按照下列步骤操作：
-单击“开始”，然后单击“运行”。
-在“打开”框中，键入“regedit”，然后单击“确定”。
-找到并单击下面的注册表项：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-在右窗格中，双击“Start”。
-在“数值数据”框中，键入 4，单击“十六进制”（如果尚未选中），然后单击“确定”。
-退出“注册表编辑器”。
-至此，USB禁止策略实施成功。
-屏蔽U盘
-1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器
-我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。
-2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到&#34;屏蔽U盘&#34;的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。
-3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：
-POLICY !!NoDrives
-EXPLAIN !!NoDrives_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoDrives”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY POLICY !!NoViewOnDrive
-EXPLAIN !!NoViewOnDrive_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoViewOnDrive”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。">
+END POLICY
 
-      
+说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "seth.dpdns.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "系统禁用U盘策略（转）",
+      "item": "seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "系统禁用U盘策略（转）",
+  "name": "系统禁用U盘策略（转）",
+  "description": "如果计算机上尚未安装 USB 存储设备\n如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：\n%SystemRoot%\\Inf\\Usbstor.pnf\n%SystemRoot%\\Inf\\Usbstor.inf\n这样，用户将无法在计算机上安装 USB 存储设备。 要向用户或组分配对 Usbstor.pnf 和 Usbstor.inf 文件的“拒绝”权限，请按照下列步骤操作：\n启动 Windows 资源管理器，然后找到 %SystemRoot%\\Inf 文件夹。\n右键单击“Usbstor.pnf”文件，然后单击“属性”。\n单击“安全”选项卡。\n在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。\n在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。\n右键单击“Usbstor.inf”文件，然后单击“属性”。\n单击“安全”选项卡。\n在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。\n在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。\n如果计算机上已经安装了 USB 存储设备\n警告： “注册表编辑器”使用不当可导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因“注册表编辑器”使用不当而导致的问题。使用注册表编辑器需要您自担风险。 如果计算机上已经安装了 USB 存储设备，请将以下注册表项中的“Start”值设置为 4：\nHKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\UsbStor\n这样，当用户将 USB 存储设备连接到计算机时，该设备将无法运行。要设置“Start”的值，请按照下列步骤操作：\n单击“开始”，然后单击“运行”。\n在“打开”框中，键入“regedit”，然后单击“确定”。\n找到并单击下面的注册表项：\nHKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\UsbStor\n在右窗格中，双击“Start”。\n在“数值数据”框中，键入 4，单击“十六进制”（如果尚未选中），然后单击“确定”。\n退出“注册表编辑器”。\n至此，USB禁止策略实施成功。\n屏蔽U盘\n1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器\n我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。\n2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到\u0026quot;屏蔽U盘\u0026quot;的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。\n3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：\nPOLICY !!NoDrives\nEXPLAIN !!NoDrives_Help\nPART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED\nVALUENAME \u0026ldquo;NoDrives\u0026rdquo;\nITEMLIST\nNAME !!ABOnly VALUE NUMERIC 3\nNAME !!COnly VALUE NUMERIC 4\nNAME !!DOnly VALUE NUMERIC 8\nNAME !!ABConly VALUE NUMERIC 7\nNAME !!ABCDOnly VALUE NUMERIC 15\nNAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT\n; low 26 bits on (1 bit per drive)\nNAME !!RestNoDrives VALUE NUMERIC 0\nEND ITEMLIST\nEND PART\nEND POLICY POLICY !!NoViewOnDrive\nEXPLAIN !!NoViewOnDrive_Help\nPART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED\nVALUENAME \u0026ldquo;NoViewOnDrive\u0026rdquo;\nITEMLIST\nNAME !!ABOnly VALUE NUMERIC 3\nNAME !!COnly VALUE NUMERIC 4\nNAME !!DOnly VALUE NUMERIC 8\nNAME !!ABConly VALUE NUMERIC 7\nNAME !!ABCDOnly VALUE NUMERIC 15\nNAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）\n; low 26 bits on (1 bit per drive)\nNAME !!RestNoDrives VALUE NUMERIC 0\nEND ITEMLIST\nEND PART\nEND POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。\n",
+  "keywords": [
     
-	
-  </head><body class="ma0 avenir bg-near-white production">
+  ],
+  "articleBody": "如果计算机上尚未安装 USB 存储设备\n如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：\n%SystemRoot%\\Inf\\Usbstor.pnf\n%SystemRoot%\\Inf\\Usbstor.inf\n这样，用户将无法在计算机上安装 USB 存储设备。 要向用户或组分配对 Usbstor.pnf 和 Usbstor.inf 文件的“拒绝”权限，请按照下列步骤操作：\n启动 Windows 资源管理器，然后找到 %SystemRoot%\\Inf 文件夹。\n右键单击“Usbstor.pnf”文件，然后单击“属性”。\n单击“安全”选项卡。\n在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。\n在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。\n右键单击“Usbstor.inf”文件，然后单击“属性”。\n单击“安全”选项卡。\n在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。\n在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。\n如果计算机上已经安装了 USB 存储设备\n警告： “注册表编辑器”使用不当可导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因“注册表编辑器”使用不当而导致的问题。使用注册表编辑器需要您自担风险。 如果计算机上已经安装了 USB 存储设备，请将以下注册表项中的“Start”值设置为 4：\nHKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\UsbStor\n这样，当用户将 USB 存储设备连接到计算机时，该设备将无法运行。要设置“Start”的值，请按照下列步骤操作：\n单击“开始”，然后单击“运行”。\n在“打开”框中，键入“regedit”，然后单击“确定”。\n找到并单击下面的注册表项：\nHKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\UsbStor\n在右窗格中，双击“Start”。\n在“数值数据”框中，键入 4，单击“十六进制”（如果尚未选中），然后单击“确定”。\n退出“注册表编辑器”。\n至此，USB禁止策略实施成功。\n屏蔽U盘\n1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器\n我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。\n2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到\"屏蔽U盘\"的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。\n3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：\nPOLICY !!NoDrives\nEXPLAIN !!NoDrives_Help\nPART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED\nVALUENAME “NoDrives”\nITEMLIST\nNAME !!ABOnly VALUE NUMERIC 3\nNAME !!COnly VALUE NUMERIC 4\nNAME !!DOnly VALUE NUMERIC 8\nNAME !!ABConly VALUE NUMERIC 7\nNAME !!ABCDOnly VALUE NUMERIC 15\nNAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT\n; low 26 bits on (1 bit per drive)\nNAME !!RestNoDrives VALUE NUMERIC 0\nEND ITEMLIST\nEND PART\nEND POLICY POLICY !!NoViewOnDrive\nEXPLAIN !!NoViewOnDrive_Help\nPART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED\nVALUENAME “NoViewOnDrive”\nITEMLIST\nNAME !!ABOnly VALUE NUMERIC 3\nNAME !!COnly VALUE NUMERIC 4\nNAME !!DOnly VALUE NUMERIC 8\nNAME !!ABConly VALUE NUMERIC 7\nNAME !!ABCDOnly VALUE NUMERIC 15\nNAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）\n; low 26 bits on (1 bit per drive)\nNAME !!RestNoDrives VALUE NUMERIC 0\nEND ITEMLIST\nEND PART\nEND POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。\n仔细观察上述代码，不难发现，其中一共有7个NAME项，正好和我们图2下拉框中的一一对应，后面的VALUE NUMERIC按照low 26 bits on (1 bit per drive)的规则取值，low 26 bits on的意思说值为26位的二进制，最多可指定26个驱动器盘符，而1 bit per drive则代表1位代表1个驱动器，举例说A=1，B=2，C=4，D=8，E=16，F=32，G=64，H=128，I=256，由低到高，以此类推。我们可根据我们的需要修改此代码段，假如我们要隐藏A、B、C、F、G、H、I，您可以根据您的需要而定，推荐隐藏的盘符数量应该大于您的现有的盘符数加上您客户端所有的USB接口数（防止有人同时插入几个U盘，呵呵！）。那么我们计算出VALUE NUMERIC的数值A+B+C+F+G+H+I = 1+2+4+32+64+128+256 =487，在两个策略中的\nNAME !!ABCDOnly VALUE NUMERIC 15\n下插入一行\nNAME !!ABCFGHIOnly VALUE NUMERIC 487\n随后，移到System.adm文件的末尾，\n在 ABConly=“仅限制驱动器 A、B 和 C” 下面插入一行数据，\nABCFGHIOnly=“仅限制驱动器A、B、C、F、G、H、I”\n等于号后引号内的说明您可以根据自己的喜好定义，它将会显示在如图2的下拉框中。保存后，打开“屏蔽U盘”策略，定位“用户配置-管理模板-Windows 组件-Windows 资源管理器”，在右边的窗口中双击“隐藏我的电脑中的这些指定的驱动器”或“防止从我的电脑访问驱动器”其中的一个，点击“启用”，再点击下拉框，哈哈，您会发现您多了一个选项（如图4）。\n这时候，您只要在您想屏蔽的用户的组织单位上应用此策略（别忘了这两个策略都需要设置），保存后，包含于该组织单位下的用户登录时，便会发现他的U盘插上后，系统虽能识别并正确安装驱动，但在“我的电脑”中却无法看见，并且通过其他方法也无法访问，包括在地址栏中输入盘符。\n至此，全部设置完毕，让您的客户段使用此OU下的用户登录看看吧！\n其他注意事项：\n1、这种方法在您的客户端很多的时候，很方便，您只要确保客户端登录用户属于您已应用此组策略的OU下即可，如果暂时需要允许他使用U盘，那只要把该用户移出此OU，该用户再注销重新登录一下就OK。\n2、需要注意的是，您在OU中建立用户时，用户缺省是属于Domain users组，这对于大多数软件来说没有问题，但会使有些软件无法安装或运行，您可以赋予这些用户在客户端本机的Power user组的权限，即可解决。\n3、注意这种方法同时也屏蔽了您的光驱盘符，光驱也是不能访问的。当然U盘都屏蔽了，我想光驱就更该屏蔽了，呵呵！如果实在要访问，可以在计算机管理中的磁盘管理中赋予光驱一个靠后的盘符即可。\n4、OU是可以嵌套的，客户端组策略的应用是从域根到OU再到子OU，而且是可以覆盖的，除非您选定了“阻止策略继承”。如果您在父OU上设置了屏蔽U盘，但在子OU中又取消了屏蔽，那么客户端的U盘是不会被屏蔽的。\n5、如果您在一个OU中设置了此屏蔽策略，但您又要在其他同级的OU中要开放一些用户的U盘时，您需要重新建一个策略，而不是直接在“屏蔽U盘”的策略上修改成不屏蔽U盘，因为这是个链接到“屏蔽U盘”的策略，您实际修改的是“屏蔽U盘”策略，这会影响到他管理下的所有的OU，他们都将会应用您修改后的策略。\n6、在域中应用组策略时，系统只能对整个域、组织单位实施组策略，不能对单个的用户或者计算机指定组策略，在实际应用的时候，可多建立几个组织单位来管理用户。\n",
+  "wordCount" : "246",
+  "inLanguage": "en",
+  "datePublished": "2008-07-11T13:56:20+08:00",
+  "dateModified": "2008-07-11T13:56:20+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Seth"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seth Dang'S",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "seth.dpdns.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="seth.dpdns.org/" accesskey="h" title="Seth Dang&#39;S (Alt + H)">Seth Dang&#39;S</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
     
-   
-  
+    <h1 class="post-title entry-hint-parent">
+      系统禁用U盘策略（转）
+    </h1>
+    <div class="post-meta"><span title='2008-07-11 13:56:20 +0800 +0800'>July 11, 2008</span>&nbsp;·&nbsp;Seth
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        Seth Dang博客
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">系统禁用U盘策略（转）</h1>
-      
-      <p class="tracked"><strong>Seth</strong>
-      </p>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2008-07-11T13:56:20+08:00">July 11, 2008</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>如果计算机上尚未安装 USB 存储设备</p>
+</div>
+  </header> 
+  <div class="post-content"><p>如果计算机上尚未安装 USB 存储设备</p>
 <p>如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：</p>
 <p>%SystemRoot%\Inf\Usbstor.pnf</p>
 <p>%SystemRoot%\Inf\Usbstor.inf</p>
@@ -443,34 +453,86 @@ ABCFGHIOnly=&ldquo;仅限制驱动器A、B、C、F、G、H、I&rdquo;<br>
 <p>4、OU是可以嵌套的，客户端组策略的应用是从域根到OU再到子OU，而且是可以覆盖的，除非您选定了“阻止策略继承”。如果您在父OU上设置了屏蔽U盘，但在子OU中又取消了屏蔽，那么客户端的U盘是不会被屏蔽的。</p>
 <p>5、如果您在一个OU中设置了此屏蔽策略，但您又要在其他同级的OU中要开放一些用户的U盘时，您需要重新建一个策略，而不是直接在“屏蔽U盘”的策略上修改成不屏蔽U盘，因为这是个链接到“屏蔽U盘”的策略，您实际修改的是“屏蔽U盘”策略，这会影响到他管理下的所有的OU，他们都将会应用您修改后的策略。</p>
 <p>6、在域中应用组策略时，系统只能对整个域、组织单位实施组策略，不能对单个的用户或者计算机指定组策略，在实际应用的时候，可多建立几个组织单位来管理用户。</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
 
 
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
-    &copy;  Seth Dang博客 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
   </div>
-</footer>
 
-  </body>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="seth.dpdns.org/">Seth Dang&#39;S</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

@@ -1,33 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Softwave on Seth Dang博客</title>
-    <link>/categories/softwave/</link>
-    <description>Recent content in Softwave on Seth Dang博客</description>
-    <generator>Hugo</generator>
+    <title>Softwave on Seth Dang&#39;S</title>
+    <link>seth.dpdns.org/categories/softwave/</link>
+    <description>Recent content in Softwave on Seth Dang&#39;S</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 26 Apr 2012 16:24:07 +0800</lastBuildDate>
-    <atom:link href="/categories/softwave/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="seth.dpdns.org/categories/softwave/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何取消word文档保护——设置了word文档保护，忘记了文档保护密码怎么办？(转)</title>
-      <link>/posts/%E5%A6%82%E4%BD%95%E5%8F%96%E6%B6%88word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E8%AE%BE%E7%BD%AE%E4%BA%86word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%BF%98%E8%AE%B0%E4%BA%86%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E%E8%BD%AC/</link>
+      <link>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E5%8F%96%E6%B6%88word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E8%AE%BE%E7%BD%AE%E4%BA%86word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%BF%98%E8%AE%B0%E4%BA%86%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E%E8%BD%AC/</link>
       <pubDate>Thu, 26 Apr 2012 16:24:07 +0800</pubDate>
-      <guid>/posts/%E5%A6%82%E4%BD%95%E5%8F%96%E6%B6%88word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E8%AE%BE%E7%BD%AE%E4%BA%86word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%BF%98%E8%AE%B0%E4%BA%86%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E%E8%BD%AC/</guid>
-      <description>&lt;p&gt;在设定了Word文档保护后，常会因忘记密码而无法编辑，现在介绍几种破解方法》&lt;/p&gt;&#xA;&lt;p&gt;在使用Word进行文档保护时，我们经常会使用到窗体保护（工具→保护文档(P)&amp;hellip;），用窗体保护最为彻底，用户无法编辑，也无法进行Copy&amp;amp;Paste;操作。&lt;/p&gt;&#xA;&lt;p&gt;但是，Word文档的漏洞可以让你用很简单的方法去掉这个密码，我们自己来测试一下：&lt;/p&gt;&#xA;&lt;p&gt;首先创建一个Ｗord文档，使用窗体保护的方式保护文档，工具→保护文档(P)&amp;hellip;→核对“仅允许在文档中进行此类编辑”-&amp;gt;选择“填写窗体”，此时会弹出一个密码框，输入两次密码（我这里选择123作为Ｗord文件密码），这样，该文档就已经被保护起来了。&lt;/p&gt;&#xA;&lt;p&gt;然后我们来破解它，打开刚才创建的Ｗord文档，文件→另存为→选择XML格式，存为一个XML文档，用记事本打开该XML文件，搜索“w:UnprotectPassword“（引号内的内容，或直接搜索Password），你会看到5BCECF7A的字样（如果你的密码用的是123的话）。&lt;/p&gt;&#xA;&lt;p&gt;设置了word文档保护，忘记了文档保护密码怎么办？&lt;/p&gt;&#xA;&lt;p&gt;接下去的破解办法不只一种，大多网站介绍使用UltraEdit32或其他的类似的二进制工具修改文档，我们觉得这是很麻烦的，一般的计算机没有安装这这类软件，如果去网上下载又得安装，确实很麻烦，是否可以不用这类工具，也能够破解呢？答案是肯定的，下面我们一起探讨一下破解的方法：&lt;/p&gt;&#xA;&lt;p&gt;①打开受限制的Word文件，然后“文件→另存为→选择XML格式”，也把它存为一个XML文档。&lt;/p&gt;&#xA;&lt;p&gt;②用记事本打开该XML文件，搜索“w:UnprotectPassword“（引号内的内容，或直接搜索Password），把“w:UnprotectPassword”＝后面引号里面的八个数字字母混合的字样改为“5BCECF7A”（这里我们准备用密码“123”破解），保存退出。&lt;/p&gt;&#xA;&lt;p&gt;③用Word打开刚才用记事本修改过密码的XML文件，然后单击工具→取消文档保护，要求输入密码，直接输入“123”就行。最后单击“文件→另存为→选择DOC格式”就完成取消对WORD的文档密码保护了。&lt;/p&gt;&#xA;&lt;p&gt;如何取消Word文档保护密码总结如下：打开加密文档，另存为网页或XML格式文件，用记事本打开，查找“w:UnprotectPassword”，将等号后面引号的字样改为“5BCECF7A”，用Ｗord文档打开XML文档，用密码“123”取消对文档的保护，最后另存为DOC格式就完成取消文档保护。&lt;/p&gt;&#xA;&lt;p&gt;此外，还可以使用下面几种办法：&lt;/p&gt;&#xA;&lt;p&gt;方法一：插入文件法&lt;br&gt;&#xA;启动WORD，新建一个空白文档，执行“插入——〉文件”命令，打开“插入文件”对话框，定位到需要解除保护的文档所在的文件夹，选中相应文档，单击“插入”按钮，将加密保护的文档插入到新文档中，文档保护会被自动撤销。&lt;br&gt;&#xA;方法二：文件另存法&lt;br&gt;&#xA;打开保护的文档，执行“文件——〉另存为”命令，打开“另存为”对话框，将“文件类型”选定为“WORD97—2003&amp;amp;6.0/95—RTF(*.doc)”，然后取名保存，关闭该文档，重新打开一下，执行“工具——〉取消文档保护”命令即可。&lt;br&gt;&#xA;或者将文件类型另存为HTML，然后将其中的内容，复制粘贴到新建文档中。&lt;br&gt;&#xA;方法三：写字板法&lt;br&gt;&#xA;启动写字板，打开保护的WORD文档，另存为WORD文档，同时可以取消对文档的保护。&lt;br&gt;&#xA;但此方法可能会使文档中的图片等要素丢失。&lt;br&gt;&#xA;方法四：第三方软件法 如暴力破解等&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E5%A6%82%E4%BD%95%E5%8F%96%E6%B6%88word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E8%AE%BE%E7%BD%AE%E4%BA%86word%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%BF%98%E8%AE%B0%E4%BA%86%E6%96%87%E6%A1%A3%E4%BF%9D%E6%8A%A4%E5%AF%86%E7%A0%81%E6%80%8E%E4%B9%88%E5%8A%9E%E8%BD%AC/</guid>
+      <description>&lt;p&gt;在设定了Word文档保护后，常会因忘记密码而无法编辑，现在介绍几种破解方法》&lt;/p&gt;
+&lt;p&gt;在使用Word进行文档保护时，我们经常会使用到窗体保护（工具→保护文档(P)&amp;hellip;），用窗体保护最为彻底，用户无法编辑，也无法进行Copy&amp;amp;Paste;操作。&lt;/p&gt;
+&lt;p&gt;但是，Word文档的漏洞可以让你用很简单的方法去掉这个密码，我们自己来测试一下：&lt;/p&gt;
+&lt;p&gt;首先创建一个Ｗord文档，使用窗体保护的方式保护文档，工具→保护文档(P)&amp;hellip;→核对“仅允许在文档中进行此类编辑”-&amp;gt;选择“填写窗体”，此时会弹出一个密码框，输入两次密码（我这里选择123作为Ｗord文件密码），这样，该文档就已经被保护起来了。&lt;/p&gt;
+&lt;p&gt;然后我们来破解它，打开刚才创建的Ｗord文档，文件→另存为→选择XML格式，存为一个XML文档，用记事本打开该XML文件，搜索“w:UnprotectPassword“（引号内的内容，或直接搜索Password），你会看到5BCECF7A的字样（如果你的密码用的是123的话）。&lt;/p&gt;
+&lt;p&gt;设置了word文档保护，忘记了文档保护密码怎么办？&lt;/p&gt;
+&lt;p&gt;接下去的破解办法不只一种，大多网站介绍使用UltraEdit32或其他的类似的二进制工具修改文档，我们觉得这是很麻烦的，一般的计算机没有安装这这类软件，如果去网上下载又得安装，确实很麻烦，是否可以不用这类工具，也能够破解呢？答案是肯定的，下面我们一起探讨一下破解的方法：&lt;/p&gt;
+&lt;p&gt;①打开受限制的Word文件，然后“文件→另存为→选择XML格式”，也把它存为一个XML文档。&lt;/p&gt;
+&lt;p&gt;②用记事本打开该XML文件，搜索“w:UnprotectPassword“（引号内的内容，或直接搜索Password），把“w:UnprotectPassword”＝后面引号里面的八个数字字母混合的字样改为“5BCECF7A”（这里我们准备用密码“123”破解），保存退出。&lt;/p&gt;
+&lt;p&gt;③用Word打开刚才用记事本修改过密码的XML文件，然后单击工具→取消文档保护，要求输入密码，直接输入“123”就行。最后单击“文件→另存为→选择DOC格式”就完成取消对WORD的文档密码保护了。&lt;/p&gt;
+&lt;p&gt;如何取消Word文档保护密码总结如下：打开加密文档，另存为网页或XML格式文件，用记事本打开，查找“w:UnprotectPassword”，将等号后面引号的字样改为“5BCECF7A”，用Ｗord文档打开XML文档，用密码“123”取消对文档的保护，最后另存为DOC格式就完成取消文档保护。&lt;/p&gt;
+&lt;p&gt;此外，还可以使用下面几种办法：&lt;/p&gt;
+&lt;p&gt;方法一：插入文件法&lt;br&gt;
+启动WORD，新建一个空白文档，执行“插入——〉文件”命令，打开“插入文件”对话框，定位到需要解除保护的文档所在的文件夹，选中相应文档，单击“插入”按钮，将加密保护的文档插入到新文档中，文档保护会被自动撤销。&lt;br&gt;
+方法二：文件另存法&lt;br&gt;
+打开保护的文档，执行“文件——〉另存为”命令，打开“另存为”对话框，将“文件类型”选定为“WORD97—2003&amp;amp;6.0/95—RTF(*.doc)”，然后取名保存，关闭该文档，重新打开一下，执行“工具——〉取消文档保护”命令即可。&lt;br&gt;
+或者将文件类型另存为HTML，然后将其中的内容，复制粘贴到新建文档中。&lt;br&gt;
+方法三：写字板法&lt;br&gt;
+启动写字板，打开保护的WORD文档，另存为WORD文档，同时可以取消对文档的保护。&lt;br&gt;
+但此方法可能会使文档中的图片等要素丢失。&lt;br&gt;
+方法四：第三方软件法 如暴力破解等&lt;/p&gt;</description>
     </item>
     <item>
       <title>bat的常用命令</title>
-      <link>/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Tue, 06 Feb 2007 10:26:57 +0800</pubDate>
-      <guid>/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>&lt;p&gt;echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。&lt;/p&gt;&#xA;&lt;p&gt;==== 注 ===========&lt;br&gt;&#xA;首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:&lt;br&gt;&#xA;CR(0D) 命令行結束符&lt;br&gt;&#xA;Escape(1B) ANSI轉義字符引導符&lt;br&gt;&#xA;Space(20) 常用的參數界定符&lt;br&gt;&#xA;Tab(09) ; = 不常用的參數界定符&lt;br&gt;&#xA;+ COPY命令文件連接符&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;? 文件通配符&lt;br&gt;&#xA;&amp;quot;&amp;quot; 字符串界定符&lt;br&gt;&#xA;| 命令管道符&lt;br&gt;&#xA;&amp;lt; &amp;gt; &amp;raquo; 文件重定向符&lt;br&gt;&#xA;@ 命令行回顯屏蔽符&lt;br&gt;&#xA;/ 參數開關引導符&lt;br&gt;&#xA;: 批處理標籤引導符&lt;br&gt;&#xA;% 批處理變量引導符&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;第二-與rem-不同的是-後的字符行在執行時不會回顯-無論是否用echo-on打開命令行回顯狀態-因為命令解釋器不認為他是一個有效的命令行-就此點來看-rem-在某些場合下將比--更為適用-另外-rem-可以用於-configsys-文件中&#34;&gt;其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:&lt;br&gt;&#xA;第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.&lt;br&gt;&#xA;第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中.&lt;/h1&gt;&#xA;&lt;p&gt;echo 表示顯示此命令後的字符&lt;br&gt;&#xA;echo off 表示在此語句後所有運行的命令都不顯示命令行本身&lt;br&gt;&#xA;@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。&lt;br&gt;&#xA;call 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。&lt;br&gt;&#xA;pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue&amp;hellip;的提示，等待用戶按任意鍵後繼續&lt;br&gt;&#xA;rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。&lt;br&gt;&#xA;==== 注 =====&lt;br&gt;&#xA;此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>&lt;p&gt;echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。&lt;/p&gt;
+&lt;p&gt;==== 注 ===========&lt;br&gt;
+首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:&lt;br&gt;
+CR(0D) 命令行結束符&lt;br&gt;
+Escape(1B) ANSI轉義字符引導符&lt;br&gt;
+Space(20) 常用的參數界定符&lt;br&gt;
+Tab(09) ; = 不常用的參數界定符&lt;br&gt;
++ COPY命令文件連接符&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;? 文件通配符&lt;br&gt;
+&amp;quot;&amp;quot; 字符串界定符&lt;br&gt;
+| 命令管道符&lt;br&gt;
+&amp;lt; &amp;gt; &amp;raquo; 文件重定向符&lt;br&gt;
+@ 命令行回顯屏蔽符&lt;br&gt;
+/ 參數開關引導符&lt;br&gt;
+: 批處理標籤引導符&lt;br&gt;
+% 批處理變量引導符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;第二-與rem-不同的是-後的字符行在執行時不會回顯-無論是否用echo-on打開命令行回顯狀態-因為命令解釋器不認為他是一個有效的命令行-就此點來看-rem-在某些場合下將比--更為適用-另外-rem-可以用於-configsys-文件中&#34;&gt;其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:&lt;br&gt;
+第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.&lt;br&gt;
+第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中.&lt;/h1&gt;
+&lt;p&gt;echo 表示顯示此命令後的字符&lt;br&gt;
+echo off 表示在此語句後所有運行的命令都不顯示命令行本身&lt;br&gt;
+@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。&lt;br&gt;
+call 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。&lt;br&gt;
+pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue&amp;hellip;的提示，等待用戶按任意鍵後繼續&lt;br&gt;
+rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。&lt;br&gt;
+==== 注 =====&lt;br&gt;
+此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理&lt;/p&gt;</description>
     </item>
     <item>
       <title>万能Ghost系统制作教程(转载) </title>
-      <link>/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/</link>
+      <link>seth.dpdns.org/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/</link>
       <pubDate>Fri, 01 Dec 2006 16:21:07 +0800</pubDate>
-      <guid>/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/</guid>
-      <description>&lt;p&gt;本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。&lt;/p&gt;&#xA;&lt;h1 id=&#34;一前期基础工作&#34;&gt;一、前期基础工作&lt;/h1&gt;&#xA;&lt;p&gt;1、准备所需工具软件&lt;br&gt;&#xA;*S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具&lt;br&gt;&#xA;*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）&lt;br&gt;&#xA;*Ghost_v8.0 &amp;amp; v8.2（v8.0以上版本才能够支持NTFS分区）&lt;br&gt;&#xA;*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）&lt;br&gt;&#xA;*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具&lt;/p&gt;&#xA;&lt;p&gt;2、安装操作系统&lt;br&gt;&#xA;正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，&amp;ldquo;原生&amp;quot;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（&amp;rdquo; 原生&amp;quot;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。&lt;br&gt;&#xA;对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。&lt;/p&gt;&#xA;&lt;p&gt;3、安装应用软件&lt;br&gt;&#xA;安装注册并设置好你所需要的应用软件，如：Office、Winrar等。&lt;br&gt;&#xA;注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。&lt;/p&gt;&#xA;&lt;p&gt;4、安装S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具&lt;br&gt;&#xA;双击 S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。&lt;/p&gt;&#xA;&lt;p&gt;5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）&lt;br&gt;&#xA;解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。&lt;br&gt;&#xA;在配合S&amp;amp;R;&amp;amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;amp;R;&amp;amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。&lt;/p&gt;&#xA;&lt;h1 id=&#34;二系统减肥可选&#34;&gt;二、系统减肥（可选）&lt;/h1&gt;&#xA;&lt;p&gt;为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。&lt;/p&gt;&#xA;&lt;p&gt;1、关闭系统还原&lt;br&gt;&#xA;打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。&lt;br&gt;&#xA;WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。&lt;/p&gt;&#xA;&lt;p&gt;2、关闭系统休眠&lt;br&gt;&#xA;打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。&lt;br&gt;&#xA;WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。&lt;/p&gt;&#xA;&lt;p&gt;3、转移虚拟内存页面文件&lt;br&gt;&#xA;打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。&lt;br&gt;&#xA;虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。&lt;br&gt;&#xA;如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。&lt;/p&gt;&#xA;&lt;p&gt;4、清理磁盘，删除系统和IE临时文件&lt;br&gt;&#xA;*运行磁盘清理程序删除系统临时文件&lt;br&gt;&#xA;开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。&lt;br&gt;&#xA;*删除IE临时文件和历史记录&lt;br&gt;&#xA;打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。&lt;br&gt;&#xA;*删除最近使用的文档记录&lt;br&gt;&#xA;开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。&lt;/p&gt;&#xA;&lt;p&gt;5、使用DllCacheManager备份DllCache目录文件（dll文件）&lt;br&gt;&#xA;此步须在进行完系统封装后再进行。&lt;br&gt;&#xA;使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。&lt;/p&gt;&#xA;&lt;h1 id=&#34;三删除更改系统硬件驱动关键&#34;&gt;三、删除、更改系统硬件驱动（关键）&lt;/h1&gt;&#xA;&lt;p&gt;1、卸载硬件驱动&lt;br&gt;&#xA;（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。&lt;/p&gt;&#xA;&lt;p&gt;2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC&lt;br&gt;&#xA;打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。&lt;br&gt;&#xA;更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E4%B8%87%E8%83%BDghost%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B%E8%BD%AC%E8%BD%BD/</guid>
+      <description>&lt;p&gt;本篇是制作万能Ghost系统的基础教程。制作的万能Ghost系统镜像文件，可以恢复到任何一台机器上使用（应该是绝大多数机器上），对于经常装机的朋友，可以给自己带来极大的方便。&lt;/p&gt;
+&lt;h1 id=&#34;一前期基础工作&#34;&gt;一、前期基础工作&lt;/h1&gt;
+&lt;p&gt;1、准备所需工具软件&lt;br&gt;
+*S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具&lt;br&gt;
+*DEPLOY.CAB（在系统安装光盘: SUPPORT TOOLS目录下自带）&lt;br&gt;
+*Ghost_v8.0 &amp;amp; v8.2（v8.0以上版本才能够支持NTFS分区）&lt;br&gt;
+*Windows2K/XP/2003系统安装光盘（推荐使用免激活的版本）&lt;br&gt;
+*DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具&lt;/p&gt;
+&lt;p&gt;2、安装操作系统&lt;br&gt;
+正常安装操作系统并打好系统安全补丁（一定要安装到C盘，不能安装到其他分区，除非你是整个硬盘Ghost）。操作系统可选择FAT32和NTFS两种文件格式进行安装，建议采用FAT32文件格式，因为Ghost对FTA32的压缩率更大一些，可以减小制作后的备份文件体积。再一个是FTA32格式在恢复后还可以转换为NTFS，而NTFS转换成FTA32的话就比较麻烦，因此采用FAT32文件格式较为灵活一些。当然认真读过MS的FAT与NTFS、NTFS与Convert NTFS区别的就应该知道，&amp;ldquo;原生&amp;quot;的NTFS比转换的NTFS在性能与文件碎片上更具有优势，因此也建议注重性能者采用NTFS文件格式进行安装操作系统（&amp;rdquo; 原生&amp;quot;是指直接用NTFS文件格式进行格式化的分区，而不是通过Convert转换的）。&lt;br&gt;
+对于Windows XP，制作万能克隆时的一个重要问题就是系统激活，因为Windows XP为了防止盗版，采取了激活机制，当硬件发生改变时，系统就会要求重新激活，所以建议使用不需要激活的Windows XP版本，如大企业授权版本等。&lt;/p&gt;
+&lt;p&gt;3、安装应用软件&lt;br&gt;
+安装注册并设置好你所需要的应用软件，如：Office、Winrar等。&lt;br&gt;
+注：由于使用sysprep重新封装系统后，在恢复安装时系统将把输入法的相关设置还原到系统默认状态，封装前新安装的输入法将不在语言栏的列表里显示，需手动再次添加。为此WindowsXP的系统可在系统封装前作以下设置：打开控制面板，双击“区域和语言选项”，选择“高级”，在“默认用户帐户设置”框下选中“将所有设置应用于当前用户帐户和默认用户配置文件”，然后点“确定”，这样语言栏的输入法相关设置就添加到系统的默认配置文件中了。重新封装系统后，在恢复安装时就可使新安装的输入法自动添加到语言栏的输入法列表里了。&lt;/p&gt;
+&lt;p&gt;4、安装S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具&lt;br&gt;
+双击 S&amp;amp;R;&amp;amp;S;_V9.5.0828 智能系统封装工具，一路“下一步”就可以了，它会自动在当前系统分区根目录创建sysprep文件夹。然后把系统安装光盘 SUPPORT TOOLS目录里的DEPLOY.CAB文件解压拷贝到sysprep文件夹里即可（这个目录和目录里的文件在系统封装后第一次启动安装完成时会自动删除）。&lt;/p&gt;
+&lt;p&gt;5、安装DllCacheManager_V1.0（龙帝国专用版）Dllcache备份还原工具（可选）&lt;br&gt;
+解压DllCacheManager.rar文件，然后把DllCacheManager.exe、ZProgBar.ocx两文件拷贝到%systemroot%目录(XP系统是C:/windows目录，2K系统为C:/winnt目录）中即可。&lt;br&gt;
+在配合S&amp;amp;R;&amp;amp;S;使用时，完成封装并运行DllCacheManager.exe备份Dllcache目录文件后，在进行恢复封装系统安装时，autohal.exe会自动调用DllCacheManager进行备份恢复并删除自己。如果不是配合S&amp;amp;R;&amp;amp;S;使用，则需运行DllCacheManager进行手动恢复然后再删除自己；或在相关批处理文件（如：Sysprep.inf文件里那个进入系统后第一次运行命令）中加入DllcacheManager /restore /autodelete /timeout项。也可以将DllCacheManager.rar文件解压到当前系统分区的任何一个位置，运行DllCacheManager.exe后，选择“恢复时自动删除”或者“恢复时倒记时且删除自己”进行备份，在下次系统启动时就能自动恢复备份并删除自己。&lt;/p&gt;
+&lt;h1 id=&#34;二系统减肥可选&#34;&gt;二、系统减肥（可选）&lt;/h1&gt;
+&lt;p&gt;为了减少Ghost恢复镜像备份文件时所需时间，或在一张光盘上尽可能安装更多的软件，这就需要将Ghost备份文件制作得足够小，因此我们需要对系统进行一系列的减肥工作。当然如果你对Ghost备份文件的体积不介意的话，就没有必要对系统进行减肥。&lt;/p&gt;
+&lt;p&gt;1、关闭系统还原&lt;br&gt;
+打开控制面板，双击“系统”。在系统属性面板里选择“系统还原”，选中“在所有驱动器上关闭系统还原”，然后点“确定”。&lt;br&gt;
+WindowsXP的系统还原功能占用了很大的磁盘空间，所以必须关闭以减少系统体积。关闭系统还原后，系统分区根目录下的System Volume Information目录里的内容就会立即被清空，因此你也可以在关闭系统还原后再打开此功能。&lt;/p&gt;
+&lt;p&gt;2、关闭系统休眠&lt;br&gt;
+打开控制面板，双击“电源选项”，选择“休眠”，把“启用休眠”前的勾去掉，然后点“确定”。这时在系统分区C盘根目录下的页面文件hiberfil.sys就会自动删除。&lt;br&gt;
+WindowsXP的休眠功能和系统还原一样，都占用了很大的磁盘空间，休眠功能占用系统分区的大小和物理内存的空间相当。&lt;/p&gt;
+&lt;p&gt;3、转移虚拟内存页面文件&lt;br&gt;
+打开控制面板，双击“系统”，在系统属性面板里选择“高级”，然后点击性能框里的“设置”，选择“高级”，点击虚拟内存框里的“更改”，选中当前系统分区C，再选“自定义大小”，将初始大小和最大值设为“0”，然后选择需存放页面文件的分区（如D:等），然后点击“设置”，“确定”。&lt;br&gt;
+虚拟内存页面文件Pagefile.sys一般位于系统分区的根目录下，其默认设置大小是物理内存的1.5倍，是个难以删除的顽固隐藏文件，因此最好将它转移到系统分区以外的其它分区去，以此减小系统分区的体积。&lt;br&gt;
+如使用v8.0以上版本的Ghost进行克隆系统的话，这一项其实可以不做，因为使用v8.0以上版本的Ghost在制作镜像文件时能够自动删除虚拟内存页面文件pagefile.sys。&lt;/p&gt;
+&lt;p&gt;4、清理磁盘，删除系统和IE临时文件&lt;br&gt;
+*运行磁盘清理程序删除系统临时文件&lt;br&gt;
+开始—程序—附件—系统工具—磁盘清理—选择驱动器—确定—磁盘清理—选择删除文件—确定。&lt;br&gt;
+*删除IE临时文件和历史记录&lt;br&gt;
+打开IE—工具—internet选项—常规—删除Cookies(I)—确定—删除文件(F)—确定—删除历史记(H)—确定—确定。&lt;br&gt;
+*删除最近使用的文档记录&lt;br&gt;
+开始—设置—任务栏和[开始]菜单(T)—[开始]菜单—[开始]菜单(S)—自定义(C)—高级—清除列表(C)—确定。&lt;/p&gt;
+&lt;p&gt;5、使用DllCacheManager备份DllCache目录文件（dll文件）&lt;br&gt;
+此步须在进行完系统封装后再进行。&lt;br&gt;
+使用DllCacheManager_V1.0（龙帝国专用版）备份DllCache目录文件后可减少磁盘占用空间约300M左右。&lt;/p&gt;
+&lt;h1 id=&#34;三删除更改系统硬件驱动关键&#34;&gt;三、删除、更改系统硬件驱动（关键）&lt;/h1&gt;
+&lt;p&gt;1、卸载硬件驱动&lt;br&gt;
+（1）卸载网络适配器。（2）卸载通用串行总线控制器。（3）卸载声音、视频游戏控制器。（4）卸载监视器。（5）卸载显示卡（ 卸载显卡是为了防止Ghost到别的机上时出现蓝屏现象）。卸载硬件驱动时如系统提示要重新启动，则选择“否”不启动。&lt;/p&gt;
+&lt;p&gt;2、更改计算机电源管理模式 Advanced Configuration Power Interface(ACPI) 为 Standard PC&lt;br&gt;
+打开设备管理器，右键点击“计算机”下的“Advanced Configuration Power Interface(ACPI)”，选择“更改驱动程序”，在弹出的“硬件更新向导”对话框中选择“从列表或指定位置安装（高级）”，点击下一步，再选择“不要搜索，我要自己选择要安装的驱动程序”，再点击下一步，选中“Standard PC”，再点击下一步，硬件管理器会自动安装Standard PC的驱动，之后电脑会提示重新启动，则选择“否”不启动，完成OK。&lt;br&gt;
+更改说明：若新机与母机不是同类型的ACPI，则你新克隆的机器就无法实现电脑的软关机或出现系统崩溃，因此必须更改为兼容的Standard PC模式。一般比较老的电脑只有Standard PC选项，而现在大多数的电脑都是Advanced Configuration Power Interface(ACPI)，2003年后新出的电脑则为 acpi uniprocessor pc。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

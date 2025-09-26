@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>bat的常用命令 | Seth Dang博客</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>bat的常用命令 | Seth Dang&#39;S</title>
+<meta name="keywords" content="">
+<meta name="description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
 ==== 注 ===========
 首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:
 CR(0D) 命令行結束符
@@ -35,37 +36,55 @@ pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key 
 rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。
 ==== 注 =====
 此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理">
-    <meta name="generator" content="Hugo 0.150.0">
-    
-    
-    
-      <meta name="robots" content="index, follow">
-    
-    <meta name="author" content="Seth">
-    
+<meta name="author" content="Seth">
+<link rel="canonical" href="seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link crossorigin="anonymous" href="seth.dpdns.org/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css" integrity="sha256-4fXEyuRFmWVff/lRlf&#43;JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="seth.dpdns.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="seth.dpdns.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="seth.dpdns.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="seth.dpdns.org/apple-touch-icon.png">
+<link rel="mask-icon" href="seth.dpdns.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
+            .list {
+                background: var(--theme);
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-
-
-    
-      
-
-    
-
-    
-
-    
-      <link rel="canonical" href="/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-    
-
-    <meta property="og:url" content="/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-  <meta property="og:site_name" content="Seth Dang博客">
+    </style>
+</noscript><meta property="og:url" content="seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+  <meta property="og:site_name" content="Seth Dang&#39;S">
   <meta property="og:title" content="bat的常用命令">
   <meta property="og:description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
 ==== 注 ===========
@@ -92,14 +111,14 @@ pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key 
 rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。
 ==== 注 =====
 此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale" content="zh-CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2007-02-06T10:26:57+08:00">
     <meta property="article:modified_time" content="2007-02-06T10:26:57+08:00">
-
-  <meta itemprop="name" content="bat的常用命令">
-  <meta itemprop="description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bat的常用命令">
+<meta name="twitter:description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
 ==== 注 ===========
 首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:
 CR(0D) 命令行結束符
@@ -107,112 +126,140 @@ Escape(1B) ANSI轉義字符引導符
 Space(20) 常用的參數界定符
 Tab(09) ; = 不常用的參數界定符
 &#43; COPY命令文件連接符
+
 ? 文件通配符
-&#34;&#34; 字符串界定符
+&quot;&quot; 字符串界定符
 | 命令管道符
-&lt; &gt; » 文件重定向符
+&lt; &gt; &raquo; 文件重定向符
 @ 命令行回顯屏蔽符
 / 參數開關引導符
 : 批處理標籤引導符
-% 批處理變量引導符 其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:
+% 批處理變量引導符
+
+其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:
 第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.
-第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中. echo 表示顯示此命令後的字符
+第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中.
+echo 表示顯示此命令後的字符
 echo off 表示在此語句後所有運行的命令都不顯示命令行本身
 @與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。
 call 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。
-pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue…的提示，等待用戶按任意鍵後繼續
-rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。
-==== 注 =====
-此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理">
-  <meta itemprop="datePublished" content="2007-02-06T10:26:57+08:00">
-  <meta itemprop="dateModified" content="2007-02-06T10:26:57+08:00">
-  <meta itemprop="wordCount" content="1166">
-  <meta itemprop="keywords" content="Softwave">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="bat的常用命令">
-  <meta name="twitter:description" content="echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。
-==== 注 ===========
-首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:
-CR(0D) 命令行結束符
-Escape(1B) ANSI轉義字符引導符
-Space(20) 常用的參數界定符
-Tab(09) ; = 不常用的參數界定符
-&#43; COPY命令文件連接符
-? 文件通配符
-&#34;&#34; 字符串界定符
-| 命令管道符
-&lt; &gt; » 文件重定向符
-@ 命令行回顯屏蔽符
-/ 參數開關引導符
-: 批處理標籤引導符
-% 批處理變量引導符 其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:
-第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.
-第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中. echo 表示顯示此命令後的字符
-echo off 表示在此語句後所有運行的命令都不顯示命令行本身
-@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。
-call 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。
-pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue…的提示，等待用戶按任意鍵後繼續
+pause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue&hellip;的提示，等待用戶按任意鍵後繼續
 rem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。
 ==== 注 =====
 此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理">
 
-      
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "seth.dpdns.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "bat的常用命令",
+      "item": "seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "bat的常用命令",
+  "name": "bat的常用命令",
+  "description": "echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。\n==== 注 ===========\n首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:\nCR(0D) 命令行結束符\nEscape(1B) ANSI轉義字符引導符\nSpace(20) 常用的參數界定符\nTab(09) ; = 不常用的參數界定符\n+ COPY命令文件連接符\n? 文件通配符\n\u0026quot;\u0026quot; 字符串界定符\n| 命令管道符\n\u0026lt; \u0026gt; \u0026raquo; 文件重定向符\n@ 命令行回顯屏蔽符\n/ 參數開關引導符\n: 批處理標籤引導符\n% 批處理變量引導符 其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:\n第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.\n第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中. echo 表示顯示此命令後的字符\necho off 表示在此語句後所有運行的命令都不顯示命令行本身\n@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。\ncall 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。\npause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue\u0026hellip;的提示，等待用戶按任意鍵後繼續\nrem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。\n==== 注 =====\n此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理\n",
+  "keywords": [
     
-	
-  </head><body class="ma0 avenir bg-near-white production">
+  ],
+  "articleBody": "echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。\n==== 注 ===========\n首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:\nCR(0D) 命令行結束符\nEscape(1B) ANSI轉義字符引導符\nSpace(20) 常用的參數界定符\nTab(09) ; = 不常用的參數界定符\n+ COPY命令文件連接符\n? 文件通配符\n\"\" 字符串界定符\n| 命令管道符\n\u003c \u003e » 文件重定向符\n@ 命令行回顯屏蔽符\n/ 參數開關引導符\n: 批處理標籤引導符\n% 批處理變量引導符 其次, :: 確實可以起到rem 的註釋作用, 而且更簡潔有效; 但有兩點需要注意:\n第一, 除了 :: 之外, 任何以 :開頭的字符行, 在批處理中都被視作標號, 而直接忽略其後的所有內容, 只是為了與正常的標號相區別, 建議使用 goto 所無法識別的標號, 即在 :後緊跟一個非字母數字的一個特殊符號.\n第二, 與rem 不同的是, ::後的字符行在執行時不會回顯, 無論是否用echo on打開命令行回顯狀態, 因為命令解釋器不認為他是一個有效的命令行, 就此點來看, rem 在某些場合下將比 :: 更為適用; 另外, rem 可以用於 config.sys 文件中. echo 表示顯示此命令後的字符\necho off 表示在此語句後所有運行的命令都不顯示命令行本身\n@與echo off相像，但它是加在每個命令行的最前面，表示運行時不顯示這一行的命令行（只能影響當前行）。\ncall 調用另一個批處理文件（如果不用call而直接調用別的批處理文件，那麼執行完那個批處理文件後將無法返回當前文件並執行當前文件的後續命令）。\npause 運行此句會暫停批處理的執行並在屏幕上顯示Press any key to continue…的提示，等待用戶按任意鍵後繼續\nrem 表示此命令後的字符為解釋行（註釋），不執行，只是給自己今後參考用的（相當於程序中的註釋）。\n==== 注 =====\n此處的描述較為混亂, 不如直接引用個命令的命令行幫助更為條理\n-————————\nECHO\n當程序運行時，顯示或隱藏批處理程序中的正文。也可用於允許或禁止命令的回顯。\n在運行批處理程序時，MS-DOS一般在屏幕上顯示（回顯）批處理程序中的命令。\n使用ECHO命令可關閉此功能。\n語法\nECHO [ON|OFF]\n若要用echo命令顯示一條命令，可用下述語法：\necho [message]\n參數\nON|OFF\n指定是否允許命令的回顯。若要顯示當前的ECHO的設置，可使用不帶參數的ECHO\n命令。\nmessage\n指定讓MS-DOS在屏幕上顯示的正文。\n-——————\nCALL\n從一個批處理程序中調用另一個批處理程序，而不會引起第一個批處理的中止。\n語法\nCALL [drive:][path]filename [batch-parameters]\n參數\n[drive:][path]filename\n指定要調用的批處理程序的名字及其存放處。文件名必須用.BAT作擴展名。\nbatch-parameters\n指定批處理程序所需的命令行信息。\n-——————————\nPAUSE\n暫停批處理程序的執行並顯示一條消息，提示用戶按任意鍵繼續執行。只能在批處\n理程序中使用該命令。\n語法\nPAUSE\nREM\n在批處理文件或CONFIG.SYS中加入註解。也可用REM命令來屏蔽命令（在CONFIG.SYS\n中也可以用分號 ; 代替REM命令，但在批處理文件中則不能替代）。\n語法\nREM [string]\n參數\nstring\n指定要屏蔽的命令或要包含的註解。 例1：用edit編輯a.bat文件，輸入下列內容後存盤為c:\\a.bat，執行該批處理文件後可實現：將根目錄中所有文件寫入 a.txt中，啟動UCDOS，進入WPS等功能。\n批處理文件的內容為: 命令註釋：\n@echo off 不顯示後續命令行及當前命令行\ndir c:\\. \u003ea.txt 將c盤文件列表寫入a.txt\ncall c:\\ucdos\\ucdos.bat 調用ucdos\necho 你好 顯示\"你好\"\npause 暫停,等待按鍵繼續\nrem 準備運行wps 註釋：準備運行wps\ncd ucdos 進入ucdos目錄\nwps 運行wps\n批處理文件的參數\n批處理文件還可以像C語言的函數一樣使用參數（相當於DOS命令的命令行參數），這需要用到一個參數表示符\"%\"。\n%[1-9]表示參數，參數是指在運行批處理文件時在文件名後加的以空格（或者Tab）分隔的字符串。變量可以從%0到%9，%0表示批處理命令本身，其它參數字符串用%1到%9順序表示。\n例2：C:根目錄下有一批處理文件名為f.bat，內容為：\n@echo off\nformat %1\n如果執行C:\u003ef a:\n那麼在執行f.bat時，%1就表示a:，這樣format %1就相當於format a:，於是上面的命令運行時實際執行的是format a:\n例3：C:根目錄下一批處理文件名為t.bat，內容為:\n@echo off\ntype %1\ntype %2\n那麼運行C:\u003et a.txt b.txt\n%1 : 表示a.txt\n%2 : 表示b.txt\n於是上面的命令將順序地顯示a.txt和b.txt文件的內容。\n==== 注 ===============\n參數在批處理中也作為變量處理, 所以同樣使用百分號作為引導符, 其後跟0-9中的一個數字構成參數引用符. 引用符和參數之間 (例如上文中的 %1 與 a: ) 的關係類似於變量指針與變量值的關係. 當我們要引用第十一個或更多個參數時, 就必須移動DOS 的參數起始指針. shift 命令正充當了這個移動指針的角色, 它將參數的起始指針移動到下一個參數, 類似C 語言中的指針操作. 圖示如下:\n初始狀態, cmd 為命令名, 可以用 %0 引用\ncmd arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10\n^ ^ ^ ^ ^ ^ ^ ^ ^ ^\n| | | | | | | | | |\n%0 %1 %2 %3 %4 %5 %6 %7 %8 %9\n經過1次shift後, cmd 將無法被引用\ncmd arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10\n^ ^ ^ ^ ^ ^ ^ ^ ^ ^\n| | | | | | | | | |\n%0 %1 %2 %3 %4 %5 %6 %7 %8 %9\n經過2次shift後, arg1也被廢棄, %9指向為空, 沒有引用意義\ncmd arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10\n^ ^ ^ ^ ^ ^ ^ ^ ^\n| | | | | | | | |\n%0 %1 %2 %3 %4 %5 %6 %7 %8\n遺憾的是, win9x 和DOS下均不支持 shift 的逆操作. 只有在 nt 內核命令行環境下, shift 才支持 /n 參數, 可以以第一參數為基準返復移動起始指針. 特殊命令\nif goto choice for是批處理文件中比較高級的命令，如果這幾個你用得很熟練，你就是批處理文件的專家啦。\n一、if 是條件語句，用來判斷是否符合規定的條件，從而決定執行不同的命令。 有三種格式:\n1、if [not] “參數” == “字符串” 待執行的命令\n參數如果等於(not表示不等，下同)指定的字符串，則條件成立，運行命令，否則運行下一句。\n例：if “%1”==“a” format a:\n====\nif 的命令行幫助中關於此點的描述為:\nIF [NOT] string1==string2 command\n在此有以下幾點需要注意:\n1. 包含字符串的雙引號不是語法所必須的, 而只是習慣上使用的一種\"防空\"字符\n2. string1 未必是參數, 它也可以是環境變量, 循環變量以及其他字符串常量或變量\n3. command 不是語法所必須的, string2 後跟一個空格就可以構成一個有效的命令行 2、if [not] exist [路徑\\]文件名 待執行的命令\n如果有指定的文件，則條件成立，運行命令，否則運行下一句。\n如: if exist c:\\config.sys type c:\\config.sys\n表示如果存在c:\\config.sys文件，則顯示它的內容。\n****** 注 ********\n也可以使用以下的用法:\nif exist command\ndevice 是指DOS系統中已加載的設備, 在win98下通常有:\nAUX, PRN, CON, NUL\nCOM1, COM2, COM3, COM4\nLPT1, LPT2, LPT3, LPT4\nXMSXXXX0, EMMXXXX0\nA: B: C: …,\nCLOCK$, CONFIG$, DblBuff$, IFS$HLP$\n具體的內容會因硬軟件環境的不同而略有差異, 使用這些設備名稱時, 需要保證以下三點:\n1. 該設備確實存在(由軟件虛擬的設備除外)\n2. 該設備驅動程序已加載(aux, prn等標準設備由系統缺省定義)\n3. 該設備已準備好(主要是指a: b: …, com1…, lpt1…等)\n可通過命令 mem/d | find “device” /i 來檢閱你的系統中所加載的設備\n另外, 在DOS系統中, 設備也被認為是一種特殊的文件, 而文件也可以稱作字符設備; 因為設備(device)與文件都是使用句柄(handle)來管理的, 句柄就是名字, 類似於文件名, 只不過句柄不是應用於磁盤管理, 而是應用於內存管理而已, 所謂設備加載也即指在內存中為其分配可引用的句柄. 3、if errorlevel \u003c數字\u003e 待執行的命令\n很多DOS程序在運行結束後會返回一個數字值用來表示程序運行的結果(或者狀態)，通過if errorlevel命令可以判斷程序的返回值，根據不同的返回值來決定執行不同的命令(返回值必須按照從大到小的順序排列)。如果返回值等於指定的數字，則條件成立，運行命令，否則運行下一句。\n如if errorlevel 2 goto x2\n==== 注 ===========\n返回值從大到小的順序排列不是必須的, 而只是執行命令為 goto 時的習慣用法, 當使用 set 作為執行命令時, 通常會從小到大順序排列, 比如需將返回碼置入環境變量, 就需使用以下的順序形式:\nif errorlevel 1 set el=1\nif errorlevel 2 set el=2\nif errorlevel 3 set el=3\nif errorlevel 4 set el=4\nif errorlevel 5 set el=5\n…\n當然, 也可以使用以下循環來替代, 原理是一致的:\nfor %%e in (1 2 3 4 5 6 7 8…) do if errorlevel %%e set el=%%e\n出現此種現象的原因是, if errorlevel 比較返回碼的判斷條件並非等於, 而是大於等於. 由於 goto 的跳轉特性, 由小到大排序會導致在較小的返回碼處就跳出; 而由於 set命令的 “重複” 賦值特性, 由大到小排序會導致較小的返回碼 “覆蓋” 較大的返回碼.\n另外, 雖然 if errorlevel=\u003c數字\u003e command 也是有效的命令行, 但也只是 command.com 解釋命令行時將 = 作為命令行切分符而忽略掉罷了 二、goto 批處理文件運行到這裡將跳到goto所指定的標號(標號即label，標號用:後跟標準字符串來定義)處，goto語句一般與if配合使用，根據不同的條件來執行不同的命令組。\n如:\ngoto end\n:end\necho this is the end\n標號用\":字符串\"來定義，標號所在行不被執行。\n==== willsort 編注\nlabel 常被譯為 “標籤” , 但是這並不具有廣泛的約定性.\ngoto 與 : 聯用可實現執行中途的跳轉, 再結合 if 可實現執行過程的條件分支, 多個 if 即可實現命令的分組, 類似 C 中 switch case 結構或者 Basic 中的 select case 結構, 大規模且結構化的命令分組即可實現高級語言中的函數功能. 以下是批處理和C/Basic在語法結構上的對照:\nBatch C / Basic\ngoto\u0026: goto\u0026:\ngoto\u0026:\u0026if; if{}\u0026else;{} / if\u0026elseif;\u0026endif;\ngoto\u0026:\u0026if…; switch\u0026case; / select case\ngoto\u0026:\u0026if;\u0026set;\u0026envar…; function() / function(),sub() 三、choice 使用此命令可以讓用戶輸入一個字符（用於選擇），從而根據用戶的選擇返回不同的errorlevel，然後於if errorlevel配合，根據用戶的選擇運行不同的命令。\n注意：choice命令為DOS或者Windows系統提供的外部命令，不同版本的choice命令語法會稍有不同，請用choice /?查看用法。\nchoice的命令語法（該語法為Windows 2003中choice命令的語法，其它版本的choice的命令語法與此大同小異）：\nCHOICE [/C choices] [/N] [/CS] [/T timeout /D choice] [/M text]\n描述:\n該工具允許用戶從選擇列表選擇一個項目並返回所選項目的索引。\n參數列表:\n/C choices 指定要創建的選項列表。默認列表是 “YN”。\n/N 在提示符中隱藏選項列表。提示前面的消息得到顯示，\n選項依舊處於啟用狀態。\n/CS 允許選擇分大小寫的選項。在默認情況下，這個工具\n是不分大小寫的。\n/T timeout 做出默認選擇之前，暫停的秒數。可接受的值是從 0\n到 9999。如果指定了 0，就不會有暫停，默認選項\n會得到選擇。\n/D choice 在 nnnn 秒之後指定默認選項。字符必須在用 /C 選\n項指定的一組選擇中; 同時，必須用 /T 指定 nnnn。\n/M text 指定提示之前要顯示的消息。如果沒有指定，工具只\n顯示提示。\n/? 顯示幫助消息。\n注意:\nERRORLEVEL 環境變量被設置為從選擇集選擇的鍵索引。列出的第一個選\n擇返回 1，第二個選擇返回 2，等等。如果用戶按的鍵不是有效的選擇，\n該工具會發出警告響聲。如果該工具檢測到錯誤狀態，它會返回 255 的\nERRORLEVEL 值。如果用戶按 Ctrl+Break 或 Ctrl+C 鍵，該工具會返回 0\n的 ERRORLEVEL 值。在一個批程序中使用 ERRORLEVEL 參數時，將參數降\n序排列。\n示例:\nCHOICE /?\nCHOICE /C YNC /M “確認請按 Y，否請按 N，或者取消請按 C。”\nCHOICE /T 10 /C ync /CS /D y\nCHOICE /C ab /M “選項 1 請選擇 a，選項 2 請選擇 b。”\nCHOICE /C ab /N /M “選項 1 請選擇 a，選項 2 請選擇 b。”\n==== willsort 編注 ===============================\n我列出win98下choice的用法幫助, 已資區分\nWaits for the user to choose one of a set of choices.\n等待用戶選擇一組待選字符中的一個\nCHOICE [/C[:]choices] [/N] [/S] [/T[:]c,nn] [text]\n/C[:]choices Specifies allowable keys. Default is YN\n指定允許的按鍵(待選字符), 默認為YN\n/N Do not display choices and ? at end of prompt string.\n不顯示提示字符串中的問號和待選字符\n/S Treat choice keys as case sensitive.\n處理待選字符時大小寫敏感\n/T[:]c,nn Default choice to c after nn seconds\n在 nn 秒後默認選擇 c\ntext Prompt string to display\n要顯示的提示字符串\nERRORLEVEL is set to offset of key user presses in choices.\nERRORLEVEL 被設置為用戶鍵入的字符在待選字符中的偏移值\n如果我運行命令：CHOICE /C YNC /M “確認請按 Y，否請按 N，或者取消請按 C。”\n屏幕上會顯示：\n確認請按 Y，否請按 N，或者取消請按 C。 [Y,N,C]?\n例：test.bat的內容如下（注意，用if errorlevel判斷返回值時，要按返回值從高到低排列）:\n@echo off\nchoice /C dme /M “defrag,mem,end”\nif errorlevel 3 goto end\nif errorlevel 2 goto mem\nif errorlevel 1 goto defrag\n:defrag\nc:\\dos\\defrag\ngoto end\n:mem\nmem\ngoto end\n:end\necho good bye\n此批處理運行後，將顯示\"defrag,mem,end[D,M,E]?\" ，用戶可選擇d m e ，然後if語句根據用戶的選擇作出判斷，d表示執行標號為defrag的程序段，m表示執行標號為mem的程序段，e表示執行標號為end的程序段，每個程序段最後都以goto end將程序跳到end標號處，然後程序將顯示good bye，批處理運行結束。\n四、for 循環命令，只要條件符合，它將多次執行同一命令。\n語法：\n對一組文件中的每一個文件執行某個特定命令。\nFOR %%variable IN (set) DO command [command-parameters]\n%%variable 指定一個單一字母可替換的參數。\n(set) 指定一個或一組文件。可以使用通配符。\ncommand 指定對每個文件執行的命令。\ncommand-parameters\n為特定命令指定參數或命令行開關。\n例如一個批處理文件中有一行:\nfor %%c in (*.bat *.txt) do type %%c\n則該命令行會顯示當前目錄下所有以bat和txt為擴展名的文件的內容。\n==== willsort 編注 =====================================================\n需要指出的是, 當()中的字符串並非單個或多個文件名時, 它將單純被當作字符串替換, 這個特性再加上()中可以嵌入多個字符串的特性, 很明顯 for 可以被看作一種遍歷型循環.\n當然, 在 nt/2000/xp/2003 系列的命令行環境中, for 被賦予了更多的特性, 使之可以分析命令輸出或者文件中的字符串, 也有很多開關被用於擴展了文件替換功能. 批處理示例\n1. IF-EXIST\n首先用記事本在C:\\建立一個test1.bat批處理文件，文件內容如下：\n@echo off\nIF EXIST \\AUTOEXEC.BAT TYPE \\AUTOEXEC.BAT\nIF NOT EXIST \\AUTOEXEC.BAT ECHO \\AUTOEXEC.BAT does not exist 然後運行它：\nC:\u003eTEST1.BAT\n如果C:\\存在AUTOEXEC.BAT文件，那麼它的內容就會被顯示出來，如果不存在，批處理就會提示你該文件不存在。\n接著再建立一個test2.bat文件，內容如下：\n@ECHO OFF\nIF EXIST %1 TYPE %1\nIF NOT EXIST %1 ECHO %1 does not exist 執行:\nC:\u003eTEST2 AUTOEXEC.BAT\n該命令運行結果同上。\n說明：\n(1) IF EXIST 是用來測試文件是否存在的，格式為\nIF EXIST [路徑+文件名] 命令\n(2) test2.bat文件中的%1是參數，DOS允許傳遞9個批參數信息給批處理文件，分別為%1~%9(%0表示test2命令本身) ，這有點像編程中的實參和形參的關係，%1是形參，AUTOEXEC.BAT是實參。\n==== willsort 編注 =====================================================\nDOS沒有 “允許傳遞9個批參數信息” 的限制, 參數的個數只會受到命令行長度和所調用命令處理能力的限制. 但是, 我們在批處理程序中, 在同一時刻只能同時引用10個參數, 因為 DOS只給出了 %0~%9這十個參數引用符. 更進一步的，建立一個名為TEST3.BAT的文件，內容如下：\n@echo off\nIF “%1” == “A” ECHO XIAO\nIF “%2” == “B” ECHO TIAN\nIF “%3” == “C” ECHO XIN 如果運行：\nC:\u003eTEST3 A B C\n屏幕上會顯示:\nXIAO\nTIAN\nXIN\n如果運行：\nC:\u003eTEST3 A B\n屏幕上會顯示\nXIAO\nTIAN\n在這個命令執行過程中，DOS會將一個空字符串指定給參數%3。\n2、IF-ERRORLEVEL\n建立TEST4.BAT，內容如下：\n@ECHO OFF\nXCOPY C:\\AUTOEXEC.BAT D:\\\nIF ERRORLEVEL 1 ECHO 文件拷貝失敗\nIF ERRORLEVEL 0 ECHO 成功拷貝文件\n然後執行文件:\nC:\u003eTEST4\n如果文件拷貝成功，屏幕就會顯示\"成功拷貝文件\"，否則就會顯示\"文件拷貝失敗\"。\nIF ERRORLEVEL 是用來測試它的上一個DOS命令的返回值的，注意只是上一個命令的返回值，而且返回值必須依照從大到小次序順序判斷。\n因此下面的批處理文件是錯誤的：\n@ECHO OFF\nXCOPY C:\\AUTOEXEC.BAT D:\\\nIF ERRORLEVEL 0 ECHO 成功拷貝文件\nIF ERRORLEVEL 1 ECHO 未找到拷貝文件\nIF ERRORLEVEL 2 ECHO 用戶通過ctrl-c中止拷貝操作\nIF ERRORLEVEL 3 ECHO 預置錯誤阻止文件拷貝操作\nIF ERRORLEVEL 4 ECHO 拷貝過程中寫盤錯誤\n無論拷貝是否成功，後面的：\n未找到拷貝文件\n用戶通過ctrl-c中止拷貝操作\n預置錯誤阻止文件拷貝操作\n拷貝過程中寫盤錯誤\n都將顯示出來。\n以下就是幾個常用命令的返回值及其代表的意義：\nbackup\n0 備份成功\n1 未找到備份文件\n2 文件共享衝突阻止備份完成\n3 用戶用ctrl-c中止備份\n4 由於致命的錯誤使備份操作中止\ndiskcomp\n0 盤比較相同\n1 盤比較不同\n2 用戶通過ctrl-c中止比較操作\n3 由於致命的錯誤使比較操作中止\n4 預置錯誤中止比較\ndiskcopy\n0 盤拷貝操作成功\n1 非致命盤讀/寫錯\n2 用戶通過ctrl-c結束拷貝操作\n3 因致命的處理錯誤使盤拷貝中止\n4 預置錯誤阻止拷貝操作\nformat\n0 格式化成功\n3 用戶\n",
+  "wordCount" : "1166",
+  "inLanguage": "en",
+  "datePublished": "2007-02-06T10:26:57+08:00",
+  "dateModified": "2007-02-06T10:26:57+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Seth"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "seth.dpdns.org/posts/bat%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seth Dang'S",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "seth.dpdns.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="seth.dpdns.org/" accesskey="h" title="Seth Dang&#39;S (Alt + H)">Seth Dang&#39;S</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
     
-   
-  
+    <h1 class="post-title entry-hint-parent">
+      bat的常用命令
+    </h1>
+    <div class="post-meta"><span title='2007-02-06 10:26:57 +0800 +0800'>February 6, 2007</span>&nbsp;·&nbsp;Seth
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        Seth Dang博客
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">bat的常用命令</h1>
-      
-      <p class="tracked"><strong>Seth</strong>
-      </p>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2007-02-06T10:26:57+08:00">February 6, 2007</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。</p>
+</div>
+  </header> 
+  <div class="post-content"><p>echo、@、call、pause、rem(小技巧：用::代替rem)是批處理文件最常用的幾個命令，我們就從他們開始學起。</p>
 <p>==== 注 ===========<br>
 首先, @ 不是一個命令, 而是DOS 批處理的一個特殊標記符, 僅用於屏蔽命令行回顯. 下面是DOS命令行或批處理中可能會見到的一些特殊標記符:<br>
 CR(0D) 命令行結束符<br>
@@ -323,7 +370,7 @@ cmd arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10<br>
 ^ ^ ^ ^ ^ ^ ^ ^ ^<br>
 | | | | | | | | |<br>
 %0 %1 %2 %3 %4 %5 %6 %7 %8</p>
-<h1 id="遺憾的是-win9x-和dos下均不支持-shift-的逆操作-只有在-nt-內核命令行環境下-shift-才支持-n-參數-可以以第一參數為基準返復移動起始指針">遺憾的是, win9x 和DOS下均不支持 shift 的逆操作. 只有在 nt 內核命令行環境下, shift 才支持 /n 參數, 可以以第一參數為基準返復移動起始指針.</h1>
+<h1 id="遺憾的是-win9x-和dos下均不支持-shift-的逆操作-只有在-nt-內核命令行環境下-shift-才支持-n-參數-可以以第一參數為基準返復移動起始指針">遺憾的是, win9x 和DOS下均不支持 shift 的逆操作. 只有在 nt 內核命令行環境下, shift 才支持 /n 參數, 可以以第一參數為基準返復移動起始指針.<a hidden class="anchor" aria-hidden="true" href="#遺憾的是-win9x-和dos下均不支持-shift-的逆操作-只有在-nt-內核命令行環境下-shift-才支持-n-參數-可以以第一參數為基準返復移動起始指針">#</a></h1>
 <p>特殊命令</p>
 <p>if goto choice for是批處理文件中比較高級的命令，如果這幾個你用得很熟練，你就是批處理文件的專家啦。</p>
 <p>一、if 是條件語句，用來判斷是否符合規定的條件，從而決定執行不同的命令。 有三種格式:</p>
@@ -371,7 +418,7 @@ if errorlevel 5 set el=5<br>
 <p>當然, 也可以使用以下循環來替代, 原理是一致的:<br>
 for %%e in (1 2 3 4 5 6 7 8&hellip;) do if errorlevel %%e set el=%%e</p>
 <p>出現此種現象的原因是, if errorlevel 比較返回碼的判斷條件並非等於, 而是大於等於. 由於 goto 的跳轉特性, 由小到大排序會導致在較小的返回碼處就跳出; 而由於 set命令的 &ldquo;重複&rdquo; 賦值特性, 由大到小排序會導致較小的返回碼 &ldquo;覆蓋&rdquo; 較大的返回碼.</p>
-<h1 id="另外-雖然-if-errorlevel數字-command-也是有效的命令行-但也只是-commandcom-解釋命令行時將--作為命令行切分符而忽略掉罷了">另外, 雖然 if errorlevel=&lt;數字&gt; command 也是有效的命令行, 但也只是 command.com 解釋命令行時將 = 作為命令行切分符而忽略掉罷了</h1>
+<h1 id="另外-雖然-if-errorlevel數字-command-也是有效的命令行-但也只是-commandcom-解釋命令行時將--作為命令行切分符而忽略掉罷了">另外, 雖然 if errorlevel=&lt;數字&gt; command 也是有效的命令行, 但也只是 command.com 解釋命令行時將 = 作為命令行切分符而忽略掉罷了<a hidden class="anchor" aria-hidden="true" href="#另外-雖然-if-errorlevel數字-command-也是有效的命令行-但也只是-commandcom-解釋命令行時將--作為命令行切分符而忽略掉罷了">#</a></h1>
 <p>二、goto 批處理文件運行到這裡將跳到goto所指定的標號(標號即label，標號用:後跟標準字符串來定義)處，goto語句一般與if配合使用，根據不同的條件來執行不同的命令組。</p>
 <p>如:</p>
 <p>goto end</p>
@@ -560,34 +607,86 @@ IF ERRORLEVEL 4 ECHO 拷貝過程中寫盤錯誤</p>
 <p>format<br>
 0 格式化成功<br>
 3 用戶</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
 
 
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
-    &copy;  Seth Dang博客 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
   </div>
-</footer>
 
-  </body>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="seth.dpdns.org/">Seth Dang&#39;S</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>

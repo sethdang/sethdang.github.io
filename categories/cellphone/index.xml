@@ -1,40 +1,156 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Cellphone on Seth Dang博客</title>
-    <link>/categories/cellphone/</link>
-    <description>Recent content in Cellphone on Seth Dang博客</description>
-    <generator>Hugo</generator>
+    <title>Cellphone on Seth Dang&#39;S</title>
+    <link>seth.dpdns.org/categories/cellphone/</link>
+    <description>Recent content in Cellphone on Seth Dang&#39;S</description>
+    <generator>Hugo -- 0.150.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 22 May 2010 11:24:56 +0800</lastBuildDate>
-    <atom:link href="/categories/cellphone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="seth.dpdns.org/categories/cellphone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>手机工程模式</title>
-      <link>/posts/%E6%89%8B%E6%9C%BA%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F/</link>
+      <link>seth.dpdns.org/posts/%E6%89%8B%E6%9C%BA%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sat, 22 May 2010 11:24:56 +0800</pubDate>
-      <guid>/posts/%E6%89%8B%E6%9C%BA%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F/</guid>
-      <description>&lt;p&gt;W958C如何进入工程模式&lt;/p&gt;&#xA;&lt;p&gt;滚轮上&lt;em&gt;滚轮下下&lt;/em&gt;下*&lt;/p&gt;&#xA;&lt;p&gt;L7如何进入工程模式&lt;br&gt;&#xA;*#+挂机一起按&lt;br&gt;&#xA;是BOOTLOADER模式,通俗讲是DOS模式.当然不是电脑的DOS&lt;br&gt;&#xA;菜单+0是opcode命令模式,也是底层调试模式.&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E6%89%8B%E6%9C%BA%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F/</guid>
+      <description>&lt;p&gt;W958C如何进入工程模式&lt;/p&gt;
+&lt;p&gt;滚轮上&lt;em&gt;滚轮下下&lt;/em&gt;下*&lt;/p&gt;
+&lt;p&gt;L7如何进入工程模式&lt;br&gt;
+*#+挂机一起按&lt;br&gt;
+是BOOTLOADER模式,通俗讲是DOS模式.当然不是电脑的DOS&lt;br&gt;
+菜单+0是opcode命令模式,也是底层调试模式.&lt;/p&gt;</description>
     </item>
     <item>
       <title>UIQ 3.0 手机的MMS、WAP、WEB设置方法 - 索尼爱立信 W950i - 手机论坛</title>
-      <link>/posts/uiq-30-%E6%89%8B%E6%9C%BA%E7%9A%84mmswapweb%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95---%E7%B4%A2%E5%B0%BC%E7%88%B1%E7%AB%8B%E4%BF%A1-w950i---%E6%89%8B%E6%9C%BA%E8%AE%BA%E5%9D%9B/</link>
+      <link>seth.dpdns.org/posts/uiq-30-%E6%89%8B%E6%9C%BA%E7%9A%84mmswapweb%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95---%E7%B4%A2%E5%B0%BC%E7%88%B1%E7%AB%8B%E4%BF%A1-w950i---%E6%89%8B%E6%9C%BA%E8%AE%BA%E5%9D%9B/</link>
       <pubDate>Sun, 10 Aug 2008 10:29:33 +0800</pubDate>
-      <guid>/posts/uiq-30-%E6%89%8B%E6%9C%BA%E7%9A%84mmswapweb%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95---%E7%B4%A2%E5%B0%BC%E7%88%B1%E7%AB%8B%E4%BF%A1-w950i---%E6%89%8B%E6%9C%BA%E8%AE%BA%E5%9D%9B/</guid>
-      <description>&lt;p&gt;cmwap&lt;br&gt;&#xA;工具－控制台－连线－互联网帐户&lt;br&gt;&#xA;在帐户选项卡中，选择：更多－新增帐户－数据&lt;br&gt;&#xA;帐户名称：cmwap（名字随意）&lt;br&gt;&#xA;网址：cmwap&lt;br&gt;&#xA;其它默认；&lt;br&gt;&#xA;选择：Proxy&lt;br&gt;&#xA;勾上：使用Proxy伺服器&lt;br&gt;&#xA;Proxy伺服器地址：010.000.000.172&lt;br&gt;&#xA;Proxy伺服器接口：80&lt;br&gt;&#xA;其它默认；&lt;br&gt;&#xA;然后一路存储，这样在帐户中多了一个MMS的帐户。&lt;br&gt;&#xA;然后：&lt;br&gt;&#xA;工具－控制台－信息设定－MMS帐户&lt;br&gt;&#xA;在MMS帐户中：.&lt;br&gt;&#xA;服务中心地址：全&lt;br&gt;&#xA;互联网用户：MMS（选择刚才刚新建的帐户）&lt;br&gt;&#xA;自动下载：（随你自己高兴怎么设）&lt;br&gt;&#xA;下载档案大小：（同上）&lt;br&gt;&#xA;然后存储，就完成了CMWAP的设定,MMS用的就个连接..&lt;br&gt;&#xA;cmnet：&lt;br&gt;&#xA;工具－控制台－连线－互联网帐户&lt;br&gt;&#xA;在帐户选项卡中，选择：更多－新增帐户－数据&lt;br&gt;&#xA;帐户名称：cmnet（名字随意）&lt;br&gt;&#xA;网址：cmnet&lt;br&gt;&#xA;其它默认；&lt;br&gt;&#xA;点击：更多&lt;br&gt;&#xA;选择：Proxy&lt;br&gt;&#xA;勾上：使用Proxy伺服器&lt;br&gt;&#xA;Proxy伺服器地址：010.000.000.172&lt;br&gt;&#xA;Proxy伺服器接口：80&lt;br&gt;&#xA;其它默认；&lt;br&gt;&#xA;然后一路存储，这样在帐户中多了一个CMNET的帐户。&lt;br&gt;&#xA;在互联网帐户画面，转到群组选项卡；&lt;br&gt;&#xA;里面有一个默认的群组：互联网，点击它&lt;br&gt;&#xA;在新画面中，点击：新增帐户&lt;br&gt;&#xA;你可以把刚才添加的CMNET帐户添加进去，也可以把CMNET帐户添加进去；&lt;br&gt;&#xA;索尼爱立信论坛如果你添加了两个，或者里面有多个帐户，那需要设定优先级：&lt;br&gt;&#xA;还是在互联网群组的编辑画面中，选择某一个你想设定为最高优先级的帐户，&lt;br&gt;&#xA;在弹出菜单中，选择重要性，选为1，点击：完成，这样画面上的优先级顺序就改变了；&lt;br&gt;&#xA;根据实际情况把那个帐户的优先级是设定为高点就行,如果你没有包月的话,最好把CMWAP设置高点.CMNET流量比较贵；&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/uiq-30-%E6%89%8B%E6%9C%BA%E7%9A%84mmswapweb%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95---%E7%B4%A2%E5%B0%BC%E7%88%B1%E7%AB%8B%E4%BF%A1-w950i---%E6%89%8B%E6%9C%BA%E8%AE%BA%E5%9D%9B/</guid>
+      <description>&lt;p&gt;cmwap&lt;br&gt;
+工具－控制台－连线－互联网帐户&lt;br&gt;
+在帐户选项卡中，选择：更多－新增帐户－数据&lt;br&gt;
+帐户名称：cmwap（名字随意）&lt;br&gt;
+网址：cmwap&lt;br&gt;
+其它默认；&lt;br&gt;
+选择：Proxy&lt;br&gt;
+勾上：使用Proxy伺服器&lt;br&gt;
+Proxy伺服器地址：010.000.000.172&lt;br&gt;
+Proxy伺服器接口：80&lt;br&gt;
+其它默认；&lt;br&gt;
+然后一路存储，这样在帐户中多了一个MMS的帐户。&lt;br&gt;
+然后：&lt;br&gt;
+工具－控制台－信息设定－MMS帐户&lt;br&gt;
+在MMS帐户中：.&lt;br&gt;
+服务中心地址：全&lt;br&gt;
+互联网用户：MMS（选择刚才刚新建的帐户）&lt;br&gt;
+自动下载：（随你自己高兴怎么设）&lt;br&gt;
+下载档案大小：（同上）&lt;br&gt;
+然后存储，就完成了CMWAP的设定,MMS用的就个连接..&lt;br&gt;
+cmnet：&lt;br&gt;
+工具－控制台－连线－互联网帐户&lt;br&gt;
+在帐户选项卡中，选择：更多－新增帐户－数据&lt;br&gt;
+帐户名称：cmnet（名字随意）&lt;br&gt;
+网址：cmnet&lt;br&gt;
+其它默认；&lt;br&gt;
+点击：更多&lt;br&gt;
+选择：Proxy&lt;br&gt;
+勾上：使用Proxy伺服器&lt;br&gt;
+Proxy伺服器地址：010.000.000.172&lt;br&gt;
+Proxy伺服器接口：80&lt;br&gt;
+其它默认；&lt;br&gt;
+然后一路存储，这样在帐户中多了一个CMNET的帐户。&lt;br&gt;
+在互联网帐户画面，转到群组选项卡；&lt;br&gt;
+里面有一个默认的群组：互联网，点击它&lt;br&gt;
+在新画面中，点击：新增帐户&lt;br&gt;
+你可以把刚才添加的CMNET帐户添加进去，也可以把CMNET帐户添加进去；&lt;br&gt;
+索尼爱立信论坛如果你添加了两个，或者里面有多个帐户，那需要设定优先级：&lt;br&gt;
+还是在互联网群组的编辑画面中，选择某一个你想设定为最高优先级的帐户，&lt;br&gt;
+在弹出菜单中，选择重要性，选为1，点击：完成，这样画面上的优先级顺序就改变了；&lt;br&gt;
+根据实际情况把那个帐户的优先级是设定为高点就行,如果你没有包月的话,最好把CMWAP设置高点.CMNET流量比较贵；&lt;/p&gt;</description>
     </item>
     <item>
       <title>刷机宝典</title>
-      <link>/posts/%E5%88%B7%E6%9C%BA%E5%AE%9D%E5%85%B8/</link>
+      <link>seth.dpdns.org/posts/%E5%88%B7%E6%9C%BA%E5%AE%9D%E5%85%B8/</link>
       <pubDate>Fri, 01 Dec 2006 16:25:38 +0800</pubDate>
-      <guid>/posts/%E5%88%B7%E6%9C%BA%E5%AE%9D%E5%85%B8/</guid>
-      <description>&lt;p&gt;有必要先解释一下什么叫刷机，所谓刷机就是刷新手机固件FLASH芯片里的系统程序，相当于我们电脑的系统格式化重装。一般如果手机系统运行不正常或者手机系统的版本过于陈旧，就可以通过刷机更新整个系统。&lt;/p&gt;&#xA;&lt;p&gt;那么，该怎样刷机呢？刷机首先 要有刷机程序，也就是刷机包，不同的刷机包适合不同的手机型号，一般手机厂家会定期更新刷机程序，L7有各种不同的刷机版本,我们可以经常去手机网站上下载自己想要的刷机包；其次刷机还要有刷机工具，所谓刷机工具就是刷机引导程序，可以配合刷机包下达刷机指令，常用的工具软件有RSD. SMAREMOTO .PST。我个人比较喜欢的是RSD&lt;/p&gt;&#xA;&lt;p&gt;用刷机工具RSD2.4刷新L7的过程：用数据线连接电脑和手机，打开安装好的RSD刷机软件，点击Rsd面板上上有三个点的按键，浏览刷机包文件所在的路径，找到刷机文件， 选“打开”，软件会读取刷机包文件的信息。之后点击“ start”按钮就开始刷机了，刷机过程中手机会自动转入D0S黑屏模式，大概10分钟左右，手机刷机好会自动退出DOS黑屏模式，然后自动重启，RSD显示英文PASS，大功告成 ！拔掉数据线，自己 重新关机 开机一下 就 OK了！这时手机已经完全恢复到了出厂状态！刷过后 IMEI/ESN 号都不会变,所以大可不必担心保修的问题了!&lt;/p&gt;&#xA;&lt;p&gt;RSD刷机工具操作界面和刷新步骤：&lt;br&gt;&#xA;图 1.jpg 第一步 运行RSD，看见操作界面，RSD自动读取手机信息&lt;br&gt;&#xA;图 2.jpg 第二步 点击Rsd面板上有三个点的按键，选择数据包文件路径&lt;br&gt;&#xA;图 3.jpg 第三步 点击START按钮开始刷机。&lt;br&gt;&#xA;图 4.jpg 第四步 RSD显示刷新进度，大约10分钟左右，RSD刷机成功。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_cf9WVr5ddT4NEnd6yWXa6oXk5cRCRrXf&#34;&gt;&lt;img src=&#34;http://img.blog.163.com/photo/oVp0oEEzM2fDjzeq75iw1A==/3970204546503920692.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_uXLfonLMX6W-sKfGNFIOhAhDW-VBMXJW&#34;&gt;&lt;img src=&#34;http://img.blog.163.com/photo/PkyW99T4GNlX6KCMBQryng==/3970204546503920696.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_ya-l3uizh7Q50HHyoQupD5fFUtIUk3my&#34;&gt;&lt;img src=&#34;http://img.blog.163.com/photo/mfiAIvplPKzQndcqRD1iuA==/3970204546503920700.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_3DBbl1rh5HwatIMzW_tsOcolJTmr_hAE&#34;&gt;&lt;img src=&#34;http://img.blog.163.com/photo/nDJ4tCka9tBpmLNpsFI_pg==/3970204546503920708.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;在刷机过程中如果手机因人为原因忽然断电或手机数据线脱落,就会造成刷机的失败,这时手机就会无法正常启动,遇见这种情况大家往往都会心急如焚,其实也不用太担心,处理刷机失败的方法其实也很简单&amp;mdash;-重新运行 rsd刷机工具以后，把数据线插上手机，同时 按住*键. #键和 电源键 开机，手机这时会直接进入DOS黑屏刷机模式 ，然后重新刷机就可以了。&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E5%88%B7%E6%9C%BA%E5%AE%9D%E5%85%B8/</guid>
+      <description>&lt;p&gt;有必要先解释一下什么叫刷机，所谓刷机就是刷新手机固件FLASH芯片里的系统程序，相当于我们电脑的系统格式化重装。一般如果手机系统运行不正常或者手机系统的版本过于陈旧，就可以通过刷机更新整个系统。&lt;/p&gt;
+&lt;p&gt;那么，该怎样刷机呢？刷机首先 要有刷机程序，也就是刷机包，不同的刷机包适合不同的手机型号，一般手机厂家会定期更新刷机程序，L7有各种不同的刷机版本,我们可以经常去手机网站上下载自己想要的刷机包；其次刷机还要有刷机工具，所谓刷机工具就是刷机引导程序，可以配合刷机包下达刷机指令，常用的工具软件有RSD. SMAREMOTO .PST。我个人比较喜欢的是RSD&lt;/p&gt;
+&lt;p&gt;用刷机工具RSD2.4刷新L7的过程：用数据线连接电脑和手机，打开安装好的RSD刷机软件，点击Rsd面板上上有三个点的按键，浏览刷机包文件所在的路径，找到刷机文件， 选“打开”，软件会读取刷机包文件的信息。之后点击“ start”按钮就开始刷机了，刷机过程中手机会自动转入D0S黑屏模式，大概10分钟左右，手机刷机好会自动退出DOS黑屏模式，然后自动重启，RSD显示英文PASS，大功告成 ！拔掉数据线，自己 重新关机 开机一下 就 OK了！这时手机已经完全恢复到了出厂状态！刷过后 IMEI/ESN 号都不会变,所以大可不必担心保修的问题了!&lt;/p&gt;
+&lt;p&gt;RSD刷机工具操作界面和刷新步骤：&lt;br&gt;
+图 1.jpg 第一步 运行RSD，看见操作界面，RSD自动读取手机信息&lt;br&gt;
+图 2.jpg 第二步 点击Rsd面板上有三个点的按键，选择数据包文件路径&lt;br&gt;
+图 3.jpg 第三步 点击START按钮开始刷机。&lt;br&gt;
+图 4.jpg 第四步 RSD显示刷新进度，大约10分钟左右，RSD刷机成功。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_cf9WVr5ddT4NEnd6yWXa6oXk5cRCRrXf&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/oVp0oEEzM2fDjzeq75iw1A==/3970204546503920692.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_uXLfonLMX6W-sKfGNFIOhAhDW-VBMXJW&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/PkyW99T4GNlX6KCMBQryng==/3970204546503920696.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_ya-l3uizh7Q50HHyoQupD5fFUtIUk3my&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/mfiAIvplPKzQndcqRD1iuA==/3970204546503920700.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://daledeng.blog.163.com/album/prevPhoto.do?photoId=_fks_3DBbl1rh5HwatIMzW_tsOcolJTmr_hAE&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://img.blog.163.com/photo/nDJ4tCka9tBpmLNpsFI_pg==/3970204546503920708.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在刷机过程中如果手机因人为原因忽然断电或手机数据线脱落,就会造成刷机的失败,这时手机就会无法正常启动,遇见这种情况大家往往都会心急如焚,其实也不用太担心,处理刷机失败的方法其实也很简单&amp;mdash;-重新运行 rsd刷机工具以后，把数据线插上手机，同时 按住*键. #键和 电源键 开机，手机这时会直接进入DOS黑屏刷机模式 ，然后重新刷机就可以了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>刷机包结构</title>
-      <link>/posts/%E5%88%B7%E6%9C%BA%E5%8C%85%E7%BB%93%E6%9E%84/</link>
+      <link>seth.dpdns.org/posts/%E5%88%B7%E6%9C%BA%E5%8C%85%E7%BB%93%E6%9E%84/</link>
       <pubDate>Fri, 01 Dec 2006 16:24:54 +0800</pubDate>
-      <guid>/posts/%E5%88%B7%E6%9C%BA%E5%8C%85%E7%BB%93%E6%9E%84/</guid>
-      <description>&lt;p&gt;最近论坛里面刷机的人越来越多了，但好象大家都不知道刷机包由什么组成的，也就不知道怎么修改了，我这里把我知道的刷机包的组成部分丢出来，希望对大家有点帮助&lt;/p&gt;&#xA;&lt;p&gt;首先介绍刷机的一些基本常识及步骤。&lt;br&gt;&#xA;刷机给人最直观的感觉，就是升级。没错，就是升级，升级你手机的软体，从而改善整机的速度和稳定性。&lt;br&gt;&#xA;在论坛上大家会听到这样或那样的术语，下面我对它们做下简要的解释：（当你用SHXCoDec分解一体包时，经常见到）&lt;br&gt;&#xA;0。CG0（Code Group 0）地址范围（03FD0000&lt;del&gt;03FF0000）RAM Downloader 大小128KB&lt;br&gt;&#xA;这个就是我们说的LDR文件。&lt;br&gt;&#xA;1。CG1 (Code Group 1) 地址范围（10080000&lt;/del&gt;10D00000）Flash&lt;br&gt;&#xA;这个文件在国外又称为kernel(内核)，主要是由OS（operation system）操作系统组成,起到驱动/控制手机硬件。好比是我们用的windows内核系统，一个道理。（轻易不要改动）&lt;/p&gt;&#xA;&lt;p&gt;2。CG2（Code Group 2）地址范围（11100000~11FE0000）Flex&lt;br&gt;&#xA;这个文件主要有file system和seems组成。你会在里面找到电话本，铃声，主题等相关资源，保存个人信息。其实我们mod机子就是针对这部分。（主要改动对象）&lt;/p&gt;&#xA;&lt;p&gt;3。CG3（Code Group 3）地址范围（10040000~10080000）DSP&lt;br&gt;&#xA;Digital Signal Processor（数字信号处理器）主要应用于多媒体和通讯，对媒体和通讯的信号进行编码/解码处理。例如对MP3，MP4信号处理等等。&lt;/p&gt;&#xA;&lt;p&gt;4。CG4（Code Group 4）地址范围（10F40000~11140000）Language Pack&lt;br&gt;&#xA;这个文件是语言包。不用多说了，大家都理解的。呵呵。&lt;br&gt;&#xA;以下给大家一些常用的语言包列表:（你可以在手机里面查到相关信息）&lt;br&gt;&#xA;Language Package 0001 (US English)&lt;br&gt;&#xA;Language Package 0002 (UK English)&lt;br&gt;&#xA;Language Package 0003 (US English, Canadian French, American Spanish, Brazilian Portuguese)&lt;br&gt;&#xA;Language Package 0004 (UK English, French, German, Italian)&lt;br&gt;&#xA;Language Package 0005 (UK English, German, French, Dutch)&lt;br&gt;&#xA;Language Package 000A (UK English, Greek, Spanish, Portuguese)&lt;br&gt;&#xA;Language Package 000B (UK English, Norwegian, Danish, Swedish)&lt;br&gt;&#xA;Language Package 000C (UK English, Estonian, Swedish, Finnish)&lt;br&gt;&#xA;Language Package 000D (UK English, Lithuanian, Latvian, Russian)&lt;br&gt;&#xA;Language Package 000E (UK English, Polish, Czech, Slovak)&lt;br&gt;&#xA;Language Package 000F (UK English, Turkish, Bulgarian, Hungarian)&lt;br&gt;&#xA;Language Package 0010 (UK English, Serbian, Slovenian, Croatian)&lt;br&gt;&#xA;Language Package 0011 (UK English, Russian, Romanian, German)&lt;br&gt;&#xA;Language Package 0012 (UK English, Arabic, Hebrew, Russian)&lt;br&gt;&#xA;Language Package 0014 (UK English, Complex Chinese) HK&lt;br&gt;&#xA;Language Package 0015 (US English, Simplified Chinese) CN&lt;br&gt;&#xA;Language Package 0016 (US English, Complex Chinese) TW&lt;br&gt;&#xA;Language Package 0017 (UK English, Canadian French)&lt;br&gt;&#xA;Language Package 0018 (US English, American Spanish)&lt;br&gt;&#xA;Language Package 0019 (US English, Brazilian Portuguese)&lt;br&gt;&#xA;Language Package 001A (US English, American, Portuguese, Spanish, Brazilian)&lt;br&gt;&#xA;Language Package 001B (US English, Canadian French, Spanish American)&lt;br&gt;&#xA;Language Package 0020 (UK English, Arabic, Turkish, French)&lt;br&gt;&#xA;Language Package 0021 (UK English, Thai, Vietnamese, Malaysian {Bahasa?} )&lt;br&gt;&#xA;Language Package 0023 (UK English, French, German, Italian, Portuguese, Spanish)&lt;br&gt;&#xA;Language Package 0024 (UK English, Chinese Simplified)&lt;br&gt;&#xA;Language Package 0027 (UK English, French, German, Italian, Swedish)&lt;br&gt;&#xA;Language Package 0028 (UK English, Nederlands, German, Italian, Spanish)&lt;br&gt;&#xA;Language Package 0029 (UK English, Finnish, Norwegian, Swedish, Danish)&lt;br&gt;&#xA;Language Package 002C (UK English, Danish, Swedish, Norwegian, Finn, German, Russian)&lt;br&gt;&#xA;Language Package 002D (UK English, Estonio, Latvian, Lithuanian, Finnish, Polish, Russian)&lt;br&gt;&#xA;Language Package 002E (UK English, German, Russian, Ukrainian, French, Spanish, Portuguese)&lt;br&gt;&#xA;Language Package 002F (UK English, Hungarian, Polish, Czech, Slovakian, Slovenian, Croatian)&lt;br&gt;&#xA;Language Package 0030 (UK English, Bulgarian, Croatian, Rumanian, Serbian, Slovenian, German)&lt;br&gt;&#xA;Language Package 0031 (UK English, Greek, Romanian, Bulgarian, Italian, German, Russian)&lt;br&gt;&#xA;Language Package 0032 (UK English, French, Arabic, German, Russian, Spanish, Turkish)&lt;br&gt;&#xA;Language Package 0033 (UK English, Hebrew, Arabic, Russian, Spanish, French, Turkish)&lt;br&gt;&#xA;Language Package 0034 (UK English, French, Urdu, Farsi, Arabic, Russian, Spanish)&lt;br&gt;&#xA;Language Package 0035 (UK English, Swedish, Romanian, Polish, Hungarian, Greek)&lt;br&gt;&#xA;Language Package 0036 (UK English, Danish, Polish, Russian, Slovakian)&lt;br&gt;&#xA;Language Package 0037 (UK English, German, Dutch, Polish, Hungarian, Czech, Croatian)&lt;br&gt;&#xA;Language Package 0038 (UK English, French, German, Italian, Spanish, Turkish, Greek)&lt;br&gt;&#xA;Language Package 0039 (UK English, French, German, Italian, Spanish, Dutch, Turkish, Portuguese)&lt;br&gt;&#xA;Language Package 004B (UK English, Hindi)&lt;br&gt;&#xA;Language Package 004D (UK English, Complex Chinese, Simplified Chinese)&lt;/p&gt;</description>
+      <guid>seth.dpdns.org/posts/%E5%88%B7%E6%9C%BA%E5%8C%85%E7%BB%93%E6%9E%84/</guid>
+      <description>&lt;p&gt;最近论坛里面刷机的人越来越多了，但好象大家都不知道刷机包由什么组成的，也就不知道怎么修改了，我这里把我知道的刷机包的组成部分丢出来，希望对大家有点帮助&lt;/p&gt;
+&lt;p&gt;首先介绍刷机的一些基本常识及步骤。&lt;br&gt;
+刷机给人最直观的感觉，就是升级。没错，就是升级，升级你手机的软体，从而改善整机的速度和稳定性。&lt;br&gt;
+在论坛上大家会听到这样或那样的术语，下面我对它们做下简要的解释：（当你用SHXCoDec分解一体包时，经常见到）&lt;br&gt;
+0。CG0（Code Group 0）地址范围（03FD0000&lt;del&gt;03FF0000）RAM Downloader 大小128KB&lt;br&gt;
+这个就是我们说的LDR文件。&lt;br&gt;
+1。CG1 (Code Group 1) 地址范围（10080000&lt;/del&gt;10D00000）Flash&lt;br&gt;
+这个文件在国外又称为kernel(内核)，主要是由OS（operation system）操作系统组成,起到驱动/控制手机硬件。好比是我们用的windows内核系统，一个道理。（轻易不要改动）&lt;/p&gt;
+&lt;p&gt;2。CG2（Code Group 2）地址范围（11100000~11FE0000）Flex&lt;br&gt;
+这个文件主要有file system和seems组成。你会在里面找到电话本，铃声，主题等相关资源，保存个人信息。其实我们mod机子就是针对这部分。（主要改动对象）&lt;/p&gt;
+&lt;p&gt;3。CG3（Code Group 3）地址范围（10040000~10080000）DSP&lt;br&gt;
+Digital Signal Processor（数字信号处理器）主要应用于多媒体和通讯，对媒体和通讯的信号进行编码/解码处理。例如对MP3，MP4信号处理等等。&lt;/p&gt;
+&lt;p&gt;4。CG4（Code Group 4）地址范围（10F40000~11140000）Language Pack&lt;br&gt;
+这个文件是语言包。不用多说了，大家都理解的。呵呵。&lt;br&gt;
+以下给大家一些常用的语言包列表:（你可以在手机里面查到相关信息）&lt;br&gt;
+Language Package 0001 (US English)&lt;br&gt;
+Language Package 0002 (UK English)&lt;br&gt;
+Language Package 0003 (US English, Canadian French, American Spanish, Brazilian Portuguese)&lt;br&gt;
+Language Package 0004 (UK English, French, German, Italian)&lt;br&gt;
+Language Package 0005 (UK English, German, French, Dutch)&lt;br&gt;
+Language Package 000A (UK English, Greek, Spanish, Portuguese)&lt;br&gt;
+Language Package 000B (UK English, Norwegian, Danish, Swedish)&lt;br&gt;
+Language Package 000C (UK English, Estonian, Swedish, Finnish)&lt;br&gt;
+Language Package 000D (UK English, Lithuanian, Latvian, Russian)&lt;br&gt;
+Language Package 000E (UK English, Polish, Czech, Slovak)&lt;br&gt;
+Language Package 000F (UK English, Turkish, Bulgarian, Hungarian)&lt;br&gt;
+Language Package 0010 (UK English, Serbian, Slovenian, Croatian)&lt;br&gt;
+Language Package 0011 (UK English, Russian, Romanian, German)&lt;br&gt;
+Language Package 0012 (UK English, Arabic, Hebrew, Russian)&lt;br&gt;
+Language Package 0014 (UK English, Complex Chinese) HK&lt;br&gt;
+Language Package 0015 (US English, Simplified Chinese) CN&lt;br&gt;
+Language Package 0016 (US English, Complex Chinese) TW&lt;br&gt;
+Language Package 0017 (UK English, Canadian French)&lt;br&gt;
+Language Package 0018 (US English, American Spanish)&lt;br&gt;
+Language Package 0019 (US English, Brazilian Portuguese)&lt;br&gt;
+Language Package 001A (US English, American, Portuguese, Spanish, Brazilian)&lt;br&gt;
+Language Package 001B (US English, Canadian French, Spanish American)&lt;br&gt;
+Language Package 0020 (UK English, Arabic, Turkish, French)&lt;br&gt;
+Language Package 0021 (UK English, Thai, Vietnamese, Malaysian {Bahasa?} )&lt;br&gt;
+Language Package 0023 (UK English, French, German, Italian, Portuguese, Spanish)&lt;br&gt;
+Language Package 0024 (UK English, Chinese Simplified)&lt;br&gt;
+Language Package 0027 (UK English, French, German, Italian, Swedish)&lt;br&gt;
+Language Package 0028 (UK English, Nederlands, German, Italian, Spanish)&lt;br&gt;
+Language Package 0029 (UK English, Finnish, Norwegian, Swedish, Danish)&lt;br&gt;
+Language Package 002C (UK English, Danish, Swedish, Norwegian, Finn, German, Russian)&lt;br&gt;
+Language Package 002D (UK English, Estonio, Latvian, Lithuanian, Finnish, Polish, Russian)&lt;br&gt;
+Language Package 002E (UK English, German, Russian, Ukrainian, French, Spanish, Portuguese)&lt;br&gt;
+Language Package 002F (UK English, Hungarian, Polish, Czech, Slovakian, Slovenian, Croatian)&lt;br&gt;
+Language Package 0030 (UK English, Bulgarian, Croatian, Rumanian, Serbian, Slovenian, German)&lt;br&gt;
+Language Package 0031 (UK English, Greek, Romanian, Bulgarian, Italian, German, Russian)&lt;br&gt;
+Language Package 0032 (UK English, French, Arabic, German, Russian, Spanish, Turkish)&lt;br&gt;
+Language Package 0033 (UK English, Hebrew, Arabic, Russian, Spanish, French, Turkish)&lt;br&gt;
+Language Package 0034 (UK English, French, Urdu, Farsi, Arabic, Russian, Spanish)&lt;br&gt;
+Language Package 0035 (UK English, Swedish, Romanian, Polish, Hungarian, Greek)&lt;br&gt;
+Language Package 0036 (UK English, Danish, Polish, Russian, Slovakian)&lt;br&gt;
+Language Package 0037 (UK English, German, Dutch, Polish, Hungarian, Czech, Croatian)&lt;br&gt;
+Language Package 0038 (UK English, French, German, Italian, Spanish, Turkish, Greek)&lt;br&gt;
+Language Package 0039 (UK English, French, German, Italian, Spanish, Dutch, Turkish, Portuguese)&lt;br&gt;
+Language Package 004B (UK English, Hindi)&lt;br&gt;
+Language Package 004D (UK English, Complex Chinese, Simplified Chinese)&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

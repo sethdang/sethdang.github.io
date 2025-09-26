@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>ABAP计算工资的程序 | Seth Dang博客</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>ABAP计算工资的程序 | Seth Dang&#39;S</title>
+<meta name="keywords" content="">
+<meta name="description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
 &ldquo;应税所得=取得的收入-免税收入-费用扣除额
 &ldquo;应交的个税=应税所得*适用税率-速算扣除数。
 &ldquo;其中：
@@ -36,37 +37,55 @@ l_sal_for_calc type p ,
 l_house_fund type f ,
 l_house_fund_p type p ,
 l_old_passion type p ,">
-    <meta name="generator" content="Hugo 0.150.0">
-    
-    
-    
-      <meta name="robots" content="index, follow">
-    
-    <meta name="author" content="Seth">
-    
+<meta name="author" content="Seth">
+<link rel="canonical" href="seth.dpdns.org/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/">
+<link crossorigin="anonymous" href="seth.dpdns.org/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css" integrity="sha256-4fXEyuRFmWVff/lRlf&#43;JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="seth.dpdns.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="seth.dpdns.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="seth.dpdns.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="seth.dpdns.org/apple-touch-icon.png">
+<link rel="mask-icon" href="seth.dpdns.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="seth.dpdns.org/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-    
-<link rel="stylesheet" href="/ananke/css/main.min.2438bcafd7af9675c426d1a4afcd16cfff18e4e10f401071e45b5ccd3be40a0d.css" >
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
+            .list {
+                background: var(--theme);
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-    
-
-
-    
-      
-
-    
-
-    
-
-    
-      <link rel="canonical" href="/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/">
-    
-
-    <meta property="og:url" content="/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/">
-  <meta property="og:site_name" content="Seth Dang博客">
+    </style>
+</noscript><meta property="og:url" content="seth.dpdns.org/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/">
+  <meta property="og:site_name" content="Seth Dang&#39;S">
   <meta property="og:title" content="ABAP计算工资的程序">
   <meta property="og:description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
 “应税所得=取得的收入-免税收入-费用扣除额
@@ -98,72 +117,36 @@ l_sal_for_calc type p ,
 l_house_fund type f ,
 l_house_fund_p type p ,
 l_old_passion type p ,">
-  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale" content="zh-CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2008-04-26T15:19:38+08:00">
     <meta property="article:modified_time" content="2008-04-26T15:19:38+08:00">
-
-  <meta itemprop="name" content="ABAP计算工资的程序">
-  <meta itemprop="description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
-“应税所得=取得的收入-免税收入-费用扣除额
-“应交的个税=应税所得*适用税率-速算扣除数。
-“其中：
-“1。免税收入包括有：个人按照规定交纳的社会保险金和住房公积金，等。
-“2。费用扣除额（即平常所说的所谓的“起征点”）自2006年1月1日起，全国统一执行1 600元的标准。目前法定的费用扣除额为800元，但各地在执行中存在擅自提高的情况，因此各地实际的费用扣除额并不一样。
-“3。税率为5%-45%九级超额累进税率。由于超额累进税率的计算较为复杂，因此转化为使用适用税率和速算扣除数的简化算法。具体适用税率和速算扣除数可查阅税率表：
-“（应税所得、适用税率%、速算扣除数）
-“0-500、5、0
-“500-2 000、10、25
-“2 000-5 000、15、125
-“5 000-20 000、20、375
-“20 000-40 000、25、1 375
-“40 000-60 000、30、3 375
-“60 000-80 000、35、6 375
-“80 000-100 000、40、10 375
-“100 000以上、45、15 375
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ABAP计算工资的程序">
+<meta name="twitter:description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
+&ldquo;应税所得=取得的收入-免税收入-费用扣除额
+&ldquo;应交的个税=应税所得*适用税率-速算扣除数。
+&ldquo;其中：
+&ldquo;1。免税收入包括有：个人按照规定交纳的社会保险金和住房公积金，等。
+&ldquo;2。费用扣除额（即平常所说的所谓的“起征点”）自2006年1月1日起，全国统一执行1 600元的标准。目前法定的费用扣除额为800元，但各地在执行中存在擅自提高的情况，因此各地实际的费用扣除额并不一样。
+&ldquo;3。税率为5%-45%九级超额累进税率。由于超额累进税率的计算较为复杂，因此转化为使用适用税率和速算扣除数的简化算法。具体适用税率和速算扣除数可查阅税率表：
+&ldquo;（应税所得、适用税率%、速算扣除数）
+&ldquo;0-500、5、0
+&ldquo;500-2 000、10、25
+&ldquo;2 000-5 000、15、125
+&ldquo;5 000-20 000、20、375
+&ldquo;20 000-40 000、25、1 375
+&ldquo;40 000-60 000、30、3 375
+&ldquo;60 000-80 000、35、6 375
+&ldquo;80 000-100 000、40、10 375
+&ldquo;100 000以上、45、15 375
 DATA : l_salary type f.
 PARAMETERS p_salary type string.
 TRY .
 l_salary = p_salary.
 CATCH cx_root.
-WRITE ‘Error input’ .
-exit.
-ENDTRY.
-DATA:
-l_sal_for_calc type p ,
-l_house_fund type f ,
-l_house_fund_p type p ,
-l_old_passion type p ,">
-  <meta itemprop="datePublished" content="2008-04-26T15:19:38+08:00">
-  <meta itemprop="dateModified" content="2008-04-26T15:19:38+08:00">
-  <meta itemprop="wordCount" content="356">
-  <meta itemprop="keywords" content="ERP">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ABAP计算工资的程序">
-  <meta name="twitter:description" content="*关于工资薪金所得应交个人所得税的具体计算方法如下：
-“应税所得=取得的收入-免税收入-费用扣除额
-“应交的个税=应税所得*适用税率-速算扣除数。
-“其中：
-“1。免税收入包括有：个人按照规定交纳的社会保险金和住房公积金，等。
-“2。费用扣除额（即平常所说的所谓的“起征点”）自2006年1月1日起，全国统一执行1 600元的标准。目前法定的费用扣除额为800元，但各地在执行中存在擅自提高的情况，因此各地实际的费用扣除额并不一样。
-“3。税率为5%-45%九级超额累进税率。由于超额累进税率的计算较为复杂，因此转化为使用适用税率和速算扣除数的简化算法。具体适用税率和速算扣除数可查阅税率表：
-“（应税所得、适用税率%、速算扣除数）
-“0-500、5、0
-“500-2 000、10、25
-“2 000-5 000、15、125
-“5 000-20 000、20、375
-“20 000-40 000、25、1 375
-“40 000-60 000、30、3 375
-“60 000-80 000、35、6 375
-“80 000-100 000、40、10 375
-“100 000以上、45、15 375
-DATA : l_salary type f.
-PARAMETERS p_salary type string.
-TRY .
-l_salary = p_salary.
-CATCH cx_root.
-WRITE ‘Error input’ .
+WRITE &lsquo;Error input&rsquo; .
 exit.
 ENDTRY.
 DATA:
@@ -172,63 +155,118 @@ l_house_fund type f ,
 l_house_fund_p type p ,
 l_old_passion type p ,">
 
-      
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "seth.dpdns.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "ABAP计算工资的程序",
+      "item": "seth.dpdns.org/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "ABAP计算工资的程序",
+  "name": "ABAP计算工资的程序",
+  "description": "*关于工资薪金所得应交个人所得税的具体计算方法如下：\n\u0026ldquo;应税所得=取得的收入-免税收入-费用扣除额\n\u0026ldquo;应交的个税=应税所得*适用税率-速算扣除数。\n\u0026ldquo;其中：\n\u0026ldquo;1。免税收入包括有：个人按照规定交纳的社会保险金和住房公积金，等。\n\u0026ldquo;2。费用扣除额（即平常所说的所谓的“起征点”）自2006年1月1日起，全国统一执行1 600元的标准。目前法定的费用扣除额为800元，但各地在执行中存在擅自提高的情况，因此各地实际的费用扣除额并不一样。\n\u0026ldquo;3。税率为5%-45%九级超额累进税率。由于超额累进税率的计算较为复杂，因此转化为使用适用税率和速算扣除数的简化算法。具体适用税率和速算扣除数可查阅税率表：\n\u0026ldquo;（应税所得、适用税率%、速算扣除数）\n\u0026ldquo;0-500、5、0\n\u0026ldquo;500-2 000、10、25\n\u0026ldquo;2 000-5 000、15、125\n\u0026ldquo;5 000-20 000、20、375\n\u0026ldquo;20 000-40 000、25、1 375\n\u0026ldquo;40 000-60 000、30、3 375\n\u0026ldquo;60 000-80 000、35、6 375\n\u0026ldquo;80 000-100 000、40、10 375\n\u0026ldquo;100 000以上、45、15 375\nDATA : l_salary type f.\nPARAMETERS p_salary type string.\nTRY .\nl_salary = p_salary.\nCATCH cx_root.\nWRITE \u0026lsquo;Error input\u0026rsquo; .\nexit.\nENDTRY.\nDATA:\nl_sal_for_calc type p ,\nl_house_fund type f ,\nl_house_fund_p type p ,\nl_old_passion type p ,\n",
+  "keywords": [
     
-	
-  </head><body class="ma0 avenir bg-near-white production">
+  ],
+  "articleBody": "*关于工资薪金所得应交个人所得税的具体计算方法如下：\n“应税所得=取得的收入-免税收入-费用扣除额\n“应交的个税=应税所得*适用税率-速算扣除数。\n“其中：\n“1。免税收入包括有：个人按照规定交纳的社会保险金和住房公积金，等。\n“2。费用扣除额（即平常所说的所谓的“起征点”）自2006年1月1日起，全国统一执行1 600元的标准。目前法定的费用扣除额为800元，但各地在执行中存在擅自提高的情况，因此各地实际的费用扣除额并不一样。\n“3。税率为5%-45%九级超额累进税率。由于超额累进税率的计算较为复杂，因此转化为使用适用税率和速算扣除数的简化算法。具体适用税率和速算扣除数可查阅税率表：\n“（应税所得、适用税率%、速算扣除数）\n“0-500、5、0\n“500-2 000、10、25\n“2 000-5 000、15、125\n“5 000-20 000、20、375\n“20 000-40 000、25、1 375\n“40 000-60 000、30、3 375\n“60 000-80 000、35、6 375\n“80 000-100 000、40、10 375\n“100 000以上、45、15 375\nDATA : l_salary type f.\nPARAMETERS p_salary type string.\nTRY .\nl_salary = p_salary.\nCATCH cx_root.\nWRITE ‘Error input’ .\nexit.\nENDTRY.\nDATA:\nl_sal_for_calc type p ,\nl_house_fund type f ,\nl_house_fund_p type p ,\nl_old_passion type p ,\nl_medicial type p ,\nl_unemployed type p ,\nl_tax type f.\nif l_salary \u003e 6705 .\nl_sal_for_calc = 6705.\nendif.\nl_medicial = l_sal_for_calc / 100 * 2 .\nl_house_fund = l_salary / 100 * 7.\nif l_house_fund \u003e 517 .\nl_house_fund = 517 .\nendif.\nl_old_passion = l_sal_for_calc / 100 * 8.\nl_unemployed = l_sal_for_calc / 100 * 1.\nWRITE : / , ‘Medical: ’ ,l_medicial,\n/ , ‘Unemployee: ’ ,l_unemployed,\n/ , ‘Old Passion: ’ ,l_old_passion,\n/ , ‘House Fund: ’ ,l_house_fund .\nl_sal_for_calc = l_salary - l_medicial - l_unemployed - l_old_passion - l_house_fund.\nl_sal_for_calc = l_sal_for_calc - 1600 .\nDATA : l_tmp type f .\nif l_sal_for_calc \u003c 0 .\nl_tax = 0 .\nelse .\nl_tmp = l_sal_for_calc - 500 .\nif l_tmp \u003c 0 .\nl_tax = l_tax + l_sal_for_calc * 5 / 100 .\nelse .\nl_tax = l_tax + 500 * 5 / 100.\nl_sal_for_calc = l_sal_for_calc - 500 .\nl_tmp = l_sal_for_calc - 1500.\nif l_tmp \u003c 0 .\nl_tax = l_tax + l_sal_for_calc * 10 / 100 .\nelse.\nl_tax = l_tax + 1500 * 10 / 100.\nl_sal_for_calc = l_sal_for_calc - 1500 .\nl_tmp = l_sal_for_calc - 3000.\nif l_tmp \u003c 0 .\nl_tax = l_tax + l_sal_for_calc * 15 / 100 .\nelse.\nl_tax = l_tax + 3000 * 15 / 100.\nl_sal_for_calc = l_sal_for_calc - 3000 .\nl_tmp = l_sal_for_calc - 15000.\nif l_tmp \u003c 0 .\nl_tax = l_tax + l_sal_for_calc * 20 / 100 .\nelse.\nl_tax = l_tax + 15000 * 20 / 100.\nl_sal_for_calc = l_sal_for_calc - 15000 .\nendif.\nendif.\nendif.\nendif.\nl_sal_for_calc = l_sal_for_calc - 500.\nendif.\nNEW-LINE.\nWRITE :/ ’tax:’ , l_tax.\n",
+  "wordCount" : "356",
+  "inLanguage": "en",
+  "datePublished": "2008-04-26T15:19:38+08:00",
+  "dateModified": "2008-04-26T15:19:38+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Seth"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "seth.dpdns.org/posts/abap%E8%AE%A1%E7%AE%97%E5%B7%A5%E8%B5%84%E7%9A%84%E7%A8%8B%E5%BA%8F/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seth Dang'S",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "seth.dpdns.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
 
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="seth.dpdns.org/" accesskey="h" title="Seth Dang&#39;S (Alt + H)">Seth Dang&#39;S</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
     
-   
-  
+    <h1 class="post-title entry-hint-parent">
+      ABAP计算工资的程序
+    </h1>
+    <div class="post-meta"><span title='2008-04-26 15:19:38 +0800 +0800'>April 26, 2008</span>&nbsp;·&nbsp;Seth
 
-  <header>
-    <div class="bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l center items-center justify-between">
-    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
-      
-        Seth Dang博客
-      
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
-</nav>
-
-    </div>
-  </header>
-
-
-
-    <main class="pb7" role="main">
-      
-  
-  
-  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
-    <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-          
-        Posts
-      </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">ABAP计算工资的程序</h1>
-      
-      <p class="tracked"><strong>Seth</strong>
-      </p>
-      
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2008-04-26T15:19:38+08:00">April 26, 2008</time>
-      
-
-      
-      
-    </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>*关于工资薪金所得应交个人所得税的具体计算方法如下：</p>
+</div>
+  </header> 
+  <div class="post-content"><p>*关于工资薪金所得应交个人所得税的具体计算方法如下：</p>
 <p>&ldquo;应税所得=取得的收入-免税收入-费用扣除额</p>
 <p>&ldquo;应交的个税=应税所得*适用税率-速算扣除数。</p>
 <p>&ldquo;其中：</p>
@@ -313,34 +351,86 @@ l_old_passion type p ,">
 <p>endif.</p>
 <p>NEW-LINE.</p>
 <p>WRITE :/ &rsquo;tax:&rsquo; , l_tax.</p>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6 instapaper_ignoref">
-      
-      
-      </div>
-    </div>
-
-    <aside class="w-30-l mt6-l">
 
 
-
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="/" >
-    &copy;  Seth Dang博客 2025 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
   </div>
-</footer>
 
-  </body>
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="seth.dpdns.org/">Seth Dang&#39;S</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
 </html>
