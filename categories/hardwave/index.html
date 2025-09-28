@@ -90,65 +90,7 @@ C:\avldr.dos=“MS-DOS 7.1 from USB-FDD”
 [operating systems]小节是菜单中出现的引导选项，第一个就是前面default设置的老毛桃WinPE，双引号里面的是注释行，会显示在引导菜单里面。下面两行分别是为主板识别U盘为USB-HDD和主板识别U盘为USB-FDD两种模式对应的引导项。
 2、把硬盘系统的NTLDR和NTDETECT.COM两个文件拷贝到U盘根目录，这是NT Loader引导器的必须文件。
 ...</p></div><footer class=entry-footer><span title='2008-08-07 14:42:47 +0800 +0800'>August 7, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to DOS/WinPE双启动移动硬盘制作详解（转帖）" href=https://seth.dpdns.org/posts/doswinpe%E5%8F%8C%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E5%88%B6%E4%BD%9C%E8%AF%A6%E8%A7%A3%E8%BD%AC%E5%B8%96/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>接口定義</h2></header><div class=entry-content><p>PS/2 鍵盤接口為 6 針母插，外觀為：
-引腳定義
-1
-DATA
-Key Data
-2
-n/c
-Not connected
-3
-GND
-Gnd
-4
-VCC
-Power , +5 VDC
-5
-CLK
-Clock
-6
-n/c
-Not connected
-老式PC/aT 鍵盤接口的引腳定義
-鍵盤接口為 5 針母插座
-1
-CLOCK
-Clock
-CLK/CTS, Open-collector
-2
-DATA
-Data
-RxD/TxD/RTS, Open-collector
-3
-n/c
-Not connected
-Reset on some very old keyboards.
-4
-GND
-Ground
-5
-VCC
-+5 VDC
-老式PC/XT 鍵盤接口的引腳定義稍有不同
-鍵盤接口為 5 針母插座：
-1
-CLOCK
-Clock
-CLK/CTS, Open-collector
-2
-DATA
-Data
-RxD/TxD/RTS, Open-collector
-3
-Reset
-Reset
-4
-GND
-Ground
-5
-VCC
-+5 VDC
-...</p></div><footer class=entry-footer><span title='2007-04-10 16:15:35 +0800 +0800'>April 10, 2007</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 接口定義" href=https://seth.dpdns.org/posts/%E6%8E%A5%E5%8F%A3%E5%AE%9A%E7%BE%A9/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>磁盘阵列(Disk Array)</h2></header><div class=entry-content><p>**
+[](https://fastly.jsdelivr.net/gh/sethdang/sethPic/blog_img/5150429123851676322.jpg</p></div><footer class=entry-footer><span title='2007-04-10 16:15:35 +0800 +0800'>April 10, 2007</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 接口定義" href=https://seth.dpdns.org/posts/%E6%8E%A5%E5%8F%A3%E5%AE%9A%E7%BE%A9/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>磁盘阵列(Disk Array)</h2></header><div class=entry-content><p>**
 1.为什么需要磁盘阵列
 如何增加磁盘的存取(access)速度,如何防止数据因磁盘的故障而失落及如何有效的利用磁盘空间,一直是电脑专业人员和用户的困扰;而大容量磁盘的价格非常昂贵,对用户形成很大的负担。磁盘阵列技术的产生一举解决了这些问题。
 过去十年来,CPU的处理速度增加了五十倍有多,内存(memory)的存取速度亦大幅增加,而数据储存装置–主要是磁盘(hard disk)–的存取速度只增加了三、四倍,形成电脑系统的瓶颈,拉低了电脑系统的整体性能(throughput),若不能有效的提升磁盘的存取速度,CPU、内存及磁盘间的不平衡将使CPU及内存的改进形成浪费。

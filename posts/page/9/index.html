@@ -1,405 +1,155 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | Seth Dang'S</title><meta name=keywords content><meta name=description content="Posts - Seth Dang'S"><meta name=author content="Seth"><link rel=canonical href=https://seth.dpdns.org/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css integrity="sha256-4fXEyuRFmWVff/lRlf+JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as=style><link rel=icon href=https://seth.dpdns.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://seth.dpdns.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://seth.dpdns.org/favicon-32x32.png><link rel=apple-touch-icon href=https://seth.dpdns.org/apple-touch-icon.png><link rel=mask-icon href=https://seth.dpdns.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://seth.dpdns.org/posts/index.xml><link rel=alternate hreflang=en href=https://seth.dpdns.org/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://seth.dpdns.org/posts/"><meta property="og:site_name" content="Seth Dang'S"><meta property="og:title" content="Posts"><meta property="og:description" content="技术博客与知识分享"><meta property="og:locale" content="zh-CN"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="技术博客与知识分享"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://seth.dpdns.org/posts/"}]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://seth.dpdns.org/ accesskey=h title="Seth Dang'S (Alt + H)">Seth Dang'S</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
 <svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>系统禁用U盘策略（转）</h2></header><div class=entry-content><p>如果计算机上尚未安装 USB 存储设备
-如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
-%SystemRoot%\Inf\Usbstor.pnf
-%SystemRoot%\Inf\Usbstor.inf
-这样，用户将无法在计算机上安装 USB 存储设备。 要向用户或组分配对 Usbstor.pnf 和 Usbstor.inf 文件的“拒绝”权限，请按照下列步骤操作：
-启动 Windows 资源管理器，然后找到 %SystemRoot%\Inf 文件夹。
-右键单击“Usbstor.pnf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-右键单击“Usbstor.inf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-如果计算机上已经安装了 USB 存储设备
-警告： “注册表编辑器”使用不当可导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因“注册表编辑器”使用不当而导致的问题。使用注册表编辑器需要您自担风险。 如果计算机上已经安装了 USB 存储设备，请将以下注册表项中的“Start”值设置为 4：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-这样，当用户将 USB 存储设备连接到计算机时，该设备将无法运行。要设置“Start”的值，请按照下列步骤操作：
-单击“开始”，然后单击“运行”。
-在“打开”框中，键入“regedit”，然后单击“确定”。
-找到并单击下面的注册表项：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-在右窗格中，双击“Start”。
-在“数值数据”框中，键入 4，单击“十六进制”（如果尚未选中），然后单击“确定”。
-退出“注册表编辑器”。
-至此，USB禁止策略实施成功。
-屏蔽U盘
-1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器
-我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。
-2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到"屏蔽U盘"的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。
-3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：
-POLICY !!NoDrives
-EXPLAIN !!NoDrives_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoDrives”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY POLICY !!NoViewOnDrive
-EXPLAIN !!NoViewOnDrive_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoViewOnDrive”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。
-...</p></div><footer class=entry-footer><span title='2008-07-11 13:56:20 +0800 +0800'>July 11, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 系统禁用U盘策略（转）" href=https://seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>c#编程实例代码</h2></header><div class=entry-content><p>//massagebox
-System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
-//tab顺序
-textBox1.TabIndex.ToString( );
-//日期与时间方法及属性使用示例
-lblInfo.Text += “\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n” + DateTime.Now.ToLongDateString();
-lblInfo.Text += “\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n” + DateTime.Now.ToLongTimeString();
-lblInfo.Text += “\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n” + DateTime.Now.ToShortDateString();
-lblInfo.Text += “\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n” + DateTime.Now.ToShortTimeString();
-/*
-lblInfo.Text += “\n获取当前年份DateTime.Now.Year：” + DateTime.Now.Year;
-lblInfo.Text += “\n获取当前小时DateTime.Now.Hour：” + DateTime.Now.Hour;/
-lblInfo.Text += “\n当前为星期几DateTime.Now.DayOfWeek：” + DateTime.Now.DayOfWeek;
-lblInfo.Text += “\n当前为一年中的第几天DateTime.Now.DayOfYear：” + DateTime.Now.DayOfYear;
-lblInfo.Text += “\n增减天数后的日期DateTime.Now.AddDays(1.5)：” + DateTime.Now.AddDays(1.5);
-/
-lblInfo.Text += “\n增减天数后的日期DateTime.Now.AddDays(-1.5)：” + DateTime.Now.AddDays(-1.5);*/
-//数学方法及字段使用示例
-lblInfo.Text += “\n字段，圆周率Math.PI：”
-+ Math.PI;
-lblInfo.Text += “\n求绝对值方法Math.Abs(-38.5)：” + Math.Abs(-38.5);
-lblInfo.Text += “\n求正弦值方法（30度）Math.Sin(Math.PI/6)：” + Math.Sin(Math.PI / 6);
-lblInfo.Text += “\n求余弦值方法（60度）Math.Cos(Math.PI/3)：” + Math.Cos(Math.PI / 3);
-lblInfo.Text += “\n求正切值方法（45度）Math.Tan(Math.PI/4)：” + Math.Tan(Math.PI / 4);
-lblInfo.Text += “\n求最大值方法Math.Max(3,2)：” + Math.Max(3, 2);
-lblInfo.Text += “\n求最小值方法Math.Min(3,2)：” + Math.Min(3, 2);
-lblInfo.Text += “\n求幂方法（3的平方）Math.Pow(3,2)：” + Math.Pow(3, 2);
-lblInfo.Text += “\n求保留小数值方法Math.Round(3.54)：” + Math.Round(3.54);
-lblInfo.Text += “\n求保留小数值方法（2）Math.Round(3.1415926,3)："+ Math.Round(3.1415926, 3);
-lblInfo.Text += “\n求平方根方法（2的平方根）Math.Sqrt(2)：” + Math.Sqrt(2);
-...</p></div><footer class=entry-footer><span title='2008-07-03 11:22:13 +0800 +0800'>July 3, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to c#编程实例代码" href=https://seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>c# 建立多窗口界面(MDI)方法 (转)</h2></header><div class=entry-content><p>傳統上，可以為Windows編寫3種應用程序，它們是：
-1）基於對話框的應用程序，它們給用戶顯示一個對話框，該 對話框提供了所有的功能。如計算器
-2）單一文檔界面（SDI），這些應用程序給用戶顯示一個菜單、一個或多個工具欄和一個窗口，在該窗口中，用戶可以執行任務。如WordPad
-3）多文檔界面（MDI），這些應用程序的執行方式與SDI相同，但可以同時打開多個窗口。
-MDI應用程序至少要由兩個截然不同的窗口組成。第一個窗口叫作MDI容器（Container）,第二個為 可以在容器中顯示的窗口叫作MDI子窗口。創建MDI時，只需把窗體的IsMdiContainer屬性設為True即可。
-創建子窗體時，要把這個窗體的MdiParent屬性設置為主窗口的一個引用，該窗體就變成子窗體了。不能通過Properties面板設置這個屬性，只能通過代碼來設置。
-建立MDI的方法
-1、建立兩個窗體。將其中的一個作為主窗體的IsMdiContainer屬性設為True。
-2、將作為子窗體的窗體構造函數中傳入主窗體。並將MdiParent設為傳為的主窗體，
-3、在主窗體中呼叫子窗體。
-示例：
-注：下面代碼中的序號與上面建立方法的序號對應
-1、建立兩個窗體：frmContainer窗體，作為主窗體；frmChild窗體，為作子窗體。
-frmContainer代碼：
-namespace MdiBasic
-{
-public partial class frmContainer : Form
-{
-public frmContainer()
-{
-InitializeComponent();
-//1、將窗體設為主窗體容器
-IsMdiContainer = true;
-//3、顯示子窗體
-MdiBasic.frmChild child = new frmChild(this);
-child.Show();
-}
-}
-}
-frmChild代碼：
-namespace MdiBasic
-{
-public partial class frmChild : Form
-{
-//2、傳入主窗體
-public frmChild(MdiBasic.frmContainer parent)
-{
-InitializeComponent();
-//2、將子窗體注冊到容器中
-this.MdiParent = parent;
-}
-}
-}
-防止子FORM重復打開的函數
-public void showMDIChildForm( Form Aform,Form Pform)
-{
-Type t = Type.GetType(“GenesisHR."+Aform.Name);
-for (int i=0;i {
-if(MdiChildren[i].GetType() == t)
-{
-MdiChildren[i].Select();
-return;
-}
-}
-...</p></div><footer class=entry-footer><span title='2008-07-01 14:07:43 +0800 +0800'>July 1, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to c# 建立多窗口界面(MDI)方法 (转)" href=https://seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>mail from sap</h2></header><div class=entry-content><p>dear dale：
-Thank you for joining the community!
-You may change your password at: https://www.sdn.sap.com/irj/sdn/changepassword
-You can help us provide tailored content and services to you by logging in and completing your profile at: https://www.sdn.sap.com/irj/sdn/updateprofile.
-To join the Business Objects Community please use:
-http://boc.sap.com
-To join the SAP Developer Network please use:
-http://sdn.sap.com
-To join the Business Process Expert Community please use:
-http://bpx.sap.com
-Should you wish to receive or discontinue receiving communications about special news and events, please visit your profile and modify the opt-in to marketing materials checkbox.
-https://www.sdn.sap.com/irj/sdn/updateprofile
-...</p></div><footer class=entry-footer><span title='2008-06-24 10:18:39 +0800 +0800'>June 24, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to  mail from sap" href=https://seth.dpdns.org/posts/mail-from-sap/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>SBO 之权限系统概述(转&增)</h2></header><div class=entry-content><p>**
-对于查询可以设置权限组来处理;
-对于字段隐藏可以采用凭证设置和编辑凭证表;
-对于成本/进价可以采用科目余额存取机密科目等方式处理;
-对于单据权限可以运用所有者权限处理.
-**一、SBO 系统权限分类：
-（1）常规权限 包括：
-功能/窗体的访问权限 —— 是“用户界面层的访问控制”。 组权限 —— 访问特定组的数据对象的权限，是“数据层的访问控制”。支持组权限的对象类型包括：单据编号系列、价格清单、用户查询类别，在 常规权限 的相应模块目录中定义。详见 常规权限。 一次性授权 —— 无相应权限的用户可以被有相应权限的用户一次性授权忽略权限限制，而执行一次本无权限的操作，例如，在一个无相应权限的用户试图添加单据或查看报表时，需要提请有权限的用户输入他或她的用户名和密码，这将允许无权限用户执行一次本无权限的操作。一次性授权机制自动被应用，不需要定义。 （2）数据所有权权限：
-数据所有权权限 —— 访问为他人所拥有的数据的权限，是“数据层的访问控制”。
-（3）审批流程：
-审批流程 功能作为标准权限管理的补充，进一步定义用户添加单据的权限条件，并在特定条件下触发审批过程。详见 审批流程。
-二、编辑权限的前提：
-（1）只有超级用户可以查看和编辑权限（为其他用户分配权限）；
-（2）首先要指定该用户是常规用户还是超级用户（在 定义用户 中设置），超级用户拥有所有权限而不能被编辑。
-三、数据所有权权限配置
-1、使用 数据所有权权限 功能的前提：
-（1）在 数据所有权例外 中激活 数据所有权权限。
-（2）创建员工主数据，在 数据所有权权限 中为员工授权（注：如果用户没有对应的员工主数据（在员工主数据中连接用户），则该用户没有任何数据所有权权限）。
-（3）要控制访问权限的单据（或主数据）必须设置所有者（员工）。
-2、数据所有权权限详述：
-数据所有权权限控制机制是数据层的“数据过滤”机制，而不是用户界面层的“具体窗体的访问控制”机制（常规权限）。在用户访问数据时，无权访问的数据（单据）将被过滤。基于以下字段进行数据过滤以控制对数据的访问：
-（1）单据中的 所有者 字段（单据所有者只能是一个被关联到用户的员工）
-（2）由 员工主数据 确定的用户与单据所有者之间的组织关系
-对每种单据类型，定义用户的以下权限 （三个选项：全部权限/只读权限/没有权限）：
-（1）访问 同级员工 的单据的权限 （同级关系（同一个经理）：取决于访问者和所有者员工主数据的 经理 字段）
-（2）访问 经理 的单据的权限 （直接上下级关系：取决于访问者员工主数据的 经理 字段）
-（3）访问 下属 的单据的权限 （直接上下级关系：取决于所有者员工主数据的 经理 字段）
-（4）访问 同部门员工 的单据的权限 （同部门关系：取决于访问者和所有者员工主数据的 部门 字段）
-（5）访问 同分支机构员工 的单据的权限 （同分支机构关系：取决于访问者和所有者员工主数据的 分支机构 字段）
-（6）访问 同团队员工 的单据的权限 （同团队关系：取决于访问者和所有者员工主数据的 所属团队列表）
-注：在 数据所有权权限 窗口中的中文翻译有误，表中各列标题应为：同级、经理、下属、同部门、同分支（分部）、同团队（组）。</p></div><footer class=entry-footer><span title='2008-06-13 09:18:47 +0800 +0800'>June 13, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to SBO 之权限系统概述(转&增)" href=https://seth.dpdns.org/posts/sbo-%E4%B9%8B%E6%9D%83%E9%99%90%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0%E8%BD%AC%E5%A2%9E/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>卖了一个收盘价，买了一个收盘价</h2></header><div class=entry-content><p>端午罗！这周才轮到可以双休。
-为了提前过好端午节日，偶花了点时间处理了一下手上的股票。挂了个价格，呵呵卖出去了，又挂了个价格买进另外一只，呵呵也买近来罗。收盘发现，哎呀卖的是一个收盘价格哈，买的和收盘价格才差一个点。
-希望接下来的事情一切顺利哈
-盼望中ing…</p></div><footer class=entry-footer><span title='2008-06-06 15:17:09 +0800 +0800'>June 6, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 卖了一个收盘价，买了一个收盘价" href=https://seth.dpdns.org/posts/%E5%8D%96%E4%BA%86%E4%B8%80%E4%B8%AA%E6%94%B6%E7%9B%98%E4%BB%B7%E4%B9%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%94%B6%E7%9B%98%E4%BB%B7/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>800电话列表</h2></header><div class=entry-content><p>尼康800电话 8008105801
-爱普生800电话 8008109977
-nikon 800电话 8008105801
-微星800电话 8008206388
-欧姆龙800电话 8008204535
-宏基800电话 8008101565
-英特尔800电话 8008201100
-戴尔800电话 8008582265
-toshiba 800电话 8008100781
-佳能800电话 01085298468
-acer 800电话 8008101565
-惠普800电话 8008202255
-HP800电话 8008202255
-联想800电话 8008108888
-Intel 800电话 8008201100
-东芝800电话 8008105556
-飞利浦800电话 8008205128
-三星800电话 8008582265
-DELL 800电话 8008582265
-海尔800电话 8008109999
-EPSON 800电话 8008109977
-松下800电话 8008205518
-IBM 800电话 8008101818
-日立800电话 8008100781
-TCL 800电话 8008308365
-永乐800电话 8008207777
-LG 800电话 8008289069
-升技800电话 8008200323
-NEC 800电话 8008108272
-康柏800电话 8008109900
-KV3000 800电话 8008102300
-方正800电话 8008101992
-VRV 800电话 8008201716
-联想800 8008108888
-长城800 8008100285
-方正800 9008101992
-清华同方800 8008105546
-浪潮800 8008600011
-TCL800 8008308365
-中科800 8008100938
-托普800 8008865566
-厦华800 8008582315
-海尔800 8008109999
-同创800 8008289009
-文曲星800 8008104668
-利盟800 8008105995
-Microtek800 8008203273
-戴尔800 8008582265
-清华紫光800 8008105288
-实达800 8008100586
-LG800 8008289069
-神脑800 8008800198
-漫步者800 8008105526
-华硕800 8008105802
-轻骑兵800 8008100141
-三菱800 8008303098
-七彩虹800 8008305866
-和讯800 8008102600
-新天下800 8008301230
-大众800 8008106024
-神州数码800 8008105556
-罗技800 8008208850
-爱国者800 8008101069
-百盛800 8008103150
-金士顿内存 8008201399
-东芝800 8008105556
-天技800 8008289111
-福中800 8008289063
-英特尔 8008201100
-理光800 8008100369
-日立 8008308098
-惠普800 8008202255
-康柏 8008106888
-索尼800 8008102228
-金长城 8008100285
-三星800 8008100716
-IBM 8008101818
-中晶800 8008203273
-NEC 8008108272
-网易800 8008106029
-上海广电 8008201122
-曙光800 8008200466
-清华紫光 8008100155
-瑞星800 8008106010
-EPSON800电话 8008109977
-捷波800 8008100195
-VRV800电话 8008201716
-柯达800 8002005528
-KV3000 8008102300
-则灵800 8008303366
-趋势科技800电话 8008208876</p></div><footer class=entry-footer><span title='2008-06-03 15:03:20 +0800 +0800'>June 3, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 800电话列表" href=https://seth.dpdns.org/posts/800%E7%94%B5%E8%AF%9D%E5%88%97%E8%A1%A8/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>sbo 预收/预付帐款 业务总结</h2></header><div class=entry-content><p>预收款业务涉及到新的三个科目，可接受的预付定金科目，预收帐款清算科目，定金税抵消科目（总帐科目确定的收入标签里确定），业务伙伴底还有一个预收定金清算科目，预收帐款清算，预收定金清算科目两个同时定义的情况下目预收款发票自动过帐分录以预收定金清算科目为主。
-SBO2004测试版中预收帐款清算科目有个BUG显示错误显示为预付款清算科目而且选择科目时只能选择非控制科目。
-预付款业务也同样涉及到新的三个科目，应付的预付定金科目，预付帐款清算科目，定金税抵消科目（总帐科目确定的采购标签里确定）。业务伙伴底还有一个预付定金清算科目，预付帐款清算，预付定金清算科目两个同时定义的情况下目预付款发票自动过帐分录以预付定金清算科目为主。
-定金税抵消科目实际在预收或预付款过程中在采购过程中设置为应交增值税（销项税额），这样产生的税额和实际发生的进项税额抵消，销售活动刚好相反，因此在实际业务中不起作用，以后的版本会考虑取消这个科目。
-2004B中预收预付款的业务处理方式
-1、使用预收定金请求；（付款类似）
-（1）创建销售订单
-（2）基与销售订单，选择预收比例，创建预收款请求
-（3）收到预付款，基于预收款请求收款（银行/收款注意不要修改金额）
-借：现金或银行存款 2340（含税的）
-应交增殖税（销项税） 340
-贷：应收帐款科目 2340 （含税的）
-应交增殖税（销项税）340
-（4）创建发票，销售/应收发票 （基于销售定单），此时不能将预收定金添加进来
-借：应收帐款科目
-销售成本
-贷：主营业务收入
-应交增殖税（销项税）
-库存商品
-（5）基于发票，收款 ，手工将基于预收款请求的收款动作和发票一起选择，收余款
-借：现金或银行存款 （余额）
-应收帐款科目 （已收款金额）
-应交增殖税（销项税） 340
-贷：应收帐款科目 （发票总额）
-应交增殖税（销项税） 340
-2、使用预收定金发票；（付款类似）
-（1）创建销售订单
-（2）基与销售订单，选择预收比例，创建预收款发票
-借：应收帐款科目
-贷：预收帐款（预收帐款清算科目/预收定金清算科目）
-应交增殖税（销项税） （预收帐款*税率）
-（3）收到预付款，基于预收发票，收款
-借：现金或银行存款
-贷：应收帐款科目
-（4）创建余额发票，销售/应收发票（基于销售定单），并将预收定金添加进来。
-借：应收帐款科目（余额）
-预收帐款
-销售成本
-贷：主营业务收入
-应交增殖税（销项税） （商品余额*税率）
-库存商品
-（5）基于余额发票，收款
-借：现金或银行存款
-3、直接在付款（不基于发票的付款）给供应商中付款生成分录是（收款类似）
-借：应付帐款
-贷：现金（或者其它付款方式）
-到货入库后作相应的入库或应付发票处理
-如果预付帐款少于应付帐款补交，在银行/付款中选中已付款和开发票两笔业务一起选择，按照差额一起付款
-此类处理方法比较简单，缺点在于要将预付款和开发票连接起来，而且在财务上没有产生预付的体现，（直接在应付的借贷方抵消）如果对逻辑关系不清楚的情况可能会搞混业务。
-4、直接做日记帐凭证
-借：预付帐款
-贷：现金或银行存款
-到货后做入库处理自动生成凭证：
-借：库存商品
-贷：物资采购
-收到发票作应付发票自动生成凭证：
-借：物资采购
-...</p></div><footer class=entry-footer><span title='2008-05-31 09:40:50 +0800 +0800'>May 31, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to sbo 预收/预付帐款 业务总结" href=https://seth.dpdns.org/posts/sbo-%E9%A2%84%E6%94%B6%E9%A2%84%E4%BB%98%E5%B8%90%E6%AC%BE-%E4%B8%9A%E5%8A%A1%E6%80%BB%E7%BB%93/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>sbo2005财务相关</h2></header><div class=entry-content><p>日记账类型术语表
-缩写 日记账类型
-OB 期初余额
-JE 日记账分录
-IN 应收发票
-CN 应收贷项凭证
-PU 应付发票
-PC 应付贷项凭证
-RC 收款
-PS 向供应商付款
-DP 存款
-CP 支票付款
-DN 交货
-RE 应收退货
-PD 采购订单收货
-SI 收货
-SO 发货
-MI 存货过帐
-WO 工作订单
-采购单据生成财务凭证的规则
-购交货单
-借：库存科目
-贷：转帐科目
-采购发票（参考采购交货单生成）
-借：转帐科目
-应交增殖税（进项税额）
-贷：供应商代码（应付账款控制科目）
-采购发票（不参考采购交货单生成）
-借：应交增殖税（进项税额）
-库存科目
-贷：供应商代码（应付账款控制科目）
-退货（未收发票）
-借：转帐科目
-贷：库存科目
-退货（已收发票）
-借：供应商代码（应付账款控制科目）
-贷：库存科目
-应交增殖税（进项税额）
-付款
-借：供应商代码（应付账款控制科目）
-贷：付款科目（现金科目等在付款类型处定义的科目）
-销售单据生成财务凭证的规则
-交货单
-借：COGM 科目
-贷：库存科目
-发票（参考交货单生成）
-借：客户代码（应收账款控制科目）
-贷：收入科目
-应交增殖税（销项税额）
-发票（不参考交货单生成）
-借：COGM 科目
-...</p></div><footer class=entry-footer><span title='2008-05-30 10:55:36 +0800 +0800'>May 30, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to sbo2005财务相关" href=https://seth.dpdns.org/posts/sbo2005%E8%B4%A2%E5%8A%A1%E7%9B%B8%E5%85%B3/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>SBO2005b测试准备&流程</h2></header><div class=entry-content><p>第一部分（基础数据准备&编码规则&初始化设置）： 一．用户 定义、销售员 定义：(用户名命名规则部门代码(字母+2位数字+3位数字顺序编号）eg:a01001 部门编码参照下表)
-部门 部门代码 总经一办 a01 销售一部 b01 研制一部 c01 加工一部 d01 采购一部 e01 质量一部 f01 人力一部 g01 财务一部 h01 服务一部 i01 **二． **用户权限设置：
-正确分配许可证权限
-正确设置 常规权限-》管理-》系统初始化-》序列 选择正确的序列组
-正确设置 数据所有权
-对于查询可以设置权限组来处理;
-对于字段隐藏可以采用凭证设置和编辑凭证表;
-对于成本/进价可以采用科目余额存取机密科目等方式处理;
-对于单据权限可以运用所有者权限处理.
-具体问题 权限设置 提示无表格 许可证-》许可证管理员 发送消息 常规 -****》发送消息 销售应收帐款 -****》凭证打印 **导出到 MS-EXECEL /**导出到 MS-WORD **导出到 MS-EXECEL /**导出到 MS-WORD 无法开启凭证界面 管理 -》序列 -》。。 **生产收货 /**生产发货 价格清单（只读权限） **** **** **** **** **** **** **** **** 三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）
-...</p></div><footer class=entry-footer><span title='2008-05-28 17:38:23 +0800 +0800'>May 28, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to SBO2005b测试准备&流程" href=https://seth.dpdns.org/posts/sbo2005b%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87%E6%B5%81%E7%A8%8B/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/8/>«&nbsp;Prev&nbsp;
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2005-04-02</h2></header><div class=entry-content><p>2005-04-02 阴 星期六
+上周一21号到了东莞，一切都不像想象的顺利。工作还没有找着。似乎什么也都还没有进入状态，钱倒用得很快的。
+这个假期休得蛮长的，一休就是半年，出来过后心情才好了那么一点儿，唉！自己前途何在呀？
+什么人的电话都不想接，我爸的电话也只是草草的应付两句。张萍的电话我也不曾回过，不管她怎么想了，说不定我不和她通话会对她有好处。
+自己现在无欲无求了？倒也不是，迫于生计和发展还是想找一份工作填饱肚子，唉！（又一个唉）工作真的太难找了，去过人才市场。四层楼都围得水泄不通，要不是亲眼所见真的难以想象。我觉得自己出来基本的工资要求应该在两千左右吧。可要是有人给一千五干不干呢？还是干吧，先就业后择业。来者不拒，不然就会一直负资产，就业压力也会更大了。
+只等下周的面试通知了呀！
+时间过得真快，眨眼间，几个月我又没写日记了，眨眼间，我都快二十三了，眨眼间，那么多的快乐和痛苦。欢乐与哀愁成了过去，来的是新的烦恼。
+听过这么种说法“成功的人生是由无数个正确的决定构成的”不知我来东莞……一切的决定是否正确，时间会去证明的，我也会不断求证，“既来之，则安之”。</p></div><footer class=entry-footer><span title='2008-08-20 21:24:46 +0800 +0800'>August 20, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2005-04-02" href=https://seth.dpdns.org/posts/2005-04-02/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>联盛集团－集团公告</h2></header><div class=entry-content><p>您查询的关键词是： 。如果打开速度慢，可以尝试快速版；如果想保存快照，可以添加到搜藏。
+(百度和网页http://www.jj-ls.com/lsjt/lsjtnews.aspx?id=981的作者无关，不对其内容负责。百度快照谨为网络故障时之索引，不代表被搜索网站的即时页面。)
+联盛“迎奥运礼仪知识竞赛”获奖名单 2008年07月28日
+优秀奖10名
+郭玉凤（超市广场店）、蔡珍珠（超市老马渡店）
+周 璇（超市湖滨店）、詹晓红（超市湖滨店）
+桂长秀（超市湖滨店）、荣艳花（超市湖滨店）
+高美红（广场３F）、 钱志群（超市老马渡店）
+石金萍（广场３Ｆ）、 李刚英（广场３Ｆ）
+纪念奖100名
+集团（5名）：周刘坤（结算中心）、胡江霞（审计部）、余国智（广告公司）、
+汤水秀（结算中心）、周希娟（企划部）
+广场（40名）：殷小慧（3F）、刘飞平（3F）、徐艾军（现场部）、
+彭红平（现场部）、雷飞（4F）、徐丽君（VIP）、
+朱凤霞（VIP）、徐琦（财务部）、徐彩霞（现场部）、
+潘玉红（4F）、张水琴（4F）、徐锦秀（1F）、
+余艳（1F）、李娟（迎宾馆）、许华（专柜部）、
+蔡丽萍（1F）、王煦（专柜部）、孙海云（保安部）、
+胡芳（货品部）、高香连（现场部）、张天平（专柜部）、
+郭成燕（3F）、陶晓琴（现场部）、毛宗英（迎宾馆）、
+叶冬萍（4F）、汪玉芳（4F）、陈玉英（1F）、
+孙丽萍（4F）、洪小玲（VIP）、夏迎春（3F）、
+吴宇林（保安部）、李周力（3F）、徐礼军（迎宾馆）、
+蒋文（1F）、卢珍珍 （财务部）、张霞（财务部）、
+庄晓琴（现场部）、余金萍（4F）、刘九一（3F）
+孔祥艳（3F）
+浪井（9名）：柯于铜（企划部）、廖维红（财务部）、张美萍（现场部）、
+谢学英（总经办）、张传春（保安部）、童玉高（保安部）、
+易序观（总经办）、许梅花（总经办）、王建萍（保安部）、
+超市（46名）：杨小娥（浪井店）、曹艳（浪井店）、张丰（浪井店）、
+夏云（浪井店）、占席明（浪井店）、郭小琴（浪井店）、
+沈军华（浪井店）、李丽萍（广场店）、李雪琴（广场店）、
+赵丽（老马渡店）、杨军（企划部）、梅玲（浪井店）、
+乔青云（老马渡店）、代秋玲（老马渡店）、许峰（湖滨店）、
+吴敏（老马渡店）、骆英（湖滨店）、刘进年（人力资源部）、
+胡忠梅（老马渡店）、王成洪（老马渡店）、代玉香（浪井店）、
+袁晓晖（湖滨店）、俞菊仙（老马渡店）、钱荣（老马渡店）
+吴丽华（老马渡店）、李桃珍（老马渡店）、董水奇（老马渡店）
+杨朋辉（营运部）、谢晟东 （配送中心）、李文春（企划部）、
+芦婷（老马渡店）、陈银娥（老马渡店）、聂浩（广场店）、
+陈亚君（配送中心）、张赛郡（稽核处）、曹卫国（浪井店）、
+余历毅（浪井店）、严玲丽（浪井店）、汪梅兰（老马渡店）、
+胡莉（老马渡店）、罗春花（老马渡店）、余丹（老马渡店）、
+张亚平（老马渡店）殷凤琴（老马渡店）、徐和珍（老马渡店）、
+夏双燕（老马渡店）
+联盛工会 2008.7.23.
+引文来源 联盛集团－集团公告
+-—————————
+一键转贴，快速捕捉生活精彩，赢每周好礼！查看活动首页»</p></div><footer class=entry-footer><span title='2008-08-19 14:43:58 +0800 +0800'>August 19, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 联盛集团－集团公告" href=https://seth.dpdns.org/posts/%E8%81%94%E7%9B%9B%E9%9B%86%E5%9B%A2%E9%9B%86%E5%9B%A2%E5%85%AC%E5%91%8A/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>UIQ 3.0 手机的MMS、WAP、WEB设置方法 - 索尼爱立信 W950i - 手机论坛</h2></header><div class=entry-content><p>cmwap
+工具－控制台－连线－互联网帐户
+在帐户选项卡中，选择：更多－新增帐户－数据
+帐户名称：cmwap（名字随意）
+网址：cmwap
+其它默认；
+选择：Proxy
+勾上：使用Proxy伺服器
+Proxy伺服器地址：010.000.000.172
+Proxy伺服器接口：80
+其它默认；
+然后一路存储，这样在帐户中多了一个MMS的帐户。
+然后：
+工具－控制台－信息设定－MMS帐户
+在MMS帐户中：.
+服务中心地址：全
+互联网用户：MMS（选择刚才刚新建的帐户）
+自动下载：（随你自己高兴怎么设）
+下载档案大小：（同上）
+然后存储，就完成了CMWAP的设定,MMS用的就个连接..
+cmnet：
+工具－控制台－连线－互联网帐户
+在帐户选项卡中，选择：更多－新增帐户－数据
+帐户名称：cmnet（名字随意）
+网址：cmnet
+其它默认；
+点击：更多
+选择：Proxy
+勾上：使用Proxy伺服器
+Proxy伺服器地址：010.000.000.172
+Proxy伺服器接口：80
+其它默认；
+然后一路存储，这样在帐户中多了一个CMNET的帐户。
+在互联网帐户画面，转到群组选项卡；
+里面有一个默认的群组：互联网，点击它
+在新画面中，点击：新增帐户
+你可以把刚才添加的CMNET帐户添加进去，也可以把CMNET帐户添加进去；
+索尼爱立信论坛如果你添加了两个，或者里面有多个帐户，那需要设定优先级：
+还是在互联网群组的编辑画面中，选择某一个你想设定为最高优先级的帐户，
+在弹出菜单中，选择重要性，选为1，点击：完成，这样画面上的优先级顺序就改变了；
+根据实际情况把那个帐户的优先级是设定为高点就行,如果你没有包月的话,最好把CMWAP设置高点.CMNET流量比较贵；</p></div><footer class=entry-footer><span title='2008-08-10 10:29:33 +0800 +0800'>August 10, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to UIQ 3.0 手机的MMS、WAP、WEB设置方法 - 索尼爱立信 W950i - 手机论坛" href=https://seth.dpdns.org/posts/uiq-30-%E6%89%8B%E6%9C%BA%E7%9A%84mmswapweb%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95---%E7%B4%A2%E5%B0%BC%E7%88%B1%E7%AB%8B%E4%BF%A1-w950i---%E6%89%8B%E6%9C%BA%E8%AE%BA%E5%9D%9B/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2004-12-29</h2></header><div class=entry-content><p>2004-12-29 小雨 星期三
+一早收好东西回家了，重庆的交通工具真够烂的，车到大石坝，有人在诈马路。转来转去到11：30左右才到红旗河沟。走了回沙滨路，以前可还没走过。
+一路下着小雨，咋选了个雨天出行哟。还好，自己没有淋着一点雨，带的电脑和衣物也没有。觉得重庆真的没有什么好留恋的了，一路上虽然搬了很多东西，可心里还是蛮轻松的。人还是得靠自己，谁也不会全力帮你。那一干事我就记在心底了，写下来没啥意思。
+一路上心很平静，在重庆-》邻水的车上温习了一遍搞笑大师周星驰的《情圣》，觉得真的不愧为大师。看过N篇还是有新鲜感。邻水-》普新路上唱着些老歌，呵呵虽说搬的东西挺累人，不过也没有什么了。</p></div><footer class=entry-footer><span title='2008-08-10 07:59:11 +0800 +0800'>August 10, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2004-12-29" href=https://seth.dpdns.org/posts/2004-12-29/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2004-12-28</h2></header><div class=entry-content><p>2004-12-28 阴 星期二
+早上一早就开始收东西了，把要走的消息给大家说了，还想晚上一起聚个餐。
+上午上了会儿网，整理了下昨天发的简历，然后去银行后巧遇她们三人，才决定晚上去吃串串。时间还早她们又要上自习，我就先回家收东西了。
+晚上的串串味还不错，不过没有什么心情吃得，可能忧伤的人只有我而已，何必呢！
+打牌的时候手气不错，第一盘给她们一个大光，第二盘一个小光升到五。这就叫“情场失意，赌场得意”吧。
+记一篇流水帐，什么心情也写不下来反正挺郁闷的。</p></div><footer class=entry-footer><span title='2008-08-10 00:17:13 +0800 +0800'>August 10, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2004-12-28" href=https://seth.dpdns.org/posts/2004-12-28/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>奥运开幕</h2></header><div class=entry-content><p>期待已久的奥运开幕了，开幕式搞得不错。
+尽管昨天很霉，股市跌了割肉了，心情也不畅快，不过还是要为奥运加油，为中国加油。
+中国人也算是扬眉吐气了一回！</p></div><footer class=entry-footer><span title='2008-08-09 13:40:10 +0800 +0800'>August 9, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 奥运开幕" href=https://seth.dpdns.org/posts/%E5%A5%A5%E8%BF%90%E5%BC%80%E5%B9%95/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>DOS/WinPE双启动移动硬盘制作详解（转帖）</h2></header><div class=entry-content><p>DOS/WinPE双启动移动硬盘制作详解
+2008-04-23 10:46
+[ 2007-5-5 5:03:00 | By: icbchnzf ]
+很多年以前，那时候软驱还是电脑的必配，维护电脑引导系统也用软盘，我那时候就做了N片启动软盘。后来随着软盘淡出市场，系统维护盘也改用光盘了，例如著名的深山红叶系统维护工具盘，就为我的工作提供了有力的帮助。不过光盘还是存在容易磨花，体积较大等缺点。现在的电脑基本上都支持USB设备启动，U盘可以做成小巧而容易携带的系统维护盘；可重写的存储媒体也为更新提供了方便，再也不用为了升级刻录一堆光盘了。目标：对于系统维护来说，WindowsPE不可却少的利器；除此外，有一些问题还是需要启动到DOS环境来解决。所以我的目标就是制作一个DOS/WinPE双启动的系统维护U盘。下次再遇到某电脑系统崩溃的话，从衣袋里面摸出一精致的U盘，启动电脑之后，把问题解决于弹指间。何其潇洒也！技术背景：其实，U盘启动电脑，主要是各种引导工具的合理灵活运用，所有的操作和调试，也都是围绕引导工具的安装和配置进行的。我们知道，作为操作系统的主要载体，磁盘一直是最重要的存储媒质。因此基本上所有的OS引导的模式都大致相同，都是由磁盘来装入的。首先，需要在OS所在磁盘的MBR（主引导记录）扇区写入特定的引导代码，电脑启动后会按照BIOS里面设置的启动顺序轮询对应磁盘的MBR区，如果找到有效的MBR记录，就按照MBR记录的指针去装入OS引导文件，如果OS引导文件正常，就加载对应的操作系统。因此完成一个操作系统的启动，需要两个必须的步骤：1、MBR引导；2、OS引导。基于上述基本原理，各种操作系统都有自带的引导器，例如WindowsNT以上系统的NT Loader（NTLDR）、Linux的Lilo、各版本的Grub引导器等等，当然还有一些第三方的多系统引导工具如System Commander等等。对于我们目前的这个应用，目的是能够在U盘上实现DOS/WinPE双启动，并且具有相对比较好的兼容性。要达到这个目的，就有一些技术要求。首先，方案要能够适应U盘移动存储这种盘符变动的情况；其次，要实现双启动，一般都会用到虚拟盘镜像，也就是引导器需要支持RAMDisk加载各种常见磁盘镜像启动的方式。虽然U盘具有小巧轻量并且可以反复擦写等诸多优点，但如果要做成启动盘，还存在一些需要解决的问题。最大的问题是：USB启动并没有统一的行业规范。主板制造商不同、BIOS不同，USB引导方式也有差异。作为移动存储设备，主板对U盘的识别不同，会使盘符变化。这些直接导致U盘启动的通用性和兼容性不理想，表现就是在有些电脑上无法引导。这是需要重点解决的问题。OS选择：DOS系统选用MS-DOS 7.1；WinPE选用无忧论坛老毛桃的“外置网络、多媒体组件的老九 WinPE 老毛桃最终修改版”
+NT Loader + AVLDR + Avlgo
+MBR用NT Loader引导，在NTLDR引导菜单中设置选项：用AVLDR引导WinPE；而用Avlgo引导DOS；由于Avlgo不支持选单方式多重启动，为了解决不同主板识别U盘的盘符不同的问题，对Avlgo引导配置文件稍作修改，以适应盘符变化的启动需求。
+工具准备：
+PeToUsb——用来把U盘格式化成NT引导模式；WinImage——用于制作DOS启动软盘镜像；Avlgomgr——用于生成Avlgo引导文件；UltraEdit——用于编辑修改Avlgo的引导文件。
+数据准备：
+1、PeToUSB是一款免费软件，专门用来把U盘引导区格式化成NTLDR引导代码。启动PeToUSB，从“Destination Driver”栏选择目标U盘，点击下面的“Start”按钮，它询问“Continue”是否继续，点击“是”，弹出一个警告窗口，提示目标盘的所有数据都将会丢失，是否继续？还是选择“是”，然后片刻就完成格式化。
+2、用WinImage制作一个2.88M的启动软盘镜像，将MS-DOS 7.1装入镜像，并把常用的DOS工具也放到镜像里面。启动WinImage后，点击最左边的按钮新建一个镜像，这里选择标准格式2.88MB，为的是尽量能多存放一些工具。然后向这个镜像中添加文件，把事先准备好的MS-DOS系统文件从资源管理器里面拖拽到WinImage窗口中。其它DOS工具也这样添加进来。文件添加完毕之后，点击“映像”菜单——“引导扇区属性”，选择“Windows 95/98”并确定，这一步很重要，漏做这一步的话，这个软盘镜像就不能引导电脑了。最后保存成ima格式的镜像文件DOS.ima。
+3、、先备份好C盘的Boot.ini文件，注意默认状态看不到这个系统、隐藏属性的文件，需要到资源管理器里面“工具”菜单“文件夹选项”当中修改查看方式，取消“隐藏受保护的操作系统文件”复选框，并切换为显示所有文件。启动Avlgomgr，在“虚拟磁盘完整路径”浏览找到刚才用WinImage制作的镜像文件，然后点击“装配”按钮，Avlgomgr自动修改Boot.ini文件，并在目标盘（本例为C盘）生成我们需要的Avldr.bin和Avlgo.sys两个关键文件，把这两个文件拷贝到某处备用。完成以后恢复原C盘的Boot.ini文件。
+4、启动UltraEdit，先打开Avldr.bin，在编辑屏右边的ASCⅡ码区域可以找到“AVLGO.SYS”的字符串，把它改成“AVDOS.SYS”，文件另存为Avldr.dos。
+5、然后打开Avlgo.sys，在右边ASCⅡ码区域找“(hd0,0)/DOS.IMA”字符串，把它修改成“(fd0)/DOS.IMA”。修改的时候要注意，由于修改后的字符串比修改前的短，为保证文件长度不变，剩下的部分要切换到左边16进制码区域，用“00”填充，这样才能保证文件长度不变。修改完后另存为Avdos.sys。
+开始组装：
+1、首先，在U盘的根目录用记事本创建一个Boot.ini文件，内容如下：
+[boot loader]
+timeout=30
+default=C:\avldr.xpe
+[operating systems]
+C:\avldr.xpe=“Windows PE”
+C:\avldr.bin=“MS-DOS 7.1 form USB-HDD”
+C:\avldr.dos=“MS-DOS 7.1 from USB-FDD”
+完成以后把这个文件的属性修改成 只读/系统/隐藏（可以用DOS命令 attrib +r +s +h boot.ini 修改文件属性）。
+这是NT Loader的菜单配置文件，timeout参数设置的是说サ却 奔洌 绻 谏瓒ǖ氖奔洌ū纠 ?0秒）用户没有进行选择，就自动加载default项默认的C:\avldr.xpe，启动WinPE。
+[operating systems]小节是菜单中出现的引导选项，第一个就是前面default设置的老毛桃WinPE，双引号里面的是注释行，会显示在引导菜单里面。下面两行分别是为主板识别U盘为USB-HDD和主板识别U盘为USB-FDD两种模式对应的引导项。
+2、把硬盘系统的NTLDR和NTDETECT.COM两个文件拷贝到U盘根目录，这是NT Loader引导器的必须文件。
+...</p></div><footer class=entry-footer><span title='2008-08-07 14:42:47 +0800 +0800'>August 7, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to DOS/WinPE双启动移动硬盘制作详解（转帖）" href=https://seth.dpdns.org/posts/doswinpe%E5%8F%8C%E5%90%AF%E5%8A%A8%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E5%88%B6%E4%BD%9C%E8%AF%A6%E8%A7%A3%E8%BD%AC%E5%B8%96/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2004-12-27</h2></header><div class=entry-content><p>2004-12-27 小雨 星期一
+天好冷，肯定其它地方下了雪，郁闷的是去查了下线路，居然没有重庆到东莞的直通车。咋办呢？明年就不回来了，去达川赶车。
+上午上网中，下午就回家收了东西，把魏瑜娜送我的杯子装进了行李箱，没想到益键居然想盘根究底。是不是脑壳有问题哟，转快点赛！没事做挺无聊的，上午在jobcn.com上发的简历，真希望能助我明年一举成功。
+还好!这几天(自从圣诞以后）心事就蛮少的，除了为钱的事有些耿耿于怀，剩下的就是一门心事的想出去。毕竟是自己决定的，自己前途所在嘛。离别的忧伤还是蛮多的，不过我不晓得大家怎么看我，只知道继续以前的生活是会被大家所遗弃的。而现在，他们会不会认为我是在遗弃她们呢？说不上，看见大家不说话，我很郁闷，看见大家又说又笑，我觉得很心寒。自己是不是有什么心理问题哟。
+真想从明年开始就和大家玩一次人间蒸发，可是似乎不是我的性格。目前的打算是留几个我的联系方式，如果大家都把我忘了，我也没有必要联系哪个哟。不过我想我会禁不住和他们联系的，只不过一定要尽量克制一下，不想再为了那些无足轻重的感情而放弃自己的美好前景。
+等她们回来我会告诉她们我要在后天回家，或许就不来重庆了，东西嘛，能搬的自己搬，搬不了的让姐帮忙哟!</p></div><footer class=entry-footer><span title='2008-08-02 10:28:27 +0800 +0800'>August 2, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2004-12-27" href=https://seth.dpdns.org/posts/2004-12-27/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2004-12-26</h2></header><div class=entry-content><p>2004-12-26 阴有小雨 星期天
+买了一个不怎么样的笔记本，有什么办法呢，m不怎么够吧。
+m是我明年的目标，没想到出门还要回家要m，觉得自己确实不怎么样,咋混成这样了呢？
+小灵通给了益键自己连个时间都没有，回家又得把还给爸爸的手机要回来了。没钱装是什么酷。什么东西都拱手让人，人家又不见得记得你的好，记好又咋样，以后面都难得见。真该300块钱把小灵通卖给周先生，多交个朋友又得了钱、＋xx＋xx嘿，明年的路费就有了。
+想想而，谁叫自己是一个这么善良的人，相信总有那么几个真心的朋友记得我的好。不过以后自己要改改了。要不什么损失都让家人承担了，我还怎么混。
+现在身无分文了，真想去跳楼，银行卡上那仅有的几百块钱怎么混得到年关哟？回家去吧，回到家就衣食无忧，明年再找爸爸要个两千块钱出门，混得好的话一年挣个一、二万应该没问题。也该为自己前途做些打算了。“钱途”则是一切的开始，原始资本积累够了先。
+“钱是万恶之源”而今眼目下，看来自己得好好想想，处理好这个问题。拓展出一条生财之道才是。要不然被这可恶的东西驱使了，不知道要出好多状况，“君子爱财取之有道”哟！</p></div><footer class=entry-footer><span title='2008-07-31 13:30:54 +0800 +0800'>July 31, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2004-12-26" href=https://seth.dpdns.org/posts/2004-12-26/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>2004-12-25</h2></header><div class=entry-content><p>2004-12-25 阴 星期六
+昨晚过了一个欢乐的平安夜，和张译予，杨建岚一起Happy到了十二点，然后一觉到9:00。第一次发觉原来放开一些事，只要自己去追求快乐，其实也不会再有多少痛苦了。“地球离了谁也号会转的”。
+又一次梦见了认真上进的w，天哪都连续两晚梦见她了。可能她对我来说从来都是个梦！对所有人都好的话其实你并没有什么优势，最多落个“好人”的名声，就像我一样。自己离幸福生活和成功事业还差得远，要坚定目标走下去。
+可能这段经历会给爸妈和许多朋友留下我不思进取的印象。管不了那么多了“All’s well that end welll.”只能希望结果是好的那就不错了。
+晚点给爸妈打个电话说我就快回家了，希望他们不要太责怪我。家人总是我的支柱，不管是精神还是物质。回家好好表现一下罗。觉得自己一直以来都是家里的寄生虫，只一味的索取，回报给大家的总是学习成绩下降呀，考分没上线呀等等一系列的坏消息。现在失业＋失恋＋失意,又奔家里去了。得和爸妈好好沟通一下，以后要回家呆那么久就不容易了。
+本打算明天回家，可准备不充分，就暂推迟到一月三号吧。明天去买个日记本，好好抄一下日记，鬼画桃符，好难看哟！
+2004－12－16抄</p></div><footer class=entry-footer><span title='2008-07-31 10:39:30 +0800 +0800'>July 31, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 2004-12-25" href=https://seth.dpdns.org/posts/2004-12-25/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/8/>«&nbsp;Prev&nbsp;
 </a><a class=next href=https://seth.dpdns.org/posts/page/10/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://seth.dpdns.org/>Seth Dang'S</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
