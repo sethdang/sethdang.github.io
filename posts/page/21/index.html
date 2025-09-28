@@ -1,85 +1,6 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | Seth Dang'S</title><meta name=keywords content><meta name=description content="Posts - Seth Dang'S"><meta name=author content="Seth"><link rel=canonical href=https://seth.dpdns.org/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css integrity="sha256-4fXEyuRFmWVff/lRlf+JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as=style><link rel=icon href=https://seth.dpdns.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://seth.dpdns.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://seth.dpdns.org/favicon-32x32.png><link rel=apple-touch-icon href=https://seth.dpdns.org/apple-touch-icon.png><link rel=mask-icon href=https://seth.dpdns.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://seth.dpdns.org/posts/index.xml><link rel=alternate hreflang=en href=https://seth.dpdns.org/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://seth.dpdns.org/posts/"><meta property="og:site_name" content="Seth Dang'S"><meta property="og:title" content="Posts"><meta property="og:description" content="技术博客与知识分享"><meta property="og:locale" content="zh-CN"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="技术博客与知识分享"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://seth.dpdns.org/posts/"}]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://seth.dpdns.org/ accesskey=h title="Seth Dang'S (Alt + H)">Seth Dang'S</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
 <svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>公司的南京办事处与上海办事处之间建立VPN联接</h2></header><div class=entry-content><p>在公司的南京办事处与上海办事处之间建立VPN联接。
-南京办事处网络设置：
-内网IP 10.1.1.0/24
-外网IP 202.102.1.5/24
-上海办事处网络设置：
-内网IP 10.1.2.0/24
-外网IP 202.102.1.6/24
-南京路由器配置
-!
-service timestamps debug uptime
-service timestamps log uptime
-no service password-encryption
-!
-hostname nanjing
-!
-enable cisco
-!
-! crypto isakmp policy 1 生成iskamp policy number 1
-encryption des 选择用DES encryption也可用3DES指定三倍DES加密
-hash sha 指定使用的散列算法，也可以是md5(二端保持一致)
-authentication pre-share
-group 1 指定为Diffie-Hellman组,1表示768位,2表示1024位
-lifetime 14400 指定安全关联的有效期，不设就为默认值
--—–以下配置密钥方法—–
-crypto isakmp identity address 指定与远程路由器通信时使用isakmp标识
-crypto isakmp key 654321 address 202.102.1.6 对远程路由器端口202.102.1.6使用密钥654321
-crypto isakmp key 654321 address 192.168.1.2 对远程路由器隧道端口192.168.1.2使用密钥654321
-!
--—–以下定义一个转换集—–
-crypto ipsec transform-set tset1 ah-md5-hmac esp-des esp-md5-hmac 可以定义一个或多个集
-!
-!
--——以下建立加密图——
-crypto map cmap1 local-address serial 0 定义加密图cmap1并指定s0为本地地址
-crypto map cmap1 1 ipsec-isakmp 用序号1设置加密图
-set peer 202.102.1.6 设定目标地址
-set peer 192.168.1.2
-set transform-set test1 指定转换集
-match address 111 指定加密访问列表111中的地址
-!
-!
-process-max-time 200
-!
--——以下设置隧道端口——
-interface Tunnel0
-ip address 192.168.1.1 255.255.255.0
-tunnel source 202.102.1.5
-tunnel destination 202.102.1.6
-crypto map cmap
-!
--——以下设置内网口——
-interface Ethernet0
-ip address 10.1.1.1 255.255.255.0
-!
--——以下设置外网口——
-interface serial0
-ip address 202.102.1.5 255.255.255.0
-no ip mroute-cache
-no fair-queue
-crypto map cmap
-!
-ip classless
-!
--——以下建立访问列表111——
-access-list 111 permit ip host 202.102.1.5 host 202.102.1.6
-access-list 111 permit ip host 202.102.1.6 host 202.102.1.5
-access-list 111 permit ip 10.1.1.0 0.0.0.255 202.102.1.0 0.0.0.255
-access-list 111 permit ip 10.1.2.0 0.0.0.255 202.102.1.0 0.0.0.255
-access-list 111 permit ip 10.1.1.0 0.0.0.255 10.1.2.0 0.0.0.255
-access-list 111 permit ip 10.1.2.0 0.0.0.255 10.1.1.0 0.0.0.255
-!
-line con 0
-line aux 0
-line vty 0 4
-password cisco
-login
-!
-end
-!
-...</p></div><footer class=entry-footer><span title='2007-01-12 11:16:16 +0800 +0800'>January 12, 2007</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 公司的南京办事处与上海办事处之间建立VPN联接" href=https://seth.dpdns.org/posts/%E5%85%AC%E5%8F%B8%E7%9A%84%E5%8D%97%E4%BA%AC%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B8%8E%E4%B8%8A%E6%B5%B7%E5%8A%9E%E4%BA%8B%E5%A4%84%E4%B9%8B%E9%97%B4%E5%BB%BA%E7%AB%8Bvpn%E8%81%94%E6%8E%A5/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>用活Win2000域控制器</h2></header><div class=entry-content><p>也许不少人会认为域控制器的使用，是非常简单的一件事情；但当你与域控制器进行了“亲密”接触之后，你会发现事实并非想象的那样简单，因为在实际管理域控制器的过程中，你或许会碰到许多特殊要求；面对不同的要求，你需要对域控制器进行个性化的控制和管理。
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>用活Win2000域控制器</h2></header><div class=entry-content><p>也许不少人会认为域控制器的使用，是非常简单的一件事情；但当你与域控制器进行了“亲密”接触之后，你会发现事实并非想象的那样简单，因为在实际管理域控制器的过程中，你或许会碰到许多特殊要求；面对不同的要求，你需要对域控制器进行个性化的控制和管理。
 巧“借”域来装程序
 在包含有多台工作站的局域网中，为每一台工作站安装相同的应用程序，看似是一件轻松而又简单的事情，其实实际操作起来很费时间，如果同时在每台工作站中安装多个应用程序的话，那工作量就更大了！为了能快速、高效地将多个应用程序安装到每台工作站中，你可以按照下面的方法来进行批量操作：
 首先将局域网服务器升级为域服务器，如果你的服务器还没有完成升级的话，那不妨参考相关资料完成升级任务。倘若这里的网络服务器已经完成了升级操作，而且升级好的域服务器名称为“ad.ycsti.cn”；
@@ -370,7 +291,52 @@ You’re well on the way./有慧根，悟性高。
 如果说way是指一段路途的话，那么be well on the way就是指在这段路途上很顺遂，有着好的开始。用be well on the way这个句型用来形容一个人学习的路途，就是指他“有慧根，悟性高”。
 You’re out of your mind./丧失神智。
 mind是指“心智状态，神智”，be out of…是指“没有了…‥，用完了……”，be out of one’s mind的意思就是“(某人)丧失神智”，也就是“(某人)发疯”的意思。当你觉得有人做了非一般正常人会做的事，你就可以对他说You’re out of your mind.。当然这可以指暂时丧失神智，也可能是真的发了疯。
-...</p></div><footer class=entry-footer><span title='2006-11-29 20:21:35 +0800 +0800'>November 29, 2006</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 英语抢先学" href=https://seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/20/>«&nbsp;Prev&nbsp;
+...</p></div><footer class=entry-footer><span title='2006-11-29 20:21:35 +0800 +0800'>November 29, 2006</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 英语抢先学" href=https://seth.dpdns.org/posts/%E8%8B%B1%E8%AF%AD%E6%8A%A2%E5%85%88%E5%AD%A6/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>全国各地DNS</h2></header><div class=entry-content><p>全国各地DNS服务器
+[广东] [上海]
+pdns=202.96.128.143 pdns=202.96.199.132
+adns=202.96.128.68 adns=202.96.209.133
+[香港] [澳门]
+pdns=205.252.144.228 pdns=202.175.3.8
+[深圳] [浙江]
+pdns=202.96.154.15 pdns=202.96.96.68
+adns=202.96.154.8 adns=202.96.104.18
+[陕西] [天津]
+pdns=202.100.13.11 pdns=202.99.96.68
+[西安] [辽宁]
+pdns=202.100.4.15 pdns=202.96.75.64
+adns=202.100.0.68 adns=202.96.64.68
+[江苏] [安徽]
+pdns=202.102.13.141 pdns=202.102.192.68
+adns=202.102.24.35 adns=202.102.199.68
+[四川] [河北]
+pdns=61.139.2.69 pdns=202.99.160.68
+[重庆] [保定]
+pdns=61.128.128.68 pdns=202.99.160.68
+adns=61.128.192.4 adns=202.99.166.4
+[成都] [山东]
+pdns=202.98.96.68 pdns=202.102.152.3
+adns=202.98.96.69 adns=202.102.128.68
+[山西] [吉林]
+pdns=202.99.198.6 pdns=202.98.5.68
+[福建] [湖南]
+pdns=202.101.98.55 pdns=202.103.100.206
+[广西] [江西]
+pdns=202.103.224.68 pdns=202.101.240.36
+adns=202.103.225.68 adns=202.109.129.2
+[云南] [新疆]
+pdns=202.98.160.68 pdns=61.128.97.73
+[河南] [乌鲁木齐]
+pdns=:202.102.227.68 pdns=61.128.97.73
+adns=202.102.224.68 adns=61.128.97.74
+[武汉] [厦门]
+pdns=202.103.0.117 pdns=202.101.103.55
+adns=202.103.24.68 adns=202.101.103.54
+[长沙] [北京2]
+pdns=202.103.96.68 pdns=202.106.196.115
+adns=202.103.96.112 adns=202.106.148.1
+[北邮] [北京]
+pdns=202.112.10.36 pdns=202.106.196.152
+adns=202.112.10.37 adns=202.106.196.115</p></div><footer class=entry-footer><span title='2006-11-29 20:17:45 +0800 +0800'>November 29, 2006</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 全国各地DNS" href=https://seth.dpdns.org/posts/%E5%85%A8%E5%9B%BD%E5%90%84%E5%9C%B0dns/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/20/>«&nbsp;Prev&nbsp;
 </a><a class=next href=https://seth.dpdns.org/posts/page/22/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://seth.dpdns.org/>Seth Dang'S</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

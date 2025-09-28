@@ -1,68 +1,6 @@
 <!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Posts | Seth Dang'S</title><meta name=keywords content><meta name=description content="Posts - Seth Dang'S"><meta name=author content="Seth"><link rel=canonical href=https://seth.dpdns.org/posts/><link crossorigin=anonymous href=/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css integrity="sha256-4fXEyuRFmWVff/lRlf+JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as=style><link rel=icon href=https://seth.dpdns.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://seth.dpdns.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://seth.dpdns.org/favicon-32x32.png><link rel=apple-touch-icon href=https://seth.dpdns.org/apple-touch-icon.png><link rel=mask-icon href=https://seth.dpdns.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://seth.dpdns.org/posts/index.xml><link rel=alternate hreflang=en href=https://seth.dpdns.org/posts/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://seth.dpdns.org/posts/"><meta property="og:site_name" content="Seth Dang'S"><meta property="og:title" content="Posts"><meta property="og:description" content="技术博客与知识分享"><meta property="og:locale" content="zh-CN"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content="技术博客与知识分享"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://seth.dpdns.org/posts/"}]}</script></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://seth.dpdns.org/ accesskey=h title="Seth Dang'S (Alt + H)">Seth Dang'S</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
 <svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>系统禁用U盘策略（转）</h2></header><div class=entry-content><p>如果计算机上尚未安装 USB 存储设备
-如果计算机上尚未安装 USB 存储设备，请向用户或组分配对下列文件的“拒绝”权限：
-%SystemRoot%\Inf\Usbstor.pnf
-%SystemRoot%\Inf\Usbstor.inf
-这样，用户将无法在计算机上安装 USB 存储设备。 要向用户或组分配对 Usbstor.pnf 和 Usbstor.inf 文件的“拒绝”权限，请按照下列步骤操作：
-启动 Windows 资源管理器，然后找到 %SystemRoot%\Inf 文件夹。
-右键单击“Usbstor.pnf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-右键单击“Usbstor.inf”文件，然后单击“属性”。
-单击“安全”选项卡。
-在“组或用户名称”列表中，单击要为其设置“拒绝”权限的用户或组。
-在“用户名或组名 的权限”列表中，单击以选中“完全控制”旁边的“拒绝”复选框，然后单击“确定”。
-如果计算机上已经安装了 USB 存储设备
-警告： “注册表编辑器”使用不当可导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因“注册表编辑器”使用不当而导致的问题。使用注册表编辑器需要您自担风险。 如果计算机上已经安装了 USB 存储设备，请将以下注册表项中的“Start”值设置为 4：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-这样，当用户将 USB 存储设备连接到计算机时，该设备将无法运行。要设置“Start”的值，请按照下列步骤操作：
-单击“开始”，然后单击“运行”。
-在“打开”框中，键入“regedit”，然后单击“确定”。
-找到并单击下面的注册表项：
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor
-在右窗格中，双击“Start”。
-在“数值数据”框中，键入 4，单击“十六进制”（如果尚未选中），然后单击“确定”。
-退出“注册表编辑器”。
-至此，USB禁止策略实施成功。
-屏蔽U盘
-1、在域控制器上打开Active Directory用户和计算机，找到您要屏蔽U盘的组织单位（Organizational Unit 简称OU），右键查看此组织单位的属性，点击组策略页面，新建一个组策略，命名并保存为“屏蔽U盘”，建好后，双击“屏蔽U盘”（必需先打开一次，否则系统不会拷贝那几个模板文件），在打开的标题为“组策略”的窗口的左边，按以下顺序定位“用户配置－管理模板-Windows组件-Windows资源管理器”，选中Windows资源管理器
-我们可以看到有“隐藏我的电脑中的这些指定的驱动器”和“防止从我的电脑访问驱动器”，双击打开其中一项策略，选择“启用”，下面的下拉框会变亮，单击下拉框，如图2所示，您会发现系统提供了7种限制访问驱动器号的组合，其中也包括了“不限制驱动器”，显然，这些组合不能满足我们的要求（因为U盘的盘符通常是排在最后的，而且现在的硬盘比较大，少则也有三四个分区）。
-2、在域控制器上打开Active Directory 用户和计算机，在刚才我们新建的“屏蔽U盘”策略上单击右键选择查看属性，在如图3所示的位置找到"屏蔽U盘"的组策略的唯一的名称，此名称为一长串数字和字母组成，本例中为{82F86A8E-B345-4DDC-A304-E448F6E900A9}，记下此字符串。
-3、打开系统盘，定位以{82F86A8E-B345-4DDC-A304-E448F6E900A9}命名的文件夹，此文件夹位于“C:WINNTSYSVOLbaling.com.cnPolicies”下（盘符依赖于您安装的操作系统所在的分区），注意其中baling.com.cn是您的Windows 2000的域名，打开{82F86A8E-B345-4DDC-A304-E448F6E900A9}目录，找到ADM目录下的system.adm文件，此文件是我们在实施组策略的模板文件，是一个纯文本文件，可用记事本打开，找到下面这两段代码：
-POLICY !!NoDrives
-EXPLAIN !!NoDrives_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoDrives”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY POLICY !!NoViewOnDrive
-EXPLAIN !!NoViewOnDrive_Help
-PART !!NoDrivesDropdown DROPDOWNLIST NOSORT REQUIRED
-VALUENAME “NoViewOnDrive”
-ITEMLIST
-NAME !!ABOnly VALUE NUMERIC 3
-NAME !!COnly VALUE NUMERIC 4
-NAME !!DOnly VALUE NUMERIC 8
-NAME !!ABConly VALUE NUMERIC 7
-NAME !!ABCDOnly VALUE NUMERIC 15
-NAME !!ALLDrives VALUE NUMERIC 67108863 DEFAULT （C/D ONLY=67108851）
-; low 26 bits on (1 bit per drive)
-NAME !!RestNoDrives VALUE NUMERIC 0
-END ITEMLIST
-END PART
-END POLICY 说明：这是两个策略，第一个!!NoDrive，它的作用是在我的电脑中不显示指定的驱动器名，驱动器号代表的所有驱动器不出现在标准的打开对话框上，但是在地址栏中输入盘符或新建一个指向硬盘盘符的快捷方式，用户仍然可以访问该驱动器；第二个!!NoViewOnDrive的作用是阻止用户访问驱动器。可以阻止上述情况的出现，但是仅仅用第二个的话，用户可以看见该驱动器的盘符，但不能访问，一般情况，两个同时使用，可以达到比较理想的效果。
-...</p></div><footer class=entry-footer><span title='2008-07-11 13:56:20 +0800 +0800'>July 11, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 系统禁用U盘策略（转）" href=https://seth.dpdns.org/posts/%E7%B3%BB%E7%BB%9F%E7%A6%81%E7%94%A8u%E7%9B%98%E7%AD%96%E7%95%A5%E8%BD%AC/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>c#编程实例代码</h2></header><div class=entry-content><p>//massagebox
+<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>Posts</h1></header><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>c#编程实例代码</h2></header><div class=entry-content><p>//massagebox
 System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
 //tab顺序
 textBox1.TabIndex.ToString( );
@@ -399,7 +337,12 @@ WO 工作订单
 对于成本/进价可以采用科目余额存取机密科目等方式处理;
 对于单据权限可以运用所有者权限处理.
 具体问题 权限设置 提示无表格 许可证-》许可证管理员 发送消息 常规 -****》发送消息 销售应收帐款 -****》凭证打印 **导出到 MS-EXECEL /**导出到 MS-WORD **导出到 MS-EXECEL /**导出到 MS-WORD 无法开启凭证界面 管理 -》序列 -》。。 **生产收货 /**生产发货 价格清单（只读权限） **** **** **** **** **** **** **** **** 三．编辑科目表 定义（有 成本 销售 支出 3种类型，关注 现金控制和现金流相关 两个属性 要设好标题和明细）
-...</p></div><footer class=entry-footer><span title='2008-05-28 17:38:23 +0800 +0800'>May 28, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to SBO2005b测试准备&流程" href=https://seth.dpdns.org/posts/sbo2005b%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87%E6%B5%81%E7%A8%8B/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/9/>«&nbsp;Prev&nbsp;
+...</p></div><footer class=entry-footer><span title='2008-05-28 17:38:23 +0800 +0800'>May 28, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to SBO2005b测试准备&流程" href=https://seth.dpdns.org/posts/sbo2005b%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87%E6%B5%81%E7%A8%8B/></a></article><article class=post-entry><header class=entry-header><h2 class=entry-hint-parent>让自己很忙</h2></header><div class=entry-content><p>刚刚入职是汶川地震的第二天，让自己变得很忙，在一个不大的公司。尽管工资给得低，但老板还是相当有钱！
+老板花了N多MONEY买来SAP的SBO,这么简单一个为小企业设计的系统，推了那么久硬是没有推上来。很是佩服厂里人的执行能力。
+世上好多无赖，不合理！
+放下吧，忙去吧。
+祈祷为朋友，家乡的亲人。
+灾难就此结束，好运开始降临。</p></div><footer class=entry-footer><span title='2008-05-20 19:03:10 +0800 +0800'>May 20, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to 让自己很忙" href=https://seth.dpdns.org/posts/%E8%AE%A9%E8%87%AA%E5%B7%B1%E5%BE%88%E5%BF%99/></a></article><footer class=page-footer><nav class=pagination><a class=prev href=https://seth.dpdns.org/posts/page/9/>«&nbsp;Prev&nbsp;
 </a><a class=next href=https://seth.dpdns.org/posts/page/11/>Next&nbsp;&nbsp;»</a></nav></footer></main><footer class=footer><span>&copy; 2025 <a href=https://seth.dpdns.org/>Seth Dang'S</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
