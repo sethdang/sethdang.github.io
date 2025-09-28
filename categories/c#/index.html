@@ -1,91 +1,71 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>C# | Seth Dang'S</title><meta name=keywords content><meta name=description content="技术博客与知识分享"><meta name=author content="Seth"><link rel=canonical href=https://seth.dpdns.org/categories/c%23/><link crossorigin=anonymous href=/assets/css/stylesheet.e1f5c4cae44599655f7ff95195ff89c8cb3adbda94f2b1581a434ab2b4d4e6cf.css integrity="sha256-4fXEyuRFmWVff/lRlf+JyMs629qU8rFYGkNKsrTU5s8=" rel="preload stylesheet" as=style><link rel=icon href=https://seth.dpdns.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://seth.dpdns.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://seth.dpdns.org/favicon-32x32.png><link rel=apple-touch-icon href=https://seth.dpdns.org/apple-touch-icon.png><link rel=mask-icon href=https://seth.dpdns.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate type=application/rss+xml href=https://seth.dpdns.org/categories/c%23/index.xml><link rel=alternate hreflang=en href=https://seth.dpdns.org/categories/c%23/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://seth.dpdns.org/categories/c%23/"><meta property="og:site_name" content="Seth Dang'S"><meta property="og:title" content="C#"><meta property="og:description" content="技术博客与知识分享"><meta property="og:locale" content="zh-CN"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="C#"><meta name=twitter:description content="技术博客与知识分享"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://seth.dpdns.org/ accesskey=h title="Seth Dang'S (Alt + H)">Seth Dang'S</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme">
-<svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-<svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu></ul></nav></header><main class=main><header class=page-header><h1>C#</h1></header><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>c#编程实例代码</h2></header><div class=entry-content><p>//massagebox
-System.Windows.Forms.MessageBox.Show(“欢迎使用Vsual Studio 2005！”);
-//tab顺序
-textBox1.TabIndex.ToString( );
-//日期与时间方法及属性使用示例
-lblInfo.Text += “\n获取当前日期字符串DateTime.Now.ToLongDateString( )：\n” + DateTime.Now.ToLongDateString();
-lblInfo.Text += “\n获取当前时间字符串DateTime.Now.ToLongTimeString( )：\n” + DateTime.Now.ToLongTimeString();
-lblInfo.Text += “\n获取当前日期字符串(2)DateTime.Now.ToShortDateString( )：\n” + DateTime.Now.ToShortDateString();
-lblInfo.Text += “\n获取当前时间字符串(2)DateTime.Now.ToShortTimeString( )：\n” + DateTime.Now.ToShortTimeString();
-/*
-lblInfo.Text += “\n获取当前年份DateTime.Now.Year：” + DateTime.Now.Year;
-lblInfo.Text += “\n获取当前小时DateTime.Now.Hour：” + DateTime.Now.Hour;/
-lblInfo.Text += “\n当前为星期几DateTime.Now.DayOfWeek：” + DateTime.Now.DayOfWeek;
-lblInfo.Text += “\n当前为一年中的第几天DateTime.Now.DayOfYear：” + DateTime.Now.DayOfYear;
-lblInfo.Text += “\n增减天数后的日期DateTime.Now.AddDays(1.5)：” + DateTime.Now.AddDays(1.5);
-/
-lblInfo.Text += “\n增减天数后的日期DateTime.Now.AddDays(-1.5)：” + DateTime.Now.AddDays(-1.5);*/
-//数学方法及字段使用示例
-lblInfo.Text += “\n字段，圆周率Math.PI：”
-+ Math.PI;
-lblInfo.Text += “\n求绝对值方法Math.Abs(-38.5)：” + Math.Abs(-38.5);
-lblInfo.Text += “\n求正弦值方法（30度）Math.Sin(Math.PI/6)：” + Math.Sin(Math.PI / 6);
-lblInfo.Text += “\n求余弦值方法（60度）Math.Cos(Math.PI/3)：” + Math.Cos(Math.PI / 3);
-lblInfo.Text += “\n求正切值方法（45度）Math.Tan(Math.PI/4)：” + Math.Tan(Math.PI / 4);
-lblInfo.Text += “\n求最大值方法Math.Max(3,2)：” + Math.Max(3, 2);
-lblInfo.Text += “\n求最小值方法Math.Min(3,2)：” + Math.Min(3, 2);
-lblInfo.Text += “\n求幂方法（3的平方）Math.Pow(3,2)：” + Math.Pow(3, 2);
-lblInfo.Text += “\n求保留小数值方法Math.Round(3.54)：” + Math.Round(3.54);
-lblInfo.Text += “\n求保留小数值方法（2）Math.Round(3.1415926,3)："+ Math.Round(3.1415926, 3);
-lblInfo.Text += “\n求平方根方法（2的平方根）Math.Sqrt(2)：” + Math.Sqrt(2);
-...</p></div><footer class=entry-footer><span title='2008-07-03 11:22:13 +0800 +0800'>July 3, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to c#编程实例代码" href=https://seth.dpdns.org/posts/c%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>c# 建立多窗口界面(MDI)方法 (转)</h2></header><div class=entry-content><p>傳統上，可以為Windows編寫3種應用程序，它們是：
-1）基於對話框的應用程序，它們給用戶顯示一個對話框，該 對話框提供了所有的功能。如計算器
-2）單一文檔界面（SDI），這些應用程序給用戶顯示一個菜單、一個或多個工具欄和一個窗口，在該窗口中，用戶可以執行任務。如WordPad
-3）多文檔界面（MDI），這些應用程序的執行方式與SDI相同，但可以同時打開多個窗口。
-MDI應用程序至少要由兩個截然不同的窗口組成。第一個窗口叫作MDI容器（Container）,第二個為 可以在容器中顯示的窗口叫作MDI子窗口。創建MDI時，只需把窗體的IsMdiContainer屬性設為True即可。
-創建子窗體時，要把這個窗體的MdiParent屬性設置為主窗口的一個引用，該窗體就變成子窗體了。不能通過Properties面板設置這個屬性，只能通過代碼來設置。
-建立MDI的方法
-1、建立兩個窗體。將其中的一個作為主窗體的IsMdiContainer屬性設為True。
-2、將作為子窗體的窗體構造函數中傳入主窗體。並將MdiParent設為傳為的主窗體，
-3、在主窗體中呼叫子窗體。
-示例：
-注：下面代碼中的序號與上面建立方法的序號對應
-1、建立兩個窗體：frmContainer窗體，作為主窗體；frmChild窗體，為作子窗體。
-frmContainer代碼：
-namespace MdiBasic
-{
-public partial class frmContainer : Form
-{
-public frmContainer()
-{
-InitializeComponent();
-//1、將窗體設為主窗體容器
-IsMdiContainer = true;
-//3、顯示子窗體
-MdiBasic.frmChild child = new frmChild(this);
-child.Show();
+/* 分类封面样式 */
+.category-cover-container {
+position: relative;
+margin: 2rem 0;
+overflow: hidden;
 }
+.category-cover {
+width: 100%;
+object-fit: cover;
 }
+.cover-caption {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0,0,0,0.7);
+color: white;
+padding: 0.5rem 1rem;
+margin: 0;
+font-size: 0.9rem;
 }
-frmChild代碼：
-namespace MdiBasic
-{
-public partial class frmChild : Form
-{
-//2、傳入主窗體
-public frmChild(MdiBasic.frmContainer parent)
-{
-InitializeComponent();
-//2、將子窗體注冊到容器中
-this.MdiParent = parent;
+/* 分类网格布局 */
+.category-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+gap: 1.5rem;
+margin: 2rem 0;
 }
+.category-card {
+display: block;
+border: 1px solid var(--border);
+border-radius: var(--radius);
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.category-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-防止子FORM重復打開的函數
-public void showMDIChildForm( Form Aform,Form Pform)
-{
-Type t = Type.GetType(“GenesisHR."+Aform.Name);
-for (int i=0;i {
-if(MdiChildren[i].GetType() == t)
-{
-MdiChildren[i].Select();
-return;
+.category-cover-wrapper {
+height: 160px;
+overflow: hidden;
 }
+.category-cover-thumb {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
 }
-...</p></div><footer class=entry-footer><span title='2008-07-01 14:07:43 +0800 +0800'>July 1, 2008</span>&nbsp;·&nbsp;Seth</footer><a class=entry-link aria-label="post link to c# 建立多窗口界面(MDI)方法 (转)" href=https://seth.dpdns.org/posts/c-%E5%BB%BA%E7%AB%8B%E5%A4%9A%E7%AA%97%E5%8F%A3%E7%95%8C%E9%9D%A2mdi%E6%96%B9%E6%B3%95-%E8%BD%AC/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://seth.dpdns.org/>Seth Dang'S</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+.category-card:hover .category-cover-thumb {
+transform: scale(1.05);
+}
+.category-info {
+padding: 1rem;
+}
+.category-info h3 {
+margin: 0 0 0.5rem 0;
+color: var(--primary);
+}
+.post-count {
+font-size: 0.8rem;
+color: var(--secondary);
+display: block;
+margin-bottom: 0.5rem;
+}
+.description {
+margin: 0;
+font-size: 0.9rem;
+color: var(--secondary);
+line-height: 1.4;
+}
